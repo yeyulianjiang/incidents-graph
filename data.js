@@ -14439,6 +14439,314 @@ window.GRAPH_DATA = {
     "s.tridesmahiera": {
       "label": "三重誓之仪",
       "desc": "三重绳结姐妹会所使用的仪式，包含了某些栖息于世界背面的林地居民的秘密。"
+    },
+    "x.leaves.thorns": {
+      "label": "教诲：叶片与棘刺",
+      "desc": "我已更加理解叶片与棘刺。[将此卡在研究中使用。]"
+    },
+    "x.bells.brazieries": {
+      "label": "教诲：洪钟与铜器",
+      "desc": "我已更加理解洪钟与铜器。[将此卡在研究中使用。]"
+    },
+    "x.inks.revelation": {
+      "label": "教诲：启示之墨",
+      "desc": "我已更加理解启示之墨。[将此卡在研究中使用。]"
+    },
+    "x.coil.chasm": {
+      "label": "教诲：虬蟠与裂隙",
+      "desc": "我已更加理解虬蟠与裂隙。[将此卡在研究中使用。]"
+    },
+    "x.stitching.binding": {
+      "label": "教诲：缝合与装订",
+      "desc": "我已更加理解缝合与装订。[将此卡在研究中使用。]"
+    },
+    "x.seastories": {
+      "label": "教诲：大海的故事",
+      "desc": "我已更加理解大海的故事。[将此卡在研究中使用。]"
+    },
+    "x.tridesmahiera": {
+      "label": "教诲：三重誓之仪",
+      "desc": "我已更加理解三重誓之仪。[将此卡在研究中使用。]"
+    },
+    "x.surgeries.exsanguinations": {
+      "label": "教诲：手术与放血",
+      "desc": "我已更加理解手术与放血。[将此卡在研究中使用。]"
+    },
+    "x.maggephenemysteries": {
+      "label": "教诲：疫疠之秘",
+      "desc": "我已更加理解疫疠之秘。[将此卡在研究中使用。]"
+    },
+    "x.orchids.narcotics": {
+      "label": "教诲：兰花与迷药",
+      "desc": "我已更加理解兰花与迷药。[将此卡在研究中使用。]"
+    },
+    "x.ramsund": {
+      "label": "教诲：拉姆桑德语",
+      "desc": "我已更加理解拉姆桑德语。[将此卡在研究中使用。]"
+    },
+    "x.sabazine": {
+      "label": "教诲：萨巴佐因语",
+      "desc": "我已更加理解萨巴佐因语。[将此卡在研究中使用。]"
+    },
+    "x.rites.theroots": {
+      "label": "教诲：根系之仪",
+      "desc": "我已更加理解根系之仪。[将此卡在研究中使用。]"
+    },
+    "x.pentiments.precursors": {
+      "label": "教诲：覆画残迹与古老前身",
+      "desc": "我已更加理解覆画残迹与古老前身。[将此卡在研究中使用。]"
+    },
+    "x.wolfstories": {
+      "label": "教诲：狼的故事",
+      "desc": "我已更加理解狼的故事。[将此卡在研究中使用。]"
+    },
+    "x.putrefactions.calcinations": {
+      "label": "教诲：腐化与煅烧",
+      "desc": "我已更加理解腐化与煅烧。[将此卡在研究中使用。]"
+    },
+    "x.henavek": {
+      "label": "教诲：赫沃尔语",
+      "desc": "我已更加理解赫沃尔语。[将此卡在研究中使用。]"
+    },
+    "x.herbs.infusions": {
+      "label": "教诲：草药与药汤",
+      "desc": "我已更加理解草药与药汤。[将此卡在研究中使用。]"
+    },
+    "x.glaziery.lightsmithing": {
+      "label": "教诲：玻璃与锻光",
+      "desc": "我已更加理解玻璃与锻光。[将此卡在研究中使用。]"
+    },
+    "x.sickle.eclipse": {
+      "label": "教诲：镰刀与日蚀",
+      "desc": "我已更加理解镰刀与日蚀。[将此卡在研究中使用。]"
+    },
+    "x.inks.power": {
+      "label": "教诲：力量之墨",
+      "desc": "我已更加理解力量之墨。[将此卡在研究中使用。]"
+    },
+    "x.weaving.knotworking": {
+      "label": "教诲：缝纫与编织",
+      "desc": "我已更加理解缝纫与编织。[将此卡在研究中使用。]"
+    },
+    "x.vak": {
+      "label": "教诲：伐诃语",
+      "desc": "我已更加理解伐诃语。[将此卡在研究中使用。]"
+    },
+    "x.disciplines.thescar": {
+      "label": "教诲：伤疤的戒律",
+      "desc": "我已更加理解伤疤的戒律。[将此卡在研究中使用。]"
+    },
+    "x.spices.savours": {
+      "label": "教诲：香料与滋味",
+      "desc": "我已更加理解香料与滋味。[将此卡在研究中使用。]"
+    },
+    "x.edictsmartial": {
+      "label": "教诲：武力之敕令",
+      "desc": "我已更加理解武力之敕令。[将此卡在研究中使用。]"
+    },
+    "x.hill.hollow": {
+      "label": "教诲：丘陵与孔窍",
+      "desc": "我已更加理解丘陵与孔窍。[将此卡在研究中使用。]"
+    },
+    "x.purifications.exaltations": {
+      "label": "教诲：精炼与擢升",
+      "desc": "我已更加理解精炼与擢升。[将此卡在研究中使用。]"
+    },
+    "x.inks.containment": {
+      "label": "教诲：收容之墨",
+      "desc": "我已更加理解收容之墨。[将此卡在研究中使用。]"
+    },
+    "x.resurgences.emergences": {
+      "label": "教诲：复苏与羽化",
+      "desc": "我已更加理解复苏与羽化。[将此卡在研究中使用。]"
+    },
+    "x.ouranoscopy": {
+      "label": "教诲：窥天术",
+      "desc": "我已更加理解窥天术。[将此卡在研究中使用。]"
+    },
+    "x.hyksos": {
+      "label": "教诲：希克索斯语",
+      "desc": "我已更加理解希克索斯语。[将此卡在研究中使用。]"
+    },
+    "x.sacralimiae": {
+      "label": "教诲：利米亚典仪",
+      "desc": "我已更加理解利米亚典仪。[将此卡在研究中使用。]"
+    },
+    "x.sandstories": {
+      "label": "教诲：沙的故事",
+      "desc": "我已更加理解沙的故事。[将此卡在研究中使用。]"
+    },
+    "x.stonestories": {
+      "label": "教诲：岩石的故事",
+      "desc": "我已更加理解岩石的故事。[将此卡在研究中使用。]"
+    },
+    "x.transformations.liberations": {
+      "label": "教诲：嬗变与解放",
+      "desc": "我已更加理解嬗变与解放。[将此卡在研究中使用。]"
+    },
+    "x.path.pilgrim": {
+      "label": "教诲：道途与朝圣",
+      "desc": "我已更加理解道途与朝圣。[将此卡在研究中使用。]"
+    },
+    "x.fucine": {
+      "label": "教诲：富奇诺语",
+      "desc": "我已更加理解富奇诺语。[将此卡在研究中使用。]"
+    },
+    "x.quenchings.quellings": {
+      "label": "教诲：淬火与熄焰",
+      "desc": "我已更加理解淬火与熄焰。[将此卡在研究中使用。]"
+    },
+    "x.sacrasolisinvicti": {
+      "label": "教诲：无敌太阳典仪",
+      "desc": "我已更加理解无敌太阳典仪。[将此卡在研究中使用。]"
+    },
+    "x.anbary.lapidary": {
+      "label": "教诲：雕珀与琢石",
+      "desc": "我已更加理解雕珀与琢石。[将此卡在研究中使用。]"
+    },
+    "x.auroralcontemplations": {
+      "label": "教诲：曙光的静观",
+      "desc": "我已更加理解曙光的静观。[将此卡在研究中使用。]"
+    },
+    "x.cracktrack": {
+      "label": "教诲：解踪语",
+      "desc": "我已更加理解解踪语。[将此卡在研究中使用。]"
+    },
+    "x.desires.dissolutions": {
+      "label": "教诲：诱惑与消殒",
+      "desc": "我已更加理解诱惑与消殒。[将此卡在研究中使用。]"
+    },
+    "x.door.wall": {
+      "label": "教诲：门扉与墙垣",
+      "desc": "我已更加理解门扉与墙垣。[将此卡在研究中使用。]"
+    },
+    "x.insects.nectars": {
+      "label": "教诲：昆虫与花蜜",
+      "desc": "我已更加理解昆虫与花蜜。[将此卡在研究中使用。]"
+    },
+    "x.preliminalmeter": {
+      "label": "教诲：阙前格律",
+      "desc": "我已更加理解阙前格律。[将此卡在研究中使用。]"
+    },
+    "x.snowstories": {
+      "label": "教诲：白雪的故事",
+      "desc": "我已更加理解白雪的故事。[将此卡在研究中使用。]"
+    },
+    "x.disciplines.thehammer": {
+      "label": "教诲：锤砧的戒律",
+      "desc": "我已更加理解锤砧的戒律。[将此卡在研究中使用。]"
+    },
+    "x.thegreatsignsandthegreatscars": {
+      "label": "教诲：伟大符印与伟大伤疤",
+      "desc": "我已更加理解伟大符印与伟大伤疤。[将此卡在研究中使用。]"
+    },
+    "x.edictsliminal": {
+      "label": "教诲：阈限之敕令",
+      "desc": "我已更加理解阈限之敕令。[将此卡在研究中使用。]"
+    },
+    "x.sights.sensations": {
+      "label": "教诲：景象与感知",
+      "desc": "我已更加理解景象与感知。[将此卡在研究中使用。]"
+    },
+    "x.horns.ivories": {
+      "label": "教诲：兽角与象牙",
+      "desc": "我已更加理解兽角与象牙。[将此卡在研究中使用。]"
+    },
+    "x.meniscatereflections": {
+      "label": "教诲：弧月的倒影",
+      "desc": "我已更加理解弧月的倒影。[将此卡在研究中使用。]"
+    },
+    "x.skystories": {
+      "label": "教诲：天空的故事",
+      "desc": "我已更加理解天空的故事。[将此卡在研究中使用。]"
+    },
+    "x.glassblowing.vesselcrafting": {
+      "label": "教诲：玻璃吹制与容器制造",
+      "desc": "我已更加理解玻璃吹制与容器制造。[将此卡在研究中使用。]"
+    },
+    "x.lockworks.clockworks": {
+      "label": "教诲：锁簧与发条",
+      "desc": "我已更加理解锁簧与发条。[将此卡在研究中使用。]"
+    },
+    "x.rhyme.remembrance": {
+      "label": "教诲：音律与铭记",
+      "desc": "我已更加理解音律与铭记。[将此卡在研究中使用。]"
+    },
+    "x.strings.songs": {
+      "label": "教诲：弦乐与歌谣",
+      "desc": "我已更加理解弦乐与歌谣。[将此卡在研究中使用。]"
+    },
+    "x.killasimi": {
+      "label": "教诲：夜魄语",
+      "desc": "我已更加理解夜魄语。[将此卡在研究中使用。]"
+    },
+    "x.pyroglyphics": {
+      "label": "教诲：焰篆体",
+      "desc": "我已更加理解焰篆体。[将此卡在研究中使用。]"
+    },
+    "x.edictsinviolable": {
+      "label": "教诲：无侵之敕令",
+      "desc": "我已更加理解无侵之敕令。[将此卡在研究中使用。]"
+    },
+    "x.ericapaean": {
+      "label": "教诲：厄里卡帕奥语",
+      "desc": "我已更加理解厄里卡帕奥语。[将此卡在研究中使用。]"
+    },
+    "x.sharps": {
+      "label": "教诲：锋锐",
+      "desc": "我已更加理解锋锐。[将此卡在研究中使用。]"
+    },
+    "x.mandaic": {
+      "label": "教诲：渊深曼达安语",
+      "desc": "我已更加理解渊深曼达安语。[将此卡在研究中使用。]"
+    },
+    "x.raggedcrossroads": {
+      "label": "教诲：残破十字路",
+      "desc": "我已更加理解残破十字路。[将此卡在研究中使用。]"
+    },
+    "x.drums.dances": {
+      "label": "教诲：鼓点与舞步",
+      "desc": "我已更加理解鼓点与舞步。[将此卡在研究中使用。]"
+    },
+    "x.applebrighteuphonies": {
+      "label": "教诲：光明果悦音",
+      "desc": "我已更加理解光明果悦音。[将此卡在研究中使用。]"
+    },
+    "x.pearl.tide": {
+      "label": "教诲：珍珠与浪潮",
+      "desc": "我已更加理解珍珠与浪潮。[将此卡在研究中使用。]"
+    },
+    "x.solutions.separations": {
+      "label": "教诲：溶解与离析",
+      "desc": "我已更加理解溶解与离析。[将此卡在研究中使用。]"
+    },
+    "x.furs.feathers": {
+      "label": "教诲：毛皮与羽翎",
+      "desc": "我已更加理解毛皮与羽翎。[将此卡在研究中使用。]"
+    },
+    "x.watchmansparadoxes": {
+      "label": "教诲：守夜人的悖论",
+      "desc": "我已更加理解守夜人的悖论。[将此卡在研究中使用。]"
+    },
+    "x.serpents.venoms": {
+      "label": "教诲：群蛇与毒液",
+      "desc": "我已更加理解群蛇与毒液。[将此卡在研究中使用。]"
+    },
+    "echidna.enroute": {
+      "label": "厄客德娜正在途中",
+      "desc": "战之伤与蛇之疤，于天之街巷与沙之深邃。做好准备。"
+    },
+    "technique.summon.echidna": {
+      "label": "技巧：厄客德娜的徘徊",
+      "desc": "丽姬亚厄客德娜常于旷野中徘徊。[行于荒野，并提供足以取信于她的威严召唤厄客德娜。你需要这门技艺，一张魂质卡，一份作为供品的蛇乳（可以在秘授级的或下，将凶匿墨调制成蛇乳），以及总计7点的。]"
+    },
+    "x.summon.echidna": {
+      "label": "教诲：厄客德娜的徘徊",
+      "desc": "我知道丽姬亚厄客德娜常于旷野中徘徊。[将其与“虬蟠与裂隙”、“覆画残迹与古老前身”、“群蛇与毒液”以及“狼的故事”中你最精通的技艺一起用于研究，便可习得如何邀请厄客德娜前来布兰库格。]"
+    },
+    "echidna.enroute.persistent": {
+      "label": "厄客德娜正在途中",
+      "desc": "战之伤与蛇之疤，于天之街巷与沙之深邃。做好准备。"
     }
   },
   "salons": [
@@ -14446,6 +14754,7 @@ window.GRAPH_DATA = {
       "id": "slnev.echidna.echidnanodal",
       "desc_cn": "厄客德娜",
       "participants": [],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -14455,6 +14764,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "aladim"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -14464,6 +14774,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "arthur"
       ],
+      "lesson_key": "x.disciplines.thescar",
       "befriend": null
     },
     {
@@ -14473,6 +14784,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "arun"
       ],
+      "lesson_key": "x.drums.dances",
       "befriend": null
     },
     {
@@ -14482,6 +14794,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "azita"
       ],
+      "lesson_key": "x.strings.songs",
       "befriend": null
     },
     {
@@ -14491,6 +14804,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "chaima"
       ],
+      "lesson_key": "x.drums.dances",
       "befriend": "befriend.agdistis.chaima"
     },
     {
@@ -14500,6 +14814,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "connie"
       ],
+      "lesson_key": "x.ouranoscopy",
       "befriend": null
     },
     {
@@ -14509,6 +14824,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "coquille"
       ],
+      "lesson_key": "x.strings.songs",
       "befriend": null
     },
     {
@@ -14518,6 +14834,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "corso"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -14527,6 +14844,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "dagmar"
       ],
+      "lesson_key": "x.fucine",
       "befriend": null
     },
     {
@@ -14536,6 +14854,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "douglas"
       ],
+      "lesson_key": "x.weaving.knotworking",
       "befriend": null
     },
     {
@@ -14545,6 +14864,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "ehsan"
       ],
+      "lesson_key": "x.stitching.binding",
       "befriend": null
     },
     {
@@ -14554,6 +14874,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "fraser"
       ],
+      "lesson_key": "x.purifications.exaltations",
       "befriend": null
     },
     {
@@ -14563,6 +14884,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "hokobald"
       ],
+      "lesson_key": "x.bells.brazieries",
       "befriend": null
     },
     {
@@ -14572,6 +14894,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "morgen"
       ],
+      "lesson_key": "x.serpents.venoms",
       "befriend": null
     },
     {
@@ -14581,6 +14904,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "olympe"
       ],
+      "lesson_key": "x.pyroglyphics",
       "befriend": null
     },
     {
@@ -14590,6 +14914,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "serena"
       ],
+      "lesson_key": "x.watchmansparadoxes",
       "befriend": null
     },
     {
@@ -14599,6 +14924,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "stanislav"
       ],
+      "lesson_key": "x.leaves.thorns",
       "befriend": null
     },
     {
@@ -14608,6 +14934,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "yvette"
       ],
+      "lesson_key": "x.sights.sensations",
       "befriend": null
     },
     {
@@ -14617,6 +14944,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "zachary"
       ],
+      "lesson_key": "x.putrefactions.calcinations",
       "befriend": null
     },
     {
@@ -14626,6 +14954,7 @@ window.GRAPH_DATA = {
         "aladim",
         "agdistis"
       ],
+      "lesson_key": "x.skystories",
       "befriend": null
     },
     {
@@ -14635,6 +14964,7 @@ window.GRAPH_DATA = {
         "aladim",
         "arthur"
       ],
+      "lesson_key": "x.auroralcontemplations",
       "befriend": null
     },
     {
@@ -14644,6 +14974,7 @@ window.GRAPH_DATA = {
         "aladim",
         "arun"
       ],
+      "lesson_key": "x.serpents.venoms",
       "befriend": null
     },
     {
@@ -14653,6 +14984,7 @@ window.GRAPH_DATA = {
         "aladim",
         "azita"
       ],
+      "lesson_key": "x.skystories",
       "befriend": null
     },
     {
@@ -14662,6 +14994,7 @@ window.GRAPH_DATA = {
         "aladim",
         "chaima"
       ],
+      "lesson_key": "x.horns.ivories",
       "befriend": null
     },
     {
@@ -14671,6 +15004,7 @@ window.GRAPH_DATA = {
         "aladim",
         "connie"
       ],
+      "lesson_key": "x.pearl.tide",
       "befriend": null
     },
     {
@@ -14680,6 +15014,7 @@ window.GRAPH_DATA = {
         "aladim",
         "coquille"
       ],
+      "lesson_key": "x.pentiments.precursors",
       "befriend": null
     },
     {
@@ -14689,6 +15024,7 @@ window.GRAPH_DATA = {
         "aladim",
         "corso"
       ],
+      "lesson_key": "x.pentiments.precursors",
       "befriend": null
     },
     {
@@ -14698,6 +15034,7 @@ window.GRAPH_DATA = {
         "aladim",
         "dagmar"
       ],
+      "lesson_key": "x.path.pilgrim",
       "befriend": null
     },
     {
@@ -14707,6 +15044,7 @@ window.GRAPH_DATA = {
         "aladim",
         "douglas"
       ],
+      "lesson_key": "x.path.pilgrim",
       "befriend": null
     },
     {
@@ -14716,6 +15054,7 @@ window.GRAPH_DATA = {
         "aladim",
         "ehsan"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -14725,6 +15064,7 @@ window.GRAPH_DATA = {
         "aladim",
         "fraser"
       ],
+      "lesson_key": "x.inks.power",
       "befriend": null
     },
     {
@@ -14734,6 +15074,7 @@ window.GRAPH_DATA = {
         "aladim",
         "hokobald"
       ],
+      "lesson_key": "x.inks.power",
       "befriend": null
     },
     {
@@ -14743,6 +15084,7 @@ window.GRAPH_DATA = {
         "aladim",
         "morgen"
       ],
+      "lesson_key": "x.applebrighteuphonies",
       "befriend": null
     },
     {
@@ -14752,6 +15094,7 @@ window.GRAPH_DATA = {
         "aladim",
         "olympe"
       ],
+      "lesson_key": "x.stonestories",
       "befriend": null
     },
     {
@@ -14761,6 +15104,7 @@ window.GRAPH_DATA = {
         "aladim",
         "serena"
       ],
+      "lesson_key": "x.inks.power",
       "befriend": null
     },
     {
@@ -14770,6 +15114,7 @@ window.GRAPH_DATA = {
         "aladim",
         "stanislav"
       ],
+      "lesson_key": "x.herbs.infusions",
       "befriend": null
     },
     {
@@ -14779,6 +15124,7 @@ window.GRAPH_DATA = {
         "aladim",
         "yvette"
       ],
+      "lesson_key": "x.hill.hollow",
       "befriend": null
     },
     {
@@ -14788,6 +15134,7 @@ window.GRAPH_DATA = {
         "aladim",
         "zachary"
       ],
+      "lesson_key": "x.putrefactions.calcinations",
       "befriend": null
     },
     {
@@ -14797,6 +15144,7 @@ window.GRAPH_DATA = {
         "arthur",
         "agdistis"
       ],
+      "lesson_key": "x.auroralcontemplations",
       "befriend": null
     },
     {
@@ -14806,6 +15154,7 @@ window.GRAPH_DATA = {
         "arthur",
         "aladim"
       ],
+      "lesson_key": "x.inks.power",
       "befriend": null
     },
     {
@@ -14815,6 +15164,7 @@ window.GRAPH_DATA = {
         "arthur",
         "arun"
       ],
+      "lesson_key": "x.sharps",
       "befriend": null
     },
     {
@@ -14824,6 +15174,7 @@ window.GRAPH_DATA = {
         "arthur",
         "azita"
       ],
+      "lesson_key": "x.glaziery.lightsmithing",
       "befriend": null
     },
     {
@@ -14833,6 +15184,7 @@ window.GRAPH_DATA = {
         "arthur",
         "chaima"
       ],
+      "lesson_key": "x.disciplines.thehammer",
       "befriend": null
     },
     {
@@ -14842,6 +15194,7 @@ window.GRAPH_DATA = {
         "arthur",
         "connie"
       ],
+      "lesson_key": "x.disciplines.thehammer",
       "befriend": null
     },
     {
@@ -14851,6 +15204,7 @@ window.GRAPH_DATA = {
         "arthur",
         "coquille"
       ],
+      "lesson_key": "x.desires.dissolutions",
       "befriend": null
     },
     {
@@ -14860,6 +15214,7 @@ window.GRAPH_DATA = {
         "arthur",
         "corso"
       ],
+      "lesson_key": "x.ericapaean",
       "befriend": null
     },
     {
@@ -14869,6 +15224,7 @@ window.GRAPH_DATA = {
         "arthur",
         "dagmar"
       ],
+      "lesson_key": "x.raggedcrossroads",
       "befriend": null
     },
     {
@@ -14878,6 +15234,7 @@ window.GRAPH_DATA = {
         "arthur",
         "douglas"
       ],
+      "lesson_key": "x.disciplines.thescar",
       "befriend": null
     },
     {
@@ -14887,6 +15244,7 @@ window.GRAPH_DATA = {
         "arthur",
         "ehsan"
       ],
+      "lesson_key": "x.watchmansparadoxes",
       "befriend": null
     },
     {
@@ -14896,6 +15254,7 @@ window.GRAPH_DATA = {
         "arthur",
         "fraser"
       ],
+      "lesson_key": "x.coil.chasm",
       "befriend": null
     },
     {
@@ -14905,6 +15264,7 @@ window.GRAPH_DATA = {
         "arthur",
         "hokobald"
       ],
+      "lesson_key": "x.meniscatereflections",
       "befriend": null
     },
     {
@@ -14914,6 +15274,7 @@ window.GRAPH_DATA = {
         "arthur",
         "morgen"
       ],
+      "lesson_key": "x.glaziery.lightsmithing",
       "befriend": null
     },
     {
@@ -14923,6 +15284,7 @@ window.GRAPH_DATA = {
         "arthur",
         "olympe"
       ],
+      "lesson_key": "x.meniscatereflections",
       "befriend": null
     },
     {
@@ -14932,6 +15294,7 @@ window.GRAPH_DATA = {
         "arthur",
         "serena"
       ],
+      "lesson_key": "x.pyroglyphics",
       "befriend": null
     },
     {
@@ -14941,6 +15304,7 @@ window.GRAPH_DATA = {
         "arthur",
         "stanislav"
       ],
+      "lesson_key": "x.herbs.infusions",
       "befriend": null
     },
     {
@@ -14950,6 +15314,7 @@ window.GRAPH_DATA = {
         "arthur",
         "yvette"
       ],
+      "lesson_key": "x.sabazine",
       "befriend": null
     },
     {
@@ -14959,6 +15324,7 @@ window.GRAPH_DATA = {
         "arthur",
         "zachary"
       ],
+      "lesson_key": "x.raggedcrossroads",
       "befriend": null
     },
     {
@@ -14968,6 +15334,7 @@ window.GRAPH_DATA = {
         "arun",
         "agdistis"
       ],
+      "lesson_key": "x.stitching.binding",
       "befriend": null
     },
     {
@@ -14977,6 +15344,7 @@ window.GRAPH_DATA = {
         "arun",
         "aladim"
       ],
+      "lesson_key": "x.path.pilgrim",
       "befriend": null
     },
     {
@@ -14986,6 +15354,7 @@ window.GRAPH_DATA = {
         "arun",
         "arthur"
       ],
+      "lesson_key": "x.sickle.eclipse",
       "befriend": null
     },
     {
@@ -14995,6 +15364,7 @@ window.GRAPH_DATA = {
         "arun",
         "azita"
       ],
+      "lesson_key": "x.sharps",
       "befriend": null
     },
     {
@@ -15004,6 +15374,7 @@ window.GRAPH_DATA = {
         "arun",
         "chaima"
       ],
+      "lesson_key": "x.hill.hollow",
       "befriend": null
     },
     {
@@ -15013,6 +15384,7 @@ window.GRAPH_DATA = {
         "arun",
         "connie"
       ],
+      "lesson_key": "x.edictsinviolable",
       "befriend": null
     },
     {
@@ -15022,6 +15394,7 @@ window.GRAPH_DATA = {
         "arun",
         "coquille"
       ],
+      "lesson_key": "x.vak",
       "befriend": null
     },
     {
@@ -15031,6 +15404,7 @@ window.GRAPH_DATA = {
         "arun",
         "corso"
       ],
+      "lesson_key": "x.inks.revelation",
       "befriend": null
     },
     {
@@ -15040,6 +15414,7 @@ window.GRAPH_DATA = {
         "arun",
         "dagmar"
       ],
+      "lesson_key": "x.edictsliminal",
       "befriend": null
     },
     {
@@ -15049,6 +15424,7 @@ window.GRAPH_DATA = {
         "arun",
         "douglas"
       ],
+      "lesson_key": "x.maggephenemysteries",
       "befriend": null
     },
     {
@@ -15058,6 +15434,7 @@ window.GRAPH_DATA = {
         "arun",
         "ehsan"
       ],
+      "lesson_key": "x.resurgences.emergences",
       "befriend": null
     },
     {
@@ -15067,6 +15444,7 @@ window.GRAPH_DATA = {
         "arun",
         "fraser"
       ],
+      "lesson_key": "x.serpents.venoms",
       "befriend": null
     },
     {
@@ -15076,6 +15454,7 @@ window.GRAPH_DATA = {
         "arun",
         "hokobald"
       ],
+      "lesson_key": "x.desires.dissolutions",
       "befriend": null
     },
     {
@@ -15085,6 +15464,7 @@ window.GRAPH_DATA = {
         "arun",
         "morgen"
       ],
+      "lesson_key": "x.sacralimiae",
       "befriend": null
     },
     {
@@ -15094,6 +15474,7 @@ window.GRAPH_DATA = {
         "arun",
         "olympe"
       ],
+      "lesson_key": "x.transformations.liberations",
       "befriend": null
     },
     {
@@ -15103,6 +15484,7 @@ window.GRAPH_DATA = {
         "arun",
         "serena"
       ],
+      "lesson_key": "x.inks.revelation",
       "befriend": null
     },
     {
@@ -15112,6 +15494,7 @@ window.GRAPH_DATA = {
         "arun",
         "stanislav"
       ],
+      "lesson_key": "x.rites.theroots",
       "befriend": null
     },
     {
@@ -15121,6 +15504,7 @@ window.GRAPH_DATA = {
         "arun",
         "yvette"
       ],
+      "lesson_key": "x.rhyme.remembrance",
       "befriend": "befriend.arun.yvette"
     },
     {
@@ -15130,6 +15514,7 @@ window.GRAPH_DATA = {
         "arun",
         "zachary"
       ],
+      "lesson_key": "x.edictsliminal",
       "befriend": null
     },
     {
@@ -15139,6 +15524,7 @@ window.GRAPH_DATA = {
         "azita",
         "agdistis"
       ],
+      "lesson_key": "x.edictsmartial",
       "befriend": null
     },
     {
@@ -15148,6 +15534,7 @@ window.GRAPH_DATA = {
         "azita",
         "aladim"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -15157,6 +15544,7 @@ window.GRAPH_DATA = {
         "azita",
         "arthur"
       ],
+      "lesson_key": "x.watchmansparadoxes",
       "befriend": null
     },
     {
@@ -15166,6 +15554,7 @@ window.GRAPH_DATA = {
         "azita",
         "arun"
       ],
+      "lesson_key": "x.sickle.eclipse",
       "befriend": null
     },
     {
@@ -15175,6 +15564,7 @@ window.GRAPH_DATA = {
         "azita",
         "chaima"
       ],
+      "lesson_key": "x.edictsmartial",
       "befriend": null
     },
     {
@@ -15184,6 +15574,7 @@ window.GRAPH_DATA = {
         "azita",
         "connie"
       ],
+      "lesson_key": "x.anbary.lapidary",
       "befriend": null
     },
     {
@@ -15193,6 +15584,7 @@ window.GRAPH_DATA = {
         "azita",
         "coquille"
       ],
+      "lesson_key": "x.applebrighteuphonies",
       "befriend": null
     },
     {
@@ -15202,6 +15594,7 @@ window.GRAPH_DATA = {
         "azita",
         "corso"
       ],
+      "lesson_key": "x.purifications.exaltations",
       "befriend": null
     },
     {
@@ -15211,6 +15604,7 @@ window.GRAPH_DATA = {
         "azita",
         "dagmar"
       ],
+      "lesson_key": "x.lockworks.clockworks",
       "befriend": null
     },
     {
@@ -15220,6 +15614,7 @@ window.GRAPH_DATA = {
         "azita",
         "douglas"
       ],
+      "lesson_key": "x.auroralcontemplations",
       "befriend": null
     },
     {
@@ -15229,6 +15624,7 @@ window.GRAPH_DATA = {
         "azita",
         "ehsan"
       ],
+      "lesson_key": "x.stitching.binding",
       "befriend": null
     },
     {
@@ -15238,6 +15634,7 @@ window.GRAPH_DATA = {
         "azita",
         "fraser"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -15247,6 +15644,7 @@ window.GRAPH_DATA = {
         "azita",
         "hokobald"
       ],
+      "lesson_key": "x.disciplines.thehammer",
       "befriend": null
     },
     {
@@ -15256,6 +15654,7 @@ window.GRAPH_DATA = {
         "azita",
         "morgen"
       ],
+      "lesson_key": "x.horns.ivories",
       "befriend": null
     },
     {
@@ -15265,6 +15664,7 @@ window.GRAPH_DATA = {
         "azita",
         "olympe"
       ],
+      "lesson_key": "x.anbary.lapidary",
       "befriend": null
     },
     {
@@ -15274,6 +15674,7 @@ window.GRAPH_DATA = {
         "azita",
         "serena"
       ],
+      "lesson_key": "x.meniscatereflections",
       "befriend": null
     },
     {
@@ -15283,6 +15684,7 @@ window.GRAPH_DATA = {
         "azita",
         "stanislav"
       ],
+      "lesson_key": "x.strings.songs",
       "befriend": null
     },
     {
@@ -15292,6 +15694,7 @@ window.GRAPH_DATA = {
         "azita",
         "yvette"
       ],
+      "lesson_key": "x.edictsmartial",
       "befriend": "befriend.azita.yvette"
     },
     {
@@ -15301,6 +15704,7 @@ window.GRAPH_DATA = {
         "azita",
         "zachary"
       ],
+      "lesson_key": "x.sickle.eclipse",
       "befriend": null
     },
     {
@@ -15310,6 +15714,7 @@ window.GRAPH_DATA = {
         "chaima",
         "agdistis"
       ],
+      "lesson_key": "x.drums.dances",
       "befriend": null
     },
     {
@@ -15319,6 +15724,7 @@ window.GRAPH_DATA = {
         "chaima",
         "aladim"
       ],
+      "lesson_key": "x.path.pilgrim",
       "befriend": null
     },
     {
@@ -15328,6 +15734,7 @@ window.GRAPH_DATA = {
         "chaima",
         "arthur"
       ],
+      "lesson_key": "x.sandstories",
       "befriend": null
     },
     {
@@ -15337,6 +15744,7 @@ window.GRAPH_DATA = {
         "chaima",
         "arun"
       ],
+      "lesson_key": "x.edictsmartial",
       "befriend": null
     },
     {
@@ -15346,6 +15754,7 @@ window.GRAPH_DATA = {
         "chaima",
         "azita"
       ],
+      "lesson_key": "x.sharps",
       "befriend": null
     },
     {
@@ -15355,6 +15764,7 @@ window.GRAPH_DATA = {
         "chaima",
         "connie"
       ],
+      "lesson_key": "x.wolfstories",
       "befriend": null
     },
     {
@@ -15364,6 +15774,7 @@ window.GRAPH_DATA = {
         "chaima",
         "coquille"
       ],
+      "lesson_key": "x.preliminalmeter",
       "befriend": null
     },
     {
@@ -15373,6 +15784,7 @@ window.GRAPH_DATA = {
         "chaima",
         "corso"
       ],
+      "lesson_key": "x.raggedcrossroads",
       "befriend": null
     },
     {
@@ -15382,6 +15794,7 @@ window.GRAPH_DATA = {
         "chaima",
         "dagmar"
       ],
+      "lesson_key": "x.sandstories",
       "befriend": null
     },
     {
@@ -15391,6 +15804,7 @@ window.GRAPH_DATA = {
         "chaima",
         "douglas"
       ],
+      "lesson_key": "x.disciplines.thescar",
       "befriend": null
     },
     {
@@ -15400,6 +15814,7 @@ window.GRAPH_DATA = {
         "chaima",
         "ehsan"
       ],
+      "lesson_key": "x.skystories",
       "befriend": null
     },
     {
@@ -15409,6 +15824,7 @@ window.GRAPH_DATA = {
         "chaima",
         "fraser"
       ],
+      "lesson_key": "x.sandstories",
       "befriend": null
     },
     {
@@ -15418,6 +15834,7 @@ window.GRAPH_DATA = {
         "chaima",
         "hokobald"
       ],
+      "lesson_key": "x.disciplines.thehammer",
       "befriend": null
     },
     {
@@ -15427,6 +15844,7 @@ window.GRAPH_DATA = {
         "chaima",
         "morgen"
       ],
+      "lesson_key": "x.skystories",
       "befriend": null
     },
     {
@@ -15436,6 +15854,7 @@ window.GRAPH_DATA = {
         "chaima",
         "olympe"
       ],
+      "lesson_key": "x.cracktrack",
       "befriend": null
     },
     {
@@ -15445,6 +15864,7 @@ window.GRAPH_DATA = {
         "chaima",
         "serena"
       ],
+      "lesson_key": "x.auroralcontemplations",
       "befriend": null
     },
     {
@@ -15454,6 +15874,7 @@ window.GRAPH_DATA = {
         "chaima",
         "stanislav"
       ],
+      "lesson_key": "x.stitching.binding",
       "befriend": null
     },
     {
@@ -15464,6 +15885,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "ehsan"
       ],
+      "lesson_key": "x.stitching.binding",
       "befriend": null
     },
     {
@@ -15473,6 +15895,7 @@ window.GRAPH_DATA = {
         "chaima",
         "yvette"
       ],
+      "lesson_key": "x.snowstories",
       "befriend": null
     },
     {
@@ -15482,6 +15905,7 @@ window.GRAPH_DATA = {
         "chaima",
         "zachary"
       ],
+      "lesson_key": "x.raggedcrossroads",
       "befriend": null
     },
     {
@@ -15491,6 +15915,7 @@ window.GRAPH_DATA = {
         "connie",
         "agdistis"
       ],
+      "lesson_key": "x.ouranoscopy",
       "befriend": null
     },
     {
@@ -15500,6 +15925,7 @@ window.GRAPH_DATA = {
         "connie",
         "aladim"
       ],
+      "lesson_key": "x.pearl.tide",
       "befriend": "befriend.aladim.connie"
     },
     {
@@ -15509,6 +15935,7 @@ window.GRAPH_DATA = {
         "connie",
         "arthur"
       ],
+      "lesson_key": "x.watchmansparadoxes",
       "befriend": null
     },
     {
@@ -15518,6 +15945,7 @@ window.GRAPH_DATA = {
         "connie",
         "arun"
       ],
+      "lesson_key": "x.edictsinviolable",
       "befriend": null
     },
     {
@@ -15527,6 +15955,7 @@ window.GRAPH_DATA = {
         "connie",
         "azita"
       ],
+      "lesson_key": "x.anbary.lapidary",
       "befriend": null
     },
     {
@@ -15537,6 +15966,7 @@ window.GRAPH_DATA = {
         "chaima",
         "morgen"
       ],
+      "lesson_key": "x.wolfstories",
       "befriend": null
     },
     {
@@ -15547,6 +15977,7 @@ window.GRAPH_DATA = {
         "chaima",
         "morgen"
       ],
+      "lesson_key": "x.wolfstories",
       "befriend": null
     },
     {
@@ -15556,6 +15987,7 @@ window.GRAPH_DATA = {
         "connie",
         "coquille"
       ],
+      "lesson_key": "x.seastories",
       "befriend": null
     },
     {
@@ -15565,6 +15997,7 @@ window.GRAPH_DATA = {
         "connie",
         "corso"
       ],
+      "lesson_key": "x.tridesmahiera",
       "befriend": null
     },
     {
@@ -15574,6 +16007,7 @@ window.GRAPH_DATA = {
         "connie",
         "dagmar"
       ],
+      "lesson_key": "x.pearl.tide",
       "befriend": null
     },
     {
@@ -15583,6 +16017,7 @@ window.GRAPH_DATA = {
         "connie",
         "douglas"
       ],
+      "lesson_key": "x.maggephenemysteries",
       "befriend": null
     },
     {
@@ -15592,6 +16027,7 @@ window.GRAPH_DATA = {
         "connie",
         "ehsan"
       ],
+      "lesson_key": "x.maggephenemysteries",
       "befriend": null
     },
     {
@@ -15601,6 +16037,7 @@ window.GRAPH_DATA = {
         "connie",
         "fraser"
       ],
+      "lesson_key": "x.pentiments.precursors",
       "befriend": null
     },
     {
@@ -15610,6 +16047,7 @@ window.GRAPH_DATA = {
         "connie",
         "hokobald"
       ],
+      "lesson_key": "x.pyroglyphics",
       "befriend": null
     },
     {
@@ -15619,6 +16057,7 @@ window.GRAPH_DATA = {
         "connie",
         "morgen"
       ],
+      "lesson_key": "x.tridesmahiera",
       "befriend": null
     },
     {
@@ -15628,6 +16067,7 @@ window.GRAPH_DATA = {
         "connie",
         "olympe"
       ],
+      "lesson_key": "x.resurgences.emergences",
       "befriend": null
     },
     {
@@ -15637,6 +16077,7 @@ window.GRAPH_DATA = {
         "connie",
         "serena"
       ],
+      "lesson_key": "x.maggephenemysteries",
       "befriend": null
     },
     {
@@ -15646,6 +16087,7 @@ window.GRAPH_DATA = {
         "connie",
         "stanislav"
       ],
+      "lesson_key": "x.insects.nectars",
       "befriend": null
     },
     {
@@ -15655,6 +16097,7 @@ window.GRAPH_DATA = {
         "connie",
         "yvette"
       ],
+      "lesson_key": "x.killasimi",
       "befriend": null
     },
     {
@@ -15664,6 +16107,7 @@ window.GRAPH_DATA = {
         "connie",
         "zachary"
       ],
+      "lesson_key": "x.inks.containment",
       "befriend": null
     },
     {
@@ -15673,6 +16117,7 @@ window.GRAPH_DATA = {
         "coquille",
         "agdistis"
       ],
+      "lesson_key": "x.drums.dances",
       "befriend": null
     },
     {
@@ -15682,6 +16127,7 @@ window.GRAPH_DATA = {
         "coquille",
         "aladim"
       ],
+      "lesson_key": "x.pentiments.precursors",
       "befriend": null
     },
     {
@@ -15691,6 +16137,7 @@ window.GRAPH_DATA = {
         "coquille",
         "arthur"
       ],
+      "lesson_key": "x.desires.dissolutions",
       "befriend": null
     },
     {
@@ -15700,6 +16147,7 @@ window.GRAPH_DATA = {
         "coquille",
         "arun"
       ],
+      "lesson_key": "x.resurgences.emergences",
       "befriend": "befriend.arun.coquille"
     },
     {
@@ -15709,6 +16157,7 @@ window.GRAPH_DATA = {
         "coquille",
         "azita"
       ],
+      "lesson_key": "x.applebrighteuphonies",
       "befriend": null
     },
     {
@@ -15718,6 +16167,7 @@ window.GRAPH_DATA = {
         "coquille",
         "chaima"
       ],
+      "lesson_key": "x.preliminalmeter",
       "befriend": null
     },
     {
@@ -15727,6 +16177,7 @@ window.GRAPH_DATA = {
         "coquille",
         "connie"
       ],
+      "lesson_key": "x.seastories",
       "befriend": null
     },
     {
@@ -15736,6 +16187,7 @@ window.GRAPH_DATA = {
         "coquille",
         "corso"
       ],
+      "lesson_key": "x.thegreatsignsandthegreatscars",
       "befriend": null
     },
     {
@@ -15745,6 +16197,7 @@ window.GRAPH_DATA = {
         "coquille",
         "dagmar"
       ],
+      "lesson_key": "x.thegreatsignsandthegreatscars",
       "befriend": null
     },
     {
@@ -15754,6 +16207,7 @@ window.GRAPH_DATA = {
         "coquille",
         "douglas"
       ],
+      "lesson_key": "x.surgeries.exsanguinations",
       "befriend": "befriend.coquille.douglas"
     },
     {
@@ -15763,6 +16217,7 @@ window.GRAPH_DATA = {
         "coquille",
         "ehsan"
       ],
+      "lesson_key": "x.applebrighteuphonies",
       "befriend": null
     },
     {
@@ -15772,6 +16227,7 @@ window.GRAPH_DATA = {
         "coquille",
         "fraser"
       ],
+      "lesson_key": "x.pentiments.precursors",
       "befriend": null
     },
     {
@@ -15781,6 +16237,7 @@ window.GRAPH_DATA = {
         "coquille",
         "hokobald"
       ],
+      "lesson_key": "x.desires.dissolutions",
       "befriend": null
     },
     {
@@ -15790,6 +16247,7 @@ window.GRAPH_DATA = {
         "coquille",
         "morgen"
       ],
+      "lesson_key": "x.sights.sensations",
       "befriend": null
     },
     {
@@ -15799,6 +16257,7 @@ window.GRAPH_DATA = {
         "coquille",
         "olympe"
       ],
+      "lesson_key": "x.spices.savours",
       "befriend": null
     },
     {
@@ -15808,6 +16267,7 @@ window.GRAPH_DATA = {
         "coquille",
         "serena"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -15817,6 +16277,7 @@ window.GRAPH_DATA = {
         "coquille",
         "stanislav"
       ],
+      "lesson_key": "x.leaves.thorns",
       "befriend": null
     },
     {
@@ -15826,6 +16287,7 @@ window.GRAPH_DATA = {
         "coquille",
         "yvette"
       ],
+      "lesson_key": "x.seastories",
       "befriend": null
     },
     {
@@ -15835,6 +16297,7 @@ window.GRAPH_DATA = {
         "coquille",
         "zachary"
       ],
+      "lesson_key": "x.thegreatsignsandthegreatscars",
       "befriend": null
     },
     {
@@ -15844,6 +16307,7 @@ window.GRAPH_DATA = {
         "corso",
         "agdistis"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -15853,6 +16317,7 @@ window.GRAPH_DATA = {
         "corso",
         "aladim"
       ],
+      "lesson_key": "x.pentiments.precursors",
       "befriend": null
     },
     {
@@ -15862,6 +16327,7 @@ window.GRAPH_DATA = {
         "corso",
         "arthur"
       ],
+      "lesson_key": "x.ericapaean",
       "befriend": null
     },
     {
@@ -15871,6 +16337,7 @@ window.GRAPH_DATA = {
         "corso",
         "arun"
       ],
+      "lesson_key": "x.inks.revelation",
       "befriend": null
     },
     {
@@ -15880,6 +16347,7 @@ window.GRAPH_DATA = {
         "corso",
         "azita"
       ],
+      "lesson_key": "x.purifications.exaltations",
       "befriend": null
     },
     {
@@ -15889,6 +16357,7 @@ window.GRAPH_DATA = {
         "corso",
         "chaima"
       ],
+      "lesson_key": "x.hyksos",
       "befriend": null
     },
     {
@@ -15898,6 +16367,7 @@ window.GRAPH_DATA = {
         "corso",
         "connie"
       ],
+      "lesson_key": "x.tridesmahiera",
       "befriend": null
     },
     {
@@ -15907,6 +16377,7 @@ window.GRAPH_DATA = {
         "corso",
         "coquille"
       ],
+      "lesson_key": "x.orchids.narcotics",
       "befriend": null
     },
     {
@@ -15916,6 +16387,7 @@ window.GRAPH_DATA = {
         "corso",
         "dagmar"
       ],
+      "lesson_key": "x.lockworks.clockworks",
       "befriend": null
     },
     {
@@ -15925,6 +16397,7 @@ window.GRAPH_DATA = {
         "corso",
         "douglas"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -15934,6 +16407,7 @@ window.GRAPH_DATA = {
         "corso",
         "ehsan"
       ],
+      "lesson_key": "x.purifications.exaltations",
       "befriend": null
     },
     {
@@ -15943,6 +16417,7 @@ window.GRAPH_DATA = {
         "corso",
         "fraser"
       ],
+      "lesson_key": "x.pentiments.precursors",
       "befriend": null
     },
     {
@@ -15952,6 +16427,7 @@ window.GRAPH_DATA = {
         "corso",
         "hokobald"
       ],
+      "lesson_key": "x.mandaic",
       "befriend": null
     },
     {
@@ -15961,6 +16437,7 @@ window.GRAPH_DATA = {
         "corso",
         "morgen"
       ],
+      "lesson_key": "x.glaziery.lightsmithing",
       "befriend": null
     },
     {
@@ -15970,6 +16447,7 @@ window.GRAPH_DATA = {
         "corso",
         "olympe"
       ],
+      "lesson_key": "x.transformations.liberations",
       "befriend": null
     },
     {
@@ -15979,6 +16457,7 @@ window.GRAPH_DATA = {
         "corso",
         "serena"
       ],
+      "lesson_key": "x.pyroglyphics",
       "befriend": null
     },
     {
@@ -15988,6 +16467,7 @@ window.GRAPH_DATA = {
         "corso",
         "stanislav"
       ],
+      "lesson_key": "x.orchids.narcotics",
       "befriend": null
     },
     {
@@ -15997,6 +16477,7 @@ window.GRAPH_DATA = {
         "corso",
         "yvette"
       ],
+      "lesson_key": "x.snowstories",
       "befriend": null
     },
     {
@@ -16006,6 +16487,7 @@ window.GRAPH_DATA = {
         "corso",
         "zachary"
       ],
+      "lesson_key": "x.hyksos",
       "befriend": null
     },
     {
@@ -16015,6 +16497,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "agdistis"
       ],
+      "lesson_key": "x.lockworks.clockworks",
       "befriend": null
     },
     {
@@ -16024,6 +16507,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "aladim"
       ],
+      "lesson_key": "x.path.pilgrim",
       "befriend": null
     },
     {
@@ -16033,6 +16517,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "arthur"
       ],
+      "lesson_key": "x.glassblowing.vesselcrafting",
       "befriend": null
     },
     {
@@ -16042,6 +16527,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "arun"
       ],
+      "lesson_key": "x.solutions.separations",
       "befriend": null
     },
     {
@@ -16051,6 +16537,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "azita"
       ],
+      "lesson_key": "x.glassblowing.vesselcrafting",
       "befriend": null
     },
     {
@@ -16060,6 +16547,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "chaima"
       ],
+      "lesson_key": "x.sandstories",
       "befriend": null
     },
     {
@@ -16069,6 +16557,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "connie"
       ],
+      "lesson_key": "x.edictsliminal",
       "befriend": null
     },
     {
@@ -16078,6 +16567,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "coquille"
       ],
+      "lesson_key": "x.thegreatsignsandthegreatscars",
       "befriend": null
     },
     {
@@ -16087,6 +16577,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "corso"
       ],
+      "lesson_key": "x.thegreatsignsandthegreatscars",
       "befriend": null
     },
     {
@@ -16096,6 +16587,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "douglas"
       ],
+      "lesson_key": "x.edictsinviolable",
       "befriend": null
     },
     {
@@ -16105,6 +16597,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "ehsan"
       ],
+      "lesson_key": "x.skystories",
       "befriend": null
     },
     {
@@ -16114,6 +16607,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "fraser"
       ],
+      "lesson_key": "x.lockworks.clockworks",
       "befriend": null
     },
     {
@@ -16123,6 +16617,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "hokobald"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -16132,6 +16627,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "morgen"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -16141,6 +16637,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "olympe"
       ],
+      "lesson_key": "x.solutions.separations",
       "befriend": null
     },
     {
@@ -16150,6 +16647,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "serena"
       ],
+      "lesson_key": "x.preliminalmeter",
       "befriend": null
     },
     {
@@ -16159,6 +16657,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "stanislav"
       ],
+      "lesson_key": "x.surgeries.exsanguinations",
       "befriend": null
     },
     {
@@ -16168,6 +16667,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "yvette"
       ],
+      "lesson_key": "x.rhyme.remembrance",
       "befriend": null
     },
     {
@@ -16177,6 +16677,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "zachary"
       ],
+      "lesson_key": "x.preliminalmeter",
       "befriend": null
     },
     {
@@ -16186,6 +16687,7 @@ window.GRAPH_DATA = {
         "douglas",
         "agdistis"
       ],
+      "lesson_key": "x.drums.dances",
       "befriend": null
     },
     {
@@ -16195,6 +16697,7 @@ window.GRAPH_DATA = {
         "douglas",
         "aladim"
       ],
+      "lesson_key": "x.edictsinviolable",
       "befriend": null
     },
     {
@@ -16204,6 +16707,7 @@ window.GRAPH_DATA = {
         "douglas",
         "arthur"
       ],
+      "lesson_key": "x.disciplines.thescar",
       "befriend": "befriend.arthur.douglas"
     },
     {
@@ -16213,6 +16717,7 @@ window.GRAPH_DATA = {
         "douglas",
         "arun"
       ],
+      "lesson_key": "x.maggephenemysteries",
       "befriend": null
     },
     {
@@ -16222,6 +16727,7 @@ window.GRAPH_DATA = {
         "douglas",
         "azita"
       ],
+      "lesson_key": "x.purifications.exaltations",
       "befriend": null
     },
     {
@@ -16231,6 +16737,7 @@ window.GRAPH_DATA = {
         "douglas",
         "chaima"
       ],
+      "lesson_key": "x.stitching.binding",
       "befriend": null
     },
     {
@@ -16240,6 +16747,7 @@ window.GRAPH_DATA = {
         "douglas",
         "connie"
       ],
+      "lesson_key": "x.edictsinviolable",
       "befriend": null
     },
     {
@@ -16249,6 +16757,7 @@ window.GRAPH_DATA = {
         "douglas",
         "coquille"
       ],
+      "lesson_key": "x.surgeries.exsanguinations",
       "befriend": null
     },
     {
@@ -16258,6 +16767,7 @@ window.GRAPH_DATA = {
         "douglas",
         "corso"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -16267,6 +16777,7 @@ window.GRAPH_DATA = {
         "douglas",
         "dagmar"
       ],
+      "lesson_key": "x.surgeries.exsanguinations",
       "befriend": null
     },
     {
@@ -16276,6 +16787,7 @@ window.GRAPH_DATA = {
         "douglas",
         "ehsan"
       ],
+      "lesson_key": "x.purifications.exaltations",
       "befriend": null
     },
     {
@@ -16285,6 +16797,7 @@ window.GRAPH_DATA = {
         "douglas",
         "fraser"
       ],
+      "lesson_key": "x.stonestories",
       "befriend": null
     },
     {
@@ -16294,6 +16807,7 @@ window.GRAPH_DATA = {
         "douglas",
         "hokobald"
       ],
+      "lesson_key": "x.pyroglyphics",
       "befriend": null
     },
     {
@@ -16303,6 +16817,7 @@ window.GRAPH_DATA = {
         "douglas",
         "morgen"
       ],
+      "lesson_key": "x.quenchings.quellings",
       "befriend": null
     },
     {
@@ -16312,6 +16827,7 @@ window.GRAPH_DATA = {
         "douglas",
         "olympe"
       ],
+      "lesson_key": "x.weaving.knotworking",
       "befriend": null
     },
     {
@@ -16321,6 +16837,7 @@ window.GRAPH_DATA = {
         "douglas",
         "serena"
       ],
+      "lesson_key": "x.weaving.knotworking",
       "befriend": null
     },
     {
@@ -16330,6 +16847,7 @@ window.GRAPH_DATA = {
         "douglas",
         "stanislav"
       ],
+      "lesson_key": "x.herbs.infusions",
       "befriend": null
     },
     {
@@ -16339,6 +16857,7 @@ window.GRAPH_DATA = {
         "douglas",
         "yvette"
       ],
+      "lesson_key": "x.rhyme.remembrance",
       "befriend": null
     },
     {
@@ -16348,6 +16867,7 @@ window.GRAPH_DATA = {
         "douglas",
         "zachary"
       ],
+      "lesson_key": "x.quenchings.quellings",
       "befriend": null
     },
     {
@@ -16357,6 +16877,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "agdistis"
       ],
+      "lesson_key": "x.purifications.exaltations",
       "befriend": null
     },
     {
@@ -16366,6 +16887,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "aladim"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -16375,6 +16897,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "arthur"
       ],
+      "lesson_key": "x.glaziery.lightsmithing",
       "befriend": null
     },
     {
@@ -16384,6 +16907,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "arun"
       ],
+      "lesson_key": "x.stitching.binding",
       "befriend": null
     },
     {
@@ -16393,6 +16917,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "azita"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -16402,6 +16927,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "chaima"
       ],
+      "lesson_key": "x.skystories",
       "befriend": null
     },
     {
@@ -16411,6 +16937,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "connie"
       ],
+      "lesson_key": "x.edictsinviolable",
       "befriend": null
     },
     {
@@ -16420,6 +16947,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "coquille"
       ],
+      "lesson_key": "x.applebrighteuphonies",
       "befriend": null
     },
     {
@@ -16429,6 +16957,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "corso"
       ],
+      "lesson_key": "x.watchmansparadoxes",
       "befriend": null
     },
     {
@@ -16438,6 +16967,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "dagmar"
       ],
+      "lesson_key": "x.sights.sensations",
       "befriend": null
     },
     {
@@ -16447,6 +16977,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "douglas"
       ],
+      "lesson_key": "x.purifications.exaltations",
       "befriend": null
     },
     {
@@ -16456,6 +16987,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "fraser"
       ],
+      "lesson_key": "x.herbs.infusions",
       "befriend": null
     },
     {
@@ -16465,6 +16997,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "hokobald"
       ],
+      "lesson_key": "x.herbs.infusions",
       "befriend": null
     },
     {
@@ -16474,6 +17007,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "morgen"
       ],
+      "lesson_key": "x.strings.songs",
       "befriend": null
     },
     {
@@ -16483,6 +17017,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "olympe"
       ],
+      "lesson_key": "x.anbary.lapidary",
       "befriend": null
     },
     {
@@ -16492,6 +17027,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "serena"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -16501,6 +17037,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "stanislav"
       ],
+      "lesson_key": "x.surgeries.exsanguinations",
       "befriend": null
     },
     {
@@ -16510,6 +17047,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "yvette"
       ],
+      "lesson_key": "x.pearl.tide",
       "befriend": null
     },
     {
@@ -16519,6 +17057,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "zachary"
       ],
+      "lesson_key": "x.sights.sensations",
       "befriend": null
     },
     {
@@ -16528,6 +17067,7 @@ window.GRAPH_DATA = {
         "fraser",
         "agdistis"
       ],
+      "lesson_key": "x.purifications.exaltations",
       "befriend": null
     },
     {
@@ -16537,6 +17077,7 @@ window.GRAPH_DATA = {
         "fraser",
         "aladim"
       ],
+      "lesson_key": "x.inks.power",
       "befriend": null
     },
     {
@@ -16546,6 +17087,7 @@ window.GRAPH_DATA = {
         "fraser",
         "arthur"
       ],
+      "lesson_key": "x.coil.chasm",
       "befriend": null
     },
     {
@@ -16555,6 +17097,7 @@ window.GRAPH_DATA = {
         "fraser",
         "arun"
       ],
+      "lesson_key": "x.serpents.venoms",
       "befriend": null
     },
     {
@@ -16564,6 +17107,7 @@ window.GRAPH_DATA = {
         "fraser",
         "azita"
       ],
+      "lesson_key": "x.horns.ivories",
       "befriend": null
     },
     {
@@ -16573,6 +17117,7 @@ window.GRAPH_DATA = {
         "fraser",
         "chaima"
       ],
+      "lesson_key": "x.disciplines.thehammer",
       "befriend": null
     },
     {
@@ -16582,6 +17127,7 @@ window.GRAPH_DATA = {
         "fraser",
         "connie"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -16591,6 +17137,7 @@ window.GRAPH_DATA = {
         "fraser",
         "coquille"
       ],
+      "lesson_key": "x.pentiments.precursors",
       "befriend": null
     },
     {
@@ -16600,6 +17147,7 @@ window.GRAPH_DATA = {
         "fraser",
         "corso"
       ],
+      "lesson_key": "x.pentiments.precursors",
       "befriend": null
     },
     {
@@ -16609,6 +17157,7 @@ window.GRAPH_DATA = {
         "fraser",
         "dagmar"
       ],
+      "lesson_key": "x.lockworks.clockworks",
       "befriend": null
     },
     {
@@ -16619,6 +17168,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "morgen"
       ],
+      "lesson_key": "x.lockworks.clockworks",
       "befriend": null
     },
     {
@@ -16628,6 +17178,7 @@ window.GRAPH_DATA = {
         "fraser",
         "douglas"
       ],
+      "lesson_key": "x.wolfstories",
       "befriend": null
     },
     {
@@ -16637,6 +17188,7 @@ window.GRAPH_DATA = {
         "fraser",
         "ehsan"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -16646,6 +17198,7 @@ window.GRAPH_DATA = {
         "fraser",
         "hokobald"
       ],
+      "lesson_key": "x.henavek",
       "befriend": null
     },
     {
@@ -16655,6 +17208,7 @@ window.GRAPH_DATA = {
         "fraser",
         "morgen"
       ],
+      "lesson_key": "x.hill.hollow",
       "befriend": null
     },
     {
@@ -16664,6 +17218,7 @@ window.GRAPH_DATA = {
         "fraser",
         "olympe"
       ],
+      "lesson_key": "x.inks.revelation",
       "befriend": null
     },
     {
@@ -16673,6 +17228,7 @@ window.GRAPH_DATA = {
         "fraser",
         "serena"
       ],
+      "lesson_key": "x.stonestories",
       "befriend": null
     },
     {
@@ -16682,6 +17238,7 @@ window.GRAPH_DATA = {
         "fraser",
         "stanislav"
       ],
+      "lesson_key": "x.stonestories",
       "befriend": null
     },
     {
@@ -16691,6 +17248,7 @@ window.GRAPH_DATA = {
         "fraser",
         "yvette"
       ],
+      "lesson_key": "x.hill.hollow",
       "befriend": null
     },
     {
@@ -16700,6 +17258,7 @@ window.GRAPH_DATA = {
         "fraser",
         "zachary"
       ],
+      "lesson_key": "x.serpents.venoms",
       "befriend": null
     },
     {
@@ -16709,6 +17268,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "agdistis"
       ],
+      "lesson_key": "x.bells.brazieries",
       "befriend": null
     },
     {
@@ -16718,6 +17278,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "aladim"
       ],
+      "lesson_key": "x.path.pilgrim",
       "befriend": null
     },
     {
@@ -16727,6 +17288,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "arthur"
       ],
+      "lesson_key": "x.meniscatereflections",
       "befriend": null
     },
     {
@@ -16736,6 +17298,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "arun"
       ],
+      "lesson_key": "x.desires.dissolutions",
       "befriend": null
     },
     {
@@ -16745,6 +17308,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "azita"
       ],
+      "lesson_key": "x.disciplines.thehammer",
       "befriend": null
     },
     {
@@ -16754,6 +17318,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "chaima"
       ],
+      "lesson_key": "x.disciplines.thehammer",
       "befriend": null
     },
     {
@@ -16763,6 +17328,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "connie"
       ],
+      "lesson_key": "x.desires.dissolutions",
       "befriend": null
     },
     {
@@ -16772,6 +17338,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "coquille"
       ],
+      "lesson_key": "x.desires.dissolutions",
       "befriend": null
     },
     {
@@ -16781,6 +17348,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "corso"
       ],
+      "lesson_key": "x.mandaic",
       "befriend": null
     },
     {
@@ -16790,6 +17358,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "dagmar"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -16799,6 +17368,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "douglas"
       ],
+      "lesson_key": "x.raggedcrossroads",
       "befriend": "befriend.douglas.hokobald"
     },
     {
@@ -16808,6 +17378,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "ehsan"
       ],
+      "lesson_key": "x.bells.brazieries",
       "befriend": null
     },
     {
@@ -16817,6 +17388,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "fraser"
       ],
+      "lesson_key": "x.bells.brazieries",
       "befriend": null
     },
     {
@@ -16826,6 +17398,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "morgen"
       ],
+      "lesson_key": "x.anbary.lapidary",
       "befriend": null
     },
     {
@@ -16835,6 +17408,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "olympe"
       ],
+      "lesson_key": "x.resurgences.emergences",
       "befriend": null
     },
     {
@@ -16844,6 +17418,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "serena"
       ],
+      "lesson_key": "x.transformations.liberations",
       "befriend": null
     },
     {
@@ -16853,6 +17428,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "stanislav"
       ],
+      "lesson_key": "x.spices.savours",
       "befriend": null
     },
     {
@@ -16862,6 +17438,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "yvette"
       ],
+      "lesson_key": "x.bells.brazieries",
       "befriend": null
     },
     {
@@ -16871,6 +17448,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "zachary"
       ],
+      "lesson_key": "x.thegreatsignsandthegreatscars",
       "befriend": null
     },
     {
@@ -16880,6 +17458,7 @@ window.GRAPH_DATA = {
         "morgen",
         "agdistis"
       ],
+      "lesson_key": "x.strings.songs",
       "befriend": null
     },
     {
@@ -16889,6 +17468,7 @@ window.GRAPH_DATA = {
         "morgen",
         "aladim"
       ],
+      "lesson_key": "x.orchids.narcotics",
       "befriend": null
     },
     {
@@ -16898,6 +17478,7 @@ window.GRAPH_DATA = {
         "morgen",
         "arthur"
       ],
+      "lesson_key": "x.glaziery.lightsmithing",
       "befriend": null
     },
     {
@@ -16907,6 +17488,7 @@ window.GRAPH_DATA = {
         "morgen",
         "arun"
       ],
+      "lesson_key": "x.sacralimiae",
       "befriend": null
     },
     {
@@ -16916,6 +17498,7 @@ window.GRAPH_DATA = {
         "morgen",
         "azita"
       ],
+      "lesson_key": "x.horns.ivories",
       "befriend": null
     },
     {
@@ -16925,6 +17508,7 @@ window.GRAPH_DATA = {
         "morgen",
         "chaima"
       ],
+      "lesson_key": "x.skystories",
       "befriend": null
     },
     {
@@ -16934,6 +17518,7 @@ window.GRAPH_DATA = {
         "morgen",
         "connie"
       ],
+      "lesson_key": "x.ouranoscopy",
       "befriend": null
     },
     {
@@ -16943,6 +17528,7 @@ window.GRAPH_DATA = {
         "morgen",
         "coquille"
       ],
+      "lesson_key": "x.desires.dissolutions",
       "befriend": null
     },
     {
@@ -16952,6 +17538,7 @@ window.GRAPH_DATA = {
         "morgen",
         "corso"
       ],
+      "lesson_key": "x.applebrighteuphonies",
       "befriend": null
     },
     {
@@ -16961,6 +17548,7 @@ window.GRAPH_DATA = {
         "morgen",
         "dagmar"
       ],
+      "lesson_key": "x.seastories",
       "befriend": null
     },
     {
@@ -16970,6 +17558,7 @@ window.GRAPH_DATA = {
         "morgen",
         "douglas"
       ],
+      "lesson_key": "x.spices.savours",
       "befriend": null
     },
     {
@@ -16979,6 +17568,7 @@ window.GRAPH_DATA = {
         "morgen",
         "ehsan"
       ],
+      "lesson_key": "x.strings.songs",
       "befriend": null
     },
     {
@@ -16988,6 +17578,7 @@ window.GRAPH_DATA = {
         "morgen",
         "fraser"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -16997,6 +17588,7 @@ window.GRAPH_DATA = {
         "morgen",
         "hokobald"
       ],
+      "lesson_key": "x.anbary.lapidary",
       "befriend": null
     },
     {
@@ -17006,6 +17598,7 @@ window.GRAPH_DATA = {
         "morgen",
         "olympe"
       ],
+      "lesson_key": "x.ramsund",
       "befriend": null
     },
     {
@@ -17015,6 +17608,7 @@ window.GRAPH_DATA = {
         "morgen",
         "serena"
       ],
+      "lesson_key": "x.ouranoscopy",
       "befriend": null
     },
     {
@@ -17024,6 +17618,7 @@ window.GRAPH_DATA = {
         "morgen",
         "stanislav"
       ],
+      "lesson_key": "x.orchids.narcotics",
       "befriend": null
     },
     {
@@ -17033,6 +17628,7 @@ window.GRAPH_DATA = {
         "morgen",
         "yvette"
       ],
+      "lesson_key": "x.killasimi",
       "befriend": null
     },
     {
@@ -17042,6 +17638,7 @@ window.GRAPH_DATA = {
         "morgen",
         "zachary"
       ],
+      "lesson_key": "x.glassblowing.vesselcrafting",
       "befriend": "befriend.morgen.zachary"
     },
     {
@@ -17051,6 +17648,7 @@ window.GRAPH_DATA = {
         "olympe",
         "agdistis"
       ],
+      "lesson_key": "x.edictsliminal",
       "befriend": null
     },
     {
@@ -17060,6 +17658,7 @@ window.GRAPH_DATA = {
         "olympe",
         "aladim"
       ],
+      "lesson_key": "x.sabazine",
       "befriend": null
     },
     {
@@ -17069,6 +17668,7 @@ window.GRAPH_DATA = {
         "olympe",
         "arthur"
       ],
+      "lesson_key": "x.ramsund",
       "befriend": null
     },
     {
@@ -17078,6 +17678,7 @@ window.GRAPH_DATA = {
         "olympe",
         "arun"
       ],
+      "lesson_key": "x.transformations.liberations",
       "befriend": null
     },
     {
@@ -17087,6 +17688,7 @@ window.GRAPH_DATA = {
         "olympe",
         "azita"
       ],
+      "lesson_key": "x.edictsmartial",
       "befriend": null
     },
     {
@@ -17096,6 +17698,7 @@ window.GRAPH_DATA = {
         "olympe",
         "chaima"
       ],
+      "lesson_key": "x.ramsund",
       "befriend": null
     },
     {
@@ -17105,6 +17708,7 @@ window.GRAPH_DATA = {
         "olympe",
         "connie"
       ],
+      "lesson_key": "x.inks.revelation",
       "befriend": null
     },
     {
@@ -17114,6 +17718,7 @@ window.GRAPH_DATA = {
         "olympe",
         "coquille"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -17123,6 +17728,7 @@ window.GRAPH_DATA = {
         "olympe",
         "corso"
       ],
+      "lesson_key": "x.inks.revelation",
       "befriend": null
     },
     {
@@ -17132,6 +17738,7 @@ window.GRAPH_DATA = {
         "olympe",
         "dagmar"
       ],
+      "lesson_key": "x.solutions.separations",
       "befriend": null
     },
     {
@@ -17141,6 +17748,7 @@ window.GRAPH_DATA = {
         "olympe",
         "douglas"
       ],
+      "lesson_key": "x.ouranoscopy",
       "befriend": null
     },
     {
@@ -17150,6 +17758,7 @@ window.GRAPH_DATA = {
         "olympe",
         "ehsan"
       ],
+      "lesson_key": "x.anbary.lapidary",
       "befriend": null
     },
     {
@@ -17159,6 +17768,7 @@ window.GRAPH_DATA = {
         "olympe",
         "fraser"
       ],
+      "lesson_key": "x.coil.chasm",
       "befriend": null
     },
     {
@@ -17168,6 +17778,7 @@ window.GRAPH_DATA = {
         "olympe",
         "hokobald"
       ],
+      "lesson_key": "x.resurgences.emergences",
       "befriend": null
     },
     {
@@ -17177,6 +17788,7 @@ window.GRAPH_DATA = {
         "olympe",
         "morgen"
       ],
+      "lesson_key": "x.resurgences.emergences",
       "befriend": null
     },
     {
@@ -17186,6 +17798,7 @@ window.GRAPH_DATA = {
         "olympe",
         "serena"
       ],
+      "lesson_key": "x.sacralimiae",
       "befriend": null
     },
     {
@@ -17195,6 +17808,7 @@ window.GRAPH_DATA = {
         "olympe",
         "stanislav"
       ],
+      "lesson_key": "x.rites.theroots",
       "befriend": null
     },
     {
@@ -17204,6 +17818,7 @@ window.GRAPH_DATA = {
         "olympe",
         "yvette"
       ],
+      "lesson_key": "x.putrefactions.calcinations",
       "befriend": null
     },
     {
@@ -17213,6 +17828,7 @@ window.GRAPH_DATA = {
         "olympe",
         "zachary"
       ],
+      "lesson_key": "x.solutions.separations",
       "befriend": null
     },
     {
@@ -17222,6 +17838,7 @@ window.GRAPH_DATA = {
         "serena",
         "agdistis"
       ],
+      "lesson_key": "x.sacralimiae",
       "befriend": null
     },
     {
@@ -17231,6 +17848,7 @@ window.GRAPH_DATA = {
         "serena",
         "aladim"
       ],
+      "lesson_key": "x.sacralimiae",
       "befriend": null
     },
     {
@@ -17240,6 +17858,7 @@ window.GRAPH_DATA = {
         "serena",
         "arthur"
       ],
+      "lesson_key": "x.pyroglyphics",
       "befriend": null
     },
     {
@@ -17249,6 +17868,7 @@ window.GRAPH_DATA = {
         "serena",
         "arun"
       ],
+      "lesson_key": "x.inks.revelation",
       "befriend": null
     },
     {
@@ -17258,6 +17878,7 @@ window.GRAPH_DATA = {
         "serena",
         "azita"
       ],
+      "lesson_key": "x.watchmansparadoxes",
       "befriend": null
     },
     {
@@ -17267,6 +17888,7 @@ window.GRAPH_DATA = {
         "serena",
         "chaima"
       ],
+      "lesson_key": "x.disciplines.thescar",
       "befriend": null
     },
     {
@@ -17276,6 +17898,7 @@ window.GRAPH_DATA = {
         "serena",
         "connie"
       ],
+      "lesson_key": "x.bells.brazieries",
       "befriend": null
     },
     {
@@ -17285,6 +17908,7 @@ window.GRAPH_DATA = {
         "serena",
         "coquille"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -17294,6 +17918,7 @@ window.GRAPH_DATA = {
         "serena",
         "corso"
       ],
+      "lesson_key": "x.pyroglyphics",
       "befriend": null
     },
     {
@@ -17303,6 +17928,7 @@ window.GRAPH_DATA = {
         "serena",
         "dagmar"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -17312,6 +17938,7 @@ window.GRAPH_DATA = {
         "serena",
         "douglas"
       ],
+      "lesson_key": "x.weaving.knotworking",
       "befriend": null
     },
     {
@@ -17321,6 +17948,7 @@ window.GRAPH_DATA = {
         "serena",
         "ehsan"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -17330,6 +17958,7 @@ window.GRAPH_DATA = {
         "serena",
         "fraser"
       ],
+      "lesson_key": "x.coil.chasm",
       "befriend": null
     },
     {
@@ -17339,6 +17968,7 @@ window.GRAPH_DATA = {
         "serena",
         "hokobald"
       ],
+      "lesson_key": "x.transformations.liberations",
       "befriend": null
     },
     {
@@ -17348,6 +17978,7 @@ window.GRAPH_DATA = {
         "serena",
         "morgen"
       ],
+      "lesson_key": "x.meniscatereflections",
       "befriend": null
     },
     {
@@ -17357,6 +17988,7 @@ window.GRAPH_DATA = {
         "serena",
         "olympe"
       ],
+      "lesson_key": "x.transformations.liberations",
       "befriend": null
     },
     {
@@ -17366,6 +17998,7 @@ window.GRAPH_DATA = {
         "serena",
         "stanislav"
       ],
+      "lesson_key": "x.fucine",
       "befriend": null
     },
     {
@@ -17375,6 +18008,7 @@ window.GRAPH_DATA = {
         "serena",
         "yvette"
       ],
+      "lesson_key": "x.inks.containment",
       "befriend": null
     },
     {
@@ -17384,6 +18018,7 @@ window.GRAPH_DATA = {
         "serena",
         "zachary"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -17393,6 +18028,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "agdistis"
       ],
+      "lesson_key": "x.leaves.thorns",
       "befriend": null
     },
     {
@@ -17402,6 +18038,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "aladim"
       ],
+      "lesson_key": "x.cracktrack",
       "befriend": null
     },
     {
@@ -17411,6 +18048,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "arthur"
       ],
+      "lesson_key": "x.herbs.infusions",
       "befriend": null
     },
     {
@@ -17420,6 +18058,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "arun"
       ],
+      "lesson_key": "x.rites.theroots",
       "befriend": null
     },
     {
@@ -17429,6 +18068,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "azita"
       ],
+      "lesson_key": "x.rites.theroots",
       "befriend": null
     },
     {
@@ -17438,6 +18078,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "chaima"
       ],
+      "lesson_key": "x.sandstories",
       "befriend": null
     },
     {
@@ -17447,6 +18088,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "connie"
       ],
+      "lesson_key": "x.insects.nectars",
       "befriend": null
     },
     {
@@ -17456,6 +18098,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "coquille"
       ],
+      "lesson_key": "x.leaves.thorns",
       "befriend": null
     },
     {
@@ -17465,6 +18108,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "corso"
       ],
+      "lesson_key": "x.orchids.narcotics",
       "befriend": null
     },
     {
@@ -17474,6 +18118,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "dagmar"
       ],
+      "lesson_key": "x.insects.nectars",
       "befriend": null
     },
     {
@@ -17483,6 +18128,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "douglas"
       ],
+      "lesson_key": "x.herbs.infusions",
       "befriend": null
     },
     {
@@ -17492,6 +18138,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "ehsan"
       ],
+      "lesson_key": "x.coil.chasm",
       "befriend": null
     },
     {
@@ -17501,6 +18148,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "fraser"
       ],
+      "lesson_key": "x.stonestories",
       "befriend": null
     },
     {
@@ -17510,6 +18158,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "hokobald"
       ],
+      "lesson_key": "x.spices.savours",
       "befriend": null
     },
     {
@@ -17519,6 +18168,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "morgen"
       ],
+      "lesson_key": "x.orchids.narcotics",
       "befriend": null
     },
     {
@@ -17528,6 +18178,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "olympe"
       ],
+      "lesson_key": "x.rites.theroots",
       "befriend": null
     },
     {
@@ -17537,6 +18188,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "serena"
       ],
+      "lesson_key": "x.spices.savours",
       "befriend": null
     },
     {
@@ -17546,6 +18198,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "yvette"
       ],
+      "lesson_key": "x.insects.nectars",
       "befriend": null
     },
     {
@@ -17555,6 +18208,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "zachary"
       ],
+      "lesson_key": "x.quenchings.quellings",
       "befriend": null
     },
     {
@@ -17564,6 +18218,7 @@ window.GRAPH_DATA = {
         "yvette",
         "agdistis"
       ],
+      "lesson_key": "x.sights.sensations",
       "befriend": null
     },
     {
@@ -17573,6 +18228,7 @@ window.GRAPH_DATA = {
         "yvette",
         "aladim"
       ],
+      "lesson_key": "x.wolfstories",
       "befriend": null
     },
     {
@@ -17582,6 +18238,7 @@ window.GRAPH_DATA = {
         "yvette",
         "arthur"
       ],
+      "lesson_key": "x.sharps",
       "befriend": null
     },
     {
@@ -17591,6 +18248,7 @@ window.GRAPH_DATA = {
         "yvette",
         "arun"
       ],
+      "lesson_key": "x.henavek",
       "befriend": null
     },
     {
@@ -17600,6 +18258,7 @@ window.GRAPH_DATA = {
         "yvette",
         "azita"
       ],
+      "lesson_key": "x.sickle.eclipse",
       "befriend": null
     },
     {
@@ -17609,6 +18268,7 @@ window.GRAPH_DATA = {
         "yvette",
         "chaima"
       ],
+      "lesson_key": "x.inks.containment",
       "befriend": null
     },
     {
@@ -17618,6 +18278,7 @@ window.GRAPH_DATA = {
         "yvette",
         "connie"
       ],
+      "lesson_key": "x.rhyme.remembrance",
       "befriend": null
     },
     {
@@ -17627,6 +18288,7 @@ window.GRAPH_DATA = {
         "yvette",
         "coquille"
       ],
+      "lesson_key": "x.seastories",
       "befriend": null
     },
     {
@@ -17636,6 +18298,7 @@ window.GRAPH_DATA = {
         "yvette",
         "corso"
       ],
+      "lesson_key": "x.snowstories",
       "befriend": null
     },
     {
@@ -17645,6 +18308,7 @@ window.GRAPH_DATA = {
         "yvette",
         "dagmar"
       ],
+      "lesson_key": "x.pearl.tide",
       "befriend": null
     },
     {
@@ -17654,6 +18318,7 @@ window.GRAPH_DATA = {
         "yvette",
         "douglas"
       ],
+      "lesson_key": "x.rhyme.remembrance",
       "befriend": null
     },
     {
@@ -17663,6 +18328,7 @@ window.GRAPH_DATA = {
         "yvette",
         "ehsan"
       ],
+      "lesson_key": "x.pearl.tide",
       "befriend": null
     },
     {
@@ -17672,6 +18338,7 @@ window.GRAPH_DATA = {
         "yvette",
         "fraser"
       ],
+      "lesson_key": "x.pentiments.precursors",
       "befriend": null
     },
     {
@@ -17681,6 +18348,7 @@ window.GRAPH_DATA = {
         "yvette",
         "hokobald"
       ],
+      "lesson_key": "x.resurgences.emergences",
       "befriend": null
     },
     {
@@ -17690,6 +18358,7 @@ window.GRAPH_DATA = {
         "yvette",
         "morgen"
       ],
+      "lesson_key": "x.tridesmahiera",
       "befriend": null
     },
     {
@@ -17699,6 +18368,7 @@ window.GRAPH_DATA = {
         "yvette",
         "olympe"
       ],
+      "lesson_key": "x.putrefactions.calcinations",
       "befriend": null
     },
     {
@@ -17708,6 +18378,7 @@ window.GRAPH_DATA = {
         "yvette",
         "serena"
       ],
+      "lesson_key": "x.rhyme.remembrance",
       "befriend": null
     },
     {
@@ -17717,6 +18388,7 @@ window.GRAPH_DATA = {
         "yvette",
         "stanislav"
       ],
+      "lesson_key": "x.inks.containment",
       "befriend": null
     },
     {
@@ -17726,6 +18398,7 @@ window.GRAPH_DATA = {
         "yvette",
         "zachary"
       ],
+      "lesson_key": "x.snowstories",
       "befriend": null
     },
     {
@@ -17735,6 +18408,7 @@ window.GRAPH_DATA = {
         "zachary",
         "agdistis"
       ],
+      "lesson_key": "x.quenchings.quellings",
       "befriend": null
     },
     {
@@ -17744,6 +18418,7 @@ window.GRAPH_DATA = {
         "zachary",
         "aladim"
       ],
+      "lesson_key": "x.preliminalmeter",
       "befriend": null
     },
     {
@@ -17753,6 +18428,7 @@ window.GRAPH_DATA = {
         "zachary",
         "arthur"
       ],
+      "lesson_key": "x.raggedcrossroads",
       "befriend": null
     },
     {
@@ -17762,6 +18438,7 @@ window.GRAPH_DATA = {
         "zachary",
         "arun"
       ],
+      "lesson_key": "x.putrefactions.calcinations",
       "befriend": null
     },
     {
@@ -17771,6 +18448,7 @@ window.GRAPH_DATA = {
         "zachary",
         "azita"
       ],
+      "lesson_key": "x.sickle.eclipse",
       "befriend": null
     },
     {
@@ -17780,6 +18458,7 @@ window.GRAPH_DATA = {
         "zachary",
         "chaima"
       ],
+      "lesson_key": "x.raggedcrossroads",
       "befriend": null
     },
     {
@@ -17789,6 +18468,7 @@ window.GRAPH_DATA = {
         "zachary",
         "chaima"
       ],
+      "lesson_key": "x.preliminalmeter",
       "befriend": "befriend.chaima.zachary"
     },
     {
@@ -17798,6 +18478,7 @@ window.GRAPH_DATA = {
         "zachary",
         "connie"
       ],
+      "lesson_key": "x.inks.containment",
       "befriend": null
     },
     {
@@ -17807,6 +18488,7 @@ window.GRAPH_DATA = {
         "zachary",
         "coquille"
       ],
+      "lesson_key": "x.thegreatsignsandthegreatscars",
       "befriend": null
     },
     {
@@ -17816,6 +18498,7 @@ window.GRAPH_DATA = {
         "zachary",
         "corso"
       ],
+      "lesson_key": "x.hyksos",
       "befriend": null
     },
     {
@@ -17825,6 +18508,7 @@ window.GRAPH_DATA = {
         "zachary",
         "dagmar"
       ],
+      "lesson_key": "x.edictsliminal",
       "befriend": null
     },
     {
@@ -17834,6 +18518,7 @@ window.GRAPH_DATA = {
         "zachary",
         "douglas"
       ],
+      "lesson_key": "x.quenchings.quellings",
       "befriend": null
     },
     {
@@ -17843,6 +18528,7 @@ window.GRAPH_DATA = {
         "zachary",
         "ehsan"
       ],
+      "lesson_key": "x.sights.sensations",
       "befriend": null
     },
     {
@@ -17852,6 +18538,7 @@ window.GRAPH_DATA = {
         "zachary",
         "fraser"
       ],
+      "lesson_key": "x.serpents.venoms",
       "befriend": null
     },
     {
@@ -17861,6 +18548,7 @@ window.GRAPH_DATA = {
         "zachary",
         "hokobald"
       ],
+      "lesson_key": "x.thegreatsignsandthegreatscars",
       "befriend": null
     },
     {
@@ -17870,6 +18558,7 @@ window.GRAPH_DATA = {
         "zachary",
         "morgen"
       ],
+      "lesson_key": "x.glassblowing.vesselcrafting",
       "befriend": null
     },
     {
@@ -17879,6 +18568,7 @@ window.GRAPH_DATA = {
         "zachary",
         "olympe"
       ],
+      "lesson_key": "x.killasimi",
       "befriend": null
     },
     {
@@ -17888,6 +18578,7 @@ window.GRAPH_DATA = {
         "zachary",
         "serena"
       ],
+      "lesson_key": "x.glassblowing.vesselcrafting",
       "befriend": null
     },
     {
@@ -17897,6 +18588,7 @@ window.GRAPH_DATA = {
         "zachary",
         "stanislav"
       ],
+      "lesson_key": "x.quenchings.quellings",
       "befriend": null
     },
     {
@@ -17906,6 +18598,7 @@ window.GRAPH_DATA = {
         "zachary",
         "yvette"
       ],
+      "lesson_key": "x.snowstories",
       "befriend": null
     },
     {
@@ -17915,6 +18608,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "aladim"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -17924,6 +18618,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "arthur"
       ],
+      "lesson_key": "x.disciplines.thehammer",
       "befriend": null
     },
     {
@@ -17933,6 +18628,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "arun"
       ],
+      "lesson_key": "x.transformations.liberations",
       "befriend": "befriend.arun.denzil"
     },
     {
@@ -17942,6 +18638,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "azita"
       ],
+      "lesson_key": "x.disciplines.thescar",
       "befriend": null
     },
     {
@@ -17951,6 +18648,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "chaima"
       ],
+      "lesson_key": "x.sharps",
       "befriend": null
     },
     {
@@ -17960,6 +18658,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "connie"
       ],
+      "lesson_key": "x.horns.ivories",
       "befriend": null
     },
     {
@@ -17969,6 +18668,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "coquille"
       ],
+      "lesson_key": "x.anbary.lapidary",
       "befriend": null
     },
     {
@@ -17978,6 +18678,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "corso"
       ],
+      "lesson_key": "x.path.pilgrim",
       "befriend": null
     },
     {
@@ -17987,6 +18688,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "dagmar"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -17996,6 +18698,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "douglas"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -18005,6 +18708,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "ehsan"
       ],
+      "lesson_key": "x.seastories",
       "befriend": null
     },
     {
@@ -18014,6 +18718,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "fraser"
       ],
+      "lesson_key": "x.coil.chasm",
       "befriend": null
     },
     {
@@ -18023,6 +18728,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "hokobald"
       ],
+      "lesson_key": "x.bells.brazieries",
       "befriend": null
     },
     {
@@ -18032,6 +18738,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "morgen"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18041,6 +18748,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "olympe"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18050,6 +18758,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "serena"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18059,6 +18768,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "stanislav"
       ],
+      "lesson_key": "x.herbs.infusions",
       "befriend": null
     },
     {
@@ -18068,6 +18778,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "yvette"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18077,6 +18788,7 @@ window.GRAPH_DATA = {
         "visiting.denzil",
         "zachary"
       ],
+      "lesson_key": "x.raggedcrossroads",
       "befriend": null
     },
     {
@@ -18086,6 +18798,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "agdistis"
       ],
+      "lesson_key": "x.drums.dances",
       "befriend": null
     },
     {
@@ -18095,6 +18808,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "aladim"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -18104,6 +18818,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "arthur"
       ],
+      "lesson_key": "x.surgeries.exsanguinations",
       "befriend": null
     },
     {
@@ -18113,6 +18828,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "arun"
       ],
+      "lesson_key": "x.surgeries.exsanguinations",
       "befriend": null
     },
     {
@@ -18122,6 +18838,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "azita"
       ],
+      "lesson_key": "x.skystories",
       "befriend": null
     },
     {
@@ -18131,6 +18848,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "chaima"
       ],
+      "lesson_key": "x.rhyme.remembrance",
       "befriend": null
     },
     {
@@ -18140,6 +18858,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "connie"
       ],
+      "lesson_key": "x.quenchings.quellings",
       "befriend": null
     },
     {
@@ -18149,6 +18868,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "coquille"
       ],
+      "lesson_key": "x.orchids.narcotics",
       "befriend": null
     },
     {
@@ -18158,6 +18878,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "corso"
       ],
+      "lesson_key": "x.applebrighteuphonies",
       "befriend": null
     },
     {
@@ -18167,6 +18888,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "dagmar"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18176,6 +18898,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "douglas"
       ],
+      "lesson_key": "x.glassblowing.vesselcrafting",
       "befriend": null
     },
     {
@@ -18185,6 +18908,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "ehsan"
       ],
+      "lesson_key": "x.stitching.binding",
       "befriend": null
     },
     {
@@ -18194,6 +18918,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "fraser"
       ],
+      "lesson_key": "x.pentiments.precursors",
       "befriend": null
     },
     {
@@ -18203,6 +18928,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "hokobald"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18212,6 +18938,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "morgen"
       ],
+      "lesson_key": "x.seastories",
       "befriend": null
     },
     {
@@ -18221,6 +18948,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "olympe"
       ],
+      "lesson_key": "x.strings.songs",
       "befriend": null
     },
     {
@@ -18230,6 +18958,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "serena"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18239,6 +18968,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "stanislav"
       ],
+      "lesson_key": "x.rites.theroots",
       "befriend": null
     },
     {
@@ -18248,6 +18978,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "yvette"
       ],
+      "lesson_key": "x.sights.sensations",
       "befriend": null
     },
     {
@@ -18257,6 +18988,7 @@ window.GRAPH_DATA = {
         "visiting.killes",
         "zachary"
       ],
+      "lesson_key": "x.snowstories",
       "befriend": null
     },
     {
@@ -18266,6 +18998,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "agdistis"
       ],
+      "lesson_key": "x.ericapaean",
       "befriend": null
     },
     {
@@ -18275,6 +19008,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "aladim"
       ],
+      "lesson_key": "x.sandstories",
       "befriend": null
     },
     {
@@ -18284,6 +19018,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "arthur"
       ],
+      "lesson_key": "x.inks.revelation",
       "befriend": null
     },
     {
@@ -18293,6 +19028,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "arun"
       ],
+      "lesson_key": "x.preliminalmeter",
       "befriend": null
     },
     {
@@ -18302,6 +19038,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "azita"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -18311,6 +19048,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "chaima"
       ],
+      "lesson_key": "x.pearl.tide",
       "befriend": null
     },
     {
@@ -18320,6 +19058,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "connie"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -18329,6 +19068,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "coquille"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -18338,6 +19078,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "corso"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -18347,6 +19088,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "dagmar"
       ],
+      "lesson_key": "x.edictsliminal",
       "befriend": null
     },
     {
@@ -18356,6 +19098,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "douglas"
       ],
+      "lesson_key": "x.leaves.thorns",
       "befriend": null
     },
     {
@@ -18365,6 +19108,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "ehsan"
       ],
+      "lesson_key": "x.surgeries.exsanguinations",
       "befriend": null
     },
     {
@@ -18374,6 +19118,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "fraser"
       ],
+      "lesson_key": "x.insects.nectars",
       "befriend": null
     },
     {
@@ -18383,6 +19128,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "hokobald"
       ],
+      "lesson_key": "x.purifications.exaltations",
       "befriend": null
     },
     {
@@ -18392,6 +19138,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "morgen"
       ],
+      "lesson_key": "x.wolfstories",
       "befriend": null
     },
     {
@@ -18401,6 +19148,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "olympe"
       ],
+      "lesson_key": "x.disciplines.thescar",
       "befriend": null
     },
     {
@@ -18410,6 +19158,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "serena"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -18419,6 +19168,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "stanislav"
       ],
+      "lesson_key": "x.herbs.infusions",
       "befriend": null
     },
     {
@@ -18428,6 +19178,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "yvette"
       ],
+      "lesson_key": "x.watchmansparadoxes",
       "befriend": null
     },
     {
@@ -18437,6 +19188,7 @@ window.GRAPH_DATA = {
         "visiting.timothy",
         "zachary"
       ],
+      "lesson_key": "x.auroralcontemplations",
       "befriend": null
     },
     {
@@ -18446,6 +19198,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "visiting.denzil"
       ],
+      "lesson_key": "x.drums.dances",
       "befriend": null
     },
     {
@@ -18455,6 +19208,7 @@ window.GRAPH_DATA = {
         "aladim",
         "visiting.denzil"
       ],
+      "lesson_key": "x.furs.feathers",
       "befriend": null
     },
     {
@@ -18464,6 +19218,7 @@ window.GRAPH_DATA = {
         "arthur",
         "visiting.denzil"
       ],
+      "lesson_key": "x.spices.savours",
       "befriend": null
     },
     {
@@ -18473,6 +19228,7 @@ window.GRAPH_DATA = {
         "arun",
         "visiting.denzil"
       ],
+      "lesson_key": "x.desires.dissolutions",
       "befriend": null
     },
     {
@@ -18482,6 +19238,7 @@ window.GRAPH_DATA = {
         "azita",
         "visiting.denzil"
       ],
+      "lesson_key": "x.disciplines.thescar",
       "befriend": null
     },
     {
@@ -18491,6 +19248,7 @@ window.GRAPH_DATA = {
         "chaima",
         "visiting.denzil"
       ],
+      "lesson_key": "x.sharps",
       "befriend": null
     },
     {
@@ -18500,6 +19258,7 @@ window.GRAPH_DATA = {
         "connie",
         "visiting.denzil"
       ],
+      "lesson_key": "x.quenchings.quellings",
       "befriend": null
     },
     {
@@ -18509,6 +19268,7 @@ window.GRAPH_DATA = {
         "coquille",
         "visiting.denzil"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18518,6 +19278,7 @@ window.GRAPH_DATA = {
         "corso",
         "visiting.denzil"
       ],
+      "lesson_key": "x.henavek",
       "befriend": null
     },
     {
@@ -18527,6 +19288,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "visiting.denzil"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -18536,6 +19298,7 @@ window.GRAPH_DATA = {
         "douglas",
         "visiting.denzil"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -18545,6 +19308,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "visiting.denzil"
       ],
+      "lesson_key": "x.seastories",
       "befriend": null
     },
     {
@@ -18554,6 +19318,7 @@ window.GRAPH_DATA = {
         "fraser",
         "visiting.denzil"
       ],
+      "lesson_key": "x.coil.chasm",
       "befriend": null
     },
     {
@@ -18563,6 +19328,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "visiting.denzil"
       ],
+      "lesson_key": "x.bells.brazieries",
       "befriend": null
     },
     {
@@ -18572,6 +19338,7 @@ window.GRAPH_DATA = {
         "morgen",
         "visiting.denzil"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18581,6 +19348,7 @@ window.GRAPH_DATA = {
         "olympe",
         "visiting.denzil"
       ],
+      "lesson_key": "x.path.pilgrim",
       "befriend": null
     },
     {
@@ -18590,6 +19358,7 @@ window.GRAPH_DATA = {
         "serena",
         "visiting.denzil"
       ],
+      "lesson_key": "x.glassblowing.vesselcrafting",
       "befriend": null
     },
     {
@@ -18599,6 +19368,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "visiting.denzil"
       ],
+      "lesson_key": "x.putrefactions.calcinations",
       "befriend": null
     },
     {
@@ -18608,6 +19378,7 @@ window.GRAPH_DATA = {
         "yvette",
         "visiting.denzil"
       ],
+      "lesson_key": "x.seastories",
       "befriend": null
     },
     {
@@ -18617,6 +19388,7 @@ window.GRAPH_DATA = {
         "zachary",
         "visiting.denzil"
       ],
+      "lesson_key": "x.raggedcrossroads",
       "befriend": null
     },
     {
@@ -18626,6 +19398,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "visiting.killes"
       ],
+      "lesson_key": "x.rhyme.remembrance",
       "befriend": null
     },
     {
@@ -18635,6 +19408,7 @@ window.GRAPH_DATA = {
         "aladim",
         "visiting.killes"
       ],
+      "lesson_key": "x.rhyme.remembrance",
       "befriend": null
     },
     {
@@ -18644,6 +19418,7 @@ window.GRAPH_DATA = {
         "arthur",
         "visiting.killes"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18653,6 +19428,7 @@ window.GRAPH_DATA = {
         "arun",
         "visiting.killes"
       ],
+      "lesson_key": "x.purifications.exaltations",
       "befriend": null
     },
     {
@@ -18662,6 +19438,7 @@ window.GRAPH_DATA = {
         "azita",
         "visiting.killes"
       ],
+      "lesson_key": "x.leaves.thorns",
       "befriend": null
     },
     {
@@ -18671,6 +19448,7 @@ window.GRAPH_DATA = {
         "chaima",
         "visiting.killes"
       ],
+      "lesson_key": "x.spices.savours",
       "befriend": null
     },
     {
@@ -18680,6 +19458,7 @@ window.GRAPH_DATA = {
         "connie",
         "visiting.killes"
       ],
+      "lesson_key": "x.stonestories",
       "befriend": null
     },
     {
@@ -18689,6 +19468,7 @@ window.GRAPH_DATA = {
         "coquille",
         "visiting.killes"
       ],
+      "lesson_key": "x.orchids.narcotics",
       "befriend": null
     },
     {
@@ -18698,6 +19478,7 @@ window.GRAPH_DATA = {
         "corso",
         "visiting.killes"
       ],
+      "lesson_key": "x.applebrighteuphonies",
       "befriend": null
     },
     {
@@ -18707,6 +19488,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "visiting.killes"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18716,6 +19498,7 @@ window.GRAPH_DATA = {
         "douglas",
         "visiting.killes"
       ],
+      "lesson_key": "x.glassblowing.vesselcrafting",
       "befriend": null
     },
     {
@@ -18725,6 +19508,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "visiting.killes"
       ],
+      "lesson_key": "x.seastories",
       "befriend": null
     },
     {
@@ -18734,6 +19518,7 @@ window.GRAPH_DATA = {
         "fraser",
         "visiting.killes"
       ],
+      "lesson_key": "x.pentiments.precursors",
       "befriend": null
     },
     {
@@ -18743,6 +19528,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "visiting.killes"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18752,6 +19538,7 @@ window.GRAPH_DATA = {
         "morgen",
         "visiting.killes"
       ],
+      "lesson_key": "x.resurgences.emergences",
       "befriend": null
     },
     {
@@ -18761,6 +19548,7 @@ window.GRAPH_DATA = {
         "olympe",
         "visiting.killes"
       ],
+      "lesson_key": "x.strings.songs",
       "befriend": null
     },
     {
@@ -18770,6 +19558,7 @@ window.GRAPH_DATA = {
         "serena",
         "visiting.killes"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18779,6 +19568,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "visiting.killes"
       ],
+      "lesson_key": "x.herbs.infusions",
       "befriend": null
     },
     {
@@ -18788,6 +19578,7 @@ window.GRAPH_DATA = {
         "yvette",
         "visiting.killes"
       ],
+      "lesson_key": "x.sights.sensations",
       "befriend": null
     },
     {
@@ -18797,6 +19588,7 @@ window.GRAPH_DATA = {
         "zachary",
         "visiting.killes"
       ],
+      "lesson_key": "x.snowstories",
       "befriend": null
     },
     {
@@ -18806,6 +19598,7 @@ window.GRAPH_DATA = {
         "agdistis",
         "visiting.timothy"
       ],
+      "lesson_key": "x.tridesmahiera",
       "befriend": null
     },
     {
@@ -18815,6 +19608,7 @@ window.GRAPH_DATA = {
         "aladim",
         "visiting.timothy"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18824,6 +19618,7 @@ window.GRAPH_DATA = {
         "arthur",
         "visiting.timothy"
       ],
+      "lesson_key": "x.sandstories",
       "befriend": null
     },
     {
@@ -18833,6 +19628,7 @@ window.GRAPH_DATA = {
         "arun",
         "visiting.timothy"
       ],
+      "lesson_key": "x.preliminalmeter",
       "befriend": null
     },
     {
@@ -18842,6 +19638,7 @@ window.GRAPH_DATA = {
         "azita",
         "visiting.timothy"
       ],
+      "lesson_key": "x.disciplines.thescar",
       "befriend": null
     },
     {
@@ -18851,6 +19648,7 @@ window.GRAPH_DATA = {
         "chaima",
         "visiting.timothy"
       ],
+      "lesson_key": "x.pearl.tide",
       "befriend": null
     },
     {
@@ -18860,6 +19658,7 @@ window.GRAPH_DATA = {
         "connie",
         "visiting.timothy"
       ],
+      "lesson_key": "x.edictsinviolable",
       "befriend": null
     },
     {
@@ -18869,6 +19668,7 @@ window.GRAPH_DATA = {
         "coquille",
         "visiting.timothy"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -18878,6 +19678,7 @@ window.GRAPH_DATA = {
         "corso",
         "visiting.timothy"
       ],
+      "lesson_key": "x.stonestories",
       "befriend": null
     },
     {
@@ -18887,6 +19688,7 @@ window.GRAPH_DATA = {
         "dagmar",
         "visiting.timothy"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -18896,6 +19698,7 @@ window.GRAPH_DATA = {
         "douglas",
         "visiting.timothy"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18905,6 +19708,7 @@ window.GRAPH_DATA = {
         "ehsan",
         "visiting.timothy"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18914,6 +19718,7 @@ window.GRAPH_DATA = {
         "fraser",
         "visiting.timothy"
       ],
+      "lesson_key": "x.auroralcontemplations",
       "befriend": null
     },
     {
@@ -18923,6 +19728,7 @@ window.GRAPH_DATA = {
         "hokobald",
         "visiting.timothy"
       ],
+      "lesson_key": "x.glaziery.lightsmithing",
       "befriend": null
     },
     {
@@ -18932,6 +19738,7 @@ window.GRAPH_DATA = {
         "morgen",
         "visiting.timothy"
       ],
+      "lesson_key": null,
       "befriend": null
     },
     {
@@ -18941,6 +19748,7 @@ window.GRAPH_DATA = {
         "olympe",
         "visiting.timothy"
       ],
+      "lesson_key": "x.sandstories",
       "befriend": null
     },
     {
@@ -18950,6 +19758,7 @@ window.GRAPH_DATA = {
         "serena",
         "visiting.timothy"
       ],
+      "lesson_key": "x.door.wall",
       "befriend": null
     },
     {
@@ -18959,6 +19768,7 @@ window.GRAPH_DATA = {
         "stanislav",
         "visiting.timothy"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -18968,6 +19778,7 @@ window.GRAPH_DATA = {
         "yvette",
         "visiting.timothy"
       ],
+      "lesson_key": "x.sacrasolisinvicti",
       "befriend": null
     },
     {
@@ -18977,6 +19788,7 @@ window.GRAPH_DATA = {
         "zachary",
         "visiting.timothy"
       ],
+      "lesson_key": "x.quenchings.quellings",
       "befriend": null
     }
   ],

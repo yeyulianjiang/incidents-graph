@@ -785,14 +785,14 @@ function salonVisitorLabel(vid) {
   return v ? (v.label_cn || vid) : vid;
 }
 
-function parseSalonDesc(text) {
-  if (!text) return { body: "", lesson: "" };
-  const m = text.match(/[\[［]教诲[：:]\s*([^\]）\]]+)[\]）\]]/);
-  const lesson = m ? m[1].trim() : "";
-  const body = lesson
-    ? text.replace(/\s*[\[［]教诲[：:][^\]）\]]*[\]）\]]\.?$/, "").trim()
-    : text.trim();
-  return { body, lesson };
+function salonBodyHtml(text) {
+  if (!text) return "";
+  // 去掉末尾括号段落（[教诲：xxx]、[xxx] 等各种括号形式）
+  let s = text.replace(/\s*[\[［【][^\]）】]*[\]）】][\s.。]*$/g, "").trim();
+  // 只放行 <i> <b> <em> <strong>，其余标签转义
+  s = s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  s = s.replace(/&lt;(\/?(i|b|em|strong))&gt;/g,"<$1>");
+  return s;
 }
 
 function populateSalonList() {
@@ -853,8 +853,9 @@ function renderSalonVisitor(vid) {
     const partnerText = partners.length
       ? partners.map(salonVisitorLabel).join("、")
       : "（独白）";
-    const { body, lesson } = parseSalonDesc(s.desc_cn);
-    const lessonChip = lesson ? `<span class="salon-lesson-chip">教诲：${esc(lesson)}</span>` : "";
+    const bodyHtml = salonBodyHtml(s.desc_cn);
+    const lessonLabel = s.lesson_key ? itemLabel(s.lesson_key) : "";
+    const lessonChip = lessonLabel ? `<span class="salon-lesson-chip">${esc(lessonLabel)}</span>` : "";
     const befriendChip = s.befriend ? `<span class="salon-befriend-chip">✦ 结交</span>` : "";
     const chips = [lessonChip, befriendChip].filter(Boolean).join(" ");
     html += `<div class="salon-conv-card">
@@ -863,7 +864,7 @@ function renderSalonVisitor(vid) {
         <div style="display:flex;gap:6px;flex-wrap:wrap">${chips}</div>
       </div>
       <div class="salon-conv-body">
-        <p class="salon-conv-text">${esc(body)}</p>
+        <p class="salon-conv-text">${bodyHtml}</p>
       </div>
     </div>`;
   });
