@@ -1156,34 +1156,61 @@ function buildVisitorCard(vid, mysteries, iid, incSuffix, reach) {
   </div>`;
 }
 
+function nxcMatchNxh(c) {
+  return (data.nrs_by_state[c.n_state] || [])
+    .filter(r => r.kind === "nxh" && (!r.visitor || r.visitor === c.visitor))
+    .filter(r => {
+      // 过滤：若 nxh 的 reqs 含 acted.* 前置，必须全部被 nxc 的 acted_required 覆盖
+      const actedKeys = Object.keys(r.reqs || {}).filter(k => k.startsWith("acted."));
+      if (!actedKeys.length) return true;
+      return actedKeys.every(k => (c.acted_required || []).includes(k));
+    });
+}
+
 function buildConsequenceHTML(vid, iid, incSuffix, reach) {
   const relevantNxs = (data.nxs||[]).filter(nxs => reach.has(nxs.n_state) && nxs.visitor === vid);
   const relevantNxc = (data.nxc||[]).filter(c => reach.has(c.n_state) && c.visitor === vid);
   if (!relevantNxs.length && !relevantNxc.length) return "";
+  // 外层 dedupe：按"实际匹配到的 nxh 集合 + state"判定，集合相同才折叠
+  const seenSets = new Set();
   return relevantNxs.map(nxs => buildNxsStep(nxs, incSuffix, vid)).join("")
-       + relevantNxc.map(c => buildNxcStep(c)).join("");
+       + relevantNxc.map(c => {
+           const ids = nxcMatchNxh(c).map(r => r.id).sort().join(",");
+           const k = c.n_state + "|" + ids;
+           const dup = ids && seenSets.has(k);
+           seenSets.add(k);
+           return buildNxcStep(c, dup);
+         }).join("");
 }
 
-function buildNxcStep(c) {
+function buildNxcStep(c, hideInner = false) {
   const vLabel = c.visitor ? (byId["v:" + c.visitor]?.label_cn || c.visitor) : "？";
   const prereqMysteryC = c.acted_required.length ? c.acted_required[0].split(".").slice(-1)[0] : null;
   const actedHtml = prereqMysteryC
     ? `<span class="nxs-condition">需先以${mLabel(prereqMysteryC)}书帮助</span>` : "";
-  const matchNxh = (data.nrs_by_state[c.n_state] || [])
-    .filter(r => r.kind === "nxh" && (!r.visitor || r.visitor === c.visitor));
-  const nxhInner = matchNxh.map(r => {
-    const itemKey = nxhItemKey(r);
-    const nxAction = Object.keys(r.aspects || {}).find(k => k.startsWith("nx."));
-    const tr = nxAction ? data.n_transitions.find(t => t.from === c.n_state && t.via === nxAction) : null;
-    const resultNs = tr ? byId["n:" + tr.to] : null;
-    const resultLabel = resultNs ? resultNs.label_cn : (tr ? tr.to : "");
-    const descText = r.desc_cn || "";
-    return `<div style="margin-top:4px">
-      <span class="nxh-tag" title="${esc(itemDesc(itemKey))}">${esc(itemLabel(itemKey))}</span>
-      ${descText ? `<p class="nxh-desc">${esc(descText)}</p>` : ""}
-      ${resultLabel ? `<div class="nxh-result">→ ${esc(resultLabel)}</div>` : ""}
-    </div>`;
-  }).join("");
+  let nxhInner;
+  if (hideInner) {
+    nxhInner = `<div style="margin-top:4px;font-size:13px;color:var(--ink-3);font-style:italic">（候选物品与结局同上）</div>`;
+  } else {
+    const matchNxh = nxcMatchNxh(c);
+    const seenNxh = new Set();
+    nxhInner = matchNxh.map(r => {
+      const itemKey = nxhItemKey(r);
+      const nxAction = Object.keys(r.aspects || {}).find(k => k.startsWith("nx."));
+      const tr = nxAction ? data.n_transitions.find(t => t.from === c.n_state && t.via === nxAction) : null;
+      const resultNs = tr ? byId["n:" + tr.to] : null;
+      const resultLabel = resultNs ? resultNs.label_cn : (tr ? tr.to : "");
+      const descText = r.desc_cn || "";
+      const dedupeKey = itemKey + "|" + descText + "|" + (tr ? tr.to : "");
+      if (seenNxh.has(dedupeKey)) return "";
+      seenNxh.add(dedupeKey);
+      return `<div style="margin-top:4px">
+        <span class="nxh-tag" title="${esc(itemDesc(itemKey))}">${esc(itemLabel(itemKey))}</span>
+        ${descText ? `<p class="nxh-desc">${esc(descText)}</p>` : ""}
+        ${resultLabel ? `<div class="nxh-result">→ ${esc(resultLabel)}</div>` : ""}
+      </div>`;
+    }).join("");
+  }
   const label = c.label_cn || c.label_en || "";
   return `
   <div class="nxs-block">
