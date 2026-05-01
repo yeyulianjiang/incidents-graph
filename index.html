@@ -836,7 +836,11 @@ function renderSalonVisitor(vid) {
   const label = salonVisitorLabel(vid);
   const isGuest = vid.startsWith("visiting.");
   const eyebrow = isGuest ? "来访访客 · VISITING GUEST" : "访客 · VISITOR";
-  const salons = (data._salonsByVid[vid] || []);
+  const salons = (data._salonsByVid[vid] || []).slice().sort((a, b) => {
+    const pa = a.participants.filter(p => p !== vid).map(salonVisitorLabel).join("、");
+    const pb = b.participants.filter(p => p !== vid).map(salonVisitorLabel).join("、");
+    return pa.localeCompare(pb, "zh-Hans");
+  });
 
   let html = `<div class="salon-header">
     <div class="salon-header__eyebrow">${eyebrow}</div>
