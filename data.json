@@ -19802,5 +19802,642 @@
     "visiting.denzil": {
       "label_cn": "来访的邓齐尔"
     }
+  },
+  "leiters": {
+    "leiter.connie.resigned.mission.stone.consumed": {
+      "startlabel": "康妮",
+      "desc_cn": "“这种抢掠神祇遗骨的行为……有些龌龊。但我知道，离开防剿局也不会让事情更好办。我们应行必行之事，而非欲行之事。使用石源神的残余……让我们在‘必须’上多了些选择。我厌倦了妥协。但我行必行之事。”"
+    },
+    "leiter.connie.resigned.mission.autarchy": {
+      "startlabel": "康妮",
+      "desc_cn": "“离开防剿局花了我太久。学会是一个新开始……好吧， 新的开始总会有瑕疵，但我一直在警惕我们的盟友。这很艰难，但我受够妥协了。”"
+    },
+    "leiter.rowena.persistent.mission.secrecy": {
+      "startlabel": "罗威娜",
+      "desc_cn": "“边地的最后一道盾牌……根冠……不是敌人……真相，终末之花……”"
+    },
+    "leiter.ehsan.foe.nowhere": {
+      "startlabel": "埃桑",
+      "desc_cn": "“仅在今年，我就被叫去处理了数起蠕虫感染。我并不喜欢。但时迁事移，它们再也无法藏于人类表皮下发育，也失去了繁殖能力。我想知道：是因为我们做了什么吗？还是因为太阳里的什么东西？”",
+      "label_cn": "虚界司辰"
+    },
+    "leiter.dagmar.foe.nowhere": {
+      "startlabel": "妲格玛",
+      "desc_cn": "“好吧，如果我要花钱的话，我想不到比碾碎蠕虫更好的花法了。如果是要花学会的钱，那就更好不过了，总比花我自己的钱好嘛！所以可以说，一切都在往好的方向发展。”",
+      "label_cn": "虚界司辰"
+    },
+    "leiter.serena.mission.revelation": {
+      "startlabel": "瑟雷娜",
+      "desc_cn": "“我们曾重创了裂变者。我总会想，如果当时没这么做，一切会不会大不一样？新王会幸存吗？战争能避免吗？但也可能恰恰相反，情况会更糟。无论如何，我们已给了更多人选择的机会。”",
+      "label_cn": "揭露"
+    },
+    "leiter.connie.mission.autarchy": {
+      "startlabel": "康妮",
+      "desc_cn": "“我违抗伊迪丝夫人的决定是正确的。我不知道防剿局已经变得如此和光同尘。学会是一个新开始……好吧， 新的开始总会有瑕疵，但我一直在警惕我们的盟友。这很艰难，但我受够妥协了。”",
+      "label_cn": "自治"
+    },
+    "leiter.hokobald.ally.chandler": {
+      "startlabel": "霍科博尔德",
+      "desc_cn": "“无比遗憾，新王已经走了如此之远，却在这场愚蠢的地上之战中身死卡昂。我对英雄毫无耐心。但在黑暗中仍有火焰燃烧。制烛人只不过是被耽搁，而不是被否定，当他降临之日，学会将分享他的赏赐。或者，也可以说是‘她的’……我有一个理论。只有当我确认了其正确性，我才会分享出来。以前的我过于慷慨了。”",
+      "label_cn": "制烛人"
+    },
+    "leiter.aladim": {
+      "startlabel": "阿迪姆",
+      "desc_cn": "阿迪姆没有在学会的创立原则中看到自己的理念。他忠诚地向学会的盟友传递信息，并代表学会向守夜人之树的其他枝桠传话。但现在，随着浪游旅人变得不可记名，这位<b>玫瑰</b>之子看来是不会久留了。"
+    },
+    "leiter.dagmar.foe.ys": {
+      "startlabel": "妲格玛",
+      "desc_cn": "“喔，那些伊苏人都很有礼，干净得像优秀的牙医，锋利得像纽扣，可你让他们靠近了啊，啪！好似把你的灵魂关进一扇门里。呼。好吧，现在算是识破他们了，不是吗？”",
+      "label_cn": "伊苏"
+    },
+    "leiter.dagmar.foe.chandler": {
+      "startlabel": "妲格玛",
+      "desc_cn": "“在卡昂失去新王真是遗憾。当然，他是有点太制烛人了，但很有教养，血统高贵。现在会战死沙场的国王可不多吧？不过，这倒是让事情简单了一些，捏熄烛芯之类的事嘛。要捏熄的烛芯还多得很呢！”",
+      "label_cn": "制烛人"
+    },
+    "leiter.rowena.persistent.foe.ys": {
+      "startlabel": "罗威娜",
+      "desc_cn": "“我的克雷姆杜……伊苏得其报应……狼之长生者……淹没了……女祭司们……像斯芬瑟一样警觉，像群星一样狡猾。我知道，因为我曾是其中一员……但不是……苍白拂晓……最苍白的……”"
+    },
+    "leiter.azita": {
+      "startlabel": "阿齐塔",
+      "desc_cn": "阿齐塔本希望学会选择另一条路。但阿齐塔的道德底线一向灵活，并被商业动机所驱使。只要与学会的合作还有利可图，她就会继续下去——同时，学会也能从她卓越的关系网中受益。"
+    },
+    "leiter.zachary.foe.nowhere": {
+      "startlabel": "扎迦利",
+      "desc_cn": "“我与蠕虫交谈过。比你想的要简单，至少对我是这样，多亏了‘乘客’帮忙。但也没那么简单。当然，我摧毁了它们中绝大多数。但其中的一位……现在她变得和我一样了。”",
+      "label_cn": "虚界司辰"
+    },
+    "leiter.zachary.mission.peace": {
+      "startlabel": "扎迦利",
+      "desc_cn": "“斯宾塞已向下行。\n终有一日，我会随他而去。\n彼时，万籁俱寂。\n在那之前，若我静默，便为灯塔学会静默。”",
+      "label_cn": "和平"
+    },
+    "leiter.fraser.foe.carapace": {
+      "startlabel": "弗雷泽",
+      "desc_cn": "“我得到了容许，却不被信任。我已证明过自己数十次，却不被信任。我抑制住了我的介壳种天性，即使这在梦中让我付出了高昂代价，却依旧不被信任。很好，我拥有耐心。总有一天，我们皆会见证。”",
+      "label_cn": "介壳种"
+    },
+    "leiter.ehsan.foe.carapace": {
+      "startlabel": "埃桑",
+      "desc_cn": "“万物无常，在我还是剑齿兽的日子里，我既恐惧又渴望转变。所以我理解介壳种蜕变的诱惑。因此，当需要我展现技艺时，我会终结这种诱惑。”",
+      "label_cn": "介壳种"
+    },
+    "leiter.azita.ally.reckoners": {
+      "startlabel": "阿齐塔",
+      "desc_cn": "“我知道不是每个人都喜欢和清算人合作，但他们非常有用。我们在每个仍存的城市都有眼线。我们有用之不竭的年岁来武装我的特工——我们的特工。我喜欢他们：他们都是<i>专业人士</i>。”",
+      "label_cn": "清算人领主"
+    },
+    "leiter.echidna.persistent.mission.secrecy": {
+      "startlabel": "厄客德娜",
+      "desc_cn": "“我承认：我并不算是个好母亲。但在漫长的岁月里，我最牵挂的一直是我的孩子们。我为他们遮挡炎炎烈日；我保护他们远离猎人的视线。如今，学会也算是我的孩子。”"
+    },
+    "leiter.arthur": {
+      "startlabel": "亚瑟",
+      "desc_cn": "亚瑟没有在学会的创立原则中看到自己的理念。但长期以来，他一直是优秀的士兵，他将恪尽职守，履行警戒理事的职责……或许直到某天，他被迫最后一次放弃自己的原则。"
+    },
+    "leiter.arthur.mission.revelation": {
+      "startlabel": "亚瑟",
+      "desc_cn": "“‘光。’这恒是答案。即使连飞蛾也明白这点。过去几年一直很混乱，但我已经在阴影的仁慈中躲避太久了。现在，我沐浴在阳光之下。”",
+      "label_cn": "揭露"
+    },
+    "leiter.morgen.ally.carapace": {
+      "startlabel": "摩根",
+      "desc_cn": "“你还记得那场歌剧里，我结识了一个小小的朋友吗？那个身负介壳种天性的歌手？好吧，她依然出类拔萃，而我们的友谊也……<i>依旧存续</i>。”",
+      "label_cn": "介壳种"
+    },
+    "leiter.agdistis": {
+      "startlabel": "阿格狄斯提斯",
+      "desc_cn": "阿格狄斯提斯没有在学会的创立原则中看到自己的理念。他并不热衷于担任护理理事；但他尽职尽责，会按照学会的指示运用治疗的技艺。"
+    },
+    "leiter.fraser.mission.stone.remembered": {
+      "startlabel": "弗雷泽",
+      "desc_cn": "“遵从学会的指示，我已与那些深藏于大地与海洋的存在达成合作。这对我的采矿事业非常有用；我们已发掘出了意想不到的宝藏。”",
+      "label_cn": "铭记石神"
+    },
+    "leiter.serena.mission.peace": {
+      "startlabel": "瑟雷娜",
+      "desc_cn": "“我还记得齐达内，他的百灵鸟雕塑，栖木的秘密。我曾以为，归还这些秘密就能维护和平。可没过几年，太阳大战就爆发了。或许我们推迟了它。即使没有，我仍认为这桩事做得很对……”",
+      "label_cn": "和平"
+    },
+    "leiter.fraser": {
+      "startlabel": "弗雷泽",
+      "desc_cn": "弗雷泽强调，学会没有与介壳种合作让他何等失望。但就目前而言，他与学会之间仍然是互惠互利的。"
+    },
+    "leiter.fraser.mission.peace": {
+      "startlabel": "弗雷泽",
+      "desc_cn": "“我们本可以多多利用战争提供的机遇。但我尊重学会的顾虑。我们的资金也已足够，不过，我还是希望下次学会能够更好地利用我的才能。”",
+      "label_cn": "和平"
+    },
+    "leiter.arun.mission.better.gods": {
+      "startlabel": "阿伦",
+      "desc_cn": "“嗯，这并不完全符合我的预期，但我也从未声称自己是一名先知。这是最好的结果。没有我们的介入，我怀疑我们会看到月份之间错乱交叠。新神将会一如以往地锚入时间，与某个在夜晚浮现、不可记名的司辰一同。我也注意到，制烛人仍然毫无踪迹。我想这也是最好的结果。”",
+      "label_cn": "更佳诸神"
+    },
+    "leiter.connie.resigned.foe.devourers.echidna.persistent": {
+      "startlabel": "康妮",
+      "desc_cn": "“我们不得不放过那些餮猊……你也明白……因为存续理事。总有些事我得妥协，但我不喜欢。”"
+    },
+    "leiter.serena.foe.ys": {
+      "startlabel": "瑟雷娜",
+      "desc_cn": "“伊苏变幻不定，是一致性之敌。这让它成为永恒之敌。但同时，也让它站到了图书管理员的对立面。”",
+      "label_cn": "伊苏"
+    },
+    "leiter.corso.mission.revelation": {
+      "startlabel": "科尔索",
+      "desc_cn": "“你无法想象这有多轻松，每次在店里听到铃铛响起，我都不必担忧是不是防剿局上门。话虽如此，我不得不降低一些珍品的价格……当然，任务才是最重要的。智慧渴求漫游四方，诸如此类。”",
+      "label_cn": "揭露"
+    },
+    "leiter.connie.mission.stone.consumed": {
+      "startlabel": "康妮",
+      "desc_cn": "“这种抢掠神祇遗骨的行为……有些龌龊。但在防剿局，我明白了我们应行必行之事，而非欲行之事。使用石源神的残余……让我们在‘必须’上多了些选择。我厌倦了妥协。但我行必行之事。”",
+      "label_cn": "学会的使命：吞噬石神"
+    },
+    "leiter.azita.mission.peace": {
+      "startlabel": "阿齐塔",
+      "desc_cn": "“和平？为什么不呢？一片森林几十年没着过火……一旦燃烧，就更显壮丽。再说了，我最亲爱的敌人迈哈德正因此生闷气呢。”",
+      "label_cn": "和平"
+    },
+    "leiter.douglas.foe.nowhere": {
+      "startlabel": "道格拉斯",
+      "desc_cn": "“如今，世上有很多可怖之事。很多。但蠕虫是其中最可怖的。我们正一个接一个地把它们拽出来。你听说了吗？它们不再能在人体内繁殖了。世界变了，但并不总是朝着最坏的方向……”",
+      "label_cn": "虚界司辰"
+    },
+    "leiter.yvette": {
+      "startlabel": "伊薇特",
+      "desc_cn": "伊薇特其实并不知道自己在学会到底要做什么。伊薇特担心自己可能只是个棋子。总有一天，伊薇特将令人大吃一惊。"
+    },
+    "leiter.douglas.foe.ys": {
+      "startlabel": "道格拉斯",
+      "desc_cn": "“上周，我们在沃克斯豪尔发现了一名伊苏的潜藏者。她一路游过泰晤士河。我们逮到她时，她正在国家美术馆四处张望。知道她说了什么吗？‘总有一天，伊苏会变成这样。’这句话一直在我的脑海里挥之不去。”",
+      "label_cn": "伊苏"
+    },
+    "leiter.connie.mission.secrecy": {
+      "startlabel": "康妮",
+      "desc_cn": "“局里有其缺陷；根冠是一种暴政；但过去的几年已经向我们展示了当局的存在是多么必要。你无法抵抗大海，但可以修建堤坝……而这正是我们在做的事：建造知识的堤坝。”",
+      "label_cn": "守密"
+    },
+    "leiter.elie.persistent.ally.ys": {
+      "startlabel": "艾丽",
+      "desc_cn": "“我的首要使命是：维持现有事物的存续。我的第二项使命是：维持事物<i>以现貌</i>存续。与伊苏结盟对后者帮助甚微；但对前者却是必要的。”"
+    },
+    "leiter.arun.ally.carapace": {
+      "startlabel": "阿伦",
+      "desc_cn": "“介壳种？闪闪发光的流亡者们，有些还会唱歌。我当然喜欢它们。”",
+      "label_cn": "介壳种"
+    },
+    "leiter.olympe": {
+      "startlabel": "奥兰普",
+      "desc_cn": "“失落甚多，”奥兰普总是这么说，“但没有我们，情况或许会更糟。”不清楚她是否确信这一点。"
+    },
+    "leiter.stanislav": {
+      "startlabel": "斯坦尼斯拉夫",
+      "desc_cn": "“我首先是医者，其次才是教士。”斯坦尼斯拉夫总这么说。他对学会选取的方向并不满意，但只要他感觉自己还在履行首要职责，他就准备继续留在学会。"
+    },
+    "leiter.olympe.mission.revelation": {
+      "startlabel": "奥兰普",
+      "desc_cn": "“我记得威尼斯。《花斑咏叹调》，那些花斑玫瑰。那些日子里，根冠看上去还不容动摇，然而飞蛾撼动了她；我们已经走了这么远！所有那些秘密都被随意揭开，就像送给孩子们的有毒礼物。这是我职业生涯中的头条，而我却没有署名……但我觉得我也没法承受更多责任了。”",
+      "label_cn": "揭露"
+    },
+    "leiter.coquille": {
+      "startlabel": "科基尔",
+      "desc_cn": "科基尔的偏好并未体现在灯塔学会的使命或立场中。她时不时会任性地表达不满。但总体而言，她认为这一切还“足够有趣”。"
+    },
+    "leiter.morgen.mission.stone.remembered": {
+      "startlabel": "摩根",
+      "desc_cn": "“我一直都偏爱石源神，早就盼着能有一天饱餐祂们的残余。不过，我偏爱的人在餐桌上亦会有一席之地。我注意到太阳有时候变得更加赤红。我不禁好奇，与太阳分享血液会是怎样的体验。”",
+      "label_cn": "铭记石神"
+    },
+    "leiter.chaima.mission.corrivality": {
+      "startlabel": "柴玛",
+      "desc_cn": "“我曾经更加仁慈。不再如此了。”",
+      "label_cn": "角争"
+    },
+    "leiter.dagmar": {
+      "startlabel": "妲格玛",
+      "desc_cn": "妲格玛对学会的目标表现得兴致缺缺，但这明显是一种行之有效的避税手段。她确实在她的庄园里筹办了会议，接着就开始要求用捐款来修缮屋顶。"
+    },
+    "leiter.echidna.persistent.ally.ys": {
+      "startlabel": "厄客德娜",
+      "desc_cn": "“我送了一个孩子去伊苏作人质。他们则送来了一个女儿。我把她珍藏在玻璃罩下。我们是最好的朋友。”"
+    },
+    "leiter.arun.mission.revelation": {
+      "startlabel": "阿伦",
+      "desc_cn": "“我以前常说什么来着？‘最终一切都会太迟，但在那之前都并非如此。’当局的忠仆们，失去了根冠的庇护，就只能像失去了蚁后的蚂蚁般到处乱窜，他们仍在试图让梦者和梦境保持沉默……但为时已晚，为时已晚。”",
+      "label_cn": "揭露"
+    },
+    "leiter.aladim.mission.stone.remembered": {
+      "startlabel": "阿迪姆",
+      "desc_cn": "“我为她哀悼，就像我为其他不可记名、升入辉光、落入虚界、被介壳种吞食的司辰哀悼……我不是一名战士，而是一位信使，我将如携带新折绿枝般，将铭记的信息带入拂晓。”",
+      "label_cn": "铭记石神"
+    },
+    "leiter.aladim.mission.peace": {
+      "startlabel": "阿迪姆",
+      "desc_cn": "“我不知道浪游旅人是升入辉光，还是坠入虚界。我为她哀悼。如此多的司辰已不可记名……但我们仍存，我们的庇护所仍在战火中巍然屹立。和平从不持久，但战争终将结束。如今，我是历史之子，而非永恒之嗣。”",
+      "label_cn": "和平"
+    },
+    "leiter.aladim.foe.devourers": {
+      "startlabel": "阿迪姆",
+      "desc_cn": "“随着如此多的司辰不可记名，漫宿居民失去了控制……不过幸运的是，他们中的许多位也已失去踪影。我已经与欧洲及其他地区的当局进行了协调……夜晚已经变得没那么热闹了。”",
+      "label_cn": "吞噬者"
+    },
+    "leiter.serena.foe.chandler": {
+      "startlabel": "瑟雷娜",
+      "desc_cn": "“制烛人已错过了她的约定之时，仍未降临于世。也许这意味着我们得偿所愿。也许她仅是已逝的烈火虚像。又或许她也位列不可记名的司辰了……我还不能确信；我不会放松警惕。”",
+      "label_cn": "制烛人"
+    },
+    "leiter.connie.foe.ys": {
+      "startlabel": "康妮",
+      "desc_cn": "“伊苏的潜伏者们非常……礼貌，你知道吗？我发现自己已经开始放松警惕了。我不断告诉自己这是因为他们冷血无情……我不知道这对不对。”",
+      "label_cn": "伊苏"
+    },
+    "leiter.corso.foe.chandler": {
+      "startlabel": "科尔索",
+      "desc_cn": "“卡昂，是吧？新王战死沙场，制烛人弄丢了一枚国王棋子，而且我们厌恶的那方又遭受重创？还有比这更好的事吗？我们不能一直指望着有这种好运。我会尽我所能让大家都弄清状况。”",
+      "label_cn": "制烛人"
+    },
+    "leiter.dagmar.mission.revelation": {
+      "startlabel": "妲格玛",
+      "desc_cn": "“揭示！真希望我能看看昕旦的脸。划掉这句，我从没这么说过，这是个馊主意，我毫无疑问会被炸成灰烬。尽管如此。看看她的脸！”",
+      "label_cn": "揭露"
+    },
+    "leiter.douglas.foe.carapace": {
+      "startlabel": "道格拉斯",
+      "desc_cn": "“我还是会做噩梦，梦见黑森林……为了治愈莉泽洛特留下的病人，我一直在追踪他们。令人作呕。但总比其他选项要好。”",
+      "label_cn": "介壳种"
+    },
+    "leiter.olympe.ally.reckoners": {
+      "startlabel": "奥兰普",
+      "desc_cn": "“大战之后，清算人就大不相同了。有些更糟了，但有些，因为不得不在公众视野内行动，就变得……噢，不是说更好。我不会自欺欺人。但至少算是更谨慎了。”",
+      "label_cn": "清算人领主"
+    },
+    "leiter.azita.foe.devourers": {
+      "startlabel": "阿齐塔",
+      "desc_cn": "“自从战争开始后，保证夜晚的安全就变得很难。但我和我的人已经为学会、为我们保护的无助之人们尽了最大努力。是的，没有这么多潜匿的丘陵之子，我的行动会更加顺畅……但就像我故乡的俗语所说的，黄金与黑铁熔于同一种火焰。”",
+      "label_cn": "吞噬者"
+    },
+    "leiter.hokobald.mission.better.gods": {
+      "startlabel": "霍科博尔德",
+      "desc_cn": "“我创造了无人能及的事物；我被公认为是铸族中最伟大的一位！黄金与青铜之神是我的孩子，而祂们执掌整片大陆！有些时候我不得不亲自引导——祂们虽略微偏离了我的原始设计，倒也着实精巧。我想在下次会议上提议改改学会的名字，以更恰当地纪念我作出的贡献。”",
+      "label_cn": "更佳诸神"
+    },
+    "leiter.azita.mission.corrivality": {
+      "startlabel": "阿齐塔",
+      "desc_cn": "“我最亲爱的敌人迈哈德正在生闷气。他讨厌我在战争中不选边站。他会释怀的。无论如何，随着上校也被列于不可记名的司辰……我不禁好奇，我们间的协定会如何变化。”",
+      "label_cn": "角争"
+    },
+    "leiter.coquille.foe.nowhere": {
+      "startlabel": "科基尔",
+      "desc_cn": "“我同意加入学会时，可没想过要谈论这么多蠕虫的事。令人生厌。”",
+      "label_cn": "虚界司辰"
+    },
+    "leiter.arthur.mission.peace": {
+      "startlabel": "亚瑟",
+      "desc_cn": "“可以说我的从军岁月已经结束。我以前也这么想过。嗯，或许不完全算是当兵。换句话说，我认为那些直面枪林弹雨的日子已经过去了。不过，我选择了投身于学会的生活，我为此自豪。”",
+      "label_cn": "和平"
+    },
+    "leiter.aladim.mission.stone.consumed": {
+      "startlabel": "阿迪姆",
+      "desc_cn": "“我也曾冷酷无情，只在必要之时缔结盟约。我们从其上与其下的大战中幸存，而逝者众多。浪游旅人已然离去；找到新目标让人如释重负。我不后悔我的决定。”",
+      "label_cn": "学会的使命：吞噬石神"
+    },
+    "leiter.arthur.foe.chandler": {
+      "startlabel": "亚瑟",
+      "desc_cn": "“我又在寻找新王。自卡昂之后，他就无影无踪。我确实相信，随着他的失踪，我们不必再过多担心制烛人了。但制烛人的具名者仍然在外游荡，就如风中火花……我担心我们只是推迟了拂晓。因此，我会继续猎寻。”",
+      "label_cn": "制烛人"
+    },
+    "leiter.connie.resigned.foe.devourers.forbid.echidna.persistent": {
+      "startlabel": "康妮",
+      "desc_cn": "“我想念我在防剿局时拥有的那些资源。但在学会工作……远没有那么拘谨。这让我回忆起了那些旧时光。”"
+    },
+    "leiter.arthur.mission.stone.consumed": {
+      "startlabel": "亚瑟",
+      "desc_cn": "“布雷肯下面有个大玩意儿，能算得上石之具名，蟠之后裔，劣化巨龙……它早已逝去，半被啃食，但所余仍多。我亲眼目睹它被收割，我们能从中获益良多。确实是卓有成效的工作。但我仍能梦见它在月光下的轮廓。”",
+      "label_cn": "学会的使命：吞噬石神"
+    },
+    "leiter.echidna.persistent.foe.nowhere": {
+      "startlabel": "厄客德娜",
+      "desc_cn": "“我不会冒险让我的孩子对抗蠕虫。众所周知，我偶尔会亲自上阵。”"
+    },
+    "leiter.corso.ally.carapace": {
+      "startlabel": "科尔索",
+      "desc_cn": "“当然，介壳种从不读书，至少不会用我们能理解的方式。但现在我们能将它们的东西转录下来，这将大有收获。”",
+      "label_cn": "介壳种"
+    },
+    "leiter.coquille.mission.corrivality": {
+      "startlabel": "科基尔",
+      "desc_cn": "“我与兜颈贵胄同住时，不受战争之害，但很无聊。现在，虽然工作有时充满挑战，但我让我们发财了，我让我们都发财了。”",
+      "label_cn": "角争"
+    },
+    "leiter.connie.foe.devourers.forbid.echidna.persistent": {
+      "startlabel": "康妮",
+      "desc_cn": "“我想念那些我曾拥有的资源。但在学会工作……远没有那么拘谨。这让我回忆起了加入防剿局之前的那段时光。”"
+    },
+    "leiter.fraser.ally.carapace": {
+      "startlabel": "弗雷泽",
+      "desc_cn": "“终于，我可以表露我的内在天性了。我已与归来的介壳种建立了共同的事业：它们在地下挖掘，与我的采矿产业相结合。我们的合作已经让学会发了大财，而我也承认，这并无损于我的个人财产。”",
+      "label_cn": "介壳种"
+    },
+    "leiter.echidna.persistent.mission.corrivality": {
+      "startlabel": "厄客德娜",
+      "desc_cn": "“我承认：我并不算是个好母亲。但在漫长的岁月里，我最牵挂的一直是我的孩子们。如今，我把学会也视作自己的孩子。每当战斗结束，我的孩子都能美餐一顿。”"
+    },
+    "leiter.connie.resigned.foe.nowhere": {
+      "startlabel": "康妮",
+      "desc_cn": "“在纯白展馆里有一张剥下的蠕虫外皮——它的骨头则被防剿局当做战利品保存着。这是我能接触到最接近极巨态的蠕虫。自那之后，我离它更是近了不少。我不能说我喜欢这样，但工作还得做。”"
+    },
+    "leiter.connie.foe.devourers.echidna.persistent": {
+      "startlabel": "康妮",
+      "desc_cn": "“我们不得不放过那些餮猊……你也明白……因为存续理事。总有些事我得妥协，但我不喜欢。”"
+    },
+    "leiter.elie.persistent.mission.peace": {
+      "startlabel": "艾丽",
+      "desc_cn": "“长久以来，我一直尽力维持着世界的运转。我的努力无数次遭背叛破坏。学会还没做过这样的事……至今尚未。我希望如此。”"
+    },
+    "leiter.connie": {
+      "startlabel": "康妮",
+      "desc_cn": "或许有那么几天，康妮会希望自己还留在防剿局。但她已习惯了妥协。她将在灯塔学会工作，直至众人分道扬镳。"
+    },
+    "leiter.echidna.persistent.mission.stone.consumed": {
+      "startlabel": "厄客德娜",
+      "desc_cn": "“我承认：我并不算是个好母亲。但在漫长的岁月里，我最牵挂的一直是我的孩子。如今，学会也算是我的孩子。太久了，都还没尝过石源神的多汁香肉呢。现在，我所有的孩子都在大快朵颐。我很愉快。”"
+    },
+    "leiter.dagmar.ally.carapace": {
+      "startlabel": "妲格玛",
+      "desc_cn": "“去了趟弥阿，去看看花园里的介壳蜂怎么样了。不是蜜蜂，是别的，<i>蛾</i>那种东西，你知道的。进展相当不错。老实说，可能有点太好了。不过总比蠕虫强，对吧？”",
+      "label_cn": "介壳种"
+    },
+    "leiter.chaima.foe.devourers.forbid.echidna.persistent": {
+      "startlabel": "柴玛",
+      "desc_cn": "“总有别的猎物出现。我总能胜任我的任务。”"
+    },
+    "leiter.corso": {
+      "startlabel": "科尔索",
+      "desc_cn": "科尔索找不到任何人认同他那套坦率而言并不稳固的哲学主张。他已经两次赌气拒绝参加会议；大多数时候，他只是随遇而安，并利用学会的关系在战争的废墟中寻找那些罕见的书籍。"
+    },
+    "leiter.agdistis.mission.stone.remembered": {
+      "startlabel": "阿格狄斯提斯",
+      "desc_cn": "“石源诸神掌握着我们遗忘已久的治愈之术——它们仍如同巨蛇根茎上的文字一般，锁在我们细胞缠结的根系中。我已调动学会的资源，以期解开这些秘密。我只希望这是明智之举。”",
+      "label_cn": "铭记石神"
+    },
+    "leiter.agdistis.foe.nowhere": {
+      "startlabel": "阿格狄斯提斯",
+      "desc_cn": "“我拒绝接受万物皆有终结。或许，这会让我困于永恒的骗局；但无疑，这必将驱使我向虚界宣战。我曾轻信于人；我已目睹蠕虫如何在内里蚀骨噬心，于是我设计了根除之法——这非仁慈之举，却是必要之为。”",
+      "label_cn": "虚界司辰"
+    },
+    "leiter.stanislav.foe.carapace": {
+      "startlabel": "斯坦尼斯拉夫",
+      "desc_cn": "“我曾担忧我们无法与介壳种互相理解。我希望我是错的，结果却让我深感沮丧。现在，我必须把蜕变当作一种疾病。在这方面我是越做越好了。”",
+      "label_cn": "介壳种"
+    },
+    "leiter.azita.foe.chandler": {
+      "startlabel": "阿齐塔",
+      "desc_cn": "“新王自在卡昂陨落后，就再无踪影。就假设他真的陨落了。他的保护者狡猾多变……但制烛人的具名者们还在欧洲燃烧，我担心他们会得到部委的偏袒。没关系。如果制烛人现身，我会用我的小刀去修剪他的灯芯。”",
+      "label_cn": "制烛人"
+    },
+    "leiter.agdistis.mission.secrecy": {
+      "startlabel": "阿格狄斯提斯",
+      "desc_cn": "“我们知晓和平终将无望。柏林已亡；欧洲陷落；西方与东方皆被炼成奇异的金与更奇异的钢。然而我们的谨慎使我们几乎毫发无伤。我们会潜藏于巨人践踏之处，如蝉伏于叶下。待一切落幕，我们终将续存。”",
+      "label_cn": "守密"
+    },
+    "leiter.chaima.foe.devourers.echidna.persistent": {
+      "startlabel": "柴玛",
+      "desc_cn": "“总有别的猎物出现。我总能胜任我的任务……但有人要求我放过那些餮猊，所以我手下留情。只是暂时。”"
+    },
+    "leiter.aladim.foe.carapace": {
+      "startlabel": "阿迪姆",
+      "desc_cn": "“我一直认为我们不该信任介壳诸族。事实证明我是对的，但这并不让我感到高兴。蝗虫；蝎子；黄蜂。只要找到它们，我就会将之粉碎。”",
+      "label_cn": "介壳种"
+    },
+    "leiter.dagmar.ally.ys": {
+      "startlabel": "妲格玛",
+      "desc_cn": "“还没去过伊苏。\n\n不过会去的，总有一天，\n\n会有贸易访问之类的吧……”",
+      "label_cn": "伊苏"
+    },
+    "leiter.ehsan": {
+      "startlabel": "埃桑",
+      "desc_cn": "埃桑的理想与学会的理想并没有太多共通之处；但他还记得决议会的时光，那时噤声居屋还是一处避难与疗愈之所。他记得水面上的灯光，和从仆人的房间传出的笑声；他明白那些日子已经一去不复返，但他仍然坚持着自己的信仰。"
+    },
+    "leiter.fraser.ally.ys": {
+      "startlabel": "弗雷泽",
+      "desc_cn": "“伊苏可能是我们面临过的最大威胁。和他们达成联合非常明智。初步迹象表明，与他们的交易会相当有利可图——的确有利可图。这没什么好担心的。我知道如何维护我们的利益并保持必要的隔离措施。”",
+      "label_cn": "伊苏"
+    },
+    "leiter.ehsan.mission.secrecy": {
+      "startlabel": "埃桑",
+      "desc_cn": "“我曾轻信于人，已经太久了。我首先是一名医者，但是医者不止会治伤，还需要手术。我会保持刀刃锋利，为学会和根冠那当被铭记的荫蔽。”",
+      "label_cn": "守密"
+    },
+    "leiter.zachary": {
+      "startlabel": "扎迦利",
+      "desc_cn": "扎迦利在会议上痛苦地沉默着，显然对学会的发展方向感到困扰。“我必须保持寒冷”，他时不时呢喃道。"
+    },
+    "leiter.ehsan.mission.stone.remembered": {
+      "startlabel": "埃桑",
+      "desc_cn": "“或许我变得过于多疑，太吝于使用我的技艺。我已经学着再次展现出慷慨，不仅在学会中，也在世界上。现在，我所医治的不再仅是凡人。”",
+      "label_cn": "铭记石神"
+    },
+    "leiter.arthur.mission.autarchy": {
+      "startlabel": "亚瑟",
+      "desc_cn": "“现在，我绝大多数时间都住在阿尔卑斯山上，以确保避难所的安全。有时，我会怀念群狮迷宫。但我并不怀念沙漠。雪地上的阳光清澈明亮……”",
+      "label_cn": "自治"
+    },
+    "leiter.connie.resigned.foe.ys": {
+      "startlabel": "康妮",
+      "desc_cn": "“伊苏的潜伏者们非常……礼貌，你知道吗？我发现自己已经开始放松警惕了。我不断告诉自己这是因为他们冷血无情……我不知道这对不对。”"
+    },
+    "leiter.echidna.persistent.foe.devourers": {
+      "startlabel": "厄客德娜",
+      "desc_cn": "“我知道他们是怎么看我的，真正的丽姬亚从不在意别人的看法。他们留我在身边恰恰是因为不信任我。他们够聪明。我们都因此而受益。终有一日，一切都将结束，而我的孩子会大快朵颐。在此之前，我都会忠于职守。”"
+    },
+    "leiter.olympe.mission.peace": {
+      "startlabel": "奥兰普",
+      "desc_cn": "“上周我又去了凯尔伊苏姆，去见忘却会的遗老。现在那儿的海可真奇怪，每天都有尸体被冲上岸——那些从未存在、也从未死过的人。或许他们死在了另一重历史？我不清楚。失落甚多，但没有我们，情况会更糟。”",
+      "label_cn": "和平"
+    },
+    "leiter.elie.persistent.foe.nowhere": {
+      "startlabel": "艾丽",
+      "desc_cn": "“我被叫去给一个羊倌的脊椎里取出蠕虫。它已经在那儿待了将近二十八天，但羊倌的症状没有任何恶化的迹象。我还了解到其他类似的情况：蠕虫正在变得衰弱。我不会揣测原因。我还不敢信以为真。”"
+    },
+    "leiter.morgen.mission.corrivality": {
+      "startlabel": "摩根",
+      "desc_cn": "“我们的存续建立在他者的死亡之上，我在吞下第一个幼子时就明白了这点。所有人在微笑时都会露出牙齿，<i>哈</i>？我就在微笑呢。我非常感激能被邀请来维持学会的存续。”",
+      "label_cn": "角争"
+    },
+    "leiter.stanislav.mission.stone.consumed": {
+      "startlabel": "斯坦尼斯拉夫",
+      "desc_cn": "“老成仔猫吞噬了莱特里昂那些未成的不朽者。如果那时我知道这是某种先兆……我可能会做出截然不同的选择。”",
+      "label_cn": "学会的使命：吞噬石神"
+    },
+    "leiter.stanislav.mission.peace": {
+      "startlabel": "斯坦尼斯拉夫",
+      "desc_cn": "“在斯特拉斯堡，我选定了道路。我首先是医者，其次才是教士。这或许意味着，我并非总要拘于所谓的‘真理’……毕竟，存在很多重历史。（我<i>觉得</i>仍然存在很多重历史。）”",
+      "label_cn": "和平"
+    },
+    "leiter.douglas.mission.secrecy": {
+      "startlabel": "道格拉斯",
+      "desc_cn": "“当局恒存。我记得当初我是如何卷入这一切的。那时我还觉得总有一天自己要办退休。但现在，我开始庆幸没这么做。”",
+      "label_cn": "守密"
+    },
+    "leiter.yvette.foe.ys": {
+      "startlabel": "伊薇特",
+      "desc_cn": "“伊薇特·骚赛博士；伊苏的血脉；克雷姆杜的千金；边地与大海之女。我知道，以上无一不真，但我不想把它当真。我从一所相当不错的大学毕业，拿到了医学博士学位。我出版了三本关于荣格的书，但无人问津。我有一只仅会说德语的八哥。我认为这些事情才是真的。毕竟，历史总是有很多重。”",
+      "label_cn": "伊苏"
+    },
+    "leiter.arthur.foe.devourers": {
+      "startlabel": "亚瑟",
+      "desc_cn": "“毫无疑问，我非生当如此，但我被<i>造就</i>来做这份工作。我刚从南特回来——从那所剩无几之地回来。那个地方被无声亡者淹没了。如此之多……不过现在少了很多。这是有意义的工作，而且我精于此道。”",
+      "label_cn": "吞噬者"
+    },
+    "leiter.azita.mission.autarchy": {
+      "startlabel": "阿齐塔",
+      "desc_cn": "“我们本<i>可以</i>从部委和集团处购买这些。他们不是司辰；这不违背我们的创始原则。但我喜欢我们的独立性。我已经建立了我们自己的网络——我们自己的供应商……我已经有很多可着手的工作。”",
+      "label_cn": "自治"
+    },
+    "leiter.ehsan.ally.carapace": {
+      "startlabel": "埃桑",
+      "desc_cn": "“万物无常，在我还是剑齿兽的日子里，我既恐惧又渴望转变，但现在我只会为之喜悦。许多人恐惧或渴望介壳种的蜕变，我帮助他们找到了方向。”",
+      "label_cn": "介壳种"
+    },
+    "leiter.zachary.foe.chandler": {
+      "startlabel": "扎迦利",
+      "desc_cn": "“我想我见过制烛人，在伦敦。然后是在漫宿。接着又是在伦敦……\n她对我一直很和善，但我觉得，终结她的会是我。”",
+      "label_cn": "制烛人"
+    },
+    "leiter.morgen.foe.carapace": {
+      "startlabel": "摩根",
+      "desc_cn": "“当发现厨房进了虫子，正常人不会把它们吃掉，正常人会采取合适的措施。我已在协助学会采取这些措施……”",
+      "label_cn": "介壳种"
+    },
+    "leiter.morgen": {
+      "startlabel": "摩根",
+      "desc_cn": "摩根对学会的工作似乎越来越厌烦。她可能不会在存续理事的职位上待太久。但世界已然天翻地覆：或许，该考虑学会是否真的还需要一位存续理事了。"
+    },
+    "leiter.elie.persistent": {
+      "startlabel": "艾丽",
+      "desc_cn": "黑艾丽的计划已然受挫；学会并不是她期望的那样。艾丽有足够的耐心，甚至足以消耗几世；但她重回凡人的状态给了她一种新的紧迫感，她不会再长久地容忍学会自行其是。"
+    },
+    "leiter.rowena.persistent": {
+      "startlabel": "罗威娜",
+      "desc_cn": "罗威娜极少亲自出席会议。当她出席时，她的发言总是含糊而恳切，有时却也充满智慧。她绝望地舔着嘴唇。她的美丽如月光、如镜子、如骨骸。"
+    },
+    "leiter.arun.ally.reckoners": {
+      "startlabel": "阿伦",
+      "desc_cn": "“随着昕旦也位列不可记名的司辰，我和我的清算人朋友们有了扭转腾圜的余地。我一直在暗中分配岁月。这不会持续太久：一旦历史被重新解构，我们就不得不寻找新的范式。但是此刻，尽情畅饮吧，我亲爱的，尽情畅饮！”",
+      "label_cn": "清算人领主"
+    },
+    "leiter.serena": {
+      "startlabel": "瑟雷娜",
+      "desc_cn": "瑟雷娜感到失望，学会并没有如她所愿：它既不是决议会，也不是圣罗文信托，亦或她任何阴谋诡计的真正后继者。但她尽可能地与之合作。瑟雷娜一向务实。"
+    },
+    "leiter.corso.mission.stone.remembered": {
+      "startlabel": "科尔索",
+      "desc_cn": "“这就像我们打开了一扇通往异域的门，扑面而来的是石头与石楠之风。我觉得连太阳也稍增赤红。知道吗？我喜欢这个。”",
+      "label_cn": "铭记石神"
+    },
+    "leiter.dagmar.mission.peace": {
+      "startlabel": "妲格玛",
+      "desc_cn": "“这年头和平供不应求，不是吗？我会尽我所能地提供一些。做点慈善活动。得把旧东西卖掉，你知道的，我的庄园。反正屋顶都快掉下来了。就当做慈善了。”",
+      "label_cn": "和平"
+    },
+    "leiter.arun": {
+      "startlabel": "阿伦",
+      "desc_cn": "学会的使命和原则并不是阿伦的使命和原则。但要确定阿伦的原则究竟<i>是</i>什么一直是件非常困难的事。他将与学会合作，掌控或释放其秘密，用他惯常的谜语缠缚其运作。也许有一天，他会成为学会最后也是活得最久的成员。"
+    },
+    "leiter.douglas": {
+      "startlabel": "妲格玛",
+      "desc_cn": "道格拉斯对学会的发展方向感到失望。但他仍然疲惫又执著地履行他的职责。"
+    },
+    "leiter.hokobald": {
+      "startlabel": "霍科博尔德",
+      "desc_cn": "霍科博尔德出席了学会的每一次会议，如雷鸣般发泄着他对学会的原则、运作和其他创始人的抱怨……如果没有这么多可以抱怨的事情，恐怕他也不会如此享受这些会议了。"
+    },
+    "leiter.coquille.ally.chandler": {
+      "startlabel": "科基尔",
+      "desc_cn": "“新王！何等的浪费。如果他没在卡昂亲自上阵就好了。黑暗中的火苗已然黯淡，但仍在优美地燃烧着。我从米哈尔那里学到了很多令人愉悦的事，我期待着能学到更多。”",
+      "label_cn": "制烛人"
+    },
+    "leiter.connie.resigned.mission.revelation": {
+      "startlabel": "康妮",
+      "desc_cn": "“防剿局有时做得不错。我想即使是根冠也有它的可取之处。但暴政就是暴政。让光照进来是件好事。”"
+    },
+    "leiter.zachary.mission.revelation": {
+      "startlabel": "扎迦利",
+      "desc_cn": "“斯宾塞已向下行。\n终有一日，我会随他而去。\n彼时，我将得自由。\n在那之前，若我选择，便为灯塔学会选择。”",
+      "label_cn": "揭露"
+    },
+    "leiter.dagmar.mission.autarchy": {
+      "startlabel": "妲格玛",
+      "desc_cn": "“能找到盟友就尽量结交，我总是这么说，对吧？现在有这么多不可记名的司辰也算件好事。不可记名？还是不可挑战？就是找不到那些家伙，我的意思是，现在就算在漫宿里到处乱晃，也碰不见什么能把你眉毛烧掉的东西了。”",
+      "label_cn": "自治"
+    },
+    "leiter.zachary.ally.chandler": {
+      "startlabel": "扎迦利",
+      "desc_cn": "“我想我见过制烛人，在伦敦。然后是在漫宿。接着又是在伦敦……\n她对我一直很和善，因此我觉得，铭记她的会是我。”",
+      "label_cn": "制烛人"
+    },
+    "leiter.stanislav.mission.stone.remembered": {
+      "startlabel": "斯坦尼斯拉夫",
+      "desc_cn": "“每个教士都需要神明。而我之前所有的神都已失落、被取代，或令人失望。且让我们看看这些最古老、最崭新的神会如何行事。”",
+      "label_cn": "铭记石神"
+    },
+    "leiter.hokobald.mission.secrecy": {
+      "startlabel": "霍科博尔德",
+      "desc_cn": "“秘密，就像艺术中的瑰宝，餐桌上的珍馐，不该被浪费在平民身上。而近些年来，在这方面实在是太过宽松了。在学会的帮助下，我一直在努力纠正这个错误。”",
+      "label_cn": "守密"
+    },
+    "leiter.dagmar.mission.secrecy": {
+      "startlabel": "妲格玛",
+      "desc_cn": "“非常感激小图管你没跑到奥里弗拉姆拍卖行那儿去，非常感激。如果小图管能保守秘密，那么老日魇也能。非常地保密。”",
+      "label_cn": "守密"
+    },
+    "leiter.echidna.persistent": {
+      "startlabel": "厄客德娜",
+      "desc_cn": "厄客德娜在每次会议上都保持缄默。要确定她对学会的真实看法并不可能。其他成员已经开始讨论，是否还有必要设立存续理事之职……但他们并没有在厄客德娜面前讨论过这件事。"
+    },
+    "leiter.chaima": {
+      "startlabel": "柴玛",
+      "desc_cn": "如果有得选，柴玛绝不会这么做。但现在，她狩猎学会的敌人，并保持平静。"
+    },
+    "leiter.morgen.foe.devourers": {
+      "startlabel": "摩根",
+      "desc_cn": "“讽刺？我一直很享受讽刺。一位丽姬亚在理事会中，指挥着针对我的非亲表亲与非亲姐妹的行动……我对他们毫无感情。而这个学会确实已经变得足够强大。我宁愿在理事会之内，而不是之外。”",
+      "label_cn": "吞噬者"
+    },
+    "leiter.chaima.foe.chandler": {
+      "startlabel": "柴玛",
+      "desc_cn": "“我认为新王真的在卡昂陨落了。我没有参与其中；他的敌人是我永远不会与之合作的人。但制烛人的其他先兆者……我们一个接一个地扑灭他们的火焰。总有一天他们都会化为灰烬。”",
+      "label_cn": "制烛人"
+    },
+    "leiter.morgen.mission.autarchy": {
+      "startlabel": "摩根",
+      "desc_cn": "“我很庆幸守住了祖斯的栖木之秘。或许栖木的集会仍存，但没人能猜到地点。而我们所拥有的宝藏，一如新世界的果实与种子般珍重。”",
+      "label_cn": "自治"
+    },
+    "leiter.stanislav.ally.carapace": {
+      "startlabel": "斯坦尼斯拉夫",
+      "desc_cn": "“我曾希望我们能与介壳种互相理解。但至今为止，这种希望被证明是过于乐观了。随着它们回归的界域逐渐扩大，紧张的局势也在加剧……但我已竭尽所能。”",
+      "label_cn": "介壳种"
+    },
+    "leiter.olympe.foe.carapace": {
+      "startlabel": "奥兰普",
+      "desc_cn": "“我为介壳种感到遗憾。这几年，欧洲发生了太多事。但从本体论上说，世界的确不够容纳它们和我们……”",
+      "label_cn": "介壳种"
+    },
+    "leiter.serena.mission.autarchy": {
+      "startlabel": "瑟雷娜",
+      "desc_cn": "“我当图书管理员时，一切要简单得多。我真想念那会儿。那时我总烦恼得要命——和防剿局讨价还价，找一个能把正山小种送进村的供应商……还有和科勒斯的那些无聊晚餐……然而现在，我愿意付出一切，只为回到那时。但这就是历史。”",
+      "label_cn": "自治"
+    },
+    "leiter.agdistis.foe.carapace": {
+      "startlabel": "阿格狄斯提斯",
+      "desc_cn": "“我怜悯介壳种，愿它们能在天穹之外、那些星辰尚未过于饥渴的地方存续下去。然而，介壳种的天性是一种疾病。当那些患病者找到我时，我便会治愈他们。”",
+      "label_cn": "介壳种"
+    },
+    "leiter.connie.foe.nowhere": {
+      "startlabel": "康妮",
+      "desc_cn": "“在纯白展馆里有一张剥下的蠕虫外皮——它的骨头则被防剿局当做战利品保存着。这是我能接触到最接近极巨态的蠕虫。自那之后，我离它更是近了不少。我不能说我喜欢这样，但工作还得做。”",
+      "label_cn": "虚界司辰"
+    }
   }
 }

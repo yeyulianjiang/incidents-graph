@@ -358,6 +358,22 @@ p { margin: 0 0 var(--s-3); }
 .nxh-desc   { font-family: var(--font-han); font-size: 17px; line-height: 1.65; color: var(--ink-2); margin: 4px 0 2px; }
 .nxh-result { font-family: var(--font-han); font-size: 17px; font-weight: 600; color: var(--verd-1); }
 
+/* ── Leiter ending ── */
+.leiter-block {
+  margin-top: 6px; padding: 6px 10px;
+  background: var(--numa-soft);
+  border-left: 2px solid var(--numa-2);
+  border-radius: 0 var(--r-2) var(--r-2) 0;
+}
+.leiter-tag {
+  font-family: var(--font-han); font-size: 13px; font-weight: 700;
+  letter-spacing: .04em; color: var(--numa-1);
+}
+.leiter-desc {
+  font-family: var(--font-han); font-size: 16px; line-height: 1.65;
+  color: var(--ink-1); margin: 3px 0 0; font-style: italic;
+}
+
 /* ── Deeper chain ── */
 .deeper { border-left: 2px dashed var(--paper-shadow); margin: 6px 0 0 8px; padding-left: 10px; }
 .deeper-head { font-family: var(--font-han); font-size: 17px; color: var(--ink-3); cursor: pointer; user-select: none; padding: 3px 0; }
@@ -681,6 +697,55 @@ function itemLabel(key) {
 }
 function itemDesc(key) {
   return (data.items && data.items[key] && data.items[key].desc) || "";
+}
+
+// 根据 nxh 的 aspects 推断对应的 leiter 结局
+// inspiring.agenda.X (>0) → leiter.<v>.mission.X
+// inspiring.sympathy.X (>0) → leiter.<v>.ally.X
+// inspiring.fear.X (>0) → leiter.<v>.foe.X
+function nxhLeiters(r) {
+  if (!r || !r.visitor || !data.leiters) return [];
+  const v = r.visitor;
+  const out = [];
+  const seen = new Set();
+  const pickup = (prefix, mid) => {
+    Object.entries(r.aspects || {}).forEach(([k, val]) => {
+      if (val <= 0 || !k.startsWith(prefix)) return;
+      const id = "leiter." + v + "." + mid + "." + k.slice(prefix.length);
+      if (data.leiters[id] && !seen.has(id)) {
+        seen.add(id);
+        out.push({ id, ...data.leiters[id] });
+      }
+    });
+  };
+  pickup("inspiring.agenda.",   "mission");
+  pickup("inspiring.sympathy.", "ally");
+  pickup("inspiring.fear.",     "foe");
+  return out;
+}
+
+function leiterDescHtml(text) {
+  if (!text) return "";
+  let s = text.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  s = s.replace(/&lt;(\/?(i|b|em|strong))&gt;/g,"<$1>");
+  return s;
+}
+
+// 给一组 nxh 渲染 leiter 段（去重，每个 leiter 只显示一次）
+function leitersForBatch(rs) {
+  const seen = new Map();
+  rs.forEach(r => nxhLeiters(r).forEach(l => { if (!seen.has(l.id)) seen.set(l.id, l); }));
+  if (!seen.size) return "";
+  return [...seen.values()].map(l => {
+    const heading = l.label_cn
+      ? `${esc(l.startlabel || "")}的结局：${esc(l.label_cn)}`
+      : `${esc(l.startlabel || "")}的结局`;
+    return `
+    <div class="leiter-block">
+      <span class="leiter-tag" title="${esc(l.id)}">⟡ ${heading}</span>
+      <p class="leiter-desc">${leiterDescHtml(l.desc_cn)}</p>
+    </div>`;
+  }).join("");
 }
 
 async function main() {
@@ -1189,6 +1254,7 @@ function buildNxcStep(c, hideInner = false) {
   const actedHtml = prereqMysteryC
     ? `<span class="nxs-condition">需先以${mLabel(prereqMysteryC)}书帮助</span>` : "";
   let nxhInner;
+  let leitersHtml = "";
   if (hideInner) {
     nxhInner = `<div style="margin-top:4px;font-size:13px;color:var(--ink-3);font-style:italic">（候选物品与结局同上）</div>`;
   } else {
@@ -1210,6 +1276,7 @@ function buildNxcStep(c, hideInner = false) {
         ${resultLabel ? `<div class="nxh-result">→ ${esc(resultLabel)}</div>` : ""}
       </div>`;
     }).join("");
+    leitersHtml = leitersForBatch(matchNxh);
   }
   const label = c.label_cn || c.label_en || "";
   return `
@@ -1223,6 +1290,7 @@ function buildNxcStep(c, hideInner = false) {
       <span class="nxh-who">${esc(vLabel)}</span>
       ${nxhInner}
     </div>
+    ${leitersHtml}
   </div>`;
 }
 
@@ -1272,7 +1340,8 @@ function buildNStateBlock(nid, depth, vid) {
   }).join("");
 
   // nxh 深层行动
-  const nxhHtml = allNrs.filter(r => r.kind === "nxh" && !(nxcCovers && r.visitor === vid)).map(r => {
+  const visibleNxh = allNrs.filter(r => r.kind === "nxh" && !(nxcCovers && r.visitor === vid));
+  const nxhHtml = visibleNxh.map(r => {
     const vLabel = r.visitor ? (byId["v:" + r.visitor]?.label_cn || r.visitor) : "？";
     const itemKey = nxhItemKey(r);
     const nxAction = Object.keys(r.aspects || {}).find(k => k.startsWith("nx."));
@@ -1286,6 +1355,7 @@ function buildNStateBlock(nid, depth, vid) {
       ${resultLabel ? `<div class="nxh-result">→ ${esc(resultLabel)}</div>` : ""}
     </div>`;
   }).join("");
+  const stateLeitersHtml = leitersForBatch(visibleNxh);
 
   // 深层 nxs 分支
   let deeperHtml = "";
@@ -1325,6 +1395,7 @@ function buildNStateBlock(nid, depth, vid) {
     ${desc ? `<div class="nstate-desc">${esc(desc)}</div>` : ""}
     ${nxiHtml}
     ${nxhHtml}
+    ${stateLeitersHtml}
     ${deeperWrap}
   </div>`;
 }
