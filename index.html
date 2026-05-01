@@ -735,14 +735,14 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
       let extraY = deepStates.length;
       deepStates.slice(0, 3).forEach((ds, j) => {
         s += `
-<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 5 + j * 13}" fill="#285442" font-size="10" style="pointer-events:none">↳ ${esc(truncate(ds.label, 14))}</text>`;
+<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 14 + j * 13}" fill="#285442" font-size="10" style="pointer-events:none">↳ ${esc(truncate(ds.label, 14))}</text>`;
       });
 
       if (nxcResultId) {
         const nxcNs = byId["n:" + nxcResultId];
         const nxcLabel2 = truncate(nxcNs ? nxcNs.label_cn : nxcResultId, 14);
         s += `
-<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 5 + extraY * 13}" fill="#6f3aa8" font-size="10" style="pointer-events:none">↳ ${esc(nxcLabel2)}</text>`;
+<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 14 + extraY * 13}" fill="#6f3aa8" font-size="10" style="pointer-events:none">↳ ${esc(nxcLabel2)}</text>`;
       }
     }
   });
