@@ -788,7 +788,7 @@ function salonVisitorLabel(vid) {
 function salonBodyHtml(text) {
   if (!text) return "";
   // 去掉末尾括号段落（[教诲：xxx]、[xxx] 等各种括号形式）
-  let s = text.replace(/\s*[\[［【][^\]）】]*[\]）】][\s.。]*$/g, "").trim();
+  let s = text.replace(/\s*[\[［【][^\]）】］]*[\]）】］][\s.。]*$/g, "").trim();
   // 只放行 <i> <b> <em> <strong>，其余标签转义
   s = s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
   s = s.replace(/&lt;(\/?(i|b|em|strong))&gt;/g,"<$1>");
