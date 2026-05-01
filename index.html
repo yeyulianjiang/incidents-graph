@@ -273,13 +273,17 @@ p { margin: 0 0 var(--s-3); }
   font-family: var(--font-han); font-size: 17px; font-weight: 600; white-space: nowrap;
 }
 .toggle-arrow {
-  color: var(--ink-3); font-size: 17px;
+  color: var(--ink-3); font-size: 14px;
+  font-family: var(--font-han);
+  font-style: normal;
   transition: transform var(--dur-fast) var(--ease); margin-top: 2px;
+  display: inline-block;
+  unicode-bidi: isolate;
 }
 .vcard.open .toggle-arrow { transform: rotate(90deg); }
 .vcard-desc {
   font-family: var(--font-han); font-size: 18px; line-height: 1.65;
-  color: var(--ink-2); padding: 6px 14px 10px; font-style: italic;
+  color: var(--ink-2); padding: 6px 14px 10px;
 }
 .consequence {
   display: none; border-top: 1px solid var(--paper-edge);
@@ -300,7 +304,7 @@ p { margin: 0 0 var(--s-3); }
 .talk-tag.success { background: var(--verd-soft);  color: var(--verd-1);  border-color: #82c896; }
 .talk-tag.failure { background: #fce8e8; color: #8a1a1a; border-color: #e09898; }
 .talk-text {
-  font-family: var(--font-han); font-style: italic; font-size: 20px;
+  font-family: var(--font-han); font-size: 20px;
   line-height: 1.7; color: var(--ink-1); margin: 4px 0 0; padding-left: 4px;
 }
 .talk-hint { font-family: var(--font-han); font-size: 17px; color: var(--ink-3); margin: 2px 0 0; }
@@ -308,7 +312,7 @@ p { margin: 0 0 var(--s-3); }
 /* ── nxi ── */
 .nxi-item { display: flex; align-items: baseline; gap: 5px; padding: 2px 0; font-size: 18px; }
 .nxi-who  { font-weight: bold; color: var(--verd-1); flex-shrink: 0; }
-.nxi-text { color: var(--ink-2); font-style: italic; }
+.nxi-text { color: var(--ink-2); }
 
 /* ── nxs step ── */
 .nxs-block { margin-bottom: 10px; }
@@ -323,7 +327,7 @@ p { margin: 0 0 var(--s-3); }
   padding: 1px 10px; font-family: var(--font-han); font-size: 17px;
 }
 .nxs-arrow { font-family: var(--font-han); font-size: 17px; color: var(--ink-3); padding-left: 8px; margin-bottom: 4px; }
-.nxs-preface { font-size: 18px; color: var(--ink-3); font-style: italic; margin: 2px 0 4px 0; font-family: var(--font-han); }
+.nxs-preface { font-size: 18px; color: var(--ink-3); margin: 2px 0 4px 0; font-family: var(--font-han); }
 
 /* ── n-state block ── */
 .nstate-block {
@@ -335,7 +339,7 @@ p { margin: 0 0 var(--s-3); }
 .nstate-block.done { border-left-color: var(--verd-1); background: var(--verd-soft); }
 .nstate-name { font-family: var(--font-han); font-weight: 700; font-size: 20px; color: var(--ink-1); margin-bottom: 3px; }
 .nstate-done-mark { color: var(--verd-1); }
-.nstate-desc { font-family: var(--font-han); font-size: 18px; line-height: 1.65; color: var(--ink-2); font-style: italic; margin-bottom: 4px; }
+.nstate-desc { font-family: var(--font-han); font-size: 18px; line-height: 1.65; color: var(--ink-2); margin-bottom: 4px; }
 
 /* ── nxh reward ── */
 .nxh-block {
@@ -351,7 +355,7 @@ p { margin: 0 0 var(--s-3); }
   font-family: var(--font-han); font-size: 17px; margin-left: 6px;
   cursor: default;
 }
-.nxh-desc   { font-family: var(--font-han); font-size: 17px; line-height: 1.65; color: var(--ink-2); font-style: italic; margin: 4px 0 2px; }
+.nxh-desc   { font-family: var(--font-han); font-size: 17px; line-height: 1.65; color: var(--ink-2); margin: 4px 0 2px; }
 .nxh-result { font-family: var(--font-han); font-size: 17px; font-weight: 600; color: var(--verd-1); }
 
 /* ── Deeper chain ── */
@@ -841,7 +845,7 @@ function buildVisitorCard(vid, mysteries, iid, incSuffix, reach) {
       <div class="vname">${esc(vLabel)}</div>
       <div style="display:flex;gap:4px;align-items:center;flex-shrink:0">
         ${mHtml}
-        ${hasContent ? `<span class="toggle-arrow">▶</span>` : ""}
+        ${hasContent ? `<span class="toggle-arrow">›</span>` : ""}
       </div>
     </div>
     ${v && v.desc_cn ? `<div class="vcard-desc">${esc(v.desc_cn)}</div>` : ""}
