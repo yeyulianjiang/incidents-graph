@@ -64,12 +64,12 @@
   --font-han:      'Huiwen Mincho', 'Songti SC', 'STSong', 'SimSun', serif;
   --font-mono:     'JetBrains Mono', 'Menlo', 'Consolas', monospace;
 
-  --fs-xs:  17px;
-  --fs-sm:  20px;
-  --fs-base:23px;
-  --fs-md:  26px;
-  --fs-lg:  30px;
-  --fs-xl:  39px;
+  --fs-xs:  11px;
+  --fs-sm:  13px;
+  --fs-base:15px;
+  --fs-md:  17px;
+  --fs-lg:  20px;
+  --fs-xl:  26px;
 
   --lh-base: 1.65;
   --lh-loose:1.85;
@@ -101,7 +101,11 @@ p { margin: 0 0 var(--s-3); }
 ::selection { background: var(--gold-soft); color: var(--ink-1); }
 
 /* ── Layout ── */
-#app { display: grid; grid-template-columns: 360px 1fr; height: 100vh; }
+#app { display: grid; grid-template-columns: 270px 1fr; height: 100vh; }
+
+/* ── Mobile elements hidden on PC ── */
+.m-appbar-wrap { display: none; }
+.m-drawer      { display: none; }
 
 /* ── Sidebar ── */
 #sidebar {
@@ -112,19 +116,19 @@ p { margin: 0 0 var(--s-3); }
 .sidebar-brand {
   display: flex; align-items: center; gap: 10px; margin-bottom: 6px;
 }
-.sidebar-brand img { width: 57px; height: 57px; }
+.sidebar-brand img { width: 38px; height: 38px; }
 .sidebar-title {
-  font-family: var(--font-han); font-weight: 700; font-size: 26px;
+  font-family: var(--font-han); font-weight: 700; font-size: 17px;
   color: var(--ink-1); line-height: 1.15;
 }
 .sidebar-sub {
-  font-family: var(--font-display); font-style: italic; font-size: 17px;
+  font-family: var(--font-display); font-style: italic; font-size: 11px;
   color: var(--ink-3); letter-spacing: .06em; margin-top: 2px;
 }
 .sidebar-divider { width: 100%; height: auto; opacity: .5; margin: 4px 0 10px; }
 .sidebar-section {
   font-family: var(--font-display); font-weight: 600; font-style: italic;
-  font-size: 17px; letter-spacing: .14em; text-transform: uppercase;
+  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
   color: var(--rubric-1);
   margin: 14px 0 6px; padding-bottom: 4px;
   border-bottom: 1px solid var(--paper-edge);
@@ -151,7 +155,7 @@ p { margin: 0 0 var(--s-3); }
   background: rgba(112,56,168,.12); border-left-color: var(--numa-2); color: var(--numa-1);
 }
 .li-en {
-  font-family: var(--font-display); font-style: italic; font-size: 15px;
+  font-family: var(--font-display); font-style: italic; font-size: 10px;
   color: var(--ink-4); letter-spacing: .04em;
 }
 
@@ -168,22 +172,22 @@ p { margin: 0 0 var(--s-3); }
 /* ── Incident header ── */
 .inc-header { margin-bottom: 20px; }
 .inc-title {
-  font-family: var(--font-han); font-weight: 700; font-size: 48px;
+  font-family: var(--font-han); font-weight: 700; font-size: 32px;
   line-height: 1.15; color: var(--ink-1);
   display: flex; align-items: baseline; gap: 10px; margin: 0 0 4px;
 }
 .badge-numa {
-  font-family: var(--font-display); font-style: italic; font-size: 18px;
+  font-family: var(--font-display); font-style: italic; font-size: 12px;
   letter-spacing: .10em; padding: 2px 10px; border-radius: 999px;
   background: var(--numa-soft); color: var(--numa-1); border: 1px solid #c4a4dd;
   position: relative; top: -5px;
 }
 .inc-en {
   font-family: var(--font-display); font-style: italic;
-  font-size: 23px; color: var(--ink-3); letter-spacing: .04em; margin: 0 0 12px;
+  font-size: 15px; color: var(--ink-3); letter-spacing: .04em; margin: 0 0 12px;
 }
 .inc-desc {
-  font-family: var(--font-han); font-size: 23px; line-height: 1.75;
+  font-family: var(--font-han); font-size: 15px; line-height: 1.75;
   color: var(--ink-1);
   border-left: 3px solid var(--gold-2);
   padding: 4px 0 4px 14px; margin: 0 0 12px;
@@ -195,14 +199,14 @@ p { margin: 0 0 var(--s-3); }
 }
 .inc-mystery-label {
   font-family: var(--font-display); font-weight: 600; font-style: italic;
-  font-size: 17px; letter-spacing: .12em; text-transform: uppercase;
+  font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
   color: var(--rubric-1);
 }
 .m-chip {
-  display: inline-flex; align-items: center; padding: 2px 12px;
+  display: inline-flex; align-items: center; padding: 1px 10px;
   border-radius: 999px; background: var(--gold-3);
   color: #5a3500; border: 1px solid #b8902e;
-  font-family: var(--font-han); font-size: 17px; font-weight: 700;
+  font-family: var(--font-han); font-size: 11px; font-weight: 700;
 }
 .inc-rule { display: block; width: 100%; max-width: 460px; opacity: .45; margin: 18px 0 0; }
 
@@ -218,21 +222,21 @@ p { margin: 0 0 var(--s-3); }
 /* ── Phase header ── */
 .phase-pill {
   display: inline-flex; align-items: center; gap: 6px;
-  padding: 5px 18px; border-radius: var(--r-2);
-  font-family: var(--font-han); font-weight: 600; font-size: 20px;
+  padding: 4px 14px; border-radius: var(--r-2);
+  font-family: var(--font-han); font-weight: 600; font-size: 13px;
   letter-spacing: .06em;
 }
 .phase-pill.during { background: var(--verd-soft); color: var(--verd-1); border: 1px solid #82c896; }
 .phase-pill.after  { background: var(--lapis-soft); color: var(--lapis-1); border: 1px dashed #7080cc; }
-.phase-pill.after.small { padding: 3px 12px; font-size: 17px; margin-bottom: 8px; }
+.phase-pill.after.small { padding: 2px 10px; font-size: 11px; margin-bottom: 8px; }
 .phase-glyph { font-family: var(--font-display); font-style: italic; opacity: .75; }
 .phase-block { display: flex; align-items: baseline; gap: 10px; margin: 20px 0 14px; }
-.phase-hint { font-family: var(--font-han); font-size: 20px; color: var(--ink-3); }
+.phase-hint { font-family: var(--font-han); font-size: 13px; color: var(--ink-3); }
 
 /* ── Visitor grid ── */
 .visitor-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 12px; margin-bottom: 24px;
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 14px; margin-bottom: 24px;
 }
 
 /* ── Visitor card ── */
@@ -253,21 +257,21 @@ p { margin: 0 0 var(--s-3); }
 .vcard.has-chain .vcard-head:hover { background: #c8d8eb; }
 .vname {
   flex: 1; font-family: var(--font-han); font-weight: 700;
-  font-size: 23px; color: var(--ink-1); line-height: 1.3;
+  font-size: 15px; color: var(--ink-1); line-height: 1.3;
 }
 .need-chip {
-  display: inline-flex; align-items: center; padding: 2px 11px;
+  display: inline-flex; align-items: center; padding: 1px 9px;
   border-radius: 999px; background: var(--gold-soft);
   color: #6b3f00; border: 1px solid #d8b258;
-  font-family: var(--font-han); font-size: 17px; font-weight: 600; white-space: nowrap;
+  font-family: var(--font-han); font-size: 11px; font-weight: 600; white-space: nowrap;
 }
 .toggle-arrow {
-  color: var(--ink-3); font-size: 17px;
+  color: var(--ink-3); font-size: 11px;
   transition: transform var(--dur-fast) var(--ease); margin-top: 2px;
 }
 .vcard.open .toggle-arrow { transform: rotate(90deg); }
 .vcard-desc {
-  font-family: var(--font-han); font-size: 18px; line-height: 1.65;
+  font-family: var(--font-han); font-size: 12px; line-height: 1.65;
   color: var(--ink-2); padding: 6px 14px 10px; font-style: italic;
 }
 .consequence {
@@ -281,21 +285,21 @@ p { margin: 0 0 var(--s-3); }
 .talk-section { padding-bottom: 8px; border-bottom: 1px solid var(--paper-edge); margin-bottom: 12px; }
 .talk-block { margin-bottom: 8px; }
 .talk-tag {
-  display: inline-block; padding: 2px 11px; border-radius: 999px;
-  font-family: var(--font-han); font-size: 17px; font-weight: 600;
+  display: inline-block; padding: 1px 9px; border-radius: 999px;
+  font-family: var(--font-han); font-size: 11px; font-weight: 600;
   border: 1px solid; line-height: 1.5; margin-bottom: 3px;
 }
 .talk-tag.intro   { background: var(--lapis-soft); color: var(--lapis-1); border-color: #90b0e0; }
 .talk-tag.success { background: var(--verd-soft);  color: var(--verd-1);  border-color: #82c896; }
 .talk-tag.failure { background: #fce8e8; color: #8a1a1a; border-color: #e09898; }
 .talk-text {
-  font-family: var(--font-han); font-style: italic; font-size: 20px;
+  font-family: var(--font-han); font-style: italic; font-size: 13px;
   line-height: 1.7; color: var(--ink-1); margin: 4px 0 0; padding-left: 4px;
 }
-.talk-hint { font-family: var(--font-han); font-size: 17px; color: var(--ink-3); margin: 2px 0 0; }
+.talk-hint { font-family: var(--font-han); font-size: 11px; color: var(--ink-3); margin: 2px 0 0; }
 
 /* ── nxi ── */
-.nxi-item { display: flex; align-items: baseline; gap: 5px; padding: 2px 0; font-size: 18px; }
+.nxi-item { display: flex; align-items: baseline; gap: 5px; padding: 2px 0; font-size: 12px; }
 .nxi-who  { font-weight: bold; color: var(--verd-1); flex-shrink: 0; }
 .nxi-text { color: var(--ink-2); font-style: italic; }
 
@@ -304,15 +308,15 @@ p { margin: 0 0 var(--s-3); }
 .nxs-head  { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; flex-wrap: wrap; }
 .nxs-label {
   background: var(--rubric-1); color: var(--paper-1); border-radius: var(--r-2);
-  padding: 2px 11px; font-family: var(--font-han); font-size: 18px; font-weight: 600;
+  padding: 2px 9px; font-family: var(--font-han); font-size: 12px; font-weight: 600;
 }
 .nxs-condition {
   background: var(--gold-soft); color: #7a5000;
   border: 1px solid #d8b258; border-radius: var(--r-2);
-  padding: 1px 10px; font-family: var(--font-han); font-size: 17px;
+  padding: 1px 8px; font-family: var(--font-han); font-size: 11px;
 }
-.nxs-arrow { font-family: var(--font-han); font-size: 17px; color: var(--ink-3); padding-left: 8px; margin-bottom: 4px; }
-.nxs-preface { font-size: 18px; color: var(--ink-3); font-style: italic; margin: 2px 0 4px 0; font-family: var(--font-han); }
+.nxs-arrow { font-family: var(--font-han); font-size: 11px; color: var(--ink-3); padding-left: 8px; margin-bottom: 4px; }
+.nxs-preface { font-size: 12px; color: var(--ink-3); font-style: italic; margin: 2px 0 4px 0; font-family: var(--font-han); }
 
 /* ── n-state block ── */
 .nstate-block {
@@ -322,9 +326,9 @@ p { margin: 0 0 var(--s-3); }
   margin: 4px 0 8px 12px;
 }
 .nstate-block.done { border-left-color: var(--verd-1); background: var(--verd-soft); }
-.nstate-name { font-family: var(--font-han); font-weight: 700; font-size: 20px; color: var(--ink-1); margin-bottom: 3px; }
+.nstate-name { font-family: var(--font-han); font-weight: 700; font-size: 13px; color: var(--ink-1); margin-bottom: 3px; }
 .nstate-done-mark { color: var(--verd-1); }
-.nstate-desc { font-family: var(--font-han); font-size: 18px; line-height: 1.65; color: var(--ink-2); font-style: italic; margin-bottom: 4px; }
+.nstate-desc { font-family: var(--font-han); font-size: 12px; line-height: 1.65; color: var(--ink-2); font-style: italic; margin-bottom: 4px; }
 
 /* ── nxh reward ── */
 .nxh-block {
@@ -333,19 +337,19 @@ p { margin: 0 0 var(--s-3); }
   padding: 6px 10px; border-radius: 0 var(--r-2) var(--r-2) 0;
   margin-top: 6px;
 }
-.nxh-who   { font-family: var(--font-han); font-weight: 700; font-size: 18px; color: var(--lapis-1); }
+.nxh-who   { font-family: var(--font-han); font-weight: 700; font-size: 12px; color: var(--lapis-1); }
 .nxh-tag   {
-  display: inline-block; padding: 0 9px; border-radius: var(--r-2);
+  display: inline-block; padding: 0 7px; border-radius: var(--r-2);
   background: var(--gold-soft); color: #6b3f00;
-  font-family: var(--font-han); font-size: 17px; margin-left: 6px;
+  font-family: var(--font-han); font-size: 11px; margin-left: 6px;
   cursor: default;
 }
-.nxh-desc   { font-family: var(--font-han); font-size: 17px; line-height: 1.65; color: var(--ink-2); font-style: italic; margin: 4px 0 2px; }
-.nxh-result { font-family: var(--font-han); font-size: 17px; font-weight: 600; color: var(--verd-1); }
+.nxh-desc   { font-family: var(--font-han); font-size: 11px; line-height: 1.65; color: var(--ink-2); font-style: italic; margin: 4px 0 2px; }
+.nxh-result { font-family: var(--font-han); font-size: 11px; font-weight: 600; color: var(--verd-1); }
 
 /* ── Deeper chain ── */
 .deeper { border-left: 2px dashed var(--paper-shadow); margin: 6px 0 0 8px; padding-left: 10px; }
-.deeper-head { font-family: var(--font-han); font-size: 17px; color: var(--ink-3); cursor: pointer; user-select: none; padding: 3px 0; }
+.deeper-head { font-family: var(--font-han); font-size: 11px; color: var(--ink-3); cursor: pointer; user-select: none; padding: 3px 0; }
 .deeper-head:hover { color: var(--ink-1); }
 .deeper-body { display: none; }
 .deeper-body.open { display: block; }
@@ -354,7 +358,7 @@ p { margin: 0 0 var(--s-3); }
 .no-chain-visitors { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
 .mini-visitor {
   border: 1px solid var(--paper-edge); border-radius: var(--r-3);
-  padding: 5px 13px; font-size: 18px; display: flex; gap: 6px;
+  padding: 4px 10px; font-size: 12px; display: flex; gap: 6px;
   align-items: center; background: var(--paper-2);
   font-family: var(--font-han); color: var(--ink-2);
 }
@@ -365,9 +369,122 @@ p { margin: 0 0 var(--s-3); }
   40%      { outline: 3px solid var(--rubric-2); outline-offset: 2px; }
 }
 .vcard.highlighted { animation: vcard-flash .8s var(--ease); }
+
+/* ══════════════════════════════════════════
+   Mobile app bar & drawer (hidden on PC)
+   ══════════════════════════════════════════ */
+.m-appbar-wrap {
+  display: none;
+  position: sticky; top: 0; z-index: 20;
+  align-items: center; justify-content: space-between;
+  padding: 8px 14px;
+  background: var(--paper-1);
+  border-bottom: 1px solid var(--paper-edge);
+}
+.m-appbar-title {
+  font-family: var(--font-han); font-weight: 700; font-size: 16px; color: var(--ink-1);
+}
+.m-iconbtn {
+  background: transparent; border: 0; padding: 6px 10px;
+  font-family: var(--font-han); font-size: 18px; color: var(--ink-1);
+  cursor: pointer; border-radius: var(--r-2);
+}
+.m-iconbtn:hover { background: var(--paper-3); }
+
+.m-drawer {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(42,31,18,.45);
+  z-index: 30;
+  opacity: 0; pointer-events: none;
+  transition: opacity var(--dur-normal) var(--ease);
+}
+.m-drawer.is-open { opacity: 1; pointer-events: auto; }
+.m-drawer__panel {
+  position: absolute; top: 0; left: 0; bottom: 0; width: 78%;
+  max-width: 320px;
+  padding: 20px 16px;
+  background: linear-gradient(180deg, var(--paper-1), var(--paper-2));
+  border-right: 1px solid var(--paper-shadow);
+  transform: translateX(-100%);
+  transition: transform var(--dur-normal) var(--ease);
+  overflow-y: auto;
+}
+.m-drawer.is-open .m-drawer__panel { transform: translateX(0); }
+.m-drawer__brand { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.m-drawer__title { font-family: var(--font-han); font-weight: 700; font-size: 17px; color: var(--ink-1); }
+.m-drawer__sub   { font-family: var(--font-display); font-style: italic; font-size: 11px; color: var(--ink-3); }
+.m-drawer__head {
+  font-family: var(--font-display); font-style: italic; font-weight: 600;
+  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--rubric-1); margin: 14px 0 6px;
+  padding-bottom: 4px; border-bottom: 1px solid var(--paper-edge);
+}
+.m-drawer__head--numa { color: var(--numa-1); }
+.m-drawer__list { list-style: none; padding: 0; margin: 0; }
+.m-drawer__item {
+  padding: 8px 10px; border-radius: var(--r-2); cursor: pointer;
+  font-family: var(--font-han); font-size: 14px; color: var(--ink-1);
+  display: flex; flex-direction: column; gap: 1px;
+  border-left: 2px solid transparent;
+}
+.m-drawer__item:hover { background: rgba(168,123,30,.10); border-left-color: var(--gold-2); }
+.m-drawer__item.active { background: rgba(138,36,21,.12); border-left-color: var(--rubric-1); color: var(--rubric-1); font-weight: 600; }
+.m-drawer__item.numa.active { background: rgba(112,56,168,.12); border-left-color: var(--numa-2); color: var(--numa-1); }
+.m-drawer__en { font-family: var(--font-display); font-style: italic; font-size: 10px; color: var(--ink-4); }
+
+/* ══════════════════════════════════════════
+   Mobile breakpoint
+   ══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  html, body { height: auto; }
+
+  #app { display: block; height: auto; min-height: 100vh; }
+  #sidebar { display: none; }
+
+  .m-appbar-wrap { display: flex; }
+  .m-drawer      { display: block; }
+
+  #main { padding: 16px 14px 56px; }
+
+  .inc-title   { font-size: 24px; }
+  .inc-en      { font-size: 13px; }
+  .inc-desc    { font-size: 13px; }
+
+  .visitor-grid { grid-template-columns: 1fr; gap: 10px; }
+
+  .flow-diagram { display: none; }
+
+  .phase-block { margin: 14px 0 10px; }
+}
 </style>
 </head>
 <body>
+<!-- Mobile app bar -->
+<div class="m-appbar-wrap" id="m-appbar-wrap">
+  <button class="m-iconbtn" onclick="toggleDrawer()" aria-label="菜单">☰</button>
+  <div class="m-appbar-title">司辰之书</div>
+  <div style="width:40px"></div>
+</div>
+
+<!-- Mobile drawer -->
+<div class="m-drawer" id="m-drawer" onclick="closeDrawer()">
+  <aside class="m-drawer__panel" onclick="event.stopPropagation()">
+    <div class="m-drawer__brand">
+      <img src="./assets/icon-book.svg" alt="" width="34" height="34">
+      <div>
+        <div class="m-drawer__title">司辰之书</div>
+        <div class="m-drawer__sub">事件攻略 · Incidents</div>
+      </div>
+    </div>
+    <img src="./assets/divider-flourish.svg" alt="" style="width:100%;opacity:.45;margin:4px 0 10px">
+    <div class="m-drawer__head">常规事件</div>
+    <ul class="m-drawer__list" id="m-list-standard"></ul>
+    <div class="m-drawer__head m-drawer__head--numa">闰时事件 <em>Numa</em></div>
+    <ul class="m-drawer__list" id="m-list-numa"></ul>
+  </aside>
+</div>
+
 <div id="app">
   <aside id="sidebar">
     <div class="sidebar-brand">
@@ -491,8 +608,11 @@ function getVisitorDeepStates(resultId, vid) {
 function populateLists() {
   const std  = document.getElementById("list-standard");
   const numa = document.getElementById("list-numa");
+  const mStd  = document.getElementById("m-list-standard");
+  const mNuma = document.getElementById("m-list-numa");
   data.incidents.forEach(inc => {
     if (inc.id === "incident.consultation") return;
+    // Desktop sidebar
     const li = document.createElement("li");
     li.dataset.id = inc.id;
     if (inc.numatic) li.classList.add("numa");
@@ -500,10 +620,23 @@ function populateLists() {
     li.title = inc.id;
     li.onclick = () => { renderIncident(inc.id); markActive(inc.id); };
     (inc.numatic ? numa : std).appendChild(li);
+    // Mobile drawer
+    const mLi = document.createElement("li");
+    mLi.dataset.id = inc.id;
+    mLi.className = "m-drawer__item" + (inc.numatic ? " numa" : "");
+    mLi.innerHTML = `<span>${esc(inc.label_cn)}</span><span class="m-drawer__en">${esc(inc.label_en || "")}</span>`;
+    mLi.onclick = () => { renderIncident(inc.id); markActive(inc.id); closeDrawer(); };
+    (inc.numatic ? mNuma : mStd).appendChild(mLi);
   });
 }
 function markActive(iid) {
-  document.querySelectorAll(".incident-list li").forEach(li => li.classList.toggle("active", li.dataset.id === iid));
+  document.querySelectorAll(".incident-list li, .m-drawer__item").forEach(li => li.classList.toggle("active", li.dataset.id === iid));
+}
+function toggleDrawer() {
+  document.getElementById("m-drawer").classList.toggle("is-open");
+}
+function closeDrawer() {
+  document.getElementById("m-drawer").classList.remove("is-open");
 }
 
 // ── 流程图 SVG ──
@@ -512,16 +645,16 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
   if (!nInit || !withChain.length) return "";
 
   const N = withChain.length;
-  const ROW_H = 110, PAD_V = 32;
+  const ROW_H = 82, PAD_V = 26;
   const H = N * ROW_H + PAD_V * 2;
-  const W = 720;
+  const W = 640;
 
-  const INC_CX = 80, INC_W = 140, INC_H = 62;
-  const CON_X  = 158;
-  const VIS_X  = 172, VIS_W = 188, VIS_H = 50;
-  const ARR_X1 = VIS_X + VIS_W + 8;
-  const ARR_X2 = ARR_X1 + 88;
-  const RES_X  = ARR_X2 + 4, RES_W = 210, RES_H = 50;
+  const INC_CX = 70, INC_W = 120, INC_H = 48;
+  const CON_X  = 136;
+  const VIS_X  = 150, VIS_W = 162, VIS_H = 40;
+  const ARR_X1 = VIS_X + VIS_W + 6;
+  const ARR_X2 = ARR_X1 + 76;
+  const RES_X  = ARR_X2 + 4, RES_W = 188, RES_H = 40;
 
   const incCY = H / 2;
   const firstY = PAD_V + ROW_H / 2;
@@ -534,9 +667,9 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
   // 事件框 — lapis + gold border
   s += `
 <rect x="${INC_CX - INC_W / 2}" y="${incCY - INC_H / 2}" width="${INC_W}" height="${INC_H}" rx="4" fill="#1d3461" stroke="#c89a3e" stroke-width="1.5"/>
-<text x="${INC_CX}" y="${incCY - 6}" text-anchor="middle" dominant-baseline="middle" fill="#faf6ec" font-size="20" font-weight="700">${esc(truncate(inc.label_cn, 8))}</text>`;
+<text x="${INC_CX}" y="${incCY - 4}" text-anchor="middle" dominant-baseline="middle" fill="#faf6ec" font-size="13" font-weight="700">${esc(truncate(inc.label_cn, 8))}</text>`;
   if (inc.label_en) s += `
-<text x="${INC_CX}" y="${incCY + 16}" text-anchor="middle" fill="#c89a3e" font-size="14" font-style="italic" letter-spacing="0.06em">${esc(truncate(inc.label_en, 20))}</text>`;
+<text x="${INC_CX}" y="${incCY + 13}" text-anchor="middle" fill="#c89a3e" font-size="9" font-style="italic" letter-spacing="0.06em">${esc(truncate(inc.label_en, 20))}</text>`;
 
   // 主干线
   s += `
@@ -582,7 +715,7 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
     s += `
 <line x1="${CON_X}" y1="${rowY}" x2="${VIS_X}" y2="${rowY}" stroke="#b89f74" stroke-width="1.5"/>
 <rect x="${VIS_X}" y="${rowY - VIS_H / 2}" width="${VIS_W}" height="${VIS_H}" rx="3" fill="#faf6ec" stroke="#325ea0" stroke-width="1.5" style="cursor:pointer" onclick="openCard('vc-${vid}')"/>
-<text x="${visCX}" y="${rowY}" text-anchor="middle" dominant-baseline="middle" fill="#1d3461" font-size="17" font-weight="600" style="pointer-events:none">${esc(vLabel)}</text>`;
+<text x="${visCX}" y="${rowY}" text-anchor="middle" dominant-baseline="middle" fill="#1d3461" font-size="11" font-weight="600" style="pointer-events:none">${esc(vLabel)}</text>`;
 
     if (resultId) {
       const arrMidX = (ARR_X1 + ARR_X2) / 2;
@@ -593,23 +726,23 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
       s += `
 <line x1="${ARR_X1}" y1="${rowY}" x2="${ARR_X2}" y2="${rowY}" stroke="#806a4e" stroke-width="1.5" marker-end="url(#flo-arr)"/>`;
       if (action) s += `
-<text x="${arrMidX}" y="${rowY - 6}" text-anchor="middle" fill="#8c2a1e" font-size="15" font-weight="700">${esc(action)}</text>`;
+<text x="${arrMidX}" y="${rowY - 6}" text-anchor="middle" fill="#8c2a1e" font-size="10" font-weight="700">${esc(action)}</text>`;
       s += `
 <rect x="${RES_X}" y="${rowY - RES_H / 2}" width="${RES_W}" height="${RES_H}" rx="3" fill="${resFill}" stroke="${resBorder}" stroke-width="1.5" style="cursor:pointer" onclick="openCard('vc-${vid}')"/>
-<text x="${resCX}" y="${rowY}" text-anchor="middle" dominant-baseline="middle" fill="${resText}" font-size="17" style="pointer-events:none">${esc(resultLabel)}</text>`;
+<text x="${resCX}" y="${rowY}" text-anchor="middle" dominant-baseline="middle" fill="${resText}" font-size="11" style="pointer-events:none">${esc(resultLabel)}</text>`;
 
       const deepStates = getVisitorDeepStates(resultId, vid);
       let extraY = deepStates.length;
       deepStates.slice(0, 3).forEach((ds, j) => {
         s += `
-<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 7 + j * 17}" fill="#285442" font-size="15" style="pointer-events:none">↳ ${esc(truncate(ds.label, 14))}</text>`;
+<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 5 + j * 13}" fill="#285442" font-size="10" style="pointer-events:none">↳ ${esc(truncate(ds.label, 14))}</text>`;
       });
 
       if (nxcResultId) {
         const nxcNs = byId["n:" + nxcResultId];
         const nxcLabel2 = truncate(nxcNs ? nxcNs.label_cn : nxcResultId, 14);
         s += `
-<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 7 + extraY * 17}" fill="#6f3aa8" font-size="15" style="pointer-events:none">↳ ${esc(nxcLabel2)}</text>`;
+<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 5 + extraY * 13}" fill="#6f3aa8" font-size="10" style="pointer-events:none">↳ ${esc(nxcLabel2)}</text>`;
       }
     }
   });
