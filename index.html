@@ -64,12 +64,12 @@
   --font-han:      'Huiwen Mincho', 'Songti SC', 'STSong', 'SimSun', serif;
   --font-mono:     'JetBrains Mono', 'Menlo', 'Consolas', monospace;
 
-  --fs-xs:  11px;
-  --fs-sm:  13px;
-  --fs-base:15px;
-  --fs-md:  17px;
-  --fs-lg:  20px;
-  --fs-xl:  26px;
+  --fs-xs:  17px;
+  --fs-sm:  20px;
+  --fs-base:23px;
+  --fs-md:  26px;
+  --fs-lg:  30px;
+  --fs-xl:  39px;
 
   --lh-base: 1.65;
   --lh-loose:1.85;
@@ -101,7 +101,7 @@ p { margin: 0 0 var(--s-3); }
 ::selection { background: var(--gold-soft); color: var(--ink-1); }
 
 /* ── Layout ── */
-#app { display: grid; grid-template-columns: 270px 1fr; height: 100vh; }
+#app { display: grid; grid-template-columns: 360px 1fr; height: 100vh; }
 
 /* ── Sidebar ── */
 #sidebar {
@@ -112,19 +112,19 @@ p { margin: 0 0 var(--s-3); }
 .sidebar-brand {
   display: flex; align-items: center; gap: 10px; margin-bottom: 6px;
 }
-.sidebar-brand img { width: 38px; height: 38px; }
+.sidebar-brand img { width: 57px; height: 57px; }
 .sidebar-title {
-  font-family: var(--font-han); font-weight: 700; font-size: 17px;
+  font-family: var(--font-han); font-weight: 700; font-size: 26px;
   color: var(--ink-1); line-height: 1.15;
 }
 .sidebar-sub {
-  font-family: var(--font-display); font-style: italic; font-size: 11px;
+  font-family: var(--font-display); font-style: italic; font-size: 17px;
   color: var(--ink-3); letter-spacing: .06em; margin-top: 2px;
 }
 .sidebar-divider { width: 100%; height: auto; opacity: .5; margin: 4px 0 10px; }
 .sidebar-section {
   font-family: var(--font-display); font-weight: 600; font-style: italic;
-  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  font-size: 17px; letter-spacing: .14em; text-transform: uppercase;
   color: var(--rubric-1);
   margin: 14px 0 6px; padding-bottom: 4px;
   border-bottom: 1px solid var(--paper-edge);
@@ -151,7 +151,7 @@ p { margin: 0 0 var(--s-3); }
   background: rgba(112,56,168,.12); border-left-color: var(--numa-2); color: var(--numa-1);
 }
 .li-en {
-  font-family: var(--font-display); font-style: italic; font-size: 10px;
+  font-family: var(--font-display); font-style: italic; font-size: 15px;
   color: var(--ink-4); letter-spacing: .04em;
 }
 
@@ -168,22 +168,22 @@ p { margin: 0 0 var(--s-3); }
 /* ── Incident header ── */
 .inc-header { margin-bottom: 20px; }
 .inc-title {
-  font-family: var(--font-han); font-weight: 700; font-size: 32px;
+  font-family: var(--font-han); font-weight: 700; font-size: 48px;
   line-height: 1.15; color: var(--ink-1);
   display: flex; align-items: baseline; gap: 10px; margin: 0 0 4px;
 }
 .badge-numa {
-  font-family: var(--font-display); font-style: italic; font-size: 12px;
+  font-family: var(--font-display); font-style: italic; font-size: 18px;
   letter-spacing: .10em; padding: 2px 10px; border-radius: 999px;
   background: var(--numa-soft); color: var(--numa-1); border: 1px solid #c4a4dd;
   position: relative; top: -5px;
 }
 .inc-en {
   font-family: var(--font-display); font-style: italic;
-  font-size: 15px; color: var(--ink-3); letter-spacing: .04em; margin: 0 0 12px;
+  font-size: 23px; color: var(--ink-3); letter-spacing: .04em; margin: 0 0 12px;
 }
 .inc-desc {
-  font-family: var(--font-han); font-size: 15px; line-height: 1.75;
+  font-family: var(--font-han); font-size: 23px; line-height: 1.75;
   color: var(--ink-1);
   border-left: 3px solid var(--gold-2);
   padding: 4px 0 4px 14px; margin: 0 0 12px;
@@ -195,14 +195,14 @@ p { margin: 0 0 var(--s-3); }
 }
 .inc-mystery-label {
   font-family: var(--font-display); font-weight: 600; font-style: italic;
-  font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  font-size: 17px; letter-spacing: .12em; text-transform: uppercase;
   color: var(--rubric-1);
 }
 .m-chip {
-  display: inline-flex; align-items: center; padding: 1px 10px;
+  display: inline-flex; align-items: center; padding: 2px 12px;
   border-radius: 999px; background: var(--gold-3);
   color: #5a3500; border: 1px solid #b8902e;
-  font-family: var(--font-han); font-size: 11px; font-weight: 700;
+  font-family: var(--font-han); font-size: 17px; font-weight: 700;
 }
 .inc-rule { display: block; width: 100%; max-width: 460px; opacity: .45; margin: 18px 0 0; }
 
@@ -218,16 +218,16 @@ p { margin: 0 0 var(--s-3); }
 /* ── Phase header ── */
 .phase-pill {
   display: inline-flex; align-items: center; gap: 6px;
-  padding: 4px 14px; border-radius: var(--r-2);
-  font-family: var(--font-han); font-weight: 600; font-size: 13px;
+  padding: 5px 18px; border-radius: var(--r-2);
+  font-family: var(--font-han); font-weight: 600; font-size: 20px;
   letter-spacing: .06em;
 }
 .phase-pill.during { background: var(--verd-soft); color: var(--verd-1); border: 1px solid #82c896; }
 .phase-pill.after  { background: var(--lapis-soft); color: var(--lapis-1); border: 1px dashed #7080cc; }
-.phase-pill.after.small { padding: 2px 10px; font-size: 11px; margin-bottom: 8px; }
+.phase-pill.after.small { padding: 3px 12px; font-size: 17px; margin-bottom: 8px; }
 .phase-glyph { font-family: var(--font-display); font-style: italic; opacity: .75; }
 .phase-block { display: flex; align-items: baseline; gap: 10px; margin: 20px 0 14px; }
-.phase-hint { font-family: var(--font-han); font-size: 13px; color: var(--ink-3); }
+.phase-hint { font-family: var(--font-han); font-size: 20px; color: var(--ink-3); }
 
 /* ── Visitor grid ── */
 .visitor-grid {
@@ -253,21 +253,21 @@ p { margin: 0 0 var(--s-3); }
 .vcard.has-chain .vcard-head:hover { background: #c8d8eb; }
 .vname {
   flex: 1; font-family: var(--font-han); font-weight: 700;
-  font-size: 15px; color: var(--ink-1); line-height: 1.3;
+  font-size: 23px; color: var(--ink-1); line-height: 1.3;
 }
 .need-chip {
-  display: inline-flex; align-items: center; padding: 1px 9px;
+  display: inline-flex; align-items: center; padding: 2px 11px;
   border-radius: 999px; background: var(--gold-soft);
   color: #6b3f00; border: 1px solid #d8b258;
-  font-family: var(--font-han); font-size: 11px; font-weight: 600; white-space: nowrap;
+  font-family: var(--font-han); font-size: 17px; font-weight: 600; white-space: nowrap;
 }
 .toggle-arrow {
-  color: var(--ink-3); font-size: 11px;
+  color: var(--ink-3); font-size: 17px;
   transition: transform var(--dur-fast) var(--ease); margin-top: 2px;
 }
 .vcard.open .toggle-arrow { transform: rotate(90deg); }
 .vcard-desc {
-  font-family: var(--font-han); font-size: 12px; line-height: 1.65;
+  font-family: var(--font-han); font-size: 18px; line-height: 1.65;
   color: var(--ink-2); padding: 6px 14px 10px; font-style: italic;
 }
 .consequence {
@@ -281,21 +281,21 @@ p { margin: 0 0 var(--s-3); }
 .talk-section { padding-bottom: 8px; border-bottom: 1px solid var(--paper-edge); margin-bottom: 12px; }
 .talk-block { margin-bottom: 8px; }
 .talk-tag {
-  display: inline-block; padding: 1px 9px; border-radius: 999px;
-  font-family: var(--font-han); font-size: 11px; font-weight: 600;
+  display: inline-block; padding: 2px 11px; border-radius: 999px;
+  font-family: var(--font-han); font-size: 17px; font-weight: 600;
   border: 1px solid; line-height: 1.5; margin-bottom: 3px;
 }
 .talk-tag.intro   { background: var(--lapis-soft); color: var(--lapis-1); border-color: #90b0e0; }
 .talk-tag.success { background: var(--verd-soft);  color: var(--verd-1);  border-color: #82c896; }
 .talk-tag.failure { background: #fce8e8; color: #8a1a1a; border-color: #e09898; }
 .talk-text {
-  font-family: var(--font-han); font-style: italic; font-size: 13px;
+  font-family: var(--font-han); font-style: italic; font-size: 20px;
   line-height: 1.7; color: var(--ink-1); margin: 4px 0 0; padding-left: 4px;
 }
-.talk-hint { font-family: var(--font-han); font-size: 11px; color: var(--ink-3); margin: 2px 0 0; }
+.talk-hint { font-family: var(--font-han); font-size: 17px; color: var(--ink-3); margin: 2px 0 0; }
 
 /* ── nxi ── */
-.nxi-item { display: flex; align-items: baseline; gap: 5px; padding: 2px 0; font-size: 12px; }
+.nxi-item { display: flex; align-items: baseline; gap: 5px; padding: 2px 0; font-size: 18px; }
 .nxi-who  { font-weight: bold; color: var(--verd-1); flex-shrink: 0; }
 .nxi-text { color: var(--ink-2); font-style: italic; }
 
@@ -304,15 +304,15 @@ p { margin: 0 0 var(--s-3); }
 .nxs-head  { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; flex-wrap: wrap; }
 .nxs-label {
   background: var(--rubric-1); color: var(--paper-1); border-radius: var(--r-2);
-  padding: 2px 9px; font-family: var(--font-han); font-size: 12px; font-weight: 600;
+  padding: 2px 11px; font-family: var(--font-han); font-size: 18px; font-weight: 600;
 }
 .nxs-condition {
   background: var(--gold-soft); color: #7a5000;
   border: 1px solid #d8b258; border-radius: var(--r-2);
-  padding: 1px 8px; font-family: var(--font-han); font-size: 11px;
+  padding: 1px 10px; font-family: var(--font-han); font-size: 17px;
 }
-.nxs-arrow { font-family: var(--font-han); font-size: 11px; color: var(--ink-3); padding-left: 8px; margin-bottom: 4px; }
-.nxs-preface { font-size: 12px; color: var(--ink-3); font-style: italic; margin: 2px 0 4px 0; font-family: var(--font-han); }
+.nxs-arrow { font-family: var(--font-han); font-size: 17px; color: var(--ink-3); padding-left: 8px; margin-bottom: 4px; }
+.nxs-preface { font-size: 18px; color: var(--ink-3); font-style: italic; margin: 2px 0 4px 0; font-family: var(--font-han); }
 
 /* ── n-state block ── */
 .nstate-block {
@@ -322,9 +322,9 @@ p { margin: 0 0 var(--s-3); }
   margin: 4px 0 8px 12px;
 }
 .nstate-block.done { border-left-color: var(--verd-1); background: var(--verd-soft); }
-.nstate-name { font-family: var(--font-han); font-weight: 700; font-size: 13px; color: var(--ink-1); margin-bottom: 3px; }
+.nstate-name { font-family: var(--font-han); font-weight: 700; font-size: 20px; color: var(--ink-1); margin-bottom: 3px; }
 .nstate-done-mark { color: var(--verd-1); }
-.nstate-desc { font-family: var(--font-han); font-size: 12px; line-height: 1.65; color: var(--ink-2); font-style: italic; margin-bottom: 4px; }
+.nstate-desc { font-family: var(--font-han); font-size: 18px; line-height: 1.65; color: var(--ink-2); font-style: italic; margin-bottom: 4px; }
 
 /* ── nxh reward ── */
 .nxh-block {
@@ -333,19 +333,19 @@ p { margin: 0 0 var(--s-3); }
   padding: 6px 10px; border-radius: 0 var(--r-2) var(--r-2) 0;
   margin-top: 6px;
 }
-.nxh-who   { font-family: var(--font-han); font-weight: 700; font-size: 12px; color: var(--lapis-1); }
+.nxh-who   { font-family: var(--font-han); font-weight: 700; font-size: 18px; color: var(--lapis-1); }
 .nxh-tag   {
-  display: inline-block; padding: 0 7px; border-radius: var(--r-2);
+  display: inline-block; padding: 0 9px; border-radius: var(--r-2);
   background: var(--gold-soft); color: #6b3f00;
-  font-family: var(--font-han); font-size: 11px; margin-left: 6px;
+  font-family: var(--font-han); font-size: 17px; margin-left: 6px;
   cursor: default;
 }
-.nxh-desc   { font-family: var(--font-han); font-size: 11px; line-height: 1.65; color: var(--ink-2); font-style: italic; margin: 4px 0 2px; }
-.nxh-result { font-family: var(--font-han); font-size: 11px; font-weight: 600; color: var(--verd-1); }
+.nxh-desc   { font-family: var(--font-han); font-size: 17px; line-height: 1.65; color: var(--ink-2); font-style: italic; margin: 4px 0 2px; }
+.nxh-result { font-family: var(--font-han); font-size: 17px; font-weight: 600; color: var(--verd-1); }
 
 /* ── Deeper chain ── */
 .deeper { border-left: 2px dashed var(--paper-shadow); margin: 6px 0 0 8px; padding-left: 10px; }
-.deeper-head { font-family: var(--font-han); font-size: 11px; color: var(--ink-3); cursor: pointer; user-select: none; padding: 3px 0; }
+.deeper-head { font-family: var(--font-han); font-size: 17px; color: var(--ink-3); cursor: pointer; user-select: none; padding: 3px 0; }
 .deeper-head:hover { color: var(--ink-1); }
 .deeper-body { display: none; }
 .deeper-body.open { display: block; }
@@ -354,7 +354,7 @@ p { margin: 0 0 var(--s-3); }
 .no-chain-visitors { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
 .mini-visitor {
   border: 1px solid var(--paper-edge); border-radius: var(--r-3);
-  padding: 4px 10px; font-size: 12px; display: flex; gap: 6px;
+  padding: 5px 13px; font-size: 18px; display: flex; gap: 6px;
   align-items: center; background: var(--paper-2);
   font-family: var(--font-han); color: var(--ink-2);
 }
@@ -512,16 +512,16 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
   if (!nInit || !withChain.length) return "";
 
   const N = withChain.length;
-  const ROW_H = 82, PAD_V = 26;
+  const ROW_H = 110, PAD_V = 32;
   const H = N * ROW_H + PAD_V * 2;
-  const W = 640;
+  const W = 720;
 
-  const INC_CX = 70, INC_W = 120, INC_H = 48;
-  const CON_X  = 136;
-  const VIS_X  = 150, VIS_W = 162, VIS_H = 40;
-  const ARR_X1 = VIS_X + VIS_W + 6;
-  const ARR_X2 = ARR_X1 + 76;
-  const RES_X  = ARR_X2 + 4, RES_W = 188, RES_H = 40;
+  const INC_CX = 80, INC_W = 140, INC_H = 62;
+  const CON_X  = 158;
+  const VIS_X  = 172, VIS_W = 188, VIS_H = 50;
+  const ARR_X1 = VIS_X + VIS_W + 8;
+  const ARR_X2 = ARR_X1 + 88;
+  const RES_X  = ARR_X2 + 4, RES_W = 210, RES_H = 50;
 
   const incCY = H / 2;
   const firstY = PAD_V + ROW_H / 2;
@@ -534,9 +534,9 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
   // 事件框 — lapis + gold border
   s += `
 <rect x="${INC_CX - INC_W / 2}" y="${incCY - INC_H / 2}" width="${INC_W}" height="${INC_H}" rx="4" fill="#1d3461" stroke="#c89a3e" stroke-width="1.5"/>
-<text x="${INC_CX}" y="${incCY - 4}" text-anchor="middle" dominant-baseline="middle" fill="#faf6ec" font-size="13" font-weight="700">${esc(truncate(inc.label_cn, 8))}</text>`;
+<text x="${INC_CX}" y="${incCY - 6}" text-anchor="middle" dominant-baseline="middle" fill="#faf6ec" font-size="20" font-weight="700">${esc(truncate(inc.label_cn, 8))}</text>`;
   if (inc.label_en) s += `
-<text x="${INC_CX}" y="${incCY + 13}" text-anchor="middle" fill="#c89a3e" font-size="9" font-style="italic" letter-spacing="0.06em">${esc(truncate(inc.label_en, 20))}</text>`;
+<text x="${INC_CX}" y="${incCY + 16}" text-anchor="middle" fill="#c89a3e" font-size="14" font-style="italic" letter-spacing="0.06em">${esc(truncate(inc.label_en, 20))}</text>`;
 
   // 主干线
   s += `
@@ -582,7 +582,7 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
     s += `
 <line x1="${CON_X}" y1="${rowY}" x2="${VIS_X}" y2="${rowY}" stroke="#b89f74" stroke-width="1.5"/>
 <rect x="${VIS_X}" y="${rowY - VIS_H / 2}" width="${VIS_W}" height="${VIS_H}" rx="3" fill="#faf6ec" stroke="#325ea0" stroke-width="1.5" style="cursor:pointer" onclick="openCard('vc-${vid}')"/>
-<text x="${visCX}" y="${rowY}" text-anchor="middle" dominant-baseline="middle" fill="#1d3461" font-size="11" font-weight="600" style="pointer-events:none">${esc(vLabel)}</text>`;
+<text x="${visCX}" y="${rowY}" text-anchor="middle" dominant-baseline="middle" fill="#1d3461" font-size="17" font-weight="600" style="pointer-events:none">${esc(vLabel)}</text>`;
 
     if (resultId) {
       const arrMidX = (ARR_X1 + ARR_X2) / 2;
@@ -593,23 +593,23 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
       s += `
 <line x1="${ARR_X1}" y1="${rowY}" x2="${ARR_X2}" y2="${rowY}" stroke="#806a4e" stroke-width="1.5" marker-end="url(#flo-arr)"/>`;
       if (action) s += `
-<text x="${arrMidX}" y="${rowY - 6}" text-anchor="middle" fill="#8c2a1e" font-size="10" font-weight="700">${esc(action)}</text>`;
+<text x="${arrMidX}" y="${rowY - 6}" text-anchor="middle" fill="#8c2a1e" font-size="15" font-weight="700">${esc(action)}</text>`;
       s += `
 <rect x="${RES_X}" y="${rowY - RES_H / 2}" width="${RES_W}" height="${RES_H}" rx="3" fill="${resFill}" stroke="${resBorder}" stroke-width="1.5" style="cursor:pointer" onclick="openCard('vc-${vid}')"/>
-<text x="${resCX}" y="${rowY}" text-anchor="middle" dominant-baseline="middle" fill="${resText}" font-size="11" style="pointer-events:none">${esc(resultLabel)}</text>`;
+<text x="${resCX}" y="${rowY}" text-anchor="middle" dominant-baseline="middle" fill="${resText}" font-size="17" style="pointer-events:none">${esc(resultLabel)}</text>`;
 
       const deepStates = getVisitorDeepStates(resultId, vid);
       let extraY = deepStates.length;
       deepStates.slice(0, 3).forEach((ds, j) => {
         s += `
-<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 5 + j * 13}" fill="#285442" font-size="10" style="pointer-events:none">↳ ${esc(truncate(ds.label, 14))}</text>`;
+<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 7 + j * 17}" fill="#285442" font-size="15" style="pointer-events:none">↳ ${esc(truncate(ds.label, 14))}</text>`;
       });
 
       if (nxcResultId) {
         const nxcNs = byId["n:" + nxcResultId];
         const nxcLabel2 = truncate(nxcNs ? nxcNs.label_cn : nxcResultId, 14);
         s += `
-<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 5 + extraY * 13}" fill="#6f3aa8" font-size="10" style="pointer-events:none">↳ ${esc(nxcLabel2)}</text>`;
+<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 7 + extraY * 17}" fill="#6f3aa8" font-size="15" style="pointer-events:none">↳ ${esc(nxcLabel2)}</text>`;
       }
     }
   });
