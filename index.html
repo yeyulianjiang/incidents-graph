@@ -561,6 +561,11 @@ function nxhItemKey(r) {
   let id = r.id;
   if (r.n_state) id = id.replace("nxh." + r.n_state + ".", "");
   if (r.visitor) id = id.replace(r.visitor + ".", "");
+  // 若剩余字符串仍含 acted.* 等杂项前缀，提取末尾的 t.* 或 r.* 段
+  if (!id.startsWith("t.") && !id.startsWith("r.")) {
+    const m = id.match(/(?:^|\.)((t|r)\..+)$/);
+    if (m) id = m[1];
+  }
   return id;
 }
 function itemLabel(key) {
