@@ -771,8 +771,17 @@ async function main() {
     (data.nxs_by_state_action[k] = data.nxs_by_state_action[k] || []).push(r);
   });
   data.nxc_by_state = {};
+  data.nxc_by_state_visitor = {};
   (data.nxc || []).forEach(r => {
     if (r.n_state) (data.nxc_by_state[r.n_state] = data.nxc_by_state[r.n_state] || []).push(r);
+    if (r.n_state && r.visitor) data.nxc_by_state_visitor[r.n_state + "|" + r.visitor] = true;
+  });
+  // 预建 transition (from|via) → to 索引，渲染热路径上替代 .find 线性扫描
+  data.n_trans_by_key = {};
+  data.n_transitions.forEach(t => { data.n_trans_by_key[t.from + "|" + t.via] = t; });
+  // 给每条 nxh 预算 nx.* aspect key，避免渲染时反复 Object.keys/find
+  data.nrs.forEach(r => {
+    if (r.kind === "nxh") r._nxAction = Object.keys(r.aspects || {}).find(k => k.startsWith("nx."));
   });
 
   populateLists();
@@ -784,8 +793,8 @@ function getVisitorDeepStates(resultId, vid) {
   const seen = new Set();
   const out = [];
   (data.nrs_by_state[resultId] || []).filter(r => r.kind === "nxh" && (!r.visitor || r.visitor === vid)).forEach(r => {
-    const nxAction = Object.keys(r.aspects || {}).find(k => k.startsWith("nx."));
-    const tr = nxAction ? data.n_transitions.find(t => t.from === resultId && t.via === nxAction) : null;
+    const nxAction = r._nxAction;
+    const tr = nxAction ? data.n_trans_by_key[resultId + "|" + nxAction] : null;
     if (tr && !seen.has(tr.to)) {
       seen.add(tr.to);
       const ns = byId["n:" + tr.to];
@@ -999,7 +1008,7 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
     // nxs 路径
     const nxs = (data.nxs || []).find(r => r.visitor === vid && r.n_state === nInit)
                 || (data.nxs || []).find(r => !r.visitor && r.n_state === nInit);
-    const nxsTr = nxs ? data.n_transitions.find(t => t.from === nxs.n_state && t.via === nxs.nx_action) : null;
+    const nxsTr = nxs ? data.n_trans_by_key[nxs.n_state + "|" + nxs.nx_action] : null;
     let resultId = nxsTr ? nxsTr.to : null;
     let action   = nxs ? nxLabel(nxs.nx_action) : "";
 
@@ -1009,8 +1018,8 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
     if (myNxc) {
       const myNxh = (data.nrs_by_state[nInit]||[]).find(r => r.kind === "nxh" && r.visitor === vid);
       if (myNxh) {
-        const nxhAction = Object.keys(myNxh.aspects||{}).find(k => k.startsWith("nx."));
-        const nxhTr = nxhAction ? data.n_transitions.find(t => t.from === nInit && t.via === nxhAction) : null;
+        const nxhAction = myNxh._nxAction;
+        const nxhTr = nxhAction ? data.n_trans_by_key[nInit + "|" + nxhAction] : null;
         if (nxhTr) nxcResultId = nxhTr.to;
       }
       if (!resultId && nxcResultId) {
@@ -1028,8 +1037,8 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
         const c = (data.nxc||[]).find(c => c.visitor === vid && c.n_state === ns);
         const h = (data.nrs_by_state[ns]||[]).find(r => r.kind === "nxh" && r.visitor === vid);
         if (c && h) {
-          const ha = Object.keys(h.aspects||{}).find(k => k.startsWith("nx."));
-          const tr = ha ? data.n_transitions.find(t => t.from === ns && t.via === ha) : null;
+          const ha = h._nxAction;
+          const tr = ha ? data.n_trans_by_key[ns + "|" + ha] : null;
           if (tr) {
             resultId = tr.to;
             action = truncate(c.label_cn || c.label_en || nxLabel(ha), 6);
@@ -1038,8 +1047,8 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
           }
         }
         if (h) {
-          const ha = Object.keys(h.aspects||{}).find(k => k.startsWith("nx."));
-          const tr = ha ? data.n_transitions.find(t => t.from === ns && t.via === ha) : null;
+          const ha = h._nxAction;
+          const tr = ha ? data.n_trans_by_key[ns + "|" + ha] : null;
           if (tr) {
             resultId = tr.to;
             action = nxLabel(ha);
@@ -1049,7 +1058,7 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
         }
         const sx = (data.nxs||[]).find(r => r.visitor === vid && r.n_state === ns);
         if (sx) {
-          const tr = data.n_transitions.find(t => t.from === sx.n_state && t.via === sx.nx_action);
+          const tr = data.n_trans_by_key[sx.n_state + "|" + sx.nx_action];
           if (tr) {
             resultId = tr.to;
             action = nxLabel(sx.nx_action);
@@ -1262,8 +1271,8 @@ function buildNxcStep(c, hideInner = false) {
     const seenLeiter = new Set();
     nxhInner = matchNxh.map(r => {
       const itemKey = nxhItemKey(r);
-      const nxAction = Object.keys(r.aspects || {}).find(k => k.startsWith("nx."));
-      const tr = nxAction ? data.n_transitions.find(t => t.from === c.n_state && t.via === nxAction) : null;
+      const nxAction = r._nxAction;
+      const tr = nxAction ? data.n_trans_by_key[c.n_state + "|" + nxAction] : null;
       const resultNs = tr ? byId["n:" + tr.to] : null;
       const resultLabel = resultNs ? resultNs.label_cn : (tr ? tr.to : "");
       const descText = r.desc_cn || "";
@@ -1301,7 +1310,7 @@ function buildNxsStep(nxs, incSuffix, vid) {
   const condHtml = prereqEntry ? `<span class="nxs-condition">需先以${mLabel(prereqMystery)}书帮助</span>`
                  : hasExcl     ? `<span class="nxs-condition">其余访客均未被帮助时</span>` : "";
 
-  const tr = data.n_transitions.find(t => t.from === nxs.n_state && t.via === nxs.nx_action);
+  const tr = data.n_trans_by_key[nxs.n_state + "|" + nxs.nx_action];
   const targetState = tr ? tr.to : null;
   const targetHtml = targetState ? buildNStateBlock(targetState, 0, vid) : "";
 
@@ -1329,7 +1338,7 @@ function buildNStateBlock(nid, depth, vid) {
   const allNrs = (data.nrs_by_state[nid] || []).filter(r => !r.visitor || !vid || r.visitor === vid);
 
   // 若 vid 在 nid 上有 nxc，则该 vid 的 nxh 由 buildNxcStep 渲染，此处跳过避免重复
-  const nxcCovers = vid && (data.nxc||[]).some(c => c.visitor === vid && c.n_state === nid);
+  const nxcCovers = vid && data.nxc_by_state_visitor[nid + "|" + vid];
 
   // nxi 回顾对话
   const nxiHtml = allNrs.filter(r => r.kind === "nxi").map(r => {
@@ -1344,8 +1353,8 @@ function buildNStateBlock(nid, depth, vid) {
   const nxhHtml = visibleNxh.map(r => {
     const vLabel = r.visitor ? (byId["v:" + r.visitor]?.label_cn || r.visitor) : "？";
     const itemKey = nxhItemKey(r);
-    const nxAction = Object.keys(r.aspects || {}).find(k => k.startsWith("nx."));
-    const tr = nxAction ? data.n_transitions.find(t => t.from === nid && t.via === nxAction) : null;
+    const nxAction = r._nxAction;
+    const tr = nxAction ? data.n_trans_by_key[nid + "|" + nxAction] : null;
     const resultNs = tr ? byId["n:" + tr.to] : null;
     const resultLabel = resultNs ? resultNs.label_cn : (tr ? tr.to : "");
     const descText = r.desc_cn || "";
@@ -1364,7 +1373,7 @@ function buildNStateBlock(nid, depth, vid) {
       (data.nxs_by_state_action[nid + "|" + tr.via] || []).forEach(nxs => {
         const vLabel = nxs.visitor ? (byId["v:" + nxs.visitor]?.label_cn || nxs.visitor) : "?";
         const nxsLabel = nxs.label_cn || nxs.label_en || "";
-        const subTarget = data.n_transitions.find(t => t.from === nxs.n_state && t.via === nxs.nx_action);
+        const subTarget = data.n_trans_by_key[nxs.n_state + "|" + nxs.nx_action];
         const subTargetHtml = subTarget ? buildNStateBlock(subTarget.to, depth + 1, vid) : "";
         const subPreface = nxs.preface_cn ? `<div class="nxs-preface">${esc(nxs.preface_cn)}</div>` : "";
         const subDesc    = nxs.desc_cn    ? `<p class="nxh-desc" style="padding-left:8px">${esc(nxs.desc_cn)}</p>` : "";
