@@ -777,6 +777,7 @@ function switchTab(tab, closeMobileDrawer) {
     currentVid = null;
   }
   if (closeMobileDrawer) closeDrawer();
+  scrollMainToTop();
 }
 
 // ── Salon helpers ──
@@ -871,6 +872,7 @@ function renderSalonVisitor(vid) {
 
   html += `</div>`;
   document.getElementById("main").innerHTML = html;
+  scrollMainToTop();
 }
 
 function toggleDrawer() {
@@ -878,6 +880,11 @@ function toggleDrawer() {
 }
 function closeDrawer() {
   document.getElementById("m-drawer").classList.remove("is-open");
+}
+function scrollMainToTop() {
+  const main = document.getElementById("main");
+  if (main) main.scrollTop = 0;
+  window.scrollTo(0, 0);
 }
 
 // ── 流程图 SVG ──
@@ -948,6 +955,46 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
       }
     }
 
+    // 延伸访客回退：在 reach 中按 BFS 顺序找该 vid 最浅的 nxc+nxh / nxh / nxs
+    let extFromState = null;
+    if (!resultId) {
+      for (const ns of reach) {
+        if (ns === nInit) continue;
+        const c = (data.nxc||[]).find(c => c.visitor === vid && c.n_state === ns);
+        const h = (data.nrs_by_state[ns]||[]).find(r => r.kind === "nxh" && r.visitor === vid);
+        if (c && h) {
+          const ha = Object.keys(h.aspects||{}).find(k => k.startsWith("nx."));
+          const tr = ha ? data.n_transitions.find(t => t.from === ns && t.via === ha) : null;
+          if (tr) {
+            resultId = tr.to;
+            action = truncate(c.label_cn || c.label_en || nxLabel(ha), 6);
+            extFromState = ns;
+            break;
+          }
+        }
+        if (h) {
+          const ha = Object.keys(h.aspects||{}).find(k => k.startsWith("nx."));
+          const tr = ha ? data.n_transitions.find(t => t.from === ns && t.via === ha) : null;
+          if (tr) {
+            resultId = tr.to;
+            action = nxLabel(ha);
+            extFromState = ns;
+            break;
+          }
+        }
+        const sx = (data.nxs||[]).find(r => r.visitor === vid && r.n_state === ns);
+        if (sx) {
+          const tr = data.n_transitions.find(t => t.from === sx.n_state && t.via === sx.nx_action);
+          if (tr) {
+            resultId = tr.to;
+            action = nxLabel(sx.nx_action);
+            extFromState = ns;
+            break;
+          }
+        }
+      }
+    }
+
     const resultNs = resultId ? byId["n:" + resultId] : null;
     const resultLabel = truncate(resultNs ? resultNs.label_cn : (resultId || "？"), 13);
     const isDone = resultNs && resultNs.complete;
@@ -957,6 +1004,13 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
 <line x1="${CON_X}" y1="${rowY}" x2="${VIS_X}" y2="${rowY}" stroke="#b89f74" stroke-width="1.5"/>
 <rect x="${VIS_X}" y="${rowY - VIS_H / 2}" width="${VIS_W}" height="${VIS_H}" rx="3" fill="#faf6ec" stroke="#325ea0" stroke-width="1.5" style="cursor:pointer" onclick="openCard('vc-${vid}')"/>
 <text x="${visCX}" y="${rowY}" text-anchor="middle" dominant-baseline="middle" fill="#1d3461" font-size="11" font-weight="600" style="pointer-events:none">${esc(vLabel)}</text>`;
+
+    if (extFromState) {
+      const fns = byId["n:" + extFromState];
+      const fLabel = truncate(fns ? (fns.label_cn || extFromState) : extFromState, 14);
+      s += `
+<text x="${visCX}" y="${rowY + VIS_H / 2 + 11}" text-anchor="middle" fill="#806a4e" font-size="9" font-style="italic" style="pointer-events:none">@${esc(fLabel)}</text>`;
+    }
 
     if (resultId) {
       const arrMidX = (ARR_X1 + ARR_X2) / 2;
@@ -999,6 +1053,7 @@ function renderIncident(iid) {
   if (!inc) return;
   document.getElementById("main").innerHTML = buildIncidentHTML(inc);
   attachListeners();
+  scrollMainToTop();
 }
 
 function buildIncidentHTML(inc) {
@@ -1011,7 +1066,7 @@ function buildIncidentHTML(inc) {
   const nInit = data.incident_to_n[iid];
   const incSuffix = iid.replace(/^incident\./, "");
 
-  // BFS 可达 n-state
+  // BFS 可达 n-state（Set 迭代顺序 = BFS 层序，下游回退查询依赖此）
   let reach = new Set();
   if (nInit) {
     reach.add(nInit);
@@ -1019,12 +1074,27 @@ function buildIncidentHTML(inc) {
     while (q.length) { const c = q.shift(); (data.n_outgoing[c]||[]).forEach(t => { if (!reach.has(t.to)) { reach.add(t.to); q.push(t.to); } }); }
   }
 
+  // 延伸访客：不在 pairs 里、但在 reach 内某个 state 上有 nxs/nxc/nxh 的访客
+  if (nInit) {
+    const extra = new Set();
+    (data.nxs||[]).forEach(r => { if (r.visitor && reach.has(r.n_state)) extra.add(r.visitor); });
+    (data.nxc||[]).forEach(r => { if (r.visitor && reach.has(r.n_state)) extra.add(r.visitor); });
+    data.nrs.forEach(r => { if (r.kind === "nxh" && r.visitor && reach.has(r.n_state)) extra.add(r.visitor); });
+    extra.forEach(vid => {
+      if (!visitorIds.includes(vid)) {
+        visitorIds.push(vid);
+        visitorMysteries[vid] = [];
+      }
+    });
+  }
+
   // 分类访客
   const withChain = [], noChain = [];
   visitorIds.forEach(vid => {
     const hasAny = nInit && (
       (data.nxs||[]).some(nxs => reach.has(nxs.n_state) && (!nxs.visitor || nxs.visitor === vid)) ||
-      (data.nxc||[]).some(c   => reach.has(c.n_state)   && c.visitor === vid)
+      (data.nxc||[]).some(c   => reach.has(c.n_state)   && c.visitor === vid) ||
+      data.nrs.some(r => r.kind === "nxh" && reach.has(r.n_state) && r.visitor === vid)
     );
     (hasAny ? withChain : noChain).push(vid);
   });
@@ -1164,6 +1234,9 @@ function buildNStateBlock(nid, depth, vid) {
   const desc = ns ? (ns.desc_cn || "") : "";
   const allNrs = (data.nrs_by_state[nid] || []).filter(r => !r.visitor || !vid || r.visitor === vid);
 
+  // 若 vid 在 nid 上有 nxc，则该 vid 的 nxh 由 buildNxcStep 渲染，此处跳过避免重复
+  const nxcCovers = vid && (data.nxc||[]).some(c => c.visitor === vid && c.n_state === nid);
+
   // nxi 回顾对话
   const nxiHtml = allNrs.filter(r => r.kind === "nxi").map(r => {
     const vLabel = r.visitor ? (byId["v:" + r.visitor]?.label_cn || r.visitor) : "？";
@@ -1172,7 +1245,7 @@ function buildNStateBlock(nid, depth, vid) {
   }).join("");
 
   // nxh 深层行动
-  const nxhHtml = allNrs.filter(r => r.kind === "nxh").map(r => {
+  const nxhHtml = allNrs.filter(r => r.kind === "nxh" && !(nxcCovers && r.visitor === vid)).map(r => {
     const vLabel = r.visitor ? (byId["v:" + r.visitor]?.label_cn || r.visitor) : "？";
     const itemKey = nxhItemKey(r);
     const nxAction = Object.keys(r.aspects || {}).find(k => k.startsWith("nx."));
@@ -1196,24 +1269,27 @@ function buildNStateBlock(nid, depth, vid) {
         const nxsLabel = nxs.label_cn || nxs.label_en || "";
         const subTarget = data.n_transitions.find(t => t.from === nxs.n_state && t.via === nxs.nx_action);
         const subTargetHtml = subTarget ? buildNStateBlock(subTarget.to, depth + 1, vid) : "";
+        const subPreface = nxs.preface_cn ? `<div class="nxs-preface">${esc(nxs.preface_cn)}</div>` : "";
+        const subDesc    = nxs.desc_cn    ? `<p class="nxh-desc" style="padding-left:8px">${esc(nxs.desc_cn)}</p>` : "";
         deeperHtml += `
           <div class="nxs-block">
             <div class="nxs-head">
               <span class="nxs-label">询问：${esc(nxsLabel)}</span>
               <span style="font-size:11px;color:var(--ink-4)">${esc(vLabel)}</span>
             </div>
+            ${subPreface}
             <div class="nxs-arrow">↓ ${nxLabel(nxs.nx_action)}</div>
+            ${subDesc}
             ${subTargetHtml}
           </div>`;
       });
     });
   }
 
-  const deeperId = "deeper-" + nid + "-" + depth;
   const deeperWrap = deeperHtml ? `
     <div class="deeper">
-      <div class="deeper-head" onclick="toggleDeeper('${deeperId}')">▶ 展开后续分支</div>
-      <div class="deeper-body" id="${deeperId}">${deeperHtml}</div>
+      <div class="deeper-head" onclick="toggleDeeper(this)">▶ 展开后续分支</div>
+      <div class="deeper-body">${deeperHtml}</div>
     </div>` : "";
 
   return `
@@ -1231,12 +1307,11 @@ function toggleCard(id) {
   const el = document.getElementById(id);
   if (el) el.classList.toggle("open");
 }
-function toggleDeeper(id) {
-  const body = document.getElementById(id);
+function toggleDeeper(headEl) {
+  const body = headEl.nextElementSibling;
   if (!body) return;
   body.classList.toggle("open");
-  const head = body.previousElementSibling;
-  if (head) head.textContent = body.classList.contains("open") ? "▼ 折叠后续分支" : "▶ 展开后续分支";
+  headEl.textContent = body.classList.contains("open") ? "▼ 折叠后续分支" : "▶ 展开后续分支";
 }
 function openCard(id) {
   const el = document.getElementById(id);
