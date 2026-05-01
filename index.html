@@ -561,7 +561,7 @@ function nxhItemKey(r) {
   // 优先从 reqs 中找 t.* 或 r.*（排除 r.disciplines.* 阅读技能）
   if (r.reqs) {
     const key = Object.keys(r.reqs).find(k =>
-      k.startsWith("t.") || (k.startsWith("r.") && !k.startsWith("r.disciplines."))
+      k.startsWith("t.") || k.startsWith("s.") || (k.startsWith("r.") && !k.startsWith("r.disciplines."))
     );
     if (key) return key;
   }
