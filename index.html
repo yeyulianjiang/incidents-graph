@@ -374,6 +374,83 @@ p { margin: 0 0 var(--s-3); }
   font-family: var(--font-han); color: var(--ink-2);
 }
 
+/* ── Sidebar tab bar ── */
+.sidebar-tabs {
+  display: flex; gap: 4px; margin: 8px 0 10px;
+  border-bottom: 1px solid var(--paper-edge); padding-bottom: 8px;
+}
+.sidebar-tab {
+  flex: 1; padding: 5px 0; border: 1px solid var(--paper-edge); border-radius: var(--r-2);
+  background: var(--paper-3); color: var(--ink-3);
+  font-family: var(--font-han); font-size: 13px; font-weight: 600;
+  cursor: pointer; transition: all var(--dur-fast) var(--ease);
+}
+.sidebar-tab:hover { background: var(--paper-edge); color: var(--ink-1); }
+.sidebar-tab.active { background: var(--rubric-1); color: var(--paper-1); border-color: var(--rubric-1); }
+
+/* ── Salon visitor list ── */
+.salon-visitor-list { list-style: none; padding: 0; margin: 0; }
+.salon-visitor-list li {
+  padding: 6px 10px; border-radius: var(--r-2); cursor: pointer;
+  font-family: var(--font-han); font-size: var(--fs-sm);
+  color: var(--ink-1); border-left: 2px solid transparent;
+  transition: background var(--dur-fast) var(--ease);
+}
+.salon-visitor-list li:hover { background: rgba(168,123,30,.10); border-left-color: var(--gold-2); }
+.salon-visitor-list li.active {
+  background: rgba(138,36,21,.12); border-left-color: var(--rubric-1);
+  color: var(--rubric-1); font-weight: 600;
+}
+.salon-visitor-list .is-guest { color: var(--ink-3); }
+.salon-visitor-list .is-guest.active { color: var(--rubric-1); }
+.salon-count { font-family: var(--font-mono); font-size: 10px; color: var(--ink-4); float: right; margin-top: 2px; }
+
+/* ── Salon main view ── */
+.salon-header { margin-bottom: 24px; border-bottom: 1px solid var(--paper-edge); padding-bottom: 14px; }
+.salon-header__eyebrow {
+  font-family: var(--font-display); font-style: italic; font-weight: 600;
+  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--rubric-1);
+}
+.salon-header__title {
+  font-family: var(--font-han); font-weight: 700; font-size: 28px;
+  line-height: 1.15; color: var(--ink-1); margin: 4px 0 0;
+}
+.salon-header__sub {
+  font-family: var(--font-display); font-style: italic; font-size: 13px;
+  color: var(--ink-3); letter-spacing: .04em; margin-top: 2px;
+}
+
+.salon-conv-list { display: flex; flex-direction: column; gap: 12px; }
+.salon-conv-card {
+  border: 1.5px solid var(--paper-shadow); border-radius: var(--r-3);
+  background: var(--paper-1); box-shadow: var(--shadow-1); overflow: hidden;
+}
+.salon-conv-header {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px;
+  padding: 8px 14px; background: var(--paper-2);
+  border-bottom: 1px solid var(--paper-edge);
+}
+.salon-partner {
+  font-family: var(--font-han); font-weight: 700; font-size: 15px; color: var(--ink-1);
+}
+.salon-lesson-chip {
+  display: inline-flex; padding: 1px 9px; border-radius: var(--r-pill);
+  background: var(--verd-soft); color: var(--verd-1); border: 1px solid #82c896;
+  font-family: var(--font-han); font-size: 11px; font-weight: 600;
+}
+.salon-befriend-chip {
+  display: inline-flex; padding: 1px 9px; border-radius: var(--r-pill);
+  background: var(--lapis-soft); color: var(--lapis-1); border: 1px solid #90b0e0;
+  font-family: var(--font-han); font-size: 11px; font-weight: 600;
+}
+.salon-conv-body { padding: 10px 14px 12px; }
+.salon-conv-text {
+  font-family: var(--font-han); font-size: 15px; line-height: 1.75;
+  color: var(--ink-1); margin: 0;
+  border-left: 3px solid var(--gold-2); padding: 4px 0 4px 12px;
+}
+
 /* ── Flash animation ── */
 @keyframes vcard-flash {
   0%,100% { outline: none; }
@@ -489,10 +566,20 @@ p { margin: 0 0 var(--s-3); }
       </div>
     </div>
     <img src="./assets/divider-flourish.svg" alt="" style="width:100%;opacity:.45;margin:4px 0 10px">
-    <div class="m-drawer__head">常规事件</div>
-    <ul class="m-drawer__list" id="m-list-standard"></ul>
-    <div class="m-drawer__head m-drawer__head--numa">闰时事件 <em>Numa</em></div>
-    <ul class="m-drawer__list" id="m-list-numa"></ul>
+    <div class="sidebar-tabs" style="margin-bottom:10px">
+      <button class="sidebar-tab active" data-tab="incidents" onclick="switchTab('incidents');closeDrawer()">事件</button>
+      <button class="sidebar-tab" data-tab="salons" onclick="switchTabMobile('salons')">沙龙</button>
+    </div>
+    <div id="m-sidebar-incidents">
+      <div class="m-drawer__head">常规事件</div>
+      <ul class="m-drawer__list" id="m-list-standard"></ul>
+      <div class="m-drawer__head m-drawer__head--numa">闰时事件 <em>Numa</em></div>
+      <ul class="m-drawer__list" id="m-list-numa"></ul>
+    </div>
+    <div id="m-sidebar-salons" style="display:none">
+      <div class="m-drawer__head">访客</div>
+      <ul class="salon-visitor-list" id="m-salon-visitor-list"></ul>
+    </div>
   </aside>
 </div>
 
@@ -506,10 +593,20 @@ p { margin: 0 0 var(--s-3); }
       </div>
     </div>
     <img src="./assets/divider-flourish.svg" alt="" class="sidebar-divider">
-    <div class="sidebar-section">常规事件</div>
-    <ul class="incident-list" id="list-standard"></ul>
-    <div class="sidebar-section">闰时事件 <em>Numa</em></div>
-    <ul class="incident-list" id="list-numa"></ul>
+    <div class="sidebar-tabs">
+      <button class="sidebar-tab active" data-tab="incidents" onclick="switchTab('incidents')">事件</button>
+      <button class="sidebar-tab" data-tab="salons" onclick="switchTab('salons')">沙龙</button>
+    </div>
+    <div id="sidebar-incidents">
+      <div class="sidebar-section">常规事件</div>
+      <ul class="incident-list" id="list-standard"></ul>
+      <div class="sidebar-section">闰时事件 <em>Numa</em></div>
+      <ul class="incident-list" id="list-numa"></ul>
+    </div>
+    <div id="sidebar-salons" style="display:none">
+      <div class="sidebar-section">访客</div>
+      <ul class="salon-visitor-list" id="salon-visitor-list"></ul>
+    </div>
   </aside>
   <main id="main">
     <p class="placeholder">← 选择左侧事件查看攻略</p>
@@ -518,7 +615,7 @@ p { margin: 0 0 var(--s-3); }
 
 <script>
 const DATA_URL = "./data.json";
-let data, byId = {}, currentIid = null;
+let data, byId = {}, currentIid = null, currentTab = "incidents", currentVid = null;
 
 const NX_LABELS = {
   "nx.sealing":    "捕禁", "nx.opening":    "放走",
@@ -610,6 +707,7 @@ async function main() {
   });
 
   populateLists();
+  populateSalonList();
 }
 
 function getVisitorDeepStates(resultId, vid) {
@@ -655,6 +753,121 @@ function populateLists() {
 function markActive(iid) {
   document.querySelectorAll(".incident-list li, .m-drawer__item").forEach(li => li.classList.toggle("active", li.dataset.id === iid));
 }
+// ── Tab switching ──
+function switchTab(tab) {
+  currentTab = tab;
+  document.getElementById("sidebar-incidents").style.display = tab === "incidents" ? "" : "none";
+  document.getElementById("sidebar-salons").style.display   = tab === "salons"    ? "" : "none";
+  document.querySelectorAll(".sidebar-tab").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
+  if (tab === "incidents") {
+    document.getElementById("main").innerHTML = '<p class="placeholder">← 选择左侧事件查看攻略</p>';
+    currentIid = null;
+  } else {
+    document.getElementById("main").innerHTML = '<p class="placeholder">← 选择左侧访客查看对话记录</p>';
+    currentVid = null;
+  }
+}
+function switchTabMobile(tab) {
+  currentTab = tab;
+  document.getElementById("m-sidebar-incidents").style.display = tab === "incidents" ? "" : "none";
+  document.getElementById("m-sidebar-salons").style.display   = tab === "salons"    ? "" : "none";
+  document.querySelectorAll(".sidebar-tab").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
+  if (tab === "incidents") {
+    document.getElementById("main").innerHTML = '<p class="placeholder">← 选择左侧事件查看攻略</p>';
+  } else {
+    document.getElementById("main").innerHTML = '<p class="placeholder">← 选择访客查看对话记录</p>';
+  }
+}
+
+// ── Salon helpers ──
+function salonVisitorLabel(vid) {
+  const v = byId["v:" + vid] || (data.salon_guests && data.salon_guests[vid]);
+  return v ? (v.label_cn || vid) : vid;
+}
+
+function parseSalonDesc(text) {
+  if (!text) return { body: "", lesson: "" };
+  const m = text.match(/[\[［]教诲[：:]\s*([^\]）\]]+)[\]）\]]/);
+  const lesson = m ? m[1].trim() : "";
+  const body = lesson
+    ? text.replace(/\s*[\[［]教诲[：:][^\]）\]]*[\]）\]]\.?$/, "").trim()
+    : text.trim();
+  return { body, lesson };
+}
+
+function populateSalonList() {
+  // Build salonsByVisitor map
+  data._salonsByVid = {};
+  (data.salons || []).forEach(s => {
+    s.participants.forEach(vid => {
+      (data._salonsByVid[vid] = data._salonsByVid[vid] || []).push(s);
+    });
+  });
+
+  const allVids = Object.keys(data._salonsByVid).sort((a, b) =>
+    salonVisitorLabel(a).localeCompare(salonVisitorLabel(b), "zh-Hans"));
+
+  const list = document.getElementById("salon-visitor-list");
+  const mList = document.getElementById("m-salon-visitor-list");
+  allVids.forEach(vid => {
+    const isGuest = vid.startsWith("visiting.");
+    const cnt = data._salonsByVid[vid].length;
+    [list, mList].forEach((parent, idx) => {
+      const li = document.createElement("li");
+      li.dataset.id = vid;
+      if (isGuest) li.classList.add("is-guest");
+      li.innerHTML = `${esc(salonVisitorLabel(vid))}<span class="salon-count">${cnt}</span>`;
+      li.onclick = () => {
+        renderSalonVisitor(vid); markSalonActive(vid);
+        if (idx === 1) closeDrawer();
+      };
+      parent.appendChild(li);
+    });
+  });
+}
+
+function markSalonActive(vid) {
+  document.querySelectorAll("#salon-visitor-list li, #m-salon-visitor-list li").forEach(li =>
+    li.classList.toggle("active", li.dataset.id === vid));
+}
+
+function renderSalonVisitor(vid) {
+  currentVid = vid;
+  const label = salonVisitorLabel(vid);
+  const isGuest = vid.startsWith("visiting.");
+  const eyebrow = isGuest ? "来访访客 · VISITING GUEST" : "访客 · VISITOR";
+  const salons = (data._salonsByVid[vid] || []);
+
+  let html = `<div class="salon-header">
+    <div class="salon-header__eyebrow">${eyebrow}</div>
+    <div class="salon-header__title">${esc(label)}</div>
+    <div class="salon-header__sub">${salons.length} 条沙龙对话</div>
+  </div><div class="salon-conv-list">`;
+
+  salons.forEach(s => {
+    const partners = s.participants.filter(p => p !== vid);
+    const partnerText = partners.length
+      ? partners.map(salonVisitorLabel).join("、")
+      : "（独白）";
+    const { body, lesson } = parseSalonDesc(s.desc_cn);
+    const lessonChip = lesson ? `<span class="salon-lesson-chip">教诲：${esc(lesson)}</span>` : "";
+    const befriendChip = s.befriend ? `<span class="salon-befriend-chip">✦ 结交</span>` : "";
+    const chips = [lessonChip, befriendChip].filter(Boolean).join(" ");
+    html += `<div class="salon-conv-card">
+      <div class="salon-conv-header">
+        <span class="salon-partner">与 ${esc(partnerText)}</span>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">${chips}</div>
+      </div>
+      <div class="salon-conv-body">
+        <p class="salon-conv-text">${esc(body)}</p>
+      </div>
+    </div>`;
+  });
+
+  html += `</div>`;
+  document.getElementById("main").innerHTML = html;
+}
+
 function toggleDrawer() {
   document.getElementById("m-drawer").classList.toggle("is-open");
 }

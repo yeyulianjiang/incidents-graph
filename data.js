@@ -14440,5 +14440,4555 @@ window.GRAPH_DATA = {
       "label": "三重誓之仪",
       "desc": "三重绳结姐妹会所使用的仪式，包含了某些栖息于世界背面的林地居民的秘密。"
     }
+  },
+  "salons": [
+    {
+      "id": "slnev.echidna.echidnanodal",
+      "desc_cn": "厄客德娜",
+      "participants": [],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.aladim",
+      "desc_cn": "围绕着鸟鸣学在天气预报上的作用，阿格狄斯提斯与阿迪姆进行了热烈的对谈。[教诲：毛皮与羽翎]",
+      "participants": [
+        "agdistis",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.arthur",
+      "desc_cn": "亚瑟和阿格狄斯提斯轻柔而严肃地谈论着他们失去之人留下之伤。亚瑟说：“我仍然想念他。”阿格狄斯提斯捏了捏他的手，用希腊语引用道：“玫瑰在头旁，茉莉在脚上……”[教诲：伤疤的戒律］",
+      "participants": [
+        "agdistis",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.arun",
+      "desc_cn": "阿格狄斯提斯和阿伦正讨论轰雷之皮在弗里吉亚、印度和塞浦路斯等地的仪式……[教诲：鼓点与舞步]",
+      "participants": [
+        "agdistis",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.azita",
+      "desc_cn": "“你是粟特人吧？”阿格狄斯提斯问阿齐塔。“我出生在粟特的黄昏时期，伊本·阿萨德到来之后，我们的语言已逐渐消逝于世……不过，若你想问，我还能忆起几首我们的歌。”[教诲：弦乐与歌谣]",
+      "participants": [
+        "agdistis",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.chaima",
+      "desc_cn": "能再次见到柴玛，阿格狄斯提斯显然喜出望外，她也难得露出了微笑，灿烂一如月色下的云母。他们又开始讨论里夫山脉的舞蹈——上次相会后，他就亲自前往实地学习。[教诲： 鼓点与舞步]",
+      "participants": [
+        "agdistis",
+        "chaima"
+      ],
+      "befriend": "befriend.agdistis.chaima"
+    },
+    {
+      "id": "slnev.agdistis.connie",
+      "desc_cn": "康妮与阿格狄斯提斯出乎意料地探讨起窥天术。康妮认为，可以从司辰和天体的“舞蹈”获得司辰学相关信息。她颇有兴趣，阿格狄斯提斯则困惑不已，但还是尽力接上话茬。[教诲：窥天术]",
+      "participants": [
+        "agdistis",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.coquille",
+      "desc_cn": "阿格狄斯提斯正与科基尔讨论歌剧。他更喜欢德国的；她则喜欢意大利的。[教诲：弦乐与歌谣]",
+      "participants": [
+        "agdistis",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.corso",
+      "desc_cn": "阿格狄斯提斯与科尔索聊起太阳教的教义。他们俩似乎都是在无敌太阳教会的影响下长大成人的：两人都承认，如果在太阳日缺席了教堂的活动，负罪感就会强得离谱。[教诲：无敌太阳典仪]",
+      "participants": [
+        "agdistis",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.dagmar",
+      "desc_cn": "阿格狄斯提斯谨慎地朗诵了一些富奇诺沼泽地区女巫们的湖颂。“还是弗里吉亚语更舒心，”他说，“但向巫女致敬才是明智之举。”[教诲：富奇诺语]",
+      "participants": [
+        "agdistis",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.douglas",
+      "desc_cn": "道格拉斯观看了凯尔之作<i>《无绝休》</i>的演出——为评估梦境危险而去，而非消遣，但他还是带上了摩尔夫人（“那可是免费票”），二人都很喜欢——道格拉斯喜欢得远超他们的预想。阿格狄斯提斯十分乐意讨论凯尔的作品。[教诲：缝纫与编织］",
+      "participants": [
+        "agdistis",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.ehsan",
+      "desc_cn": "埃桑正与阿格狄斯提斯讨论着如何使用缝合印记来弥合伤口，以及其在服装缝纫上的妙用。[教诲：缝合与装订］",
+      "participants": [
+        "agdistis",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.fraser",
+      "desc_cn": "弗雷泽希望资助一部芭蕾舞剧，来诱导他的 “介壳之眷”加速发展出介壳种天性；他希望聘请阿格狄斯提斯担任编舞。阿格狄斯提斯显然十分警惕，但也显然深受诱惑。[教诲：精炼与擢升］",
+      "participants": [
+        "agdistis",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.hokobald",
+      "desc_cn": "就伦敦教堂的声学、共振，以及鸣钟，阿格狄斯提斯与霍科博尔德进行了拘谨有礼的对谈。[教诲：洪钟与铜器]",
+      "participants": [
+        "agdistis",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.morgen",
+      "desc_cn": "阿格狄斯提斯和摩根分享了丽姬亚苏洛恰那的消息，苏洛恰那是他的朋友、她的非亲姐妹（似乎也曾是她的舞蹈教师）。她目前身在格鲁吉亚： 阿格狄斯提斯想知道原因。“美狄亚，”摩根答道，但她戏谑地拒绝挑明话中之意。[教诲：群蛇与毒液]",
+      "participants": [
+        "agdistis",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.olympe",
+      "desc_cn": "阿格狄斯提斯和奥兰普谈到语言作为武器可造之伤——有大有小。他们还谈到了群星的诞生——亦是有大有小……[教诲：焰篆体］",
+      "participants": [
+        "agdistis",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.serena",
+      "desc_cn": "阿格狄斯提斯和瑟雷娜讨论了他几年前在亚历山大港观赏的一出假面戏剧，其中混合了带有堕落色彩的苏菲风格。他说：“他们只在黎明前的几个小时内表演。”瑟雷娜点头道：“我认为那很明智。”[教诲：守夜人的悖论］",
+      "participants": [
+        "agdistis",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.stanislav",
+      "desc_cn": "阿格狄斯提斯与斯坦尼斯拉夫谈论着冬日玻璃房里的园艺之道。他们的语气如父亲般慈爱。[教诲：叶片与棘刺]",
+      "participants": [
+        "agdistis",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.yvette",
+      "desc_cn": "阿格狄斯提斯听着伊薇特阐述自己对宁娜·拉格斯绘画作品的见解：伊薇特认为，宁娜·拉格斯多年来的色彩选择表明，她知道自己的终结于何时到来。[教诲：景象与感知］",
+      "participants": [
+        "agdistis",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.zachary",
+      "desc_cn": "扎迦利讲述着“碎锤者”所进行的一系列富有诗意的破坏行动，他的叙述充满亢奋，却断断续续，声音保持平淡，双手却狂乱地抽动，手指在桌面上敲打出一段复杂的节奏。阿格狄斯提斯心怀同情地聆听着。[教诲：腐化与煅烧］",
+      "participants": [
+        "agdistis",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.agdistis",
+      "desc_cn": "阿迪姆和阿格狄斯提斯正悄悄八卦着阿迪姆的女庇护者。“没有一百条腿，”阿迪姆说，“但比你想的要多……”[教诲：天空的故事]",
+      "participants": [
+        "aladim",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.arthur",
+      "desc_cn": "阿迪姆问亚瑟是否想过要成为长生者，亚瑟却摇了摇头。“要牺牲太多了——还会更多。我知道你的女庇护者更温和。可我不愿付出代价，也不愿让别人替我付出代价。”[教诲：曙光的静观]",
+      "participants": [
+        "aladim",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.arun",
+      "desc_cn": "阿迪姆打趣阿伦说，“你的毒液” 效果正在减弱。阿伦显然生起了闷气。[教诲：群蛇与毒液]",
+      "participants": [
+        "aladim",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.azita",
+      "desc_cn": "阿齐塔与阿迪姆讨论了他们相识几个世纪以来使用的各种鸟类信使和信灵。[教诲：天空的故事］",
+      "participants": [
+        "aladim",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.chaima",
+      "desc_cn": "柴玛认真聆听阿迪姆讲述狻猊被击败的罕见情形。二人看着都不太高兴。[教诲：兽角与象牙]",
+      "participants": [
+        "aladim",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.connie",
+      "desc_cn": "康妮和阿迪姆正在讨论富兰克林·班克罗夫特和伊娃·德沃尔夫之间的故事，头靠着头，面带微笑。显然这个场所对他们有所触动。[教诲： 珍珠与浪潮]",
+      "participants": [
+        "aladim",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.coquille",
+      "desc_cn": "阿迪姆礼貌地询问科基尔她的家族和天性。是的，她与谎言之墓有联系；不，那里不再欢迎她；是的，她猜想，严格来说她就是覆画残迹本身……[教诲：覆画残迹与古老前身]",
+      "participants": [
+        "aladim",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.corso",
+      "desc_cn": "阿迪姆对着科尔索追想尼沙布尔的雅登，此人知晓“先于太阳而来的歌谣”……[教诲：覆画残迹与古老前身]",
+      "participants": [
+        "aladim",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.dagmar",
+      "desc_cn": "阿迪姆和妲格玛正专心地进行学术上的深入探讨，话题围绕着韦斯特格伦叙述中漫宿的精准不变，和其可能的瞬息万变。（妲格玛一直恭敬地提醒阿迪姆，她从未通过牡鹿之门。）[教诲：道途与朝圣］",
+      "participants": [
+        "aladim",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.douglas",
+      "desc_cn": "阿迪姆滔滔不绝地讲着他的旅行故事：波斯的巍峨群山，极东的针叶密林，南极的皑皑冰雪……道格拉斯听得如痴如醉。“有时候啊，”他粗声说道，“我真希望自己当初踏上了另一条路。”[教诲：道途与朝圣]",
+      "participants": [
+        "aladim",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.ehsan",
+      "desc_cn": "埃桑和阿迪姆讨论起猛禽的护理和饲养。[教诲：毛皮与羽翎］",
+      "participants": [
+        "aladim",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.fraser",
+      "desc_cn": "历史学家阿迪姆与收藏家弗雷泽，就他们钟爱的伟大墨水的使用寿命和危险程度展开了辩论。[教诲：力量之墨］",
+      "participants": [
+        "aladim",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.hokobald",
+      "desc_cn": "霍科博尔德阐述了他的信条——名叫欢欣雌黄的伟大墨水，要么本来就是，要么将会成为制烛人的具名者。阿迪姆起初难以置信，后来仍有怀疑，但已经明显变得兴致勃勃。[教诲：力量之墨］",
+      "participants": [
+        "aladim",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.morgen",
+      "desc_cn": "阿迪姆和摩根探讨起圣布伦丹修道院院长托马斯的沉思录。摩根问阿迪姆是否见过修道院长。“我承认我比你老，”他有点生硬地答道，“可我还没有<i>那么</i>老。”[教诲：光明果悦音]",
+      "participants": [
+        "aladim",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.olympe",
+      "desc_cn": "阿迪姆和奥兰普交流起自身的经历，他们都曾会面过先于人类的死者：那些渴望更赤红的太阳的温和死者，以及寻求人血满足渴望的饥渴死者。[教诲：岩石的故事]",
+      "participants": [
+        "aladim",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.serena",
+      "desc_cn": "阿迪姆和瑟雷娜讨论了伟大墨水的力量及其特色。瑟雷娜担心使用某种特定的墨水会改变文本的含义。阿迪姆则认为这大有裨益；换而言之，这能增加文本的含义；或者说至少巩固了原义。[教诲：力量之墨］",
+      "participants": [
+        "aladim",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.stanislav",
+      "desc_cn": "阿迪姆描述了他记忆中的蒂尔扎·布雷克及其作品，那时他在居屋担任通讯理事。他显然对她爱恨交织。斯坦尼斯拉夫摇了摇头：“我真希望我认识她。我想我们会很合得来。”[教诲：草药与药汤]",
+      "participants": [
+        "aladim",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.yvette",
+      "desc_cn": "伊薇特谈及她的专著，主题是《拉吉亚的转变》，即无餍女王飞升至赤杯左手的故事。她对这个神话进行了系统的荣格式诠释。阿迪姆将信将疑，又兴致盎然，宣称自己见过拉吉亚，可伊薇特却不屈不挠。“真理不必是事实，”她抛出此言。[教诲：丘陵与孔窍］",
+      "participants": [
+        "aladim",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.zachary",
+      "desc_cn": "扎迦利和阿迪姆谈起万物如何终结；阿迪姆带有一种热切的怀旧之情；扎迦利则是单纯的急切。[教诲：腐化与煅烧]",
+      "participants": [
+        "aladim",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.agdistis",
+      "desc_cn": "阿迪姆邀请亚瑟去柏林作客，亚瑟却摇了摇头。“我最好不要再受诱惑了。过去的束缚对我来说过于沉重。我是说，战争。咱俩都知道会发生什么。”[教诲：曙光的静观]",
+      "participants": [
+        "arthur",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.aladim",
+      "desc_cn": "亚瑟和阿迪姆正在讨论推罗城里的染料与染工。[教诲：力量之墨]",
+      "participants": [
+        "arthur",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.arun",
+      "desc_cn": "亚瑟和阿伦正在讨论哪些违禁武器应当解禁，哪些武器早该被禁止。亚瑟因英国实验破晓器的传闻而忧心忡忡；阿伦则带着些许自夸，讲述自己曾挥使过名为“依呼伦覆羽”的骇人羽毛。[教诲：锋锐]",
+      "participants": [
+        "arthur",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.azita",
+      "desc_cn": "亚瑟描述了群狮迷宫里的镜子迷阵，阿齐塔则微笑聆听——可现在，他好像开始怀疑起阿齐塔询问他的真实动机，于是就此打住。[教诲：玻璃与锻光］",
+      "participants": [
+        "arthur",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.chaima",
+      "desc_cn": "亚瑟和柴玛正在讨论枪械。柴玛曾隶属于古梅尔部队时，配备的是贝蒂埃步枪，她对其可靠性嗤之以鼻。但圣埃蒂安武器制造公司最近的研究成果勾起了两人的兴趣……他们都很关心要到哪里去为新武器定制“高贵弹药”。[教诲：锤砧的戒律］",
+      "participants": [
+        "arthur",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.connie",
+      "desc_cn": "亚瑟和康妮生硬地讨论着新王的计划。两人彼此戒备。[教诲：锤砧的戒律]",
+      "participants": [
+        "arthur",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.coquille",
+      "desc_cn": "科基尔和亚瑟正在讨论家庭的危险、罪犯天孽的恐怖、马提亚斯与紫晶成虫的悲剧。此刻的科基尔最是千娇百媚，而亚瑟最是如履薄冰。[教诲：诱惑与消殒］",
+      "participants": [
+        "arthur",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.corso",
+      "desc_cn": "亚瑟和科尔索正在探讨厄里卡帕奥语，两人都在努力掌握这门语言。他们约定此后用其进行通信，尽管科尔索指出，这样做可能会让他们的信件被防剿局查封。[教诲：厄里卡帕奥语]",
+      "participants": [
+        "arthur",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.dagmar",
+      "desc_cn": "妲格玛和亚瑟为往昔的辉煌举杯，历数那些他们因国籍不同而置身于对立面的战争。[教诲：残破十字路］",
+      "participants": [
+        "arthur",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.douglas",
+      "desc_cn": "道格拉斯与亚瑟握手致意，叫他“叔叔”。亚瑟笑着称他为“小道格”。之后，两人都迟疑了一阵子，显然都在考虑道格拉斯看着比亚瑟要大二十岁这件事。他接着开口聊天时，道格拉斯的嗓音沙哑了片刻。而后，在剩余的晚间时光里，他们几乎都在谈论刃之长生者。[教诲：伤疤的戒律]",
+      "participants": [
+        "arthur",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.ehsan",
+      "desc_cn": "亚瑟和埃桑讨论起阿纳尔·维迪尔的记叙，关于“不智凡人”如何飞升入漫宿高处乃至辉光，以及他如何在众人皆败时取得成功。埃桑指了指居屋：“我是在这里学到的，见证行动者与做出行动者同样重要。”亚瑟缓缓点头。[教诲：守夜人的悖论]",
+      "participants": [
+        "arthur",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.fraser",
+      "desc_cn": "弗雷泽忽略了亚瑟关于阿什班深渊的警告。他去往此地，希望能找到巨型的介壳种残骸，甚至暗自期盼那是一条失落古龙。但正如亚瑟的警告，在七蟠的卷须中，他发现了某物正在孵化、生长，并已显露蠕虫之性。“我早就知道介壳种有转变的可能，”他哀叹道，“可我永远都不希望有看到它的一天。”[教诲：虬蟠与裂隙]",
+      "participants": [
+        "arthur",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.hokobald",
+      "desc_cn": "霍科博尔德正向亚瑟讲解路权战争的战略与战术，特别是在战场上，受控之火的君王们如何通过他们的选择展现出各自的本性。亚瑟礼貌地保持聆听。[教诲：弧月的倒影］",
+      "participants": [
+        "arthur",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.morgen",
+      "desc_cn": "摩根笑意盈盈地恳求亚瑟跟她讲讲“玻璃的瑕疵”，“炽焰”奥马尔在群狮迷宫保存圣焰时发现了这一威胁。此刻的她最是千娇百媚，就连亚瑟——一个不太可能被摩根的魅力打动的人——也相当通融地给了些暗示。[教诲：玻璃与锻光]",
+      "participants": [
+        "arthur",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.olympe",
+      "desc_cn": "亚瑟和奥兰普就未建之城展开了辩论，那是一座只存于假想、保有完美平衡的居处。奥兰普认为，在月亮边地乃至月亮居屋，建造此城都是有可能的。亚瑟则认为那是一个无法企及的理想，尤其是因为保持完美平衡的弧月位列圣坛三司辰之一，而另两位司辰也许更情愿禁止修建此城来限制她的权力。[教诲：弧月的倒影］",
+      "participants": [
+        "arthur",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.serena",
+      "desc_cn": "亚瑟提到，据传更早于光源神降临前，栖居于林地的那束光芒：他认为，那可能是石源神中那个更为赤红的太阳。瑟雷娜则认为它仅仅是火——“如果林地还有什么我们可以称之为‘仅仅’的话。”[教诲：焰篆体]",
+      "participants": [
+        "arthur",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.stanislav",
+      "desc_cn": "斯坦尼斯拉夫和亚瑟欢快地争论着哪种草药汤喝起来最恶心，最有助于送走驻留不去的客人。[教诲：草药与药汤]",
+      "participants": [
+        "arthur",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.yvette",
+      "desc_cn": "伊薇特对名为萨巴佐因语的手语十分着迷，而亚瑟精于此道。他教了她一些手势，可她却突然惊慌失措，求他到此为止。[教诲：萨巴佐因语］",
+      "participants": [
+        "arthur",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.zachary",
+      "desc_cn": "亚瑟和扎迦利回忆着夜晚的伦敦——伦敦是如何变化的，他们又是如何变化的。[教诲：残破十字路］",
+      "participants": [
+        "arthur",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.agdistis",
+      "desc_cn": "阿伦和阿格狄斯提斯正在讨论剥皮技术的相关细节，完全没有考虑到这或许会影响到大家的胃口。[教诲：缝合与装订]",
+      "participants": [
+        "arun",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.aladim",
+      "desc_cn": "阿伦沾沾自喜道：“旅者总会归来，不归者非是旅者。”阿迪姆冷嘲热讽道：“还是把这话讲给我的女庇护者听吧。”[教诲：道途与朝圣］",
+      "participants": [
+        "arun",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.arthur",
+      "desc_cn": "阿伦和亚瑟正在回忆普纳城，尽管阿伦称，自马拉塔帝国时代以来，他就再未拜访过此城。“一次又一次的流亡；覆画残迹的命运。流亡会上瘾。你迟早明白这点。”[教诲：镰刀与日蚀]",
+      "participants": [
+        "arun",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.azita",
+      "desc_cn": "阿伦和阿齐塔谈起图拉古拉里，即那些使用异质毒药猎杀不朽者的“投枪手”。阿伦不满上校创造了他们，阿齐塔却满不在乎：“锻炼锻炼身体。说实话，我还很挺想他们的。”阿伦断然拒信她之所言。[教诲：锋锐]",
+      "participants": [
+        "arun",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.chaima",
+      "desc_cn": "阿伦和柴玛谈起蚁母的“幼妹”，柴玛曾狩猎过它们。“它们中还是蛇形的已经不多了，”阿伦告诉她：“时过境迁，它们化作了人形，一如曾经的巨龙。”[教诲：丘陵与孔窍]",
+      "participants": [
+        "arun",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.connie",
+      "desc_cn": "阿伦兴致勃勃地向康妮细问防剿局与根冠间的联系。康妮显然在极力克制怒火，委婉而含糊地回答了这些问题。[教诲：无侵之敕令]",
+      "participants": [
+        "arun",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.coquille",
+      "desc_cn": "“在故乡，我们都喜爱伐诃，”阿伦叹道，科基尔点了点头，眼眸满溢光芒，“你还记得那次我们给她写诗吗？当然是用其他语言写的。除了我；我用她给她写了一首诗。又惹了个大麻烦。”他吟诵了其中的几句，科基尔开心地鼓起了掌。[教诲：伐诃语]",
+      "participants": [
+        "arun",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.corso",
+      "desc_cn": "阿伦和科尔索探讨了如何追踪珍贵书籍，认为可以通过观察书中墨水对周围人梦境的影响来实现。然而，随着谈话的进行，科尔索发现阿伦并没有认真对待这个想法，他因此而闷闷不乐。[教诲：揭示之墨］",
+      "participants": [
+        "arun",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.dagmar",
+      "desc_cn": "阿伦和妲格玛欣喜地互致问候后，又忙着开始了他们间持续多年的猜谜游戏。阿伦问：“孪生子间区别为何？”妲格玛兴奋地吼道：“所具之名其一相同！”[教诲：阈限之敕令］",
+      "participants": [
+        "arun",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.douglas",
+      "desc_cn": "靠着阿伦的警示，道格拉斯追查到了那个形成途中的长生者。阿伦向他道贺；道格拉斯带着厌恶之情描述了此人受害者们空洞的眼神……[教诲：疫疠之秘］",
+      "participants": [
+        "arun",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.ehsan",
+      "desc_cn": "前剑齿兽埃桑，与存疑的前启之长生者阿伦，谈论着成为异于过去的存在是何感受。埃桑抱怨自己不得不用上锤子和胡桃钳，而且天气一变，他的关节就开始作痛。阿伦摩挲着腕上的绷带，感慨道：“可我们忍受住了；我们忍受住了。”[教诲：复苏与显现］",
+      "participants": [
+        "arun",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.fraser",
+      "desc_cn": "上一次，阿伦建议了弗雷泽应该开发毒腺，今天弗雷泽对此由衷地表示感谢。他们挖苦地聊起了排出毒液的困难，以及日常饮食对毒效的影响。[教诲：群蛇与毒液]",
+      "participants": [
+        "arun",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.hokobald",
+      "desc_cn": "阿伦和霍科博尔德正在争论一条冬之长生者的传闻是否属实：他们无法生育子嗣，因此无需恐惧天孽，可以安全地与之同床共枕。霍科博尔德坚称，即便传闻属实，杯之长生者的丰饶，或是铸之长生者的活力，也能使受孕变成可能。[教诲：诱惑与消殒］",
+      "participants": [
+        "arun",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.morgen",
+      "desc_cn": "摩根和阿伦讨论起人称忘却会的长生者隐修会，他们立下的三重誓言，他们于午之岛的庇护所，提及后者时，摩根语带柔情。[教诲：利米亚典仪]",
+      "participants": [
+        "arun",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.olympe",
+      "desc_cn": "奥兰普试图弄清楚阿伦对新王的看法。他只用谜语作答，可她似乎发觉他的回答颇具启发性。[教诲：嬗变与解放]",
+      "participants": [
+        "arun",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.serena",
+      "desc_cn": "阿伦和瑟雷娜讨论了遭禁的墨水手册《从历史到永恒》，并猜测其作者身份。瑟雷娜猜想，作者有可能是如今主管整个防剿局的夜勤大臣，伊迪丝·阿布尼·黑斯廷斯，阿伦却对此嗤之以鼻。[教诲：揭示之墨]",
+      "participants": [
+        "arun",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.stanislav",
+      "desc_cn": "阿伦和斯坦尼斯拉夫在比较哪些圣地适于洒血，哪些欢迎洒血，哪些只能泼洒自己的血。[教诲：根系之仪］",
+      "participants": [
+        "arun",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.yvette",
+      "desc_cn": "伊薇特和阿伦重温了先前含沙射影的对话，谈起伐诃和赫沃尔间或许存在的纠葛。两人都用自己钟爱的语言朗诵诗歌。没过多久，他们就把椅子拉得更近了，以便能在彼此的耳边低吟诗句。[教诲：音律与铭记］",
+      "participants": [
+        "arun",
+        "yvette"
+      ],
+      "befriend": "befriend.arun.yvette"
+    },
+    {
+      "id": "slnev.arun.zachary",
+      "desc_cn": "扎迦利向阿伦问起兜颈贵胄与忘却会间的传说之战。阿伦友善地向扎迦利露出了他的三角形微笑。“那并不是场真正的战争。多臂之母只是对他们的一些仪式生气了。嗯，是对他们的做法。而我们仍是她的孩子啊……”[教诲：阈限之敕令]",
+      "participants": [
+        "arun",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.agdistis",
+      "desc_cn": "阿齐塔和阿格狄斯提斯正在讨论轰雷之皮（“不允休止之神”）和角争（刃之神灵的永恒角逐）在维护世界中发挥的作用。他们一致认为，唯有熟稔苦痛的司辰方可胜任……[教诲：武力之敕令]",
+      "participants": [
+        "azita",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.aladim",
+      "desc_cn": "阿迪姆和阿齐塔回忆起他们在大马士革城内初遇的时光，那时帖木儿尚未到来。“打得好！”她感叹道。“我还是更喜欢鹰猎。”他说道；之后，他们花了许多时间讨论了沙漠猎鹰。[教诲：毛皮与羽翎］",
+      "participants": [
+        "azita",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.arthur",
+      "desc_cn": "阿齐塔正向亚瑟描述自己在漫宿的经历——亚瑟似乎从未通过牡鹿之门，但显然对其看守者称赞有加。[教诲：守夜人的悖论］",
+      "participants": [
+        "azita",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.arun",
+      "desc_cn": "阿齐塔和阿伦讲起各自在很久以前与拉格什女巫宁娜伽勒的对谈，谈到了伐诃——即孔雀之门——和根冠。“那位女神！对我而言，她很糟糕，”阿伦叹道，“但对可怜的格里比来说就更是糟糕透顶。因此，他便对门扉起了兴趣，还有女神。”[教诲：镰刀与日蚀]",
+      "participants": [
+        "azita",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.chaima",
+      "desc_cn": "柴玛聆听阿齐塔讲述着名为七蟠的石源神之死，以及蚁母的诞生。“这算不得体面，”她对年轻的女人讲道，“但我倒好奇，这是否另有一番壮美。”[教诲：武力之敕令]",
+      "participants": [
+        "azita",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.connie",
+      "desc_cn": "阿齐塔和康妮出人意料地进行着商务谈判，即防剿局计划向阿齐塔的联络人购置辟邪宝石……[教诲：雕珀与琢石]",
+      "participants": [
+        "azita",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.coquille",
+      "desc_cn": "“呼吸乃灵魂的诱惑。”阿齐塔和科基尔讨论着用肺部吸入美的种种方法；阿齐塔在努力联系科基尔的好友，香烟走私商人乔吉奥……[教诲：光明果悦音]",
+      "participants": [
+        "azita",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.corso",
+      "desc_cn": "科尔索和阿齐塔都很好奇，近日以来，政府为何对日落之路派的炼金术产生了兴趣（尤其是对于那些能够，比如说，拿到失传的日落之路著作的人，这意味着什么，即使他们无法说明这些著作的来源。）[教诲：精炼与擢升］",
+      "participants": [
+        "azita",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.dagmar",
+      "desc_cn": "阿齐塔正和妲格玛协商，想用后者的庄园来存放一批“自动宴客机”；但妲格玛本人须先要相信它们“绝对无法杀人。尤其是”（她补充道）“重要之人。”[教诲：锁簧与发条］",
+      "participants": [
+        "azita",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.douglas",
+      "desc_cn": "道格拉斯正在调查一系列袭击事件，他怀疑幕后真凶可能是人称“多翼者”的刃之具名者；他向阿齐塔详细询问它们的特性和可能的行动。她虽应允，却一再坚称这些多翼者定是为狮子匠服务的，而非上校……[教诲：曙光的静观］",
+      "participants": [
+        "azita",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.ehsan",
+      "desc_cn": "上校信徒阿齐塔，聆听着曾侍奉狮子匠的埃桑讲解他对角争的思考。“我认为诸史不是编成的，而是织成的。角争，在我们的主人间来回穿梭”，他比划道，“如同织布机上的梭子……”[教诲：缝合与装订］",
+      "participants": [
+        "azita",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.fraser",
+      "desc_cn": "弗雷泽与阿齐塔正在就一项复杂的交易进行协商，涉及阿齐塔在中东的一个牧羊场。[教诲：毛皮与羽翎］",
+      "participants": [
+        "azita",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.hokobald",
+      "desc_cn": "上次，阿齐塔和霍科博尔德掰手腕，霍科博尔德虽然赢了，手腕却断了。这次，他要求再比一场。阿齐塔拒绝比试；几分钟的软磨硬泡后，她突然恼道，上次自己让他赢，下次可不会这么幸运了。霍科博尔德勃然大怒，对她的言论矢口否认；在接下来的半个小时里，他们一直在争论锐不可挡之力和岿然不动之物间的优劣。[教诲：锤砧的戒律]",
+      "participants": [
+        "azita",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.morgen",
+      "desc_cn": "阿齐塔和摩根比较起她们对“直立猎物 ”的狩猎经历。摩根不以为然地指出，不像阿齐塔，她从不为取乐而狩猎。阿齐塔扬起了眉毛，直到摩根发出了银铃般的笑声才收敛。[教诲：兽角与象牙]",
+      "participants": [
+        "azita",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.olympe",
+      "desc_cn": "奥兰普正在写一部小说，其中一个角色是个珠宝走私犯，她希望阿齐塔能协助她搜集资料。奥兰普一再保证这些事都不会被记录在案，但阿齐塔对此心存疑虑也完全可以理解。然而在奥兰普解释主角的原型是妲格玛后，她便释然地“讲起了红宝石”。[教诲：雕珀与琢石]",
+      "participants": [
+        "azita",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.serena",
+      "desc_cn": "阿齐塔和瑟雷娜讨论了那些在飞升时做出意外抉择的人。阿齐塔询问瑟雷娜的想法，而瑟雷娜摇了摇头：“忘却会已经去往西方了。可即便他们没往那去，我也会怀疑自己能不能硬起心肠。”[教诲：弧月的倒影]",
+      "participants": [
+        "azita",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.stanislav",
+      "desc_cn": "阿齐塔和斯坦尼斯拉夫谈论着轰雷之皮的诸具名者——以乐音撑起他节拍的七把乐器。阿齐塔重复着这样一个传说：通晓七种休止符的叩心魅就有资格成为乐器之一。斯坦尼斯拉夫摇了摇头。“我一直觉得成为叩心魅的选择很奇怪，先是追求成为永不止息的意识，而后又追求休止……”[教诲：弦乐与歌谣]",
+      "participants": [
+        "azita",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.yvette",
+      "desc_cn": "伊薇特向阿齐塔打听起对立双刃图格和蒂尔黛的情况，后者每隔一两个世纪就会和二人酌酒小聚。伊薇特（随口？）提到，她一直都有点迷恋蒂尔黛。阿齐塔的眼睛闪起了光：“哦，是这样吗？”[教诲：武力之敕令]",
+      "participants": [
+        "azita",
+        "yvette"
+      ],
+      "befriend": "befriend.azita.yvette"
+    },
+    {
+      "id": "slnev.azita.zachary",
+      "desc_cn": "阿齐塔与扎迦利讨论了如何在密教和私生活中保持微妙的平衡；还有如何处理尸体。[教诲：镰刀与日蚀］",
+      "participants": [
+        "azita",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.agdistis",
+      "desc_cn": "柴玛正在向阿格狄斯提斯描述一种来自她的家乡里夫山脉的舞蹈。她晃动着肩膀，似乎是想给他展示一番，但她的尊严还是让她好好坐在座位上。从阿格狄斯提斯温和的笑容中不难看出，他已经注意到了。[教诲： 鼓点与舞步]",
+      "participants": [
+        "chaima",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.aladim",
+      "desc_cn": "柴玛与阿迪姆在比较各种导航技术。[教诲：道途与朝圣]",
+      "participants": [
+        "chaima",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.arthur",
+      "desc_cn": "柴玛和亚瑟正在讨论在阿尔及利亚和波斯进行沙漠作战的困难：那里的星辰格外明晰，遍地都是黄沙，而水源边总是流传着许多传说。[教诲：沙的故事］",
+      "participants": [
+        "chaima",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.arun",
+      "desc_cn": "阿伦正在讲述他还是兜颈贵胄的一员时发生的事，他们与自己移居国度的入侵者们进行了大战——他们搅动的河流，他们创造的群狮……[教诲：武力之敕令]",
+      "participants": [
+        "chaima",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.azita",
+      "desc_cn": "柴玛和阿齐塔正在讨论图拉古拉里所使用的投枪，那是曾猎杀不朽者的组织——谈及他们的锻造工艺，塑形手法，还有为加强投枪的毒性而施加的恶毒诅咒。[教诲：锋锐］",
+      "participants": [
+        "chaima",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.connie",
+      "desc_cn": "柴玛和康妮怀着悲伤之情谈论着“餮猊”，即那些选择饮下厄客德娜赠物的狻猊……[教诲：狼的故事]",
+      "participants": [
+        "chaima",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.coquille",
+      "desc_cn": "柴玛和科基尔正在讨论“蛇之诗”，一种可从蛇的行迹中识别出的符号，用于狩猎与其他目的。令人意外的是，科基尔似乎对蛇很是了解……[教诲：阙前格律］",
+      "participants": [
+        "chaima",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.corso",
+      "desc_cn": "科尔索专注地倾听着，柴玛正讲述她在1920 年代时与清算人暴徒们（以寿命放债的高利贷者）间的恶战……[教诲：残破十字路]",
+      "participants": [
+        "chaima",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.dagmar",
+      "desc_cn": "妲格玛从姆扎卜特五城回来了（“没有我朋友的踪迹，也许是被吃掉了，不过那里可真迷人，我要能画两笔就好了。”） 她说了一大堆关于这个地区的消息，柴玛也很想听听。尽管妲格玛似乎还是觉得她名叫 “查理”。[教诲： 沙的故事]",
+      "participants": [
+        "chaima",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.douglas",
+      "desc_cn": "柴玛和道格拉斯正在讨论伊尔莎·比绍夫的实验电影<i>《敞开头脑》</i>。“我在亚历山大港看过这部电影，”柴玛表示。“我觉得她可能是被制烛人之梦触动了，祂会自战争中浮现，也会因轻率地分享知识而显身。”道格拉斯吸了口烟斗，“M 夫人想看这部电影，”他愁眉苦脸地说，“她也喜欢布努埃尔。”他又吸了口烟斗，“我可不喜欢那什么布努埃尔。”[教诲：伤疤的戒律]",
+      "participants": [
+        "chaima",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.ehsan",
+      "desc_cn": "柴玛打算猎杀一只<i>林鸮</i>，又称多翼者，它们有时侍奉上校，有时又侍奉狮子匠。她询问埃桑用什么诱饵为宜，埃桑毫不犹豫地回答道：“流言。”[教诲： 天空的故事]",
+      "participants": [
+        "chaima",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.fraser",
+      "desc_cn": "弗雷泽正向柴玛咨询穿越阿尔及利亚沙漠的路线。[教诲：沙的故事]",
+      "participants": [
+        "chaima",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.hokobald",
+      "desc_cn": "柴玛自忖可以用何种方式狩猎并击败霍科博尔德。霍科博尔德则描述了可以用何种方式捕获并吞噬她。很难确定他俩到底有几分喜爱这场谈话。[教诲：锤砧的戒律］",
+      "participants": [
+        "chaima",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.morgen",
+      "desc_cn": "柴玛直截了当地问摩根，她和其他丽姬亚是否为孪生子的具名者。摩根戏剧性地表现出震惊，暗示了这是真的；她又暗示了自己与圣杯、弧月或黑骸有联系。[教诲：天空的故事］",
+      "participants": [
+        "chaima",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.olympe",
+      "desc_cn": "宴罢将散之刻，柴玛不情不愿地说起了她所谓的“风之躔”。她掏出刀在桌子上刻划，刻下的语言俗名又称“解踪语”。柴玛解释道，这些字符记录了她的一次狩猎，不过她不会用任何一种人类的语言为猎物命名。[教诲：解踪语]",
+      "participants": [
+        "chaima",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.serena",
+      "desc_cn": "柴玛讲述了她在边境曾败于“守门者”福尔库鲁斯之手。瑟雷娜听得入神，试着引她更加深入：福尔库鲁斯真的是雅努斯的具名者吗？ 雅努斯又是真实的吗？ 柴玛表示对这两个问题不感兴趣，并低语补充道，瑟雷娜问的这些问题很不明智。[教诲：曙光的静观]",
+      "participants": [
+        "chaima",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.stanislav",
+      "desc_cn": "斯坦尼斯拉夫和柴玛正在讨论如何治疗巨兽造成的伤口：狻猊和剑齿兽；塔拉斯克兽和拉维林兽；还有因与蚁母有亲缘关系而被叫做幼妹的巨蛇。[教诲：缝合与装订］",
+      "participants": [
+        "chaima",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.stanislav.ehsan",
+      "desc_cn": "斯坦尼斯拉夫，柴玛与埃桑正在讨论如何治疗巨兽造成的伤口：塔拉斯克兽和拉维兽；因与蚁母有亲缘关系而被叫做幼妹的巨蛇；还有狻猊和剑齿兽。柴玛提及剑齿兽时，斯坦尼斯拉夫瞥了一眼埃桑。埃桑微笑着挥挥手，表示他毫不在意：但随即，一缕来自旧日的苦痛却爬上了他的脸庞。[教诲：缝合与装订]",
+      "participants": [
+        "chaima",
+        "stanislav",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.yvette",
+      "desc_cn": "柴玛请伊薇特给自己解梦——她梦见世界以西有一片纯白的荒原，苍白的喑人们用公牛的鲜血染红了皑皑白雪……[教诲：雪的故事］",
+      "participants": [
+        "chaima",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.zachary",
+      "desc_cn": "柴玛和扎迦利讨论起各自身为猎人的悔恨。[教诲：残破十字路]",
+      "participants": [
+        "chaima",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.agdistis",
+      "desc_cn": "康妮和阿格狄斯提斯再次探讨起窥天术。她让手下的人研究过阿格狄斯提斯的一些想法，而她此刻神情严肃。“要比日蚀严重得多，”她阴沉着脸说，“甚至可能是一场太阳大战。”[教诲：窥天术]",
+      "participants": [
+        "connie",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.aladim",
+      "desc_cn": "康妮与阿迪姆再次讨论起伊娃·德沃尔夫和富兰克林·班克罗夫特。康妮端起杯抿了一口，看着他慢慢凑近自己，诵起班克罗夫特写的诗歌。[教诲： 珍珠与浪潮]",
+      "participants": [
+        "connie",
+        "aladim"
+      ],
+      "befriend": "befriend.aladim.connie"
+    },
+    {
+      "id": "slnev.connie.arthur",
+      "desc_cn": "康妮和亚瑟正在讨论特蕾莎·加尔米耶的著作，论述了名为 “雅努斯 ”的神秘神灵的那本。二人都表现出略带拘束的职业礼节。[教诲：守夜人的悖论]",
+      "participants": [
+        "connie",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.arun",
+      "desc_cn": "上一次，阿伦向康妮询问了根冠和防剿局间可能存在的联系。之后，他显然看了不少资料，于是这次，他向康妮奉上了一篇阔论高谈。这似乎令她更加生厌了。[教诲：无侵之敕令]",
+      "participants": [
+        "connie",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.azita",
+      "desc_cn": "二人上次相聚时，康妮安排了从阿齐塔处购置辟邪宝石一事。事情显然已经办妥：现在康妮和阿齐塔正在商讨用防剿局资金投资一个冒险的采珠项目……[教诲：雕珀与琢石］",
+      "participants": [
+        "connie",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.chaima",
+      "desc_cn": "柴玛和康妮正非常小声地谈论着组成丽姬亚俱乐部的那七位阿卢卡……[教诲：狼的故事]",
+      "participants": [
+        "connie",
+        "chaima",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.chaima.morgen",
+      "desc_cn": "柴玛和康妮正非常小声地谈论着组成丽姬亚俱乐部的那七位阿卢卡……还频频瞥向面带摩根式微笑的摩根。[教诲：狼的故事］",
+      "participants": [
+        "connie",
+        "chaima",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.coquille",
+      "desc_cn": "康妮和科基尔正在讨论近日发生的海难事件，及其与伊苏可能的关联……[教诲：大海的故事］",
+      "participants": [
+        "connie",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.corso",
+      "desc_cn": "康妮正在向明显神情紧张的科尔索询问《圣觚石祷文》的内容和历史……还有最近局里此书抄本失踪一事。[教诲：三重誓之仪]",
+      "participants": [
+        "connie",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.dagmar",
+      "desc_cn": "康妮和妲格玛正在讨论一个叫“骨白拂晓”的小教团，该组织对伊苏的关注使康妮担忧。[教诲： 珍珠与浪潮]",
+      "participants": [
+        "connie",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.douglas",
+      "desc_cn": "道格拉斯和康妮正在谈工作；他们需要在说出某些存在的本名后在桌子上洒盐，而另一些存在的本名则完全不可说出，而是代称为 “王家带刺的”，“蓝色易怒的”，以及“油亮光滑的”。[教诲：疫疠的奥秘］",
+      "participants": [
+        "connie",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.ehsan",
+      "desc_cn": "埃桑和康妮正在讨论授予德沃尔夫家族的特权，<i>sicut regale</i>，“像国王一样”，通常是只授予边地领主，尽管布兰库格离威尔士的边地还远。“我觉得布兰库格有时像矗立在月亮边地上，”埃桑赞同道，“不过不是在我那个时代。危机已经消退了，一如既往。可伊苏依然恒存，也是一如既往。”[教诲： 疫疠之秘]",
+      "participants": [
+        "connie",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.fraser",
+      "desc_cn": "康妮和弗雷泽正在为介壳种可能会回归而争论不休。康妮理所当然地将其视为威胁；而弗雷泽不出意料地将其视为机遇。[教诲：覆画残迹与古老前身]",
+      "participants": [
+        "connie",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.hokobald",
+      "desc_cn": "近日以来，瑞士-德国边境出现毒雾，康妮就此对霍科博尔德展开了严密盘问。霍科博尔德否认自己介入过此事，还巧辩称，这可能是另一位制烛人具名者出现的先兆……[教诲：焰篆体]",
+      "participants": [
+        "connie",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.morgen",
+      "desc_cn": "康妮小心谨慎地向摩根询问她与赤杯——生诞与食欲之司辰的关系。摩根满不在乎地吐露了一些回忆，不过她坚称，在所有非亲姐妹里，她是“最没圣杯倾向的人”。[教诲：三重誓之仪]",
+      "participants": [
+        "connie",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.olympe",
+      "desc_cn": "奥兰普正就着局里查封维罗的唱片《开启天穹》一事向康妮施压。康妮显然很乐意与她交锋：“我们有充分的理由”；“这是一场采访吗，奥兰普”；“很多问题都不接受采访”等等。不过当奥兰普提到“制烛人”这个词时，她就变得有些恼了。[教诲：复苏与羽化]",
+      "participants": [
+        "connie",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.serena",
+      "desc_cn": "康妮和瑟雷娜就虚源神是习惯栖居在虚界，被驱赶降回虚界，还是本就身负虚界展开讨论。[教诲：疫疠之秘]",
+      "participants": [
+        "connie",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.stanislav",
+      "desc_cn": "康妮正在调查德国和一些低地国家显现的<i>Spinnennebel</i>——一种类蛛烟雾。斯坦尼斯拉夫闻所未闻，不过他也同意这东西听起来既不像蜂房，也不像巢穴，更不像虫蛹……[教诲：昆虫与花蜜］",
+      "participants": [
+        "connie",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.yvette",
+      "desc_cn": "“四方之地的语言，” 康妮摇摇头。“我进防剿局前在那边学过。要是说太多，会破坏气氛。不过还是能给些建议。”[教诲：夜魄语]",
+      "participants": [
+        "connie",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.zachary",
+      "desc_cn": "扎迦利向康妮寻求建议，他计划用收容纹身控制身体状况。“我希望你能早点来找我。” 她叹了口气。不过当然，她会竭尽所能给他帮助。[教诲：收容之墨]",
+      "participants": [
+        "connie",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.agdistis",
+      "desc_cn": "科基尔与阿格狄斯提斯正在聊现代舞。[教诲：鼓点与舞步]",
+      "participants": [
+        "coquille",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.aladim",
+      "desc_cn": "阿迪姆和科基尔再次进行了交锋。她直截了当地问起他长生者身份的性质；他告诉她，他“在沙漠中找到了自己的守护者”。他问她是否 “与克罗格有关”；她假装为在他问自己的年龄而生气，只回答说自己还不到一个世纪。[教诲：覆画残迹与古老前身］",
+      "participants": [
+        "coquille",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.arthur",
+      "desc_cn": "亚瑟和科基尔又在讨论家庭、生育、婚姻的危险。科基尔已经在暗示，自己很乐意被介绍给亚瑟的一位更年轻合意的亲戚。一卷青丝自然而然地垂靠在她完美无瑕的面庞。她的牙齿和双眸都很明亮。亚瑟如一座炮火围攻的堡垒般岿然不动，不断把话题引回到血上。[教诲：诱惑与消殒]",
+      "participants": [
+        "coquille",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.arun",
+      "desc_cn": "科基尔与阿伦发现，在受流放离开的次大陆上，他们有着共同的家人。他们热切地谈起表亲们显现出的家族特征；他们的蜕变和发展；他们新孵化的亲族。[教诲：复苏与羽化]",
+      "participants": [
+        "coquille",
+        "arun"
+      ],
+      "befriend": "befriend.arun.coquille"
+    },
+    {
+      "id": "slnev.coquille.azita",
+      "desc_cn": "科基尔和阿齐塔又在讨论吸入芳香精华带来的“灵魂的诱惑”。友人兼供货商乔吉奥的失踪激起了科基尔的不安；她好奇阿齐塔是否将他当作了难缠的竞争对手。阿齐塔淡淡地表示，对于此事，她负不了半点责任。[教诲：光明果悦音]",
+      "participants": [
+        "coquille",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.chaima",
+      "desc_cn": "科基尔对沉默、警觉的柴玛描述着“蛇之诗”。科基尔的双眼闪烁如玛瑙；她的牙齿比往常更显眼；甚至连说话时的嘶嘶声也更明显。[教诲：阙前格律]",
+      "participants": [
+        "coquille",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.connie",
+      "desc_cn": "科基尔与康妮谈论着两百多年前，富兰克林·班克罗夫特与伊娃·德沃尔夫之间的绯闻，班克罗夫特的离去，和他们可能生下的孩子。“能被充满爱的家庭收养真是好事，”科基尔笑着说，但她不愿透露这话的意思。[教诲：大海的故事]",
+      "participants": [
+        "coquille",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.corso",
+      "desc_cn": "为了打动科基尔，科尔索讲了好些人称“巨颚阁下”具名者的事迹，差点就要暗示他曾见过它。科基尔不为所动。但她一直微笑，于是他也一直讲述。[教诲：伟大符印与伟大伤疤]",
+      "participants": [
+        "coquille",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.dagmar",
+      "desc_cn": "妲格玛与科基尔谈着伟大符印与伟大伤疤，其间，为把科基尔介绍给一位“很不错的边境伯爵”，妲格玛数次偏离了话题。[教诲：伟大符印与伟大伤疤]",
+      "participants": [
+        "coquille",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.douglas",
+      "desc_cn": "道格拉斯转向科基尔，难过地摇头。“你的逮捕令出来了。如果你提前出发，我可以放你先走，但希顿中士已经从甜美的骨头带走了你的司机。你得试试走悬崖。”\n\n他看着科基尔瞪大眼睛，默默数到三，然后很满意地说，“哦，不，我记错人了。”\n\n自那以后，两人相处得非常融洽。[教诲：手术与放血]",
+      "participants": [
+        "coquille",
+        "douglas"
+      ],
+      "befriend": "befriend.coquille.douglas"
+    },
+    {
+      "id": "slnev.coquille.ehsan",
+      "desc_cn": "科基尔为了戏弄埃桑，提及了光明果在医疗上会带来的后果。他不觉得好笑。[教诲：光明果悦音]",
+      "participants": [
+        "coquille",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.fraser",
+      "desc_cn": "科基尔与弗雷泽谈论兜颈贵胄们在诸史之间的迁移。他问起第五史中是否还有介壳种活跃，但她拒绝作答。[教诲：覆画残迹与古老前身]",
+      "participants": [
+        "coquille",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.hokobald",
+      "desc_cn": "科基尔正与霍科博尔德在肆无忌惮地调情。他侧过头凝视她，目光滚烫如炉，既有情欲，又有饥饿。他口中挂着涎水。[教诲：诱惑与消殒]",
+      "participants": [
+        "coquille",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.morgen",
+      "desc_cn": "科基尔与摩根陷入了一场冷冰冰的恭维之战。[教诲：景象与感知]",
+      "participants": [
+        "coquille",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.olympe",
+      "desc_cn": "科基尔与奥兰普比较着梯弗利斯的餐馆。科基尔坚称，自社会主义共和国建立以来，那里就在走下坡路；奥兰普反驳道她只是没找对馆子。[教诲：香料与滋味]",
+      "participants": [
+        "coquille",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.serena",
+      "desc_cn": "科基尔与瑟雷娜谈论起“日之道途”，传说中，只有未分裂的骄阳才能踏着它穿行漫宿，并推测起骄阳的分裂自我——如狼与昕旦——现在是否踏足其上。科基尔推测，如果弧月行于其上，也许就能解释影之漫宿的一些故事，此地也时常被称为月亮之居屋……[教诲：门扉与墙垣]",
+      "participants": [
+        "coquille",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.stanislav",
+      "desc_cn": "科基尔向斯坦尼斯拉夫吹嘘，她上一任父亲的宫殿里有会吃小孩的树篱绿雕。不清楚他是否听信。[教诲：叶片与棘刺]",
+      "participants": [
+        "coquille",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.yvette",
+      "desc_cn": "科基尔问伊薇特对克雷姆杜血脉“黑鸽”有何了解。伊薇特讲了一个赫沃尔语民间传说，其中黑鸽由赫沃尔亲自委任为月亮边地的看守——这个传说与布兰库格有关。[教诲：大海的故事]",
+      "participants": [
+        "coquille",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.zachary",
+      "desc_cn": "扎迦利与科基尔探讨了司辰“束缚与限制”祂们竞争对手的方式，这些方式保证了漫宿内免于发生战争。扎迦利认为此类“束缚与限制”正日渐薄弱。这般前景似乎挑逗得科基尔兴奋起来，但扎迦利缓缓摇头否定。“蠕虫。”他低语。[教诲：伟大符印与伟大伤疤]",
+      "participants": [
+        "coquille",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.agdistis",
+      "desc_cn": "阿格狄斯提斯与科尔索友好地探讨于“太阳之路”中长大的经历。他们都曾是唱诗班男孩。（“我知道，我知道，”科尔索说。“然后我就开始抽烟了。”）[教诲：无敌太阳典仪]",
+      "participants": [
+        "corso",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.aladim",
+      "desc_cn": "科尔索渴望了解更多尼沙布尔的雅登的消息，阿迪姆可能与此人相识已久……可当科尔索的好奇发展成了对某些珍本保藏地的探求时，阿迪姆的态度逐渐冷淡了。[教诲：覆画残迹与古老前身]",
+      "participants": [
+        "corso",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.arthur",
+      "desc_cn": "科尔索和亚瑟一直在用半生不熟的厄里卡帕奥语笨拙地交谈。亚瑟进步了许多，他平静地解释说，这多亏了朱利安·科赛利的帮助。“他真的还活着吗？” 科尔索怀疑地问道。“活着？ 什么叫活着？”亚瑟回答道。“帝国还活着吗？”[教诲：厄里卡帕奥语]",
+      "participants": [
+        "corso",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.arun",
+      "desc_cn": "科尔索和阿伦嘲笑了马斯格雷夫·德沃尔夫对伟大墨水贵紫的理论。[教诲：启示之墨]",
+      "participants": [
+        "corso",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.azita",
+      "desc_cn": "科尔索和阿齐塔正在讨论近日发现的一些信件，据说是女修道院长梅兰瑟写给哈罗德之女冈希尔德的。他们探讨着信中内容，还不时地进行粗略估价。[教诲：精炼与擢升］",
+      "participants": [
+        "corso",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.chaima",
+      "desc_cn": "“可恨的语言，”科索沮丧地说。“可你知道吗，柴玛？只要一开口，就很难停下， 即便你已身陷危机。”[教诲：希克索斯语]",
+      "participants": [
+        "corso",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.connie",
+      "desc_cn": "之前，康妮怀疑科尔索可能与局里《圣觚石祷文》复制品的失窃有关。看样子，在解决了一个编目错误后，它又被找到了。罕能得见康妮如此不知所措。科尔索则发表了一通长篇大论，毫不留情地批评了姐妹会的异端行径，以庆祝其失而复得。[教诲：三重誓之仪]",
+      "participants": [
+        "corso",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.coquille",
+      "desc_cn": "科尔索试着靠即兴背诵《干渴密续》来打动科基尔。他的发音很古怪，而科基尔却意外地兴致勃勃。到头来，就连科尔索也明白了，她只想探听复制品的位置而已，可科尔索似乎并不挂怀。[教诲：兰花与迷药]",
+      "participants": [
+        "corso",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.dagmar",
+      "desc_cn": "科尔索和妲格玛正饶有兴致地就如何用夜游术中某些下作技巧来撬锁，进行了一场<i>完全理论层面的</i>的讨论。还讨论了特蕾莎·加尔米耶究竟是位夜游学家（妲格玛认为）还是位司辰学家（科尔索认为）。[教诲：锁簧与发条]",
+      "participants": [
+        "corso",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.douglas",
+      "desc_cn": "道格拉斯和科尔索和气地聊起教堂。（道格拉斯曾是个非国教徒，但摩尔夫人反对。）[教诲：无敌太阳典仪]。",
+      "participants": [
+        "corso",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.ehsan",
+      "desc_cn": "科尔索向埃桑强调，特蕾莎·加尔米耶亲自去过他在牛津开的书店。“她用的化名。所以我也不想让她尴尬。她变了，但她还是她。但她确实变了，变高了。嗯，好像是更高了吧，也不完全是变高了。别笑了，埃桑——”[教诲：精炼与擢升]",
+      "participants": [
+        "corso",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.fraser",
+      "desc_cn": "弗雷泽与科尔索争论美杜莎的谜语：“何物不得见？”科尔索从容地比划着，指夹香烟：“既然不得见，众司辰就不知它发生于何处。归根结底，‘最重要的是溯源’。”[教诲：覆画残迹与古老前身]",
+      "participants": [
+        "corso",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.hokobald",
+      "desc_cn": "在科尔索巧妙的奉承后，霍科博尔德即兴讲了一堂渊深曼达安语的符号学课程。[教诲：渊深曼达安语]",
+      "participants": [
+        "corso",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.morgen",
+      "desc_cn": "科尔索与摩根就她闻名的“黑刚玉钥匙”的实际成分说笑起来，她坚称那只能喻为玻璃，而他暗示那是“某个僻静之处”的一扇彩玻璃窗。[教诲：玻璃与锻光]",
+      "participants": [
+        "corso",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.olympe",
+      "desc_cn": "奥兰普最近为米南德《燃烧的女人》演出写了评论，她视其为新司辰，“钢源诸神”，诞生的宣言，科尔索取笑了她。她承认这想法很荒谬，但或许导演不这么认为。[教诲：嬗变与解放]",
+      "participants": [
+        "corso",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.serena",
+      "desc_cn": "瑟雷娜与科尔索悲观地争论着诗人凯勒写下的阴沉警句：“星星是针戳的小洞，太阳却是创口。”科尔索认为它意指日后骄阳的分裂；瑟雷娜则提出，此句昭示着预言中浪游旅人攀至辉光的巡礼将迎来何等恐怖的结局……[教诲：焰篆体]",
+      "participants": [
+        "corso",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.stanislav",
+      "desc_cn": "科尔索与斯坦尼斯拉夫谈起了饮下黑液“遗忘之水”后随之而来的梦境，以及他们与蛾之具名者异结翼的交谈。两人都声称从未采纳过它的建议。[教诲：兰花与迷药]",
+      "participants": [
+        "corso",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.yvette",
+      "desc_cn": "伊薇特与科尔索谈论起清算人暴徒，那群掠夺成性的年岁商人。伊薇特试探性提出，如果可行，希望科尔索帮她联系上清算人……但他劝阻了她。“你知道他们所说的‘研磨’意味着什么吗？‘操偶’呢？去了解一下再说吧，骚赛博士。”[教诲：白雪的故事]",
+      "participants": [
+        "corso",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.zachary",
+      "desc_cn": "扎迦利请科尔索教他用希克索斯语祈祷——“万一我醒来的时候死掉了呢。”[教诲：希克索斯语]",
+      "participants": [
+        "corso",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.agdistis",
+      "desc_cn": "妲格玛愉快地讲述新型哈蒙德牌电风琴在夜游术和音乐上的诸多可能性，阿格狄斯提斯则心存怀疑。“运一台过来吧，就放进我的风琴楼厢，”她兴奋地说。“当然我们得先给楼厢通上电。还有城堡，要给城堡盖个屋顶。你不会恰巧很有钱吧，阿格斯？ 能给女士帮帮忙吗？”[教诲：锁簧与发条]",
+      "participants": [
+        "dagmar",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.aladim",
+      "desc_cn": "妲格玛和阿迪姆愉快地聊起麦地那所作的《河川诸女王》。[教诲：道途与朝圣］",
+      "participants": [
+        "dagmar",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.arthur",
+      "desc_cn": "妲格玛和亚瑟讨论起“转居”——灯之长生者与类似的漫宿生物在镜子和光源中显灵的方式。（妲格玛不喜欢 “附体”这个词，她觉得这个词“低级”。）[教诲：玻璃吹制与容器制造]",
+      "participants": [
+        "dagmar",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.arun",
+      "desc_cn": "阿伦和妲格玛欣喜地互相打起了招呼，很快又开始了他们常玩的猜谜游戏；可当阿伦意识到妲格玛问他有关“伤逝散释水（悲恸之溶剂）”的谜语，只是想看看自己能否让前兜颈贵胄的“牙齿发出嘶嘶声 ”时，他便摆起了架子。[教诲：溶解与离析］",
+      "participants": [
+        "dagmar",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.azita",
+      "desc_cn": "妲格玛和阿齐塔正在讨论如何遏制叫做丘陵之子的野蛮林地生物，这些家伙显然给阿齐塔的生意带来了麻烦，因为这营生显然需要在深夜运送大量枪支穿越欧洲的荒野。[教诲：玻璃吹制与容器制造］",
+      "participants": [
+        "dagmar",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.chaima",
+      "desc_cn": "妲格玛计划去阿尔及利亚的姆扎卜特五城“抓一个可恶的麻烦制造者。” 她恳请柴玛（她一直不自觉地叫她“查理”）给她一些这片地区的注意事项。[教诲： 沙的故事］",
+      "participants": [
+        "dagmar",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.connie",
+      "desc_cn": "就防剿局及其欧洲近亲机构的越权行为，妲格玛对康妮展开了一番说教，援引了神学与自然哲学领域的论点和先例。康妮基本听进去了，基本保持了耐心。[教诲：阈限之敕令]",
+      "participants": [
+        "dagmar",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.coquille",
+      "desc_cn": "妲格玛与科基尔又在探讨伟大符印与伟大伤疤；对那位“很不错的边境伯爵”的讨论又几次打断了谈话，实际上，正是妲格玛把科基尔介绍给边境伯爵的——看样子妲格玛现在已经后悔了。[教诲：伟大符印与伟大伤疤]",
+      "participants": [
+        "dagmar",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.corso",
+      "desc_cn": "妲格玛与科尔索友好地进行了争论，杰弗里院长那本谈及福尔库鲁斯、利门提努斯与卡尔迪亚的对话录，究竟能否算作“规范的夜游术著作”。[教诲：伟大符印与伟大伤疤]",
+      "participants": [
+        "dagmar",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.douglas",
+      "desc_cn": "就防剿局的越权行为，妲格玛大肆训斥道格拉斯，但他只是抱臂端坐，静静微笑，时不时说出又一起性质险恶以至于防剿局必须介入的事件：“兰斯”“瑞维克”“特罗文”或者“荒林俱乐部”。每一个都打得妲格玛措手不及，但她重振信心，说每一次都有不同原因；道格拉斯至少可以利用她解释的时间喝喝饮料、添添烟斗。[教诲：无侵之敕令]",
+      "participants": [
+        "dagmar",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.ehsan",
+      "desc_cn": "妲格玛阴沉地警告埃桑“维也纳的动静”：“那个讨人厌的小个子。房顶上满是<i>林鸮</i>，你知道的。它们对战争的喜爱甚过闲言碎语。”[教诲：天空的故事]",
+      "participants": [
+        "dagmar",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.fraser",
+      "desc_cn": "弗雷泽又想要妲格玛帮忙，这次是为了打开他从薄暮群屿收到的被九重深锁的盒子，他希望里面可能藏着“某张地图”。然而，他断然拒绝将盒子给妲格玛看，面对如此不信任，妲格玛表示愤懑；交谈就此以失败告终。[教诲：锁簧与发条]",
+      "participants": [
+        "dagmar",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.hokobald",
+      "desc_cn": "霍科博尔德与妲格玛讨论威廉·哈里斯的作品，特别提及了其中对门楣与门槛的论述。霍科博尔德一贯的轻蔑逐渐淡化，他饶有兴趣地倾听妲格玛的回应。但妲格玛依旧谨慎地保持着距离，并且在霍科博尔德摆弄过她的盘子和茶匙以演示她的观点之后，她斜眼看了看，就再也不碰那些东西了。[教诲：门扉与墙垣]",
+      "participants": [
+        "dagmar",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.morgen",
+      "desc_cn": "妲格玛与摩根讨论了猫和狗各自的优处。偏爱猫的摩根指出，众所周知，猫无需凡人或不朽者干预也能进入漫宿，还能携“赠礼”返回醒时世界。妲格玛以同一理由论证狗更加优越。[教诲：毛皮与羽翎]",
+      "participants": [
+        "dagmar",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.olympe",
+      "desc_cn": "奥兰普正在写一部小说，其中一个角色是位犯罪化学家，专门研究酸与毒药；她希望妲格玛能协助她搜集资料。妲格玛立即警觉起来，坚称自己只懂“柠檬汁什么的”；然而在奥兰普解释主角的原型是科基尔后，她就放松下来，谈起了透指毒素的特性。[教诲：溶解与离析]",
+      "participants": [
+        "dagmar",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.serena",
+      "desc_cn": "妲格玛对着瑟雷娜引用了萨维奇《第七音》中的一些下流笑话。瑟雷娜指出其韵律中的诱梦风险；妲格玛咯咯直笑，引用了更多笑话。[教诲：阙前格律]",
+      "participants": [
+        "dagmar",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.stanislav",
+      "desc_cn": "妲格玛实事求是地向斯坦尼斯拉夫描述了某些穿越边境的路线，它们只向自伤溅血之人敞开。她甚至给他看了自己的伤疤。[教诲：手术与放血]",
+      "participants": [
+        "dagmar",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.yvette",
+      "desc_cn": "伊薇特与妲格玛都梦见过与双角斧之具名者的交谈，她公正待客，她即是“半面”刻塞诺狄刻。妲格玛确信，两人所见都是真正的刻塞诺狄刻。伊薇特以同等的坚定地确信，与她们对话的不过是一位来自集体无意识的使节，但妲格玛问起那与“真正”具名者有何区别时，她也答不出来。[教诲：音律与铭记]",
+      "participants": [
+        "dagmar",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.zachary",
+      "desc_cn": "妲格玛试图为扎迦利解释萨维奇《第七音》中的一些下流笑话。扎迦利彬彬有礼地做着笔记。[教诲：阙前格律]",
+      "participants": [
+        "dagmar",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.agdistis",
+      "desc_cn": "道格拉斯与阿格狄斯提斯谈起蜕衣俱乐部，阿格狄斯提斯曾在那里工作，而道格拉斯参与过对它的查封。道格拉斯不觉有错，但表示了遗憾。[教诲：鼓点与舞步]",
+      "participants": [
+        "douglas",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.aladim",
+      "desc_cn": "道格拉斯与阿迪姆想要辨清，阿迪姆飞升为浪游旅人的长生者后身具的不寻常特性，究竟有无触犯英国的任何法律。他两人最终还是认为他违法了，但道格拉斯务实地考虑到逮捕他的难度，决定仅施以警告，放他一马，除非他再飞升一次。[教诲：无侵之敕令]",
+      "participants": [
+        "douglas",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.arthur",
+      "desc_cn": "道格拉斯与亚瑟公事公办地聊起了对立双刃蒂尔黛与图格，以及这些年来他们惹的麻烦……但话题骤然转变：身为名副其实的警探，道格拉斯揭开了亚瑟家族历史的隐秘面纱，意识到他们相同的姓氏并不是巧合，他其实是亚瑟的侄孙。道格拉斯的情绪只表露在重复使用“好吧，真是难以置信”这句话，以及在曲终人散时不自然地长时间握手中。[教诲：伤疤的戒律]",
+      "participants": [
+        "douglas",
+        "arthur"
+      ],
+      "befriend": "befriend.arthur.douglas"
+    },
+    {
+      "id": "slnev.douglas.arun",
+      "desc_cn": "阿伦十分关心一位即将成为灯之长生者的准晋升者：他向道格拉斯分享了此人的名字和诸多信息。“刀子，绞索，火焰，字词，嗯？我不喜欢；但我也不喜欢这个有志青年。”[教诲：疫疠之秘]",
+      "participants": [
+        "douglas",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.azita",
+      "desc_cn": "阿齐塔与道格拉斯在推测特蕾莎·加尔米耶目前的位置和去向，她曾两度身为凡人，两度升至长生……[教诲：精炼与擢升]",
+      "participants": [
+        "douglas",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.chaima",
+      "desc_cn": "道格拉斯与柴玛愉快地讨论着被人咬、被东西咬、以及人咬其他东西时的实用对策。[教诲：缝合与装订]",
+      "participants": [
+        "douglas",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.connie",
+      "desc_cn": "道格拉斯与康妮重温曾经的案件，兴高采烈地推测着被他们抓捕入狱的学徒们最终的归宿。[教诲：无侵之敕令]",
+      "participants": [
+        "douglas",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.coquille",
+      "desc_cn": "科基尔笑着说，如果防剿局签发了她的逮捕令，希望道格拉斯能提醒她。“目前没有，”他答道，“但我们肯定能整理出证据。”接下来的大部分用餐时间里，科基尔都在引述扎拉的《分裂之时》，并询问：如果在一场鸡尾酒派对上背这本书，哪些内容足以让她被当场逮捕。[教诲：手术与放血]",
+      "participants": [
+        "douglas",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.corso",
+      "desc_cn": "道格拉斯与科尔索探讨起《骄阳之书》通行版与核准版之间的微妙差别……但是起先，科尔索一直在对道格拉斯表现出的兴趣大惊小怪，直到他克服这点后，探讨才得以展开。（“根本没人相信我也有学位，”道格拉斯嘟哝着。）[教诲：无敌太阳典仪]",
+      "participants": [
+        "douglas",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.dagmar",
+      "desc_cn": "道格拉斯和妲格玛犹如休养院里两位退休老人，讨论着他们的健康问题及其随后的手术细节，亲密得十分诡异。[教诲：手术与放血]",
+      "participants": [
+        "douglas",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.ehsan",
+      "desc_cn": "道格拉斯问埃桑，他是否真的像鼹鼠一样钻过地；他是由孕育而生，还是被锻造而成的；他是否曾“吃过人”。埃桑礼貌地回答了这些问题：确切来说没有；不是孕育而生的；从来没有。[教诲：精炼与擢升]",
+      "participants": [
+        "douglas",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.fraser",
+      "desc_cn": "弗雷泽想知道道格拉斯打算“如何处理原生先知”。但道格拉斯并不打算处理原生先知。弗雷泽想知道<i>局里</i>打算对原生先知采取什么措施。道格拉斯表达出困惑，而弗雷泽流露出愤怒。道格拉斯表示他对原生先知无能为力。最后两人都同意，原生先知确实不是真有办法可以对付的那种东西。[教诲：岩石的故事]",
+      "participants": [
+        "douglas",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.hokobald",
+      "desc_cn": "道格拉斯和霍科博尔德很难找到共同话题，直到出于偶然，有人提到了奋进会对火焰占卜的狂热，这种狂热甚至偶尔会发展到直接纵火的地步。两人一致认为，奋进会是一群喜欢玩火的势利小人，应该被关进监狱。［教诲：焰篆体］",
+      "participants": [
+        "douglas",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.morgen",
+      "desc_cn": "又一次，摩根用伤脑筋的假设来戏弄道格拉斯：如果她那些非亲姐妹们发动袭击，比如说操线仙娥、亦或是怪物之母，道格拉斯能用什么方法将她们击退？但他始终冷静沉着地回答，有一次甚至成功地直视了她那地平线般湛蓝的眼睛。[教诲：淬火与熄焰]",
+      "participants": [
+        "douglas",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.olympe",
+      "desc_cn": "道格拉斯阴沉地警告奥兰普不要在睡前编织东西，因为那可能会打开通往林地的道路。（“没错，我会编织。绅士也可以会编织。”）［教诲：缝纫与编织］",
+      "participants": [
+        "douglas",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.serena",
+      "desc_cn": "道格拉斯和瑟雷娜讨论他们对编织的共同热爱，深藏不露但乐此不倦。道格拉斯说：“如果你把这事泄露给房间外的任何人，我会把你关进监狱。”瑟雷娜回应：‘如果<i>你</i>把这事泄露给房间外的任何人，我就把你的住址告诉坩埚王。[教诲：缝纫与编织]",
+      "participants": [
+        "douglas",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.stanislav",
+      "desc_cn": "斯坦尼斯拉夫向道格拉斯询问大约六百年前的诺娜院长之死——据说是谋杀。道格拉斯承认，严格来说这属于局里的管辖范围；并且局里不承认任何短于永恒的时效限制；他还补充说自己有大量的事情要处理，但他承诺会调查此事，并向斯坦尼斯拉夫提出了一些关于稀有毒草的深刻问题。［教诲：草药与药汤］",
+      "participants": [
+        "douglas",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.yvette",
+      "desc_cn": "伊薇特和道格拉斯讨论了他们曾遇到过的亡者。伊薇特提到了那些无口却哀求的阴影，它们移动时仿佛在水面之下，徘徊在入眠前的门槛上。道格拉斯则提到了那些裂口的破碎之物，“试图把我的头拽下来。”［教诲：音律与铭记］",
+      "participants": [
+        "douglas",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.zachary",
+      "desc_cn": "道格拉斯试图与扎迦利一起回忆他们在防剿局时的共事经历——那次，他们不得不剿灭一支在迪恩森林游荡的擂击者乐团。然而，扎迦利只是盯着他，摇了摇头——“我不记得了”——“我不记得了”——“我只记得当时很冷”——“我不记得了”。［教诲：淬火与熄焰]",
+      "participants": [
+        "douglas",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.agdistis",
+      "desc_cn": "埃桑和阿格狄斯提斯讨论起叩心魅，那永不止息的心之长生者，只偶尔会附身凡人以寻求片刻安宁。“我曾希望能成为那样的存在，”阿格狄斯提斯说，“但我的朋友苏洛恰娜让我明白了成为长生者意味着什么，于是我就打消这个念头了。”［教诲：精炼与擢升]",
+      "participants": [
+        "ehsan",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.aladim",
+      "desc_cn": "埃桑和阿迪姆在讨论山羊。他们似乎都对山羊十分了解且异常热情，但两人都不愿承认自己曾当过牧羊人。[教诲：毛皮与羽翎]",
+      "participants": [
+        "ehsan",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.arthur",
+      "desc_cn": "亚瑟谈到了群狮迷宫中的锻光技术；埃桑则提议餐后带亚瑟参观噤声居屋礼拜堂的彩色玻璃窗（“图书管理员，你准许吗？”）。［教诲：玻璃与锻光]",
+      "participants": [
+        "ehsan",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.arun",
+      "desc_cn": "埃桑向阿伦提供了一些实用建议，关于阿伦应该如何保存和保护那些不再受皮肤保存和保护的部分。［教诲：缝合与装订］",
+      "participants": [
+        "ehsan",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.azita",
+      "desc_cn": "埃桑和阿齐塔在讨论埃桑还身为剑齿兽时期的经历，剑齿兽是狮子匠的造物。埃桑愿意退化为人形的原因不止一个。他对海鲜的热爱是其中之一；但同样，他身为战士时从未感到过自在。（阿齐塔摇摇头，微微笑了笑。）［教诲：毛皮与羽翎］",
+      "participants": [
+        "ehsan",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.chaima",
+      "desc_cn": "就宁娜·拉格斯对鸟形司辰栖木的论述，埃桑和柴玛展开了讨论，并猜测她是否真的到访过那里。埃桑愿意相信她去过。“我曾在巴黎见过她一次，不久后，残阳就召唤她归家了。她是个非同寻常的人……”［教诲：天空的故事］",
+      "participants": [
+        "ehsan",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.connie",
+      "desc_cn": "埃桑想知道，康妮是否厌倦过执行法律。她回应道，“那我或许该问你，是否厌倦过治愈肉体。”［教诲：无侵之敕令］",
+      "participants": [
+        "ehsan",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.coquille",
+      "desc_cn": "埃桑和科基尔谈论起杯之长生者特里丰。埃桑说：“她为人所爱，因此她很幸福。”科基尔的脸庞掠过某种难以言喻的神情，犹如云层投下阴影，她一瞬间苍老了许多。“不，”她说，“她为人所爱，因此并不幸福。”［教诲：光明果悦音］",
+      "participants": [
+        "ehsan",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.corso",
+      "desc_cn": "埃桑和科尔索正讨论他们在漫宿外围的梦境。埃桑承认自己十分惊讶地发现：自从失去了剑齿兽的身份后，他发现自己对林地的亲近感减少了，而对漫宿的则增多了。最后一句话显然让科尔索深感不安：他挪了挪椅子，坐得离埃桑稍微远了点。［教诲：守夜人的悖论］",
+      "participants": [
+        "ehsan",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.dagmar",
+      "desc_cn": "埃桑和妲格玛正在讨论一场画展，展出的画作（在他们眼里）似乎受到了朱利安·科赛利著作的影响。妲格玛评论道：“不大喜欢，局里很快就会叫停展览。说不上有什么损失，世界上的丑东西已经够多了。”当她意识到自己正对着房间里最丑的人说话时，脸色顿时一片惨白，连忙开始道歉，甚至开始为自己的道歉而道歉。埃桑笑起来的声音像是磨砂。过了一会儿，妲格玛也跟着轻笑起来。［教诲：景象与感知］",
+      "participants": [
+        "ehsan",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.douglas",
+      "desc_cn": "埃桑需要前往苏黎世，并想知道道格拉斯的“同僚们”是否会逮捕他。道格拉斯翻阅他所谓的“恶罪清单”，遗憾地告诉埃桑，“是的，他们很可能会这么做。”（他建议埃桑别透露他将搭乘哪趟火车。）［教诲：精炼与擢升］",
+      "participants": [
+        "ehsan",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.fraser",
+      "desc_cn": "由于手部关节的变异，弗雷泽更愿意戴上手套，现在这些关节正给他带来巨痛；埃桑给了他一些建议。［教诲：草药与药汤］",
+      "participants": [
+        "ehsan",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.hokobald",
+      "desc_cn": "霍科博尔德低声咆哮，承认尽管，或是正因为他铸之长生者的身份，布兰库格的海风使他关节僵硬。埃桑淡淡地问道：“生锈了吗？”面对霍科博尔德的怒视，他道歉了，并开了一剂草药茶。［教诲：草药与药汤］",
+      "participants": [
+        "ehsan",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.morgen",
+      "desc_cn": "对于“下层天界的害兽”——<i>林鸮</i>的起源，摩根提出了一些看法；埃桑恭敬地表示了反对。“狮子匠或许改造了它们，但他从未创造过它们。”［教诲：弦乐与歌谣］",
+      "participants": [
+        "ehsan",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.olympe",
+      "desc_cn": "埃桑和奥兰普讨论了异端领袖希格尼法的疯狂理论。奥兰普提到希格尼法认为琥珀与伊苏——波涛外之城之间存在着联系，并承认这种联系一直对她有直觉上的深意，尽管她无法解释原因……［教诲：雕珀与琢石］",
+      "participants": [
+        "ehsan",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.serena",
+      "desc_cn": "埃桑和瑟雷娜回忆起他们尚在噤声居屋时的那段鼎盛时光，那时海风受束以保海洋安宁，追缴者们尚会回应盟约的圣语……［教诲：无敌太阳典仪］",
+      "participants": [
+        "ehsan",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.stanislav",
+      "desc_cn": "埃桑和斯坦尼斯拉夫愉快地互相吹嘘起他们曾治愈的病症。埃桑描述了一种颚部的堕落病变，他不得不用黄蜂和酒精进行净化；斯坦尼斯拉夫声称自己曾通过“理性辩论”驱除了患者的血绦感染。［教诲：手术与放血］",
+      "participants": [
+        "ehsan",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.yvette",
+      "desc_cn": "埃桑和伊薇特谈论起早期教会的圣徒滕特雷托，据说他可能是人类。埃桑描述了自己前往威尼斯圣滕特雷托神龛的朝圣之旅，但承认自己只是部分出于宗教好奇心——而更多的则是对威尼斯美食的热爱，以及想与一位老（他尴尬地咳嗽了下）朋友叙旧的渴望……［教诲：珍珠与浪潮］",
+      "participants": [
+        "ehsan",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.zachary",
+      "desc_cn": "埃桑和扎迦利讨论了伊利奥波里的诗句——引用了赫舍的原句：“<b>纯白</b>在世界以西，且<b>冬</b>不永待。”扎迦利突然说他想画出那抹纯白；埃桑则轻声鼓励他；他们开始讨论淡白至极的颜料。［教诲：视觉与感官］",
+      "participants": [
+        "ehsan",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.agdistis",
+      "desc_cn": "阿格狄斯提斯与弗雷泽回顾起弗雷泽意图策划的那出前瞻性芭蕾舞剧。阿格狄斯提斯最终同意担任编舞，只有一个条件：他极其厌恶弗雷泽先前拟定的标题《颅内的嗡鸣》，必须将其一票否决。[教诲：精炼与擢升]",
+      "participants": [
+        "fraser",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.aladim",
+      "desc_cn": "即使身处噤声居屋，阿迪姆与弗雷泽争论根冠之红花的本质时也依旧戒心满满——它多大程度上利用了净化之火，又在多大程度上依赖于幻象与欺骗？[教诲：力量之墨]",
+      "participants": [
+        "fraser",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.arthur",
+      "desc_cn": "亚瑟与弗雷泽正在谈论巴格达附近的阿什班深渊。弗雷泽希望深渊中涌动的力量与介壳种有联系，但亚瑟坚定地劝阻他：如果那力量曾属介壳种，如今已经易主。[教诲：虬蟠与裂隙]",
+      "participants": [
+        "fraser",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.arun",
+      "desc_cn": "弗雷泽向阿伦说起自身的变化，他的内在天性正在逐渐显现。他的言语充满自豪；但他忧心自己的身体已经开始分泌毒液，他有些束手无策……[教诲：群蛇与毒液]",
+      "participants": [
+        "fraser",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.azita",
+      "desc_cn": "弗雷泽与阿齐塔正商讨着什么见不得人的勾当，关于猛犸象牙和寒冰之梦……[教诲：犄角与象牙]",
+      "participants": [
+        "fraser",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.chaima",
+      "desc_cn": "柴玛正委托弗雷泽制作“高贵弹药”，用以对付普通子弹无可奈何的猎物。[教诲：锤砧的戒律]",
+      "participants": [
+        "fraser",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.connie",
+      "desc_cn": "弗雷泽想去参观防剿局的纯白展馆：其中展出着经过介壳种蜕变的动物遗骸。他振振有词地说自己能帮上忙，但康妮持怀疑态度。[教诲：毛皮与羽翎]",
+      "participants": [
+        "fraser",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.coquille",
+      "desc_cn": "弗雷泽就自己最近购买的一些东方物件向科基尔请教，他希望那些是来自第六史的覆画残迹……[教诲：覆画残迹与古老前身]",
+      "participants": [
+        "fraser",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.corso",
+      "desc_cn": "科尔索要出售一本不寻常的《骄阳之书》，此书由一位身负安泰俄斯血脉的神秘朝圣者“整理”而成。弗雷泽颇有兴趣，但是想见见整理者。科尔索摇头道：“我的客户付费，就是为了买我的守口如瓶。”[教诲：覆画残迹与古老前身]",
+      "participants": [
+        "fraser",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.dagmar",
+      "desc_cn": "弗雷泽想委托妲格玛检查他的安保措施。他尤其担心入侵者使用“碎门之钥”，也担心丽姬亚与她们的钥匙，不过妲格玛嗤之以鼻：“丽姬亚可不会在乎你那点收藏。”[教诲：锁簧与发条]",
+      "participants": [
+        "fraser",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.dagmar.morgen",
+      "desc_cn": "弗雷泽想委托妲格玛检查他的安保措施。他尤其担心入侵者使用“碎门之钥”，也担心丽姬亚与她们的钥匙，不过妲格玛嗤之以鼻：“丽姬亚可不会在乎你那点收藏。”对面的摩根歪着头眨了眨眼睛。[教诲：锁簧与发条]",
+      "participants": [
+        "fraser",
+        "dagmar",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.douglas",
+      "desc_cn": "弗雷泽向道格拉斯抱怨起入户盗窃。道格拉斯毫不留情地指出，弗雷泽该少往家里放违禁品。[教诲：狼的故事]",
+      "participants": [
+        "fraser",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.ehsan",
+      "desc_cn": "弗雷泽与埃桑正在谈论<i>塔拉西斯化</i>与<i>拉维林病</i>，产生于某些“与野兽来往”的家族中的可怕变形。[教诲：毛皮与羽翎]",
+      "participants": [
+        "fraser",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.hokobald",
+      "desc_cn": "弗雷泽与霍科博尔德开始斗嘴，争论有时被称为“最年长者”的语言灵体赫沃尔究竟属于林地还是漫宿。[教诲：赫沃尔语]",
+      "participants": [
+        "fraser",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.morgen",
+      "desc_cn": "弗雷泽阐述了他对震灾之名的理论：他认为所有的新地震都出自一个有限集合。摩根坚称，根本没有新地震，只是偶尔在海底，黑骸的某条肢体发生了断裂。[教诲：丘陵与孔窍]",
+      "participants": [
+        "fraser",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.olympe",
+      "desc_cn": "奥兰普与弗雷泽讨论了阿苏麦与阿夏廷。奥兰普惊慌坦白说，自己从来记不清两者的区别；尴尬过后，弗雷泽摇了摇头，承认“我也不行。”他们相视一笑。[教诲：启示之墨]",
+      "participants": [
+        "fraser",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.serena",
+      "desc_cn": "弗雷泽与瑟雷娜谈起安泰俄斯，或许是燧石与转轮的具名映象结合生下了他。弗雷泽想知道，如果安泰俄斯的先祖是不朽者，他们为何未被吞噬他的冲动侵扰。瑟雷娜问得引人深思：那你觉得，天孽是何时被定为罪孽的……[教诲：岩石的故事]",
+      "participants": [
+        "fraser",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.stanislav",
+      "desc_cn": "弗雷泽与斯坦尼斯拉夫讨论起布列坦尼的无尽石阵，斯坦尼斯拉夫就住在此地附近。弗雷泽坚称是介壳种布下了石阵。斯坦尼斯拉夫迁就着和他继续讨论。[教诲：岩石的故事]",
+      "participants": [
+        "fraser",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.yvette",
+      "desc_cn": "伊薇特向弗雷泽打听他的“眼之梦”。他迫不及待地告诉她，此梦是介壳种中那位“伟大混种”发出的讯息，但伊薇特将信将疑。[教诲：丘陵与孔窍]",
+      "participants": [
+        "fraser",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.zachary",
+      "desc_cn": "弗雷泽偶尔用委婉的言辞询问扎迦利的状况：他体内到底承载着什么，那东西可能有什么危险，又可能会变成什么。扎迦利谨慎模糊地一一作答。[教诲：群蛇与毒液]",
+      "participants": [
+        "fraser",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.agdistis",
+      "desc_cn": "霍科博尔德和阿格狄斯提斯讨论起创作钟声芭蕾的可行性。阿格狄斯提斯全神贯注，甚至对霍科博尔德露出微笑，尽管他显然对那位堕落的不朽者心存怀疑……[教诲：洪钟与铜器］",
+      "participants": [
+        "hokobald",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.aladim",
+      "desc_cn": "霍科博尔德向阿迪姆讲述了浪游旅人“七人巡礼” 的结局——升上并越过漫宿，进入辉光。他幸灾乐祸地解释为什么她的巡礼会以失败收场。阿迪姆不以为然；他认为巡礼终会成功；可他显然为这一前景闷闷不乐。（实际上，这可能就是霍科博尔德挑起这个话题的初衷……）[教诲：道途与朝圣]",
+      "participants": [
+        "hokobald",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.arthur",
+      "desc_cn": "霍科博尔德接着话题，继续讲述路权战争中受控之火的战略，他展现出渊博的知识，但语气咄咄逼人。亚瑟始终礼貌倾听，直到霍科博尔德开始嘲弄受控之火的余烬——亚瑟朋友所在的奋进会时，亚瑟不禁怒火中烧。霍科博尔德的语气尖刻而轻蔑，亚瑟愠怒却有礼；谈话因此戛然而止。[教诲：弧月的倒影]",
+      "participants": [
+        "hokobald",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.arun",
+      "desc_cn": "阿伦抚摸着霍科博尔德的手臂，对他低语“贵胄之欢愉”。霍科博尔德的回应只能用“愤怒又好奇”来形容。[教诲：诱惑与消殒]",
+      "participants": [
+        "hokobald",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.azita",
+      "desc_cn": "霍科博尔德向阿齐塔发起掰手腕挑战。她热情地接受了。出于礼貌，二人去屋外进行比试。他们回来时宣布霍科博尔德获胜；但他的手腕断了。“这不应该！这不合理！”他不停咬牙抱怨。阿齐塔只是耸耸肩。[教诲：锤砧的戒律]",
+      "participants": [
+        "hokobald",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.chaima",
+      "desc_cn": "霍科博尔德听说，柴玛几个月前在的黎波里捕获并处死了一个阿卢卡。他打听细节，她就悉数作答，但始终面无表情。霍科博尔德两眼放光，问她是否留有此次狩猎的战利品。她停顿许久，依旧面无表情，然后说没有。[教诲：锤砧的戒律]",
+      "participants": [
+        "hokobald",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.connie",
+      "desc_cn": "霍科博尔德傲慢地谈起了一位杯之长生者，以及其在马雷玛带领教团进行的抢掠行径。康妮仔细倾听，面无表情。[教诲：诱惑与消殒]",
+      "participants": [
+        "hokobald",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.coquille",
+      "desc_cn": "霍科博尔德与科基尔继续诡异地调情。她抚摸着他的光头，呢喃着自己骨盆和肋骨的大致尺寸。[教诲：诱惑与消殒]",
+      "participants": [
+        "hokobald",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.corso",
+      "desc_cn": "科尔索买来一个滚筒印章送予霍科博尔德，上面刻了渊深曼达安语，“因为啊，大师，识货的人太少了。”霍科博尔德很满意，科尔索就顺势拿出一组相似的滚筒印章，想征求霍科博尔德对其真伪的看法和建议……[教诲：渊深曼达安语]",
+      "participants": [
+        "hokobald",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.dagmar",
+      "desc_cn": "霍科博尔德提出了一个“九拱风门”的方案，想在妲格玛的地产上修建。妲格玛显然对此项目很感兴趣，但严词拒绝霍科博尔德使用她的地产，甚至拒绝他的拜访。霍科博尔德咬牙切齿，但克制住了脾气。[教诲：门扉与墙垣]",
+      "participants": [
+        "hokobald",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.douglas",
+      "desc_cn": "霍科博尔德仍与道格拉斯彼此提防，可在对忘却会的抱怨中，两人找到了共同点。二人乐于列举忘却会的罪行，数落着他们如何在违法的边缘不断试探，并一致认为，忘却会只是一帮吹毛求疵的势利眼，早该关起来。[教诲：残破十字路]",
+      "participants": [
+        "hokobald",
+        "douglas"
+      ],
+      "befriend": "befriend.douglas.hokobald"
+    },
+    {
+      "id": "slnev.hokobald.ehsan",
+      "desc_cn": "霍科博尔德与埃桑谈论着阿米拉尼槟榔石，它刻满秘密，坠落天穹，其历史甚至可以追溯到介壳种离去之前。埃桑认为，陨石坠海后，其上的文字为伊苏所刻；霍科博尔德坚称，这显然是来自一颗星辰的“闪烁赠礼”（埃桑有异议时，还坚称埃桑只是“长得像巴哥犬的狮子屎”）。[教诲：洪钟与铜器]",
+      "participants": [
+        "hokobald",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.fraser",
+      "desc_cn": "霍科博尔德商讨着他计划从弗雷泽处购买一些异质合金。他逼问弗雷泽手头是否有伊苏金属，但弗雷泽紧张地环顾四周，坚称他无法提供那种东西。[教诲：洪钟与铜器]",
+      "participants": [
+        "hokobald",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.morgen",
+      "desc_cn": "霍科博尔德粗鲁又下流地痴痴跟随摩根，而摩根则只允许他谈论为她带来的珠宝。她偶尔给予一些不同意见，霍科博尔德就洗耳恭听。谈话结束后，她交予他一颗凸圆面蓝宝石，“留个念想”，这令他深感困惑。[教诲：雕珀与琢石]",
+      "participants": [
+        "hokobald",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.olympe",
+      "desc_cn": "就化蛹蜕变和十字路口，霍科博尔德与奥兰普展开了一系列奇异的冥想。“一切都不复从前。”她反复柔声说道。[教诲：复苏与羽化]",
+      "participants": [
+        "hokobald",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.serena",
+      "desc_cn": "霍科博尔德和瑟雷娜正在猜测那位名为制烛人的初诞司辰的本质属性，以及祂可能的身份，祂于暗中秉火，自从未进入之处离去，其奋进总能收获报偿。瑟雷娜认为制烛人可能会通过新王显容。霍科博尔德摇了摇他那硕大的脑袋。“一个追随他的具名者，毫无疑问。但仅仅是个具名者罢了。”［教诲：嬗变与解放］",
+      "participants": [
+        "hokobald",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.stanislav",
+      "desc_cn": "斯坦尼斯拉夫追问霍科博尔德，具名者老成仔猫寻求的美味究竟该具有什么特质——那些符合条件的人，有时会被丝毧选中，升格为她宠物的不朽猎物。霍科博尔德透露了一些细节，却突然问起斯坦尼斯拉夫是否希望成为长生者。斯坦尼斯拉夫拒绝作答；霍科博尔德便开始喋喋不休，悲叹自己的不朽，并说自己早该在优芬顿犁地时就死了。（不过，他可能只是喝醉了）斯坦尼斯拉夫随后问他，是不是想说“波辛德”而不是“优芬顿”，霍科博尔德岔开了话题。[教诲：香料与滋味]",
+      "participants": [
+        "hokobald",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.yvette",
+      "desc_cn": "霍科博尔德质问伊薇特是否在海边听见过伊苏的钟声。他的语气使伊薇特不悦，但她小心翼翼地回答说，她感觉可能听见过；他们探讨起钟声的种类，霍科博尔德的粗鲁态度也略有缓和。[教诲：洪钟与铜器]",
+      "participants": [
+        "hokobald",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.zachary",
+      "desc_cn": "霍科博尔德不耐烦地告诫扎迦利，不遵循他“萌芽的天性”就是一桩罪孽，而且他应当“持续吞食”。扎迦利坚定但平静地表示反对。[教诲：伟大符印与伟大伤疤]",
+      "participants": [
+        "hokobald",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.agdistis",
+      "desc_cn": "摩根与阿格狄斯提斯探讨了翁布里亚的民歌，以及其与孪生子间的联系。二人意外发现，原来在年轻时的克里斯托弗·伊利奥波里待在意大利那一年，他们都见过他。摩根好奇他现在的去向，阿格狄斯提斯脱口而出：“离他远点！”他被自己如此大胆的话吓得脸色发白，但摩根似乎乐在其中。[教诲：弦乐与歌谣]",
+      "participants": [
+        "morgen",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.aladim",
+      "desc_cn": "摩根与阿迪姆对比着两人造访信鹰之城时，所见的臭名昭著的繁花，然而，他们的造访时间似乎相隔了近两百年……[教诲：兰花与迷药]",
+      "participants": [
+        "morgen",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.arthur",
+      "desc_cn": "摩根再次追问起亚瑟，群狮迷宫在保存圣焰时发现的“玻璃的瑕疵”，以及制烛人与它的关联。这次他提高了警惕，但他也承认，有足够的<i>灯</i>与<i>启</i>就可能“激活”一种关联，那也是群狮迷宫禁止任何<i>启</i>之学徒入内的原因。[教诲：玻璃与锻光]",
+      "participants": [
+        "morgen",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.arun",
+      "desc_cn": "摩根与阿伦又说回了旧称为遗忘家族的忘却会。她开玩笑说他也是忘却会的一员，并询问他把标志性的三条锁链收在哪里。他反问她的黑刚玉之钥藏在何处。摩根翘起腿，轻声问阿伦想不想搜她的身。过了片刻，他肯定地说：不，他不想。[教诲：利米亚典仪]",
+      "participants": [
+        "morgen",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.azita",
+      "desc_cn": "摩根引述《美杜莎的哀叹》与阿齐塔调笑，该作旨在描述石源神七蟠如何死于阿齐塔的庇护者——上校之手。[教诲：兽角与象牙]",
+      "participants": [
+        "morgen",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.chaima",
+      "desc_cn": "柴玛道：如果我欲进入月亮居屋，你会否为我开门？摩根如临典仪般答道：为何你欲进入月亮居屋？柴玛道：如果我的猎物进入月亮居屋，我即享有猎手之权。摩根答道：我永远尊重猎手之权。[教诲：天空的故事］",
+      "participants": [
+        "morgen",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.connie",
+      "desc_cn": "康妮公事公办地问起了某个孪星降梦——一颗星的孪生子或倒影，她忧心其已被用来犯下梦中之罪，并怀疑它已经躲进名为月亮居屋的漫宿影面之地。摩根的回答出人意料地坦诚，她明确告知康妮，防剿局永不可能追踪它进入月亮居屋，而她也绝不会提供任何帮助。[教诲：窥天术]",
+      "participants": [
+        "morgen",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.coquille",
+      "desc_cn": "摩根与科基尔似乎相处融洽，直到摩根甜甜地问起科基尔的“上一任父亲”最近如何。科基尔脸红了：“他身体康健，而你上一个孩子呢？”话一出口，她显然后悔了。她借口“去透透气”出了房间，而摩根用那闪如银钉的双眸目送她离去。[教诲：诱惑与消殒]",
+      "participants": [
+        "morgen",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.corso",
+      "desc_cn": "科尔索在阅读圣觚石圣餐的传统调配方式时，看到了互相矛盾的记载。他征询摩根这位“圣杯使节”的意见。她反对此等称呼——“也许算是双生女巫之使节吧，至少在夜空晴朗时。”但她仍然分享了自己的明智见解。[教诲：光明果悦音]",
+      "participants": [
+        "morgen",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.dagmar",
+      "desc_cn": "妲格玛入迷地倾听着，摩根正讲述她如何试图抵达伊苏城，却至今迄未成功，她将自己的船绑在一个堕落的下层天域信使身上……[教诲：大海的故事]",
+      "participants": [
+        "morgen",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.douglas",
+      "desc_cn": "摩根与道格拉斯谈论着密教风味的烹饪，偶尔提出一些她想加入菜肴的假想人体成分（一个骗子主教；一个截了肢的<i>启</i>教徒），以及防剿局为此会多么急切地追捕她。道格拉斯很难不发脾气。[教诲：香料与滋味]",
+      "participants": [
+        "morgen",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.ehsan",
+      "desc_cn": "摩根与埃桑探讨着鸟形司辰之计划。埃桑坚信祂们本质上对凡人是友善的；摩根微笑着说：“那你大概比我更了解孪生子吧。”[教诲：弦乐与歌谣]",
+      "participants": [
+        "morgen",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.fraser",
+      "desc_cn": "摩根坚称猫优于狗。弗雷泽坚称猫不及蜜蜂。[教诲：毛皮与羽翎]",
+      "participants": [
+        "morgen",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.hokobald",
+      "desc_cn": "上次，摩根赠予霍科博尔德一颗凸圆面蓝宝石；现在，他把它还给了她，并嘲笑她布置了一个“显而易见的陷阱”。他的态度由乖戾的痴迷转为了乖戾的威胁，尽管仍带着下流的色彩。摩根大笑着坚称那“只是个小游戏”，霍科博尔德虽然并不相信，最终也选择了接受那个借口——也许是出于阿卢卡间牵强的似亲非亲之情。[教诲：雕珀与琢石]",
+      "participants": [
+        "morgen",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.olympe",
+      "desc_cn": "摩根复述着残存于记忆中、航行时海风携来的拉姆桑德语片段。奥兰普为她进行了翻译。[教诲：拉姆桑德语]",
+      "participants": [
+        "morgen",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.serena",
+      "desc_cn": "摩根与瑟雷娜探讨着司辰与天体之间的相似与相合。[教诲：窥天术]",
+      "participants": [
+        "morgen",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.stanislav",
+      "desc_cn": "摩根轻快地向斯坦尼斯拉夫打听“三面者”，翠仙苑的守卫者，据说斯坦尼斯拉夫曾在那里待过。斯坦尼斯拉夫回答得恭敬而模糊。[教诲：兰花与迷药]",
+      "participants": [
+        "morgen",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.yvette",
+      "desc_cn": "摩根似乎对伊薇特颇为着迷，她过度的关注已让人感到不适。伊薇特沉默不语，摩根便用她那银铃般的嗓音唱起银线般的歌谣。曲调欢快；但歌词却为夜魄语。一曲终了，摩根竟也显得悒悒不乐：“有时候，我真希望自己还能流泪。”[教诲：夜魄语]",
+      "participants": [
+        "morgen",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.zachary",
+      "desc_cn": "继上次器皿封存的谈话后，摩根与扎迦利为彼此带来了展品，或是礼品。他赠与她的是一面触感永远冰凉的蓝色镜子；她赠与他的是一把玻璃钥匙，她建议他在事情变得“过火”时将它捏碎。[教诲：玻璃吹制与容器制造]",
+      "participants": [
+        "morgen",
+        "zachary"
+      ],
+      "befriend": "befriend.morgen.zachary"
+    },
+    {
+      "id": "slnev.olympe.agdistis",
+      "desc_cn": "奥兰普对一位“半双刃”产生了兴趣——据说此人拜于双角斧麾下，欲飞升为刃之长生者，但未获成功。他曾是蜕变俱乐部的常客，俱乐部倒闭之前，阿格狄斯提斯就在那里工作。阿格狄斯提斯建议她停止调查：追查任何双角斧仍执掌<b>刃</b>的蛛丝马迹都是不明智的……[教诲：阈限之敕令]",
+      "participants": [
+        "olympe",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.aladim",
+      "desc_cn": "奥兰普向阿迪姆展示了她根据梦中所见的符号绘制的草图。“是的，”他说，“这几乎就是萨巴齐奥斯语了。看这，小锤塔、狼妻、黑鸽。我想你梦见了前往布兰库格的旅途……”［教诲：萨巴齐奥斯语］",
+      "participants": [
+        "olympe",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.arthur",
+      "desc_cn": "奥兰普对亚瑟发现的拾滩鸦祭坛很感兴趣，它们是在特拉比松附近的悬崖洞穴中被发现的，上面刻有拉姆桑德语的铭文。亚瑟为她画了一些符号的草图。［教诲：拉姆桑德语］",
+      "participants": [
+        "olympe",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.arun",
+      "desc_cn": "奥兰普和阿伦轻笑着谈论最近又浮上水面的一则栖木流言：石绿与树中牝马之间的古老幽会。他们讨论了在传言中，树中牝马有时会与女巫做姐妹，这究竟意味着什么，特别是对罗威娜和莫普西阿姨来说意味着什么。［教诲：嬗变与解放］",
+      "participants": [
+        "olympe",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.azita",
+      "desc_cn": "奥兰普试图指控阿齐塔，后者涉嫌向黑海以东的各支反叛军和游击组织提供武器。阿齐塔坚称，罪魁祸首是她的孪刃迈哈德。［教诲：武力之敕令］",
+      "participants": [
+        "olympe",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.chaima",
+      "desc_cn": "奥兰普教了柴玛几句实用的拉姆桑德语短句，条件是柴玛绝不能以此来欺骗她的猎物。［教诲：拉姆桑德语］",
+      "participants": [
+        "olympe",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.connie",
+      "desc_cn": "奥兰普向康妮保证，自己在创作中使用的异质颜料从未违反过梦境法。康妮确信她使用过耀素，奥兰普承认了，但随即解释说，那已被稀释到了安全的程度……［教诲：启示之墨］",
+      "participants": [
+        "olympe",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.coquille",
+      "desc_cn": "奥兰普正在写一部小说，其中一个角色是名建筑师，专门研究密道设计和隐藏门扉。她希望科基尔能协助她搜集资料。科基尔对此表达了合情合理的怀疑，尽管奥兰普再三保证任何棘手的细节都会严格保密。最终，在奥兰普解释主角的原型是弗雷泽后，科基尔才放松下来，分享出了她的秘密。[教诲：门扉与墙垣]",
+      "participants": [
+        "olympe",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.corso",
+      "desc_cn": "奥兰普和科尔索惺惺相惜地抱怨，要把阿苏麦墨水从梦中清除有多难，他们喃喃不平道，梦境会一连好几个月被染成银色……［教诲：启示之墨］",
+      "participants": [
+        "olympe",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.dagmar",
+      "desc_cn": "奥兰普和妲格玛互相交流了饮下剥皮蜜酒后的酣醉经历。两人都不确定自己是否真的变形了，或只是灵魂化成了兽形游走；不过两人一致认为，只有在值得信任的人陪伴下，他们才会再喝这种酒。［教诲：溶解与离析］",
+      "participants": [
+        "olympe",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.douglas",
+      "desc_cn": "奥兰普正向道格拉斯打探维罗的作品《开启天穹》遭禁一事——她觉得政府先是为了新王加冕委托维罗创作此曲，随后又将其查禁，实在有些奇怪。道格拉斯不安地抽着烟斗，含糊其词地说着“警务工作”和“我不太懂音乐”之类的话；直到奥兰普提到了“烁”这个词，他突然借口“透气”走出门去。［教诲：窥天术］",
+      "participants": [
+        "olympe",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.ehsan",
+      "desc_cn": "埃桑充满憧憬与遗憾地描述了他在地下识得的宝石，那时他尚为剑齿兽，可以通过更为缓慢而强烈的感官来认识它们。（奥兰普：“你在地下待了多久？”埃桑：“那是狮子匠的秘密。”）[教诲：雕珀与琢石]",
+      "participants": [
+        "olympe",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.fraser",
+      "desc_cn": "奥兰普正在写一部小说，其中一个角色经营着一家采矿公司，她希望弗雷泽能协助她搜集资料。虽然奥兰普一再保证，小说里不会透露任何关于他的姓名，外貌，以及任何生平细节，但弗雷泽还是非常担心“非必要宣传”。可就在奥兰普解释主角的原型是阿齐塔后，他便勉强愿意帮忙了。[教诲：雕珀与琢石]",
+      "participants": [
+        "olympe",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.hokobald",
+      "desc_cn": "奥兰普和霍科博尔德就淋巴、葡萄酒、脉络膜和壳质等话题互换意见。她拍拍他的手，面带微笑；他耸了耸宽阔的肩膀。[教诲：复苏与羽化]",
+      "participants": [
+        "olympe",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.morgen",
+      "desc_cn": "奥兰普直率地问摩根是否愿意变成阿卢卡，若不愿意，她就不能采取些避孕措施吗？摩根被逗得花枝乱颤——只是被逗乐而已吗？——她发现奥兰普从未理解圣杯；也难怪奥兰普“选了另一条道路”。[教诲：复苏与羽化］",
+      "participants": [
+        "olympe",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.serena",
+      "desc_cn": "奥兰普一直在研究忘却会——他们的古老势力范围，他们的锁链誓言。瑟雷娜对她的发现很感兴趣。[教诲：利米亚典仪]",
+      "participants": [
+        "olympe",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.stanislav",
+      "desc_cn": "奥兰普向斯坦尼斯拉夫打听传说中的 “本都紫杉”。据说，其花蜜可以开启通往另一处地域的大门。他尝过那蜜，不过他仅能透露那里并非漫宿。[教诲：根系之仪]",
+      "participants": [
+        "olympe",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.yvette",
+      "desc_cn": "伊薇特好奇，石源神可否只是某种精神或心理因素——祂们在何种程度上算是真正的司辰，又在何种程度上不过是现存司辰潜藏的原始冲动。奥兰普对此很感兴趣。[教诲：腐化与煅烧]",
+      "participants": [
+        "olympe",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.zachary",
+      "desc_cn": "扎迦利今天过得很不愉快。他睁大双眼，牙齿发颤。奥兰普轻轻把手放在他的胳膊上，安慰了他，并引用了《七杯之辩》中的句子：“悲恸是感官的最后溶剂……”[教诲：溶解与离析]",
+      "participants": [
+        "olympe",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.agdistis",
+      "desc_cn": "瑟雷娜和阿格狄斯提斯讨论起遗忘家族大马士革分部的仪式。她言辞委婉，言下之意却昭然易见，她想知道阿格狄斯提斯是否参加过类似的仪式，好保持他的美妙嗓音。他说自己没参加过，他在微笑，可那不过是副假面。[教诲：利米亚典仪]",
+      "participants": [
+        "serena",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.aladim",
+      "desc_cn": "瑟雷娜询问阿迪姆，现今名为“忘却会”的组织在大马士革的分部情况如何。他分享了自己的回忆。[教诲：利米亚典仪]",
+      "participants": [
+        "serena",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.arthur",
+      "desc_cn": "瑟雷娜和亚瑟低声讨论着守夜人之树的红花。瑟雷娜回忆起塞拉皮雍是如何使用盗火术保存知识的，即便烧毁的书也不例外……[教诲：焰篆体]",
+      "participants": [
+        "serena",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.arun",
+      "desc_cn": "瑟雷娜和阿伦展开了辩论，讨论如何在最佳且最安全的照明条件下阅读启示之墨写成的文本。[教诲：启示之墨］",
+      "participants": [
+        "serena",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.azita",
+      "desc_cn": "瑟雷娜和阿齐塔讨论了日记作者的战绩与失踪，此人成为灯之长生者前曾是名为拉尔斯·韦斯特格伦的凡人。“他是个怪物，”瑟雷娜承认，“不过他是我们的怪物。”[教诲：守夜人的悖论]",
+      "participants": [
+        "serena",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.chaima",
+      "desc_cn": "瑟雷娜和柴玛都经受过“图格的净化术”。瑟雷娜形容这个过程“糟糕可怕”。柴玛则认为它“振奋人心”。[教诲：伤疤的戒律］",
+      "participants": [
+        "serena",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.connie",
+      "desc_cn": "康妮和瑟雷娜忧心忡忡地谈起英国和欧洲大陆当今的局势，这些地方的政府为了寻求更可怕的武器，已全然不顾局里的制约……[教诲：洪钟与铜器]",
+      "participants": [
+        "serena",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.coquille",
+      "desc_cn": "有个传说，每个世纪在漫宿都是一楹新的宴厅，在世纪终末，祂们便把厅堂关闭，移往新处……可因每个宴厅都由所有司辰的威仪共同封印，因此，传说无法得证。科基尔和瑟雷娜分享了她们的计算结果，推测漫宿世纪之末在太阳历中的可能位置。两人都认为，那很有可能就是未来几年，这显然让她们惶惶不安。[教诲：门扉与墙垣］",
+      "participants": [
+        "serena",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.corso",
+      "desc_cn": "瑟雷娜想和科尔索签个协议，想叫后者给她弄一本传说已久的凯勒诗集，据说其对《魂归苍穹》的主题做了延申，但个中缘由她不愿透露。他们讨论了诗集可能所在的地方和其中的内容，科尔索警告她这本书实际可能并不存在，但还是欣然接受了订金。[教诲：焰篆体]",
+      "participants": [
+        "serena",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.dagmar",
+      "desc_cn": "瑟雷娜和妲格玛讨论起边境、月亮边地和虚界之间的关系。瑟雷娜认为虚界和月亮边地以外的空间是毗连的，可妲格玛却坚决地摇了摇头。“伊苏从未能找到进入虚界之路。也从未有星星找到归来之途。”[教诲：门扉与墙垣]",
+      "participants": [
+        "serena",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.douglas",
+      "desc_cn": "瑟雷娜和道格拉斯发现他们对编织有着共同的热情，并互相展示了他们的作品。道格拉斯心不在焉地说道：“织工中有一个预言，讲的是一个试图不智地寻找未来的人……”瑟雷娜惊讶地倒退一步，而道格拉斯嘟囔道：“该死的，从来没人觉得我读过书。”［教诲：缝纫与编织］",
+      "participants": [
+        "serena",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.ehsan",
+      "desc_cn": "瑟雷娜和埃桑谈论了太阳教会的“秘仪”，即那些被禁止公开的仪式，而大众仍然普遍认为司辰仅是寓言，亦或不过是真神的假面。［教诲：无敌太阳典仪］",
+      "participants": [
+        "serena",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.fraser",
+      "desc_cn": "瑟雷娜和弗雷泽对<i>狼骑</i>作出了一些推测，认为它们是布劳赛良德的狼人。瑟雷娜提出了它们与伊苏、以及拉维林这样困于兽诅家族的联系。弗雷泽刚要回应，她就不耐烦地打断道：“不是所有事情都必须要和介壳种有关。”［教诲：虬蟠与裂隙］",
+      "participants": [
+        "serena",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.hokobald",
+      "desc_cn": "瑟雷娜和霍科博尔德再次争论起某位即将到来的司辰，探讨其终极本质与身份。霍科博尔德不耐地坚称：“制烛人自从未进入的居屋离开。而且，显而易见，现在她再次附体了，而我却看不出她有任何形式的晋升。”瑟雷娜摇头道：“不，她还没获得那种程度的力量。而且无论如何，我绝不会相信她。”霍科博尔德仅是凶狠地低吼道：“那你还是个傻瓜。”［教诲：嬗变与解放］",
+      "participants": [
+        "serena",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.morgen",
+      "desc_cn": "瑟雷娜提出了一些研究方向，可能——仅仅是可能——能够让阿卢卡摆脱他们的堕落，或缓解他们迫切的饥渴……但摩根斩钉截铁地坚称，任何丽姬亚都不会对此感兴趣。［教诲：弧月的倒影］",
+      "participants": [
+        "serena",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.olympe",
+      "desc_cn": "瑟雷娜和奥兰普比较了她们会见坩埚王的不同经历。瑟雷娜曾多次召唤他，而令瑟雷娜感到惊讶的是，奥兰普竟然亲自采访过他：看起来，就连坩埚王也越来越倾向于以人类形态行走于世……［教诲：嬗变与解放］",
+      "participants": [
+        "serena",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.stanislav",
+      "desc_cn": "瑟雷娜以说教的口吻谈起，若外科医生的低声祷告中夹杂了富奇诺语，将会带来何等的“易碎后果”。“这绝非我的专长。但多年来，塞拉皮雍接待了一些德高望重的医生。”［教诲：富奇诺语］",
+      "participants": [
+        "serena",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.yvette",
+      "desc_cn": "出于安全考虑，伊薇特正在思考用猃瘿墨书写她的笔记。瑟雷娜则提醒她使用和储存猃瘿墨的风险。［教诲：收容之墨］",
+      "participants": [
+        "serena",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.zachary",
+      "desc_cn": "扎迦利向瑟雷娜询问特罗文的惠洛克家族，尤其是那位命途多舛的格里高利，那位“半双刃”。然而他们得出的结论是，这个悲惨故事中的任何内容都无法帮助扎迦利。［教诲：门扉与墙垣］",
+      "participants": [
+        "serena",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.agdistis",
+      "desc_cn": "斯坦尼斯拉夫和阿格狄斯提斯正在讨论，植物若被冬日所伤，应当如何剪枝：如何确保不留下残破的树皮，如何不因怯懦或柔情而分心。［教诲：叶片与棘刺］",
+      "participants": [
+        "stanislav",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.aladim",
+      "desc_cn": "宴罢将散之际，斯坦尼斯拉夫神父演示了一些他在“西安以东”旅行时，用来与“夔牛”交流的手势。他在盘子上画出这些手势，随后将其擦去。“不然不安全，”他轻声说道，“除非你想<i>留</i>在西安以东。”［教诲：解踪语］",
+      "participants": [
+        "stanislav",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.arthur",
+      "desc_cn": "斯坦尼斯拉夫和亚瑟讨论了波斯的草药，以及它们在群狮迷宫的治疗室中的用途。［教诲：草药与药汤］",
+      "participants": [
+        "stanislav",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.arun",
+      "desc_cn": "斯坦尼斯拉夫提到《白玉碑文》上一句耐人寻味的话——“那时我们的皮肤还很柔嫩，极易从身上脱落…… ”他想知道褪皮的“脱落”是否与此有关，而不出所料，褪皮回避了这个问题。[教诲：根系之仪］",
+      "participants": [
+        "stanislav",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.azita",
+      "desc_cn": "喀布尔和撒马尔罕最近发生了“木化瘟疫 ”，阿齐塔询问斯坦尼斯拉夫对此有何看法，截至目前，它仅对建筑物造成了影响……[教诲：根系之仪]",
+      "participants": [
+        "stanislav",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.chaima",
+      "desc_cn": "斯坦尼斯拉夫和柴玛谈论着早已逝去的七蟠，“母亲之父”；谈论着她所启发的七位非人使徒及他们的预言。柴玛若有所思地感叹，那场终结七蟠的狩猎该是多么伟大……［教诲：沙的故事］",
+      "participants": [
+        "stanislav",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.connie",
+      "desc_cn": "斯坦尼斯拉夫向康妮证实，他也听说过“蛛雾”，它最早出现在奥地利，但已经蔓延到欧洲各地的偏远乡村，甚至西至他在布列塔尼的避难所。他同意这具备许多虚界侵扰的典型特征，但若有所思地补充说，有一位线人声称，它是人为制造的……［教诲：昆虫与花蜜］",
+      "participants": [
+        "stanislav",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.coquille",
+      "desc_cn": "斯坦尼斯拉夫和科基尔互相分享了莫普西阿姨的故事。他居住在翠仙苑的半影中时，遇到了前来朝圣的莫普西；在他已经变得厌倦，开始寻求更危险的消遣时，她就将自己在梯弗利斯的养兄介绍给了他……［教诲：叶片与棘刺］",
+      "participants": [
+        "stanislav",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.corso",
+      "desc_cn": "斯坦尼斯拉夫和科尔索谈论起祖尔菲娅·扎基罗娃，科尔索差点和她结婚了——婚礼原定由斯坦尼斯拉夫主持。科尔索苦恼地拉扯着自己的胡子，描述她如何与谵妄作斗争，以及她对林地奇思妙想的痴迷。“有一天她突然开始戴假发，然后和一个调音师私奔了。上一次，我听说她在莱比锡教钢琴课。”［教诲：兰花与迷药］",
+      "participants": [
+        "stanislav",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.dagmar",
+      "desc_cn": "斯坦尼斯拉夫向妲格玛提供了些许养蜂建议。她告诉他，她庄园里的蜂巢最近“有些懈怠”。［教诲：昆虫与花蜜］",
+      "participants": [
+        "stanislav",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.douglas",
+      "desc_cn": "道格拉斯一直在调查六百年前诺娜院长的死亡真相。他询问了一些信源，但拒绝与斯坦尼斯拉夫分享细节，最后得出结论：诺娜被黑骸的具名者附身了，随后则被她的姐妹们“解决”了——“真是肮脏，但也算最好的选择。”他和斯坦尼斯拉夫讨论了某些混合草药，或许正是它们让她变得易于被附身。［教诲：草药与药汤］",
+      "participants": [
+        "stanislav",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.ehsan",
+      "desc_cn": "斯坦尼斯拉夫和埃桑辩论，在何时何季，哪条河流和哪些天气，仍然可以在比喻或神谕中被视为“七蟠的鲜血”。［教诲：虬蟠与裂隙］",
+      "participants": [
+        "stanislav",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.fraser",
+      "desc_cn": "斯坦尼斯拉夫和弗雷泽讨论了昆虫学家朱莉安娜·萨斯托斯基的研究。弗雷泽坚信，她生而拥有介壳种中的合卅族本质。［教诲：岩石的故事］",
+      "participants": [
+        "stanislav",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.hokobald",
+      "desc_cn": "斯坦尼斯拉夫向霍科博尔德询问丝毧的传说。相传，有些人若足够美味，便会被她的宠物老成仔猫追猎，最终被她赐予永生。霍科博尔德自信地确认此事属实，但他的解释里夹杂了太多的抱怨，抱怨那些本<i>该</i>成为她的猎获的人反而成了永生者，抱怨有些人尽管平淡无奇，却仍然被她吞噬。（听起来他差点都嫉妒上这些人了。）［教诲：香料与滋味］",
+      "participants": [
+        "stanislav",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.morgen",
+      "desc_cn": "摩根向斯坦尼斯拉夫进一步追问了“三面者”，这位光明果的具名者与翠仙苑密切相关。斯坦尼斯拉夫问摩根是否与三面者“有过职业上的往来”；摩根回答说，还没有——但她或许会请斯坦尼斯拉夫代为引荐。斯坦尼斯拉夫显然对此并不热衷。［教诲：兰花与迷药］",
+      "participants": [
+        "stanislav",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.olympe",
+      "desc_cn": "斯坦尼斯拉夫和奥兰普讨论了林地司辰。斯坦尼斯拉夫指出，僧侣都会剃发；他言语带着几分戏谑，暗示僧侣这一阶层可能隶属于飞蛾……［教诲：根系之仪］",
+      "participants": [
+        "stanislav",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.serena",
+      "desc_cn": "根据自己在塞拉皮雍的工作经历，瑟雷娜回答了斯坦尼斯拉夫对该地厨房的种种质询——特别是她从布兰库格带去的威斯考特氏技术。[教诲：香料与滋味］",
+      "participants": [
+        "stanislav",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.yvette",
+      "desc_cn": "伊薇特向斯坦尼斯拉夫提了几个问题，有关卡尼奥兰的异端邪说，该异端认为，月亮是虫蛹，而太阳则是它羽化后的成虫。斯坦尼斯拉夫虽然能够详细讲述其中细节，却意识到自己无法向伊薇特解释这异端的目的与起源。[教诲：昆虫与花蜜]",
+      "participants": [
+        "stanislav",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.zachary",
+      "desc_cn": "斯坦尼斯拉夫和扎迦利讨论起女巫宁的“仁慈措施”。扎迦利认为她的方法能有效对抗吞噬者，可自从他开始担心自己也会变成吞噬者后，便不愿再使用这些方法了……[教诲：淬火与熄焰］",
+      "participants": [
+        "stanislav",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.agdistis",
+      "desc_cn": "伊薇特听阿格狄斯提斯倾吐着他对所罗门·赫舍作品的反感：他不能，也不愿接受一切事物<i>必</i>有终结——他甚至连<i>任何</i>事物必有终结这一观点都不愿接受。[教诲：景象与感知］",
+      "participants": [
+        "yvette",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.aladim",
+      "desc_cn": "伊薇特问起阿迪姆对他父母的记忆。他答道，自己只记得他们的死亡。他讲起那些死亡时太过冷静，比起作为听众的她，这似乎更让他自己感到惊奇。[教诲：狼的故事]",
+      "participants": [
+        "yvette",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.arthur",
+      "desc_cn": "伊薇特再次向亚瑟聊起萨巴佐因语。她一直在读萨巴佐斯神的故事，此神以“沉默言辞”为武器，驱使人陷入疯狂。亚瑟听过这些技艺，十分谨慎地向她分享了一点……[教诲：锋锐］",
+      "participants": [
+        "yvette",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.arun",
+      "desc_cn": "阿伦和伊薇特开始了一场严肃的语言学讨论，比较了赫沃尔语和伐诃语间的相似点。谈话渐渐变得像是闲聊，两人通过把伐诃语和赫沃尔语进行拟人，来比较它们的美德和魅力。阿伦提到了两种语言就是两兄妹的传说。“如果是这样，那岂不是太遗憾了？”伊薇特狡黠地答道。“要是兄妹的话，它俩肯定不会犯下什么不得体的罪行吧？ ”阿伦笑得异常热烈，整张脸都皱了。[教诲：赫沃尔语]",
+      "participants": [
+        "yvette",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.azita",
+      "desc_cn": "在一重历史中，亚历山大从大流士那里听到了一个秘密，该秘密说服他放弃战争，回师返乡，并宣布：“日之躔回归其始，吾之躔亦如是。” 伊薇特问阿齐塔对这个秘密了解多少，显然她觉得阿齐塔和亚历山大是同一时代的人，这让阿齐塔觉得有些好笑（“我还不到一千岁呢”）。不管怎样，阿齐塔都认为此秘密只是“狮子匠的胡言乱语”，而且亚历山大被“过于高估了”。[教诲：镰刀与日蚀]",
+      "participants": [
+        "yvette",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.chaima",
+      "desc_cn": "伊薇特向柴玛询问“小索菲亚 ”的动机和可信度，此人猎杀怪物，而且专门猎杀蠕虫，还是《铁之祭献》的作者。柴玛对此含糊其辞，但很清楚地表示她本人尽可能不去猎杀蠕虫。[教诲：收容之墨]",
+      "participants": [
+        "yvette",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.connie",
+      "desc_cn": "康妮和伊薇特正在讨论伊薇特收进的一位病人，现在看，这人可能在第一次治疗前就已经去世了。（“我一直奇怪，”伊薇特讲得很慢，“为什么后来我的房间总是那么冷。”）康妮认为，既然此人已离世，就无需考虑保密的伦理问题。伊薇特却并不认同。[教诲：音律与铭记]",
+      "participants": [
+        "yvette",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.coquille",
+      "desc_cn": "科基尔追问伊薇特，她与罗威娜·亨格斯特有何相似之处，还好奇她们是否见过面。伊薇特回答：“没有，她永远不会同意和我见面。”科基尔兴致勃勃地推测原因，伊薇特点头微笑。［教诲：大海的故事］",
+      "participants": [
+        "yvette",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.corso",
+      "desc_cn": "伊薇特追问科尔索《无颅医典》的起源。他尽力回答，可随即转移了话题：“我可不想在吃饭的时候谈那本书。”[教诲：白雪的故事]",
+      "participants": [
+        "yvette",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.dagmar",
+      "desc_cn": "妲格玛向伊薇特讲述了自己画中之河的梦境。“很难说是河<i>之</i>梦，还是河<i>中</i>之梦。河在牡鹿之门后方。从未穿过牡鹿之门；嗯，说的没什么条理；嗯，要不别聊这个了，如何？反正是浪游旅人绘制了那条河，而关于她的整件事，总之就是她去了不该去的地方。说真的，要不我们还是聊点别的？”[教诲：珍珠与浪潮]",
+      "participants": [
+        "yvette",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.douglas",
+      "desc_cn": "伊薇特和道格拉斯讨论起斯廷法利斯湖兽，道格拉斯称之为“鸽子司辰的错误”，而伊薇特更愿视其为对赫日时代的一种美好回忆……[教诲：音律与铭记]",
+      "participants": [
+        "yvette",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.ehsan",
+      "desc_cn": "伊薇特和埃桑伤感地聊起他们读到的故事，那名为浪潮的失落司辰。伊薇特回忆道，当巫女退去，其他司辰有时会去填补她退去后遗留的空间，她想知道浪潮是否温和到足以在过后存留……可埃桑婉言执意称，石源诸神从不温和。[教诲：珍珠与浪潮］",
+      "participants": [
+        "yvette",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.fraser",
+      "desc_cn": "伊薇特和弗雷泽讨论起他的那些“眼之梦”，还有他对辉诞族和合卅族进入人类肉体的理论。伊薇特大声质疑，他是否想过自己大部分的——也可能是全部的此类梦境，都源于他对父亲身份未被满足的渴望。一气之下，他一把扯下自己的手套，向她展示手上变异后光洁的异角。桌前一时间鸦雀无声。[教诲：覆画残迹与古老前身]",
+      "participants": [
+        "yvette",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.hokobald",
+      "desc_cn": "伊薇特询问霍科博尔德，是否有办法确认谁是两位长生者的子嗣。他坚称，长生者的子嗣罕能存活，因为父母中的一方几乎总会将其吞噬，并“飞升”成为阿卢卡。对此，他的自豪感溢于言表。不过他也承认，极少数情况下，此类情况确实也存在，他还分享了一些相关的迹象。[教诲：复苏与羽化］",
+      "participants": [
+        "yvette",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.morgen",
+      "desc_cn": "二人上次的谈话给伊薇特壮了胆，她提了一些尖锐的问题，询问摩根是怎么变成如此模样。摩根并不愿讲述自己阿卢卡化的原因，但她讲述了自己飞升为长生者的历程——苏洛恰那对她旧形体的指导，她对轰雷之皮新形体的痴迷，还有把她带进月亮居屋的最后一支舞。[教诲：三重誓之仪]",
+      "participants": [
+        "yvette",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.olympe",
+      "desc_cn": "伊薇特和奥兰普继续推测那些石源神的本质，它们在神话和比喻上的意义。也许燧石只是铸炉的冲动冷却后的一块碎片，也许潮汐象征着圣杯潜意识中对和平的渴望……奥兰普提议委托伊薇特为<i>《凯尔伊苏姆评论报》</i>撰写系列文章。［教诲：腐化与锻烧］",
+      "participants": [
+        "yvette",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.serena",
+      "desc_cn": "瑟雷娜和伊薇特讨论了边地领主“黑威廉”格威利姆·杜尔的死因，于此事上，圣布伦丹的修女们可能——可能——与山中的古老力量有所交易。伊薇特兴奋地提出，或许在“格威利姆·杜尔”和“黑鸽”克雷姆杜之间有某种语言学上的混淆……但瑟雷娜将手指放在唇边示意她安静。［教诲：音律与铭记］",
+      "participants": [
+        "yvette",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.stanislav",
+      "desc_cn": "伊薇特和斯坦尼斯拉夫闲聊起那本臭名昭著的神秘学情色小说《伊特丽的结局》。伊薇特认为它“肤浅”，而斯坦尼斯拉夫则觉得它“撩人”。［教诲：收容之墨］",
+      "participants": [
+        "yvette",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.zachary",
+      "desc_cn": "伊薇特正轻声对扎迦利讲述白雪、静默和满月……［教诲：雪的故事］",
+      "participants": [
+        "yvette",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.agdistis",
+      "desc_cn": "扎迦利描述了他对“风暴天使”的理解：她云层之下的美貌，她雷电的力量，以及他如何渴望囚她于玻璃之中。阿格狄斯提斯耐心地倾听，偶尔眼神闪动，仿佛理解了其中的意义。［教诲：淬火与熄焰］",
+      "participants": [
+        "zachary",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.aladim",
+      "desc_cn": "扎迦利不自觉地向阿迪姆朗诵了一首创作中的诗歌：纷争的堡垒。他在桌面上敲打出节奏。阿迪姆试探性地提出了一些修改意见，扎迦利慎重考虑后接受了。［教诲：阙前格律］",
+      "participants": [
+        "zachary",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.arthur",
+      "desc_cn": "扎迦利和亚瑟讨论了一则路权战争的预言，不朽军团将与受控之火交战，带来末世般的灾难。亚瑟担心预言尚未完成，暗示它指的是即将到来的欧洲战争。扎迦利同意这一点，但难以清楚地表达他的理由——他说不朽军团并非门关军团，而是（他不断用手势表示）“与<b>心</b>紧紧相连”。［教诲：残破十字路］",
+      "participants": [
+        "zachary",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.arun",
+      "desc_cn": "“记住，”阿伦对扎迦利说，“最终一切都会太迟，但在那之前都并非如此。”扎迦利长叹了一口气。“你总是这么说。但它真没你想的那么有帮助。”［教诲：腐化与煅烧］",
+      "participants": [
+        "zachary",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.azita",
+      "desc_cn": "扎迦利和阿齐塔比较了驱魔的技巧。她开玩笑地问，应该用什么方法来给他驱魔，然而，当扎迦利没意识到她在开玩笑并尽可能认真地回答后，她立刻后悔了。［教诲：镰刀与日蚀］",
+      "participants": [
+        "zachary",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.chaima",
+      "desc_cn": "扎迦利和柴玛谈论了狩猎结束后的感受，在下一次开始前总会有的不安空隙。［教诲：残破十字路］",
+      "participants": [
+        "zachary",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.chaima.seventhvoice",
+      "desc_cn": "上次，妲格玛咯咯直笑着给扎迦利分享了萨维奇的《第七音》中的一些段落。这次，扎迦利朗诵了它们。他清晰、冷静而精确的发音带来了意想不到的效果：那些下流猥亵的元素显得深刻动人，而深刻动人的元素则闪烁着微光。柴玛在聆听时握住了他的手，他那紧绷的手指也在这一刻短暂平静下来。［教诲：阙前格律］",
+      "participants": [
+        "zachary",
+        "chaima"
+      ],
+      "befriend": "befriend.chaima.zachary"
+    },
+    {
+      "id": "slnev.zachary.connie",
+      "desc_cn": "康妮和扎迦利正在讨论收容纹身，希望这能改善他的身体情况。效果并不乐观。他向康妮展示自己的前臂，上面的纹身已经像霜下花色般褪去。“你必须动身，”她告诉他，“去防剿局，趁现在还来得急。我越来越难以说服自己为什么还没把你带过去……”［教诲：收容之墨］",
+      "participants": [
+        "zachary",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.coquille",
+      "desc_cn": "扎迦利和科基尔交换了“伟大伤疤”的寓言，身为孔雀之门的语言女神伐诃，或许终将被治愈。科基尔指出，这样做将意味着伐诃语的终结。“是的，”扎迦利同意道，“也意味着她痛苦的终结。”［教诲：伟大符印与伟大伤疤］",
+      "participants": [
+        "zachary",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.corso",
+      "desc_cn": "扎迦利想让科尔索帮助他更进一步研究希克索斯语。他听说门关军团的仪式有时会使用这种语言。他正考虑加入军团，但希望能先更好地理解它。［教诲：希克索斯语］",
+      "participants": [
+        "zachary",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.dagmar",
+      "desc_cn": "扎迦利展示给妲格玛一个他手制的诳语缠结。他试图解释它如何“描绘并泄露”出他未来的路径。妲格玛在努力地理解。［教诲：阈限之敕令］",
+      "participants": [
+        "zachary",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.douglas",
+      "desc_cn": "扎迦利和道格拉斯回忆起多年前他们共同办理的案件，当时，他们必须找到办法束缚一只莫名其妙游到泰晤士河里的三角兽。道格拉斯回忆说，这次束缚点燃了他对编织的热情，而扎迦利则努力挤出一个微笑。［教诲：淬火与熄焰］",
+      "participants": [
+        "zachary",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.ehsan",
+      "desc_cn": "扎迦利向埃桑讲述了他画中阴魂不散的虚界阶梯、墨玉灯盏，以及挽歌儿小姐发间星星点点的花朵。他说，虚界的诱惑不止一种……［教诲：景象与感知］",
+      "participants": [
+        "zachary",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.fraser",
+      "desc_cn": "弗雷泽提出了一些方法，建议扎迦利帮助他那些“无足乘客”进化或是提升，从而让双方都能超越以往，过程非常安全。扎迦利不太相信。[教诲：群蛇与毒液]",
+      "participants": [
+        "zachary",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.hokobald",
+      "desc_cn": "扎迦利和霍科博尔德讨论了太阳的分裂。扎迦利怀疑这是“天界阴谋”的结果，而霍科博尔德则坚称这是“命运的伟大创作”。［教诲：伟大符印与伟大伤疤］",
+      "participants": [
+        "zachary",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.morgen",
+      "desc_cn": "扎迦利向摩根直言询问，是否有秘术可以将欲望封存于外部器皿中。摩根傲慢地反驳，表示她从未觉得有必要遏制自己的欲望，无论是通过外部方式还是其他手段——然而，在谈话的过程中，她显然对这位面容苍白而不断抽搐的前警探生出了一丝同情。［教诲：玻璃吹制与容器制造］",
+      "participants": [
+        "zachary",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.olympe",
+      "desc_cn": "“我有一个名字，”扎迦利冷静地说，“还有另一个名字。其中之一只会用夜魄语写就。我会谈论它，因为你邀请了我。但我不会说出它，因为我是客人。”［教诲：夜魄语]",
+      "participants": [
+        "zachary",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.serena",
+      "desc_cn": "瑟雷娜提出，如果事情变得太严重，她可以为扎迦利和他的“乘客”打造一座监牢。他声称会考虑这个提议，并带着一丝讽刺，探讨了究竟什么能够囚禁住他。[教诲：玻璃吹制与容器制造]",
+      "participants": [
+        "zachary",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.stanislav",
+      "desc_cn": "斯坦尼斯拉夫向扎迦利分享了“慈悲之言”，他认为这或许能缓解那些已危害到皮肤的紧急状况。“我知道那个！”扎迦利即刻回答道，“它传承自喀俄涅。”[教诲：淬火与熄焰]",
+      "participants": [
+        "zachary",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.yvette",
+      "desc_cn": "“好冷，”扎迦利向伊薇特低语道。他浑身颤抖，“我必须保持寒冷，是不是？如果我融化，我就会失控，是不是？”伊薇特小心翼翼地点了点头，“我想你最好不要融化——现在还不行。［教诲：白雪的故事］”",
+      "participants": [
+        "zachary",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.aladim",
+      "desc_cn": "阿迪姆询问邓齐尔一些蹄铁的技术问题（“我在各种道路上骑过各种良驹……”）邓齐尔简略而严肃地作了答复，但他似乎确实被阿迪姆的暗示勾起了兴趣，如何为某些非马的“良驹”钉上马掌……［教诲：毛皮与羽翎］",
+      "participants": [
+        "visiting.denzil",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.arthur",
+      "desc_cn": "亚瑟在询问邓齐尔的作战经历。邓齐尔谦卑地用单音节词作出回答。[教诲：锤砧的戒律]",
+      "participants": [
+        "visiting.denzil",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.arun",
+      "desc_cn": "阿伦对邓齐尔开启了一场单方面的活跃对话，他在谈话中将炽热密续即兴翻译为：“剧变需要彻底的销铄。”阿伦的语气变得更加嘶哑，他与邓齐尔促膝而坐，而邓齐尔则开始小心翼翼地微笑起来。[教诲：嬗变与解放]",
+      "participants": [
+        "visiting.denzil",
+        "arun"
+      ],
+      "befriend": "befriend.arun.denzil"
+    },
+    {
+      "id": "slnev.visiting.denzil.azita",
+      "desc_cn": "阿齐塔描述了在东方道路上，强盗和税警间的几场小规模冲突。邓齐尔抱胸而坐，不时点头。[教诲：伤疤的戒律]",
+      "participants": [
+        "visiting.denzil",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.chaima",
+      "desc_cn": "邓齐尔与柴玛结伴而坐，她用小刀展示着一些惊人技巧。[教诲：锋锐]",
+      "participants": [
+        "visiting.denzil",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.connie",
+      "desc_cn": "康妮随意地询问邓齐尔最近做了什么梦，邓齐尔简洁而坦率地回答说，他梦到自己跟着生翼的野兽穿过了黑暗森林。[教诲：兽角与象牙 ]",
+      "participants": [
+        "visiting.denzil",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.coquille",
+      "desc_cn": "科基尔要求邓齐尔为她描述海岸上的风暴。她凑的很近，睫毛下双眼含笑。然而，邓齐尔并未在意，只是抱怨最近的一次风暴迫使“甜美的骨头”关门停业。最后，他谈起了“圣皮兰蜡烛”，在风暴中，教区长住宅的风向标上有时会萦绕着莫名的光芒。不过，科基尔显然对他冷淡而实际的描述并不满意。[教诲：雕珀与琢石]",
+      "participants": [
+        "visiting.denzil",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.corso",
+      "desc_cn": "科尔索询问起邓齐尔海边的小路，以及那些行于其上之物。是走私犯？朝圣者？还是鬼魂？邓齐尔摇头否定了上述所有选项，但也补充说，他的曾祖父确实邂逅过“来自波涛下的女人”……[教诲：道途与朝圣]",
+      "participants": [
+        "visiting.denzil",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.dagmar",
+      "desc_cn": "妲格玛一再要求邓齐尔搬去做她的专属铁匠，帮她完成“许多小项目”。邓齐尔则不时申明，他不会做以上任何事。妲格玛似乎并未注意到邓齐尔的拒绝，或者至少并不介意。[教诲：门扉与墙垣]",
+      "participants": [
+        "visiting.denzil",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.douglas",
+      "desc_cn": "道格拉斯请教邓齐尔该如何修缮他的小屋，邓齐尔严肃地给出了建议。[教诲：门扉与墙垣]",
+      "participants": [
+        "visiting.denzil",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.ehsan",
+      "desc_cn": "埃桑与邓齐尔聊起了钓鱼。[教诲：大海的故事]",
+      "participants": [
+        "visiting.denzil",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.fraser",
+      "desc_cn": "弗雷泽询问起邓齐尔开采康沃尔锡矿时的往事。后者家族中似乎有许多锡矿工。“没多少人能寿终正寝。”邓齐尔承认道。",
+      "participants": [
+        "visiting.denzil",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.hokobald",
+      "desc_cn": "霍科博尔德追问邓齐尔，那些流传于沿海、伊苏深沉钟声的传说。邓齐尔不太情愿地分享了一些从父亲那里听来的零碎传闻。［教诲：洪钟与铜器］",
+      "participants": [
+        "visiting.denzil",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.morgen",
+      "desc_cn": "摩根看不起邓齐尔。而邓齐尔则恭敬地保持距离，趁她不注意时偷偷在桌上划了一个太阳十字。",
+      "participants": [
+        "visiting.denzil",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.olympe",
+      "desc_cn": "奥兰普与邓齐尔聊起了乡村生活。主要是奥兰普在聊。",
+      "participants": [
+        "visiting.denzil",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.serena",
+      "desc_cn": "邓齐尔与瑟雷娜追忆起那些她尚为图书管理员的日子。那时，年轻的邓齐尔与父亲发生了争吵，躲到噤声居屋住了几周。他帮助修复了铸造间，随后，他奔赴了战场。",
+      "participants": [
+        "visiting.denzil",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.stanislav",
+      "desc_cn": "斯坦尼斯拉夫热心地建议邓齐尔，他应当使用某种能治疗腰痛的药膏。[教诲：草药与药汤]",
+      "participants": [
+        "visiting.denzil",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.yvette",
+      "desc_cn": "邓齐尔在看到伊薇特的时候瞪大了双眼。他毕恭毕敬地低下了头，但拒绝回答她的任何问题。",
+      "participants": [
+        "visiting.denzil",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.denzil.zachary",
+      "desc_cn": "看来，扎迦利在大战后到布兰库格修养时，邓齐尔就已经认识他了。他们说起那些没做过的事。邓齐尔从没结过婚，也没有去过比伊普尔更南边的地方。扎迦利自大战后就再也没碰过枪，也没有回过他出生的地方。［教诲：残破十字路］",
+      "participants": [
+        "visiting.denzil",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.agdistis",
+      "desc_cn": "基尔夫人与阿格狄斯提斯热情地互致问候。他们似乎在巴黎就认识了，那时两人都还没结婚。她问起他的舞蹈学校……[教诲：鼓点与舞步]",
+      "participants": [
+        "visiting.killes",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.aladim",
+      "desc_cn": "阿迪姆与基尔先生讨论起那些鬼魅般在荒野上空盘旋的猛禽。基尔先生对阿迪姆饲养猎鹰的爱好很感兴趣，尽管他从未亲自尝试过。[教诲：毛皮与羽翎］",
+      "participants": [
+        "visiting.killes",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.arthur",
+      "desc_cn": "亚瑟与基尔先生讨论起他们在尸体上见过的最为可怕的伤口。两人丰富的从业经历和对职业的热爱很快就让话题偏离了正轨，直到基尔太太以锐利的一瞥提醒他们身在何处，他们才都闭上了嘴。[教诲：手术与放血]",
+      "participants": [
+        "visiting.killes",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.arun",
+      "desc_cn": "阿伦的十足魅力让基尔先生放下了对外乡人的警惕。他隐晦地描述了自己的“皮肤状况”，并请教基尔先生应当如何更好地隐藏它。基尔先生坚称自己是个制棺人，不是防腐师，但他还是给出了一两个建议……[教诲：手术与放血]",
+      "participants": [
+        "visiting.killes",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.azita",
+      "desc_cn": "阿齐塔与基尔太太交流起天气知识。（“暴风雨一起，很多没足月的婴儿就迫不及待地想探出头来。”基尔太太忧郁地说道。）[教诲：天空的故事]",
+      "participants": [
+        "visiting.killes",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.chaima",
+      "desc_cn": "柴玛和基尔先生讨论起欧洲及其他地区的丧葬习俗。[教诲：音律与铭记]",
+      "participants": [
+        "visiting.killes",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.connie",
+      "desc_cn": "康妮向基尔夫人打听本郡偏远地区换生灵的传说。基尔太太坚称那不过是些闲言碎语……但她承认，人们都知道她会在窗台上系红线，或者在摇篮下放置花楸树枝，以防万一。[教诲：淬火与熄焰]",
+      "participants": [
+        "visiting.killes",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.coquille",
+      "desc_cn": "科基尔与基尔太太讨论起缓解分娩疼痛和避孕的方法。[教诲：兰花与迷药]",
+      "participants": [
+        "visiting.killes",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.corso",
+      "desc_cn": "科尔索从口袋掏出笔记本，展示了上面贴的杂志剪报，记录着一首他喜爱的诗歌“隐秘大地”，作者不是别人，正是基尔先生。基尔先生显得有些尴尬，凑近身子谈论起这件事。他承认，在“甜美的骨头”里，与那些令人难忘的噤声居屋访客的交谈，为他提供了创作灵感……[教诲：光明果悦音]",
+      "participants": [
+        "visiting.killes",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.dagmar",
+      "desc_cn": "妲格玛问候基尔太太时，脱口而出称对方为“拉维林小姐”，她很快纠正了自己的称呼，拍了拍基尔太太的肩，问起对方已多年未见的几个法国亲戚，甚至还热切地谈起其他亲戚的情况。最终，她问起了基尔太太是否得过<i>“拉维林病”</i>。基尔太太礼貌地回答说并没有……但她为此决定不要孩子，以防万一。桌子对面的基尔先生以老夫老妻的默契与她相视，握住了她的手。",
+      "participants": [
+        "visiting.killes",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.douglas",
+      "desc_cn": "道格拉斯正委托基尔先生制作一口非常特殊的棺材：雷击木，纯铜封条（基尔先生怀疑邓齐尔能否做出来），整个棺材在道格拉斯来取走之前都不能接地……[教诲：玻璃吹制与容器制造]",
+      "participants": [
+        "visiting.killes",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.ehsan",
+      "desc_cn": "基尔太太与埃桑谈论起伤口的包扎与缝合。[教诲：缝合与装订]",
+      "participants": [
+        "visiting.killes",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.fraser",
+      "desc_cn": "弗雷泽问基尔太太，这阵子附近的乡村是否有不寻常的动物或婴儿降生？她承认有。他接着追问，有没有长着翅膀或者眼睛异常的？她停顿许久，才回答说，确实有一些，但她知道的都没能活下来。[教诲：覆画残迹与古老前身]",
+      "participants": [
+        "visiting.killes",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.hokobald",
+      "desc_cn": "基尔夫妇坐得尽可能远离霍科博尔德。他们都不肯看他。",
+      "participants": [
+        "visiting.killes",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.morgen",
+      "desc_cn": "基尔太太尊敬地称呼摩根为“夏珂勒忒”，并低头致意。摩根似乎认得这个称呼。她用手指点了点自己的嘴唇，又触碰基尔太太的额头——许是祝福，或是其他。摩根停顿了一下，便开始随意地讲述最近的一次出海航行。[教诲：大海的故事]",
+      "participants": [
+        "visiting.killes",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.olympe",
+      "desc_cn": "基尔先生和奥兰普都非常喜欢诺埃尔·科沃德，两人似乎都是他的狂热崇拜者。奥兰普提到，她在行李里小心翼翼地打包了科沃德最新作品的78转唱片，《别把你的女儿送上舞台，沃辛顿夫人》。她还提出可以把这张唱片借给基尔先生。基尔先生激动得差点踢翻了椅子。[教诲：弦乐与歌谣]",
+      "participants": [
+        "visiting.killes",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.serena",
+      "desc_cn": "瑟雷娜在基尔先生还是个“邋遢小伙”时就认识他了。他们追忆起大战刚结束时的布兰库格；随后瑟雷娜提醒他，有一次他在习武园里偷水果时被抓了现行，尽管基尔先生和她一起笑了，但他的笑声中流露出一丝尴尬，谈话不久便结束了。",
+      "participants": [
+        "visiting.killes",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.stanislav",
+      "desc_cn": "斯坦尼斯拉夫询问基尔夫人，布兰库格是否还保留着那个古老的传统：母亲是否仍会把婴儿留在苹果树根上过夜。基尔太太短暂而忧郁地微笑了一下，承认说，是的，有时确实会这么做，不过，大多数母亲会付钱让她代为照看，这样她们就不必冒犯提摩西牧师。她总是在外彻夜照看婴儿，而在教会出现前就无需如此。[教诲：根系之仪]",
+      "participants": [
+        "visiting.killes",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.yvette",
+      "desc_cn": "伊薇特听科尔索说过基尔太太对诗的喜爱。她问及他的灵感，他便谨慎地分享。她问起他的梦境，他环顾四周，竖起手指放在唇前：“不能在居屋里讲。”[教诲：景象与感知]",
+      "participants": [
+        "visiting.killes",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.killes.zachary",
+      "desc_cn": "扎迦利向基尔太太吐露：他认为自己终究会生出“某种孩子”，并问她能否帮上忙。她审视着他，随后小声说，自己无计可施。他又问她，自己能否活过分娩；她思考许久，更小声地说，她觉得能。最后，他问她，孩子可能在何时出生。她凑近低语道，“我觉得会在仲夏的某天。”［教诲：白雪的故事］",
+      "participants": [
+        "visiting.killes",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.agdistis",
+      "desc_cn": "阿格狄斯提斯表露出对厄里卡帕奥语的兴趣。提摩西牧师因还未触及教会的高阶秘事，自陈“远未达到流利的程度”，但很乐意分享一些要点。[教诲：厄里卡帕奥语]",
+      "participants": [
+        "visiting.timothy",
+        "agdistis"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.aladim",
+      "desc_cn": "提摩西与阿迪姆讨论起“山巅之日”阿尔-加巴尔，臭名昭著的埃拉伽巴路斯皇帝用以自比的叙利亚神明……他们也谈起仍在崇拜这位神明与皇帝的埃美萨教派，显然，提摩西对此暗暗着迷。[教诲：沙的故事]",
+      "participants": [
+        "visiting.timothy",
+        "aladim"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.arthur",
+      "desc_cn": "提摩西牧师手中有一份关于墨水调配的手稿，他洋洋得意地认为这手稿源自群狮迷宫。他与亚瑟讨论起手稿的内容和出处，结果却发现这只是一份较新的赝品。提摩西倍感失望。[教诲：启示之墨]",
+      "participants": [
+        "visiting.timothy",
+        "arthur"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.arun",
+      "desc_cn": "提摩西牧师发现，十九世纪臭名昭著的实验性诗歌宣言《激进举措》的作者竟然就是阿伦，他现在对阿伦的每一句话都全神贯注，几乎连话都说不出来了。[教诲：阙前格律］",
+      "participants": [
+        "visiting.timothy",
+        "arun"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.azita",
+      "desc_cn": "阿齐塔和提摩西牧师正在讨论东方教会，它虽然是太阳信仰的一个分支，却认可其他司辰，他们还讨论了其他顽固的十字会异端。（阿齐塔对提摩西将其称为“十字会异端”略有不满。）[教诲：无敌太阳典仪]",
+      "participants": [
+        "visiting.timothy",
+        "azita"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.chaima",
+      "desc_cn": "提摩西显然不知道该和柴玛聊些什么，至少在最开始几分钟是这样的。现在，他擅自选了水生蜗牛来当话题（看样子，他是个热心的博物学爱好者），并和柴玛聊了一阵子水生蜗牛。柴玛也听他讲了一阵子。[教诲：珍珠与浪潮]",
+      "participants": [
+        "visiting.timothy",
+        "chaima"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.connie",
+      "desc_cn": "提摩西盘问了康妮一系列“炼金瓶”建造过程的问题，康妮作答得十分谨慎。但最后她发现，提摩西其实只对建筑学感兴趣。实际上，他似乎完全忘了那是座监狱。[教诲：门扉与墙垣］",
+      "participants": [
+        "visiting.timothy",
+        "connie"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.coquille",
+      "desc_cn": "提摩西热情洋溢地向科基尔描述他上周的布道，并因她乐意赏光而受宠若惊。尽管其他冷静的旁观者会注意到，科基尔的兴趣正变得越来越呆滞和勉强。［教诲：无敌太阳典仪］",
+      "participants": [
+        "visiting.timothy",
+        "coquille"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.corso",
+      "desc_cn": "科尔索得知，提摩西牧师继承了威尔士姨妈的小型神学藏书库。他正巧妙地试探着其中是否有高价的书籍，同时尽力避免显得过于咄咄逼人。对科尔索来说幸运的是，提摩西对此毫无察觉；对于提摩西和科尔索两人来说都很不幸的是，那些藏书大多只是维多利亚时代的重印本。［教诲：无敌太阳典仪］",
+      "participants": [
+        "visiting.timothy",
+        "corso"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.dagmar",
+      "desc_cn": "妲格玛抱怨着她背部的酸痛，随即对提摩西发起了一阵猛烈攻击。她似乎通过谴责教会，抵达了昕旦，最后将岁月账簿归咎于提摩西。昕旦掌管的岁月账簿决定了凡人的寿数。提摩西在这场攻击下像风暴中的柳树般屈服，但依然坚持复述着支持岁月账簿的道德和神学论点。最终，妲格玛无意中透露自己曾参与过“酿蜜与清算”，显然是试图调整过自己在账簿中的记录，随后狡猾地退出了争论。［教诲：阈限之敕令］",
+      "participants": [
+        "visiting.timothy",
+        "dagmar"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.douglas",
+      "desc_cn": "道格拉斯和提摩西牧师愉快地讨论了种植玫瑰的技巧。［教诲：叶片与棘刺］",
+      "participants": [
+        "visiting.timothy",
+        "douglas"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.ehsan",
+      "desc_cn": "提摩西抓住机会询问埃桑噤声居屋医务室的运作情况。他的兴趣显然在于历史，可埃桑难得有心情捉弄人，他详细描述了一些过去在那进行的骇人外科手术，令提摩西面色微微发青……［教诲：手术与放血］",
+      "participants": [
+        "visiting.timothy",
+        "ehsan"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.fraser",
+      "desc_cn": "提摩西（一个热心的博物学爱好者）与弗雷泽分享了他关于黄蜂的见解。弗雷泽的兴趣时而转浓，时而转淡。［教诲：昆虫与花蜜］",
+      "participants": [
+        "visiting.timothy",
+        "fraser"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.hokobald",
+      "desc_cn": "霍科博尔德追问提摩西牧师新王相关的议题，特别是一些高级教士主张说，新王可能与第二拂晓有关，而这似乎与《骄阳之书》的通行版有所冲突。霍科博尔德显然带有恶意。提摩西清楚意识到这一点，并且显然对霍科博尔德颇为畏惧。他虽然保持礼貌，但面色苍白，格外沉默。［教诲：精炼与擢升］",
+      "participants": [
+        "visiting.timothy",
+        "hokobald"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.morgen",
+      "desc_cn": "提摩西牧师坐在摩根旁边，起初显然觉得她颇有魅力。他愉快地聊起了自己在布兰库格和神学院的时光，接着询问起她的背景。他越来越疑惑不解，直到她提到她的“非亲姐妹”，这才终于恍然大悟。他礼貌地尽可能将椅子挪得远一些，并在接下来的用餐时间里避免交谈。她微微一笑，询问要不要帮他切食物。［教诲：狼的故事］",
+      "participants": [
+        "visiting.timothy",
+        "morgen"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.olympe",
+      "desc_cn": "提摩西牧师得知奥兰普（至少有时）是《凯尔伊苏姆评论报》的编辑，他急切地想向她推荐自己给伊尔莎·比绍夫写的影评。奥兰普老练地婉拒了他，但提摩西对比绍夫细节的无尽热情最终软化了她的心，甚至在餐毕时主动给了他自己的名片。［教诲：伤疤的戒律］",
+      "participants": [
+        "visiting.timothy",
+        "olympe"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.serena",
+      "desc_cn": "提摩西向瑟雷娜提出了种种问题，亚历山大里亚教会、圣露西亚崇拜以及与前太阳信仰的各类融合实例。瑟雷娜尽力解答他的疑问。［教诲：无敌太阳典仪］",
+      "participants": [
+        "visiting.timothy",
+        "serena"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.stanislav",
+      "desc_cn": "提摩西是神学博士，但这一头衔显然在布兰库格引发了一些误解，不少村民以为“博士”意味着他们可以找他求助，缓解疼痛和扭伤。他不喜欢拒绝他们，因此会向斯坦尼斯拉夫寻求一些实用的建议。［教诲：草药与药汤］",
+      "participants": [
+        "visiting.timothy",
+        "stanislav"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.yvette",
+      "desc_cn": "提摩西牧师正在与伊薇特讨论历史上的异端与异教。伊薇特略有兴味，提摩西却热血沸腾。[教诲：守夜人的悖论]",
+      "participants": [
+        "visiting.timothy",
+        "yvette"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.visiting.timothy.zachary",
+      "desc_cn": "提摩西牧师兴奋地和扎迦利谈起鸡蛋，钟表，当地的獾群和他那女管家制作的黑布丁。最后，他注意到了扎迦利其实心不在焉，并且郁郁寡欢。于是，他便开始柔声阐释圣莱文对终结和开始的论述。[教诲：曙光的静观］",
+      "participants": [
+        "visiting.timothy",
+        "zachary"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.visiting.denzil",
+      "desc_cn": "阿格狄斯提斯列举了几首“锻工之歌”，同时轻轻敲打着桌子。邓齐尔礼貌地点头，但显然心不在焉，毫无兴趣。［教诲：鼓点与舞步］",
+      "participants": [
+        "agdistis",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.visiting.denzil",
+      "desc_cn": "邓齐尔和阿迪姆继续他们对蹄铁的讨论。阿迪姆提出假设性问题，如何为一匹“踏浪踩沫”的假想骏马钉蹄。邓齐尔缓慢地作出回答，引用了一个民间故事，故事中的骏马被钉上了黄金马蹄，而那黄金则收集自反射的落日灿辉……［教诲：毛皮与羽翎］",
+      "participants": [
+        "aladim",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.visiting.denzil",
+      "desc_cn": "亚瑟和邓齐尔正在进行一场略显僵硬但依旧友好的对话，话题是本地啤酒。[教诲：香料与滋味]",
+      "participants": [
+        "arthur",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.visiting.denzil",
+      "desc_cn": "邓齐尔和阿伦正进行着一场出乎意料的诚恳交谈，尽管大多数时间都只有阿伦在说话。阿伦显然不是第一次问邓齐尔什么时候去伦敦看他了，然而邓齐尔只是坚定地摇了摇头，随之，对话也略微冷却了下来。［教诲：诱惑与消殒］",
+      "participants": [
+        "arun",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.visiting.denzil",
+      "desc_cn": "阿齐塔试图开始一场关于步兵战术的讨论，但邓齐尔似乎对此兴趣缺缺。［教诲：伤疤的戒律］",
+      "participants": [
+        "azita",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.visiting.denzil",
+      "desc_cn": "邓齐尔和柴玛正在进行某种比赛，两人轮流将手掌悬在蜡烛上方，时间越来越长。柴玛偶尔会说些哲学见解。［教诲：锋锐］",
+      "participants": [
+        "chaima",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.visiting.denzil",
+      "desc_cn": "康妮提醒邓齐尔，他最近的梦境非常不妙——飞蛾、黑暗的林地、拉扯他双脚的树根。她以最正式的语气提供建议：不要在午后剪头发，并应在床上放一条彩色缀布被。邓齐尔显然有些困惑，但还是礼貌地听着，频频点头，却不予置评。［教诲：淬火与熄焰］",
+      "participants": [
+        "connie",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.visiting.denzil",
+      "desc_cn": "科基尔拽了拽邓齐尔的头发，打趣地问他什么时候剪头发。他只答道：“必须之时。”便不耐烦地离开了她。他们没有再说话。",
+      "participants": [
+        "coquille",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.visiting.denzil",
+      "desc_cn": "邓齐尔教了科尔索几句赫沃尔语，这是一种布兰库格村的冬日庆典仍使用的古老语言。他称之为<i>Tavas Mytern</i>，意或为“王语”，并以“他”而不是“它”来称呼，仿佛这门语言真的是一位活着的国王。［教诲：赫沃尔语］",
+      "participants": [
+        "corso",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.visiting.denzil",
+      "desc_cn": "妲格玛提到她正在翻修马厩，这样邓齐尔来为她工作时，就能感到“宾至如归”（她似乎对铁匠的居住条件有些不清不楚。）邓齐尔又一次耐心地解释说，他不会来为她工作。妲格玛随即开始谈论中欧的铁砧。［教诲：门扉与墙垣］",
+      "participants": [
+        "dagmar",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.visiting.denzil",
+      "desc_cn": "邓齐尔和道格拉斯互发牢骚，抱怨起他们偏爱的烟斗丝近期质量下降了。［教诲：门扉与墙垣］",
+      "participants": [
+        "douglas",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.visiting.denzil",
+      "desc_cn": "邓齐尔和埃桑谈论起基尔夫人那备受赞誉的鱼肉饼，低声且敬重。［教诲：大海的故事］",
+      "participants": [
+        "ehsan",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.visiting.denzil",
+      "desc_cn": "弗雷泽再次提起采矿的话题，以及邓齐尔家族与锡矿匠的联系。显然，他在世界的这个角落也有商业野心……邓齐尔虽不情不愿，但还是回答了他。［教诲：虬蟠与裂隙］",
+      "participants": [
+        "fraser",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.visiting.denzil",
+      "desc_cn": "霍科博尔德居高临下地分享了他对“大贬质”的个人理论，及其在冶金上的后果。邓齐尔慢慢咀嚼着食物，一言不发。［教诲：洪钟与铜器］",
+      "participants": [
+        "hokobald",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.visiting.denzil",
+      "desc_cn": "摩根继续无视邓齐尔，而邓齐尔则与其保持着安全距离，时不时投去阴沉而警惕的一瞥。",
+      "participants": [
+        "morgen",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.visiting.denzil",
+      "desc_cn": "奥兰普和邓齐尔聊起了她在欧洲的旅行。邓齐尔不时插话，通常他说的是“是这样吗？”，但有一次他意味深长地说道：“奇妙。”［教诲：道途与朝圣］",
+      "participants": [
+        "olympe",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.visiting.denzil",
+      "desc_cn": "瑟雷娜询问邓齐尔，他父亲为炼金瓶典狱长科勒斯提供了什么服务。邓齐尔简短但礼貌地回答了她。显然，他们俩都不太喜欢科勒斯。［教诲：玻璃吹制与容器制造］",
+      "participants": [
+        "serena",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.visiting.denzil",
+      "desc_cn": "邓齐尔尽其所能地给斯坦尼斯拉夫提供了一些防锈的建议。［教诲：腐化与煅烧］",
+      "participants": [
+        "stanislav",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.visiting.denzil",
+      "desc_cn": "伊薇特尽力让邓齐尔放松，但他显然非常警惕。他依然保持礼貌，但即使按照他一贯沉默寡言的性格，这次也格外缄默。最终，他承认在布兰库格有个传统，认为侮辱、与浅发女子交易、或与这样的女子同饮会带来厄运……［教诲：大海的故事］",
+      "participants": [
+        "yvette",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.visiting.denzil",
+      "desc_cn": "邓齐尔和扎迦利聊起了一些旧相识，扎迦利于大战后在布兰库格养伤时结识了这些人。他们回忆起那些噤声居屋的故人：哈廷顿（“好像在纽约的一家疯人院”）、伊利奥波里（“好像在马赛”）、以及科勒斯（“真希望他死了”）……［教诲：残破十字路］",
+      "participants": [
+        "zachary",
+        "visiting.denzil"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.visiting.killes",
+      "desc_cn": "基尔夫人和阿格狄斯提斯回忆起他们在巴黎相识的时光。他问她是否还与“艾德琳姑姑”有联系，她断然摇头。“我嫁给基尔先生时，”她坚定地说，“我告诉他，我已经把那些事情都抛在身后了。他是个好人。”［教诲：音律与铭记］",
+      "participants": [
+        "agdistis",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.visiting.killes",
+      "desc_cn": "基尔夫人和阿迪姆在互相交换谚语。他说：“谁烹煮毒药，谁自食其果。”她说：“海浪带回世界失落之物……”［教诲：音律与铭记］",
+      "participants": [
+        "aladim",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.visiting.killes",
+      "desc_cn": "亚瑟和基尔先生分享着他们的狂野童年，一个在卡斯尔福德，一个在布兰库格，两人都惹过种种麻烦。两人边笑边谈，但当他们都意识到亚瑟的童年是很久、很久以前的事时，笑声逐渐消失了。",
+      "participants": [
+        "arthur",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.visiting.killes",
+      "desc_cn": "阿伦微微靠向基尔夫人，意味深长地说道：“我之一族，视时间为火焰：焰心最冷冽，而外焰最炽烈……”基尔夫人耸了耸肩，说道：“每束火焰都有其燃料，每种燃料皆惧其火焰。”\n阿伦微微后仰，带着比平常更加似蛇般的神情注视着她。“嗯。”他轻声回应。［教诲：精炼与擢升］",
+      "participants": [
+        "arun",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.visiting.killes",
+      "desc_cn": "阿齐塔和基尔先生讨论了黎巴嫩大雪松木材的特性。阿齐塔提出能以极低的价格提供一批柏木，基尔先生像往常一样微笑着拒绝了。阿齐塔接着提议送一份免费样品，基尔先生的笑容瞬间消失了。他道歉说，在布兰库格，他们从小就被教导，不能接受噤声居屋访客的礼物。［教诲：叶片与棘刺］",
+      "participants": [
+        "azita",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.visiting.killes",
+      "desc_cn": "基尔夫人和柴玛一齐感叹，在英格兰找到像样的咖啡几乎是不可能的。［教诲：香料与滋味］",
+      "participants": [
+        "chaima",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.visiting.killes",
+      "desc_cn": "康妮回想起基尔夫人在娘家时的姓是“拉维林”，于是详细盘问起她是否梦到过狼，或者是否渴望过肉类或泥土。基尔夫人耐心但疲倦地一一否认了上述问题。［教诲：岩石的故事］",
+      "participants": [
+        "connie",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.visiting.killes",
+      "desc_cn": "科基尔透露出，自己一直在种植兰花。基尔先生是一位热心的园艺爱好者，立刻燃起了兴趣。基尔夫人则密切关注着他俩，以确保他的热情不至于不必要地泛滥。［教诲：兰花与迷药］",
+      "participants": [
+        "coquille",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.visiting.killes",
+      "desc_cn": "科尔索带了一本富兰克林·班克罗夫特的诗集供基尔先生阅读，声称他在其中看到了与后者作品间的相似之处。基尔先生表示感激，但显然仍怀警惕。最后他同意借这本书一晚，前提是这并非赠礼，科尔索会在动身离开前取回它。（基尔先生暗示说，布兰库格人不会愿意接受居屋访客的礼物。）［教诲：光明果悦音］",
+      "participants": [
+        "corso",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.visiting.killes",
+      "desc_cn": "妲格玛亲切地和基尔先生聊了起来，轻蔑地谈起1848年的“民族之春”。她暗示自己那时就在现场——这让她听起来有九十岁。基尔先是震惊，而后是惊讶，接着又开始结巴。妲格玛轻描淡写地摆了摆手：“首先呢，我曾经也<i>很</i>年轻。其次，年龄不是数字。我会告诉你什么是数字：九。九是个绝对的数字。”",
+      "participants": [
+        "dagmar",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.visiting.killes",
+      "desc_cn": "道格拉斯询问基尔先生，那些躺在他打造的棺材里的逝者，有没有在下葬前，下葬后或下葬中造成过“麻烦”。基尔先生显然十分警惕，回答说从未发生过。然而，道格拉斯还是提了一些改进措施，以杜绝任何此类失当行为的发生。[教诲：玻璃吹制与容器制造］",
+      "participants": [
+        "douglas",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.visiting.killes",
+      "desc_cn": "埃桑和基尔先生谈论了淡水捕鱼。（基尔先生承认他从来没上过渔船：围绕着布兰库格四周的大海有太多流言。）[教诲：大海的故事]",
+      "participants": [
+        "ehsan",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.visiting.killes",
+      "desc_cn": "弗雷泽询问基尔夫人的梦境，尤其是她能记得的童年梦境，特别是她是否记得任何“眼之梦”。代为回答的是基尔先生，他回答得认真仔细，但没有丝毫友好之意。［教诲：覆画残迹与古老前身］",
+      "participants": [
+        "fraser",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.visiting.killes",
+      "desc_cn": "霍科博尔德问基尔先生，他在工作中是否用过木材以外的材料。基尔先生站起身，深深鞠躬，说他很遗憾自己从未这么做过，随后离开房间了好几分钟。回来后，他特别小心避免坐在霍科博尔德附近。",
+      "participants": [
+        "hokobald",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.visiting.killes",
+      "desc_cn": "基尔夫人再次称呼摩根为“夏珂勒忒”，又一次，摩根亲吻了她的手指，并且触摸了基尔夫人的额头。（基尔先生小心地从远处观察。）两人寒暄了几分钟，基尔夫人问摩根是否曾考虑过“美狄亚之途”。摩根眼中闪过一丝银光般的悲伤，她说那条路对她封闭了，并出人意料地引用了<i>《骄阳之书》</i>中的一段，那些我们在黄昏时会犯下的罪行……［教诲：复苏与羽化］",
+      "participants": [
+        "morgen",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.visiting.killes",
+      "desc_cn": "上次，奥兰普借给了基尔先生科沃德《沃辛顿夫人》的唱片。如今，他充满感激地归还了它。他们对这部作品赞不绝口，聊了好几分钟，之后，她微笑着递给他两张戏票，是下个月在伦敦上演科沃德表演的。基尔先生突然变得很严肃，谢绝了这份好意。她坚持说这些票是赠票，没花她一分钱；他却很轻声地说，他知道接受噤声居屋访客的礼物并不明智。奥兰普的笑容微微一滞，收回了票，谈话随之结束。［教诲：弦乐与歌谣］",
+      "participants": [
+        "olympe",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.visiting.killes",
+      "desc_cn": "大战结束后，瑟雷娜在布兰克鲁格认识了基尔先生，那时他还是个“邋遢小伙”。她与基尔夫人分享了一些回忆，基尔夫人专注地听着，温柔地微笑着，尽管并未大笑出声。（逗笑基尔夫人并不容易。）瑟雷娜问基尔先生有否提起过她，基尔夫人声称并没有；她说她觉得基尔先生有些害怕瑟雷娜。“闪电后的寂静；雷鸣前的沉默。”她说道，而瑟雷娜斜眼瞥了她一下。",
+      "participants": [
+        "serena",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.visiting.killes",
+      "desc_cn": "斯坦尼斯拉夫与基尔先生讨论了后者的西葫芦。斯坦尼斯拉夫显然对基尔的西葫芦由衷敬畏。［教诲：草药与药汤］",
+      "participants": [
+        "stanislav",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.visiting.killes",
+      "desc_cn": "出乎意料的是，伊薇特提议为基尔夫人作画。令人同样惊讶的是，基尔夫人同意了，“好久没这样了”。但她对伊薇特的技法追根究底。基尔先生则默默关注着这一切，尽管完全不动声色。［教诲：景象与感知］",
+      "participants": [
+        "yvette",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.visiting.killes",
+      "desc_cn": "扎迦利询问基尔先生是否可以为他做一口棺材。“现在还不需要，”他说，“但也许我们终究都会为此心怀感激。”基尔先生慢慢地摇了摇头：这不是他的工作。但他建议扎迦利谈谈胸中的烦恼。扎迦利照做了，尽管言辞含糊，提到了镜子、白雪、翅膀和“心中之扭结”。［教诲：白雪的故事］",
+      "participants": [
+        "zachary",
+        "visiting.killes"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.agdistis.visiting.timothy",
+      "desc_cn": "提摩西和阿格狄斯提斯正讨论着历史记载中弗里吉亚的山地仪式。每一提到“圣杯”，两人都显著地压低了声音。［教诲：三重誓之仪］",
+      "participants": [
+        "agdistis",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.aladim.visiting.timothy",
+      "desc_cn": "最近，阿迪姆从纽约归来。提摩西牧师立刻表现出对纽约汹涌的好奇心。而事实是，阿迪姆并不特别喜欢纽约。",
+      "participants": [
+        "aladim",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arthur.visiting.timothy",
+      "desc_cn": "提摩西和亚瑟正在讨论卡斯的艾萨克所著的《无影众王史》。亚瑟对艾萨克的可信度将信将疑，而提摩西则是他的狂热崇拜者。［教诲：沙的故事］",
+      "participants": [
+        "arthur",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.arun.visiting.timothy",
+      "desc_cn": "自上次见面以来，提摩西牧师终于<i>读完</i>了阿伦所著的《激进举措》，并因此冒出了一大堆问题。阿伦对这本书的记忆显然比提摩西的更模糊，他试图退回到他以谜语对话的舒适圈内，但提摩西源源不断的热情却毫无仁慈。[教诲：阙前格律]",
+      "participants": [
+        "arun",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.azita.visiting.timothy",
+      "desc_cn": "阿齐塔与提摩西牧师正在讨论伊尔莎·比绍夫的电影。“太可怕了，”提摩西牧师对那部<i>《敞开头脑》</i>表示了强烈的反感。“但我总忍不住去想它。我为教区杂志写了一篇它的文章。但他们不太喜欢，要求我再写一篇圣诞谜题专栏来换掉它。”",
+      "participants": [
+        "azita",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.chaima.visiting.timothy",
+      "desc_cn": "提摩西牧师坚信柴玛是一个对水生蜗牛感兴趣的人，于是他继续与柴玛谈论着水生蜗牛。柴玛带着女猎手的耐心聆听着。[教诲：珍珠与浪潮]",
+      "participants": [
+        "chaima",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.connie.visiting.timothy",
+      "desc_cn": "提摩西兴奋地发现自己竟然在和一位防剿局高层谈话，他问了康妮许多防剿局的动向，以及其与教会日益增加的合作。她回答了其中一些，而礼貌拒绝了另一些。最后，提摩西天真地问起“根冠究竟是什么？”听到这里，她摇了摇头，悄声告诫他不要再问起根冠，接着岔开了话题。[教诲：无侵之敕令]",
+      "participants": [
+        "connie",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.coquille.visiting.timothy",
+      "desc_cn": "提摩西牧师得到了一位迷人女子的注意，而对方甚至愿意听他布道。现在，他正向这位女士阐释他上一次<i>以及</i>下一次的圣诞布道。科基尔绽放出了更加迷人的微笑。她的目光扫视了房间一圈。无处可逃。[教诲：无敌太阳典仪]",
+      "participants": [
+        "coquille",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.corso.visiting.timothy",
+      "desc_cn": "提摩西孜孜不倦地向科尔索讲述他最喜欢的荒野徒步。[教诲：岩石的故事]",
+      "participants": [
+        "corso",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.dagmar.visiting.timothy",
+      "desc_cn": "不知怎么，提摩西发现了妲格玛在中欧某处拥有破败的城堡，自然而然，其中坐落着一座小教堂。他对这座教堂的建筑与装修抱有许多疑问，妲格玛一开始很乐意谈论，但在遭受提摩西牧师连珠炮般的无情提问后，她的知识开始显出薄弱之处。当他拿出并展开一份事先写就的<i>后续问题清单</i>，妲格玛彻底失去了勇气，找了个借口出去抽烟。而提摩西紧随其后。[教诲：门扉与墙垣]",
+      "participants": [
+        "dagmar",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.douglas.visiting.timothy",
+      "desc_cn": "道格拉斯盘问提摩西，问及海岸附近出没的逃犯。提摩西最初闪烁其词，但几乎立刻崩溃了，承认自己完全是出于善心，对那人抱有怜悯，指示了他的管家特伦斯将食物送到那个人藏身的煤焦中，持续了整整一周……",
+      "participants": [
+        "douglas",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.ehsan.visiting.timothy",
+      "desc_cn": "提摩西已经察觉到埃桑曾是“别的存在”，尽管他并不完全清楚那究竟为何，而埃桑也不愿多做解释。他问埃桑，生命中的蜕变是何感受。埃桑向后一靠，略显夸张地宣告——或是在引用某句格言：“大海从不后悔潮水的涨落，因为潮水退去后，会在沙滩上留下痕迹；这痕迹便是大海的记忆。”这是他对这个问题的最后一句回答。随后，面对他的沉默，提摩西的问题落如雨下。",
+      "participants": [
+        "ehsan",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.fraser.visiting.timothy",
+      "desc_cn": "提摩西素来仰慕克里斯托弗·伊利奥波里的作品，在得知弗雷泽·斯特拉思科曾收养过伊利奥波里后，便对弗雷泽提出了许许多多伊利奥波里教育背景和职业选择的问题。弗雷泽态度尚算和蔼地回答了这些问题，直到提摩西天真地问道，为何伊利奥波里现在使用了不同的姓氏。［教诲：曙光的静观］",
+      "participants": [
+        "fraser",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.hokobald.visiting.timothy",
+      "desc_cn": "霍科博尔德提出了一些问题，涉及噤声居屋礼拜堂中的彩绘玻璃和其上对司辰的描绘。提摩西牧师一直对居屋的历史和建筑充满热情，急切地想分享自己所知的一切，然而，他显然因霍科博尔德可能的别有用心而惶惶不安。然而，霍科博尔德表现出的只是纯粹的好奇（尽管依旧居高临下）。［教诲：玻璃与锻光］",
+      "participants": [
+        "hokobald",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.morgen.visiting.timothy",
+      "desc_cn": "从摩根悠然步入房间起，提摩西就目不转睛地盯着她看，像蜘蛛恐惧症患者遇见了缓慢爬行的狼蛛。摩根显然注意到了，因此在前半小时里选择无视他。某刻，她忽然转过身，定睛看着他，猛地鼓起了掌。他惊慌地踢翻了椅子，一边道歉，一边跌跌撞撞地向厕所跑去，许久没有回来。",
+      "participants": [
+        "morgen",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.olympe.visiting.timothy",
+      "desc_cn": "提摩西听说奥兰普了解格鲁吉亚时非常高兴。他向她保证，自己字面意思上对此有数百个问题，葡萄酒、异端学说、豹皮、第五杯、阿米拉尼槟榔石的神话……奥兰普按了按太阳穴，告诉他只能问十个问题。不过，她还是详细地回答了每一个。［教诲：沙的故事］",
+      "participants": [
+        "olympe",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.serena.visiting.timothy",
+      "desc_cn": "提摩西向瑟雷娜发起了一系列连珠炮似的提问，噤声居屋的建筑结构，自她卸职后居屋所发生的变化。她回答了其中无关紧要的一些，并巧妙地避开了更棘手的。[教诲：门扉与墙垣]",
+      "participants": [
+        "serena",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.stanislav.visiting.timothy",
+      "desc_cn": "斯坦尼斯拉夫和提摩西分享了一则流言，大陆的教会机构与其在英国的姊妹教派间在教义和政治上发生了分歧。斯坦尼斯拉夫半闭着眼睛，靠在椅背上，不时发出轻笑；而提摩西则既开怀不已，但又明显表现出负疚，以至于连牙齿都在轻微打颤。［教诲：无敌太阳典仪］",
+      "participants": [
+        "stanislav",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.yvette.visiting.timothy",
+      "desc_cn": "伊薇特和提摩西牧师正在讨论《骄阳之书》通行版与核准版间的差异。伊薇特所受的正规神学教育仅止于主日学校，因此在细节显而易见地不清不楚，但这只让提摩西牧师更加热衷于纠正她，他天真的热情让伊薇特忍不住微笑起来。［教诲：无敌太阳典仪］",
+      "participants": [
+        "yvette",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    },
+    {
+      "id": "slnev.zachary.visiting.timothy",
+      "desc_cn": "提摩西牧师似乎对扎迦利的状况有所察觉，或者只是自以为了解，于是向扎迦利提供了他认为可能帮上忙的祷告文辞和冥想练习。扎迦利面无表情地复述了一遍。［教诲：淬火与熄焰］",
+      "participants": [
+        "zachary",
+        "visiting.timothy"
+      ],
+      "befriend": null
+    }
+  ],
+  "salon_guests": {
+    "visiting.timothy": {
+      "label_cn": "来访的提摩西教区长"
+    },
+    "visiting.killes": {
+      "label_cn": "来访的基尔夫妇"
+    },
+    "visiting.denzil": {
+      "label_cn": "来访的邓齐尔"
+    }
   }
 };
