@@ -544,6 +544,10 @@ p { margin: 0 0 var(--s-3); }
   .flow-diagram { display: none; }
 
   .phase-block { margin: 14px 0 10px; }
+
+  .salon-conv-text { font-size: 17px; }
+  .salon-partner   { font-size: 17px; }
+  .salon-lesson-chip, .salon-befriend-chip { font-size: 13px; padding: 2px 10px; }
 }
 </style>
 </head>
@@ -567,8 +571,8 @@ p { margin: 0 0 var(--s-3); }
     </div>
     <img src="./assets/divider-flourish.svg" alt="" style="width:100%;opacity:.45;margin:4px 0 10px">
     <div class="sidebar-tabs" style="margin-bottom:10px">
-      <button class="sidebar-tab active" data-tab="incidents" onclick="switchTab('incidents');closeDrawer()">事件</button>
-      <button class="sidebar-tab" data-tab="salons" onclick="switchTabMobile('salons')">沙龙</button>
+      <button class="sidebar-tab active" data-tab="incidents" onclick="switchTab('incidents',true)">事件</button>
+      <button class="sidebar-tab" data-tab="salons" onclick="switchTab('salons')">沙龙</button>
     </div>
     <div id="m-sidebar-incidents">
       <div class="m-drawer__head">常规事件</div>
@@ -754,11 +758,17 @@ function markActive(iid) {
   document.querySelectorAll(".incident-list li, .m-drawer__item").forEach(li => li.classList.toggle("active", li.dataset.id === iid));
 }
 // ── Tab switching ──
-function switchTab(tab) {
+function switchTab(tab, closeMobileDrawer) {
   currentTab = tab;
+  // PC sidebar
   document.getElementById("sidebar-incidents").style.display = tab === "incidents" ? "" : "none";
   document.getElementById("sidebar-salons").style.display   = tab === "salons"    ? "" : "none";
+  // Mobile drawer
+  document.getElementById("m-sidebar-incidents").style.display = tab === "incidents" ? "" : "none";
+  document.getElementById("m-sidebar-salons").style.display   = tab === "salons"    ? "" : "none";
+  // All tab buttons
   document.querySelectorAll(".sidebar-tab").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
+  // Reset main
   if (tab === "incidents") {
     document.getElementById("main").innerHTML = '<p class="placeholder">← 选择左侧事件查看攻略</p>';
     currentIid = null;
@@ -766,17 +776,7 @@ function switchTab(tab) {
     document.getElementById("main").innerHTML = '<p class="placeholder">← 选择左侧访客查看对话记录</p>';
     currentVid = null;
   }
-}
-function switchTabMobile(tab) {
-  currentTab = tab;
-  document.getElementById("m-sidebar-incidents").style.display = tab === "incidents" ? "" : "none";
-  document.getElementById("m-sidebar-salons").style.display   = tab === "salons"    ? "" : "none";
-  document.querySelectorAll(".sidebar-tab").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
-  if (tab === "incidents") {
-    document.getElementById("main").innerHTML = '<p class="placeholder">← 选择左侧事件查看攻略</p>';
-  } else {
-    document.getElementById("main").innerHTML = '<p class="placeholder">← 选择访客查看对话记录</p>';
-  }
+  if (closeMobileDrawer) closeDrawer();
 }
 
 // ── Salon helpers ──
