@@ -731,14 +731,14 @@ function leiterDescHtml(text) {
   return s;
 }
 
-// 给一组 nxh 渲染 leiter 段（去重，每个 leiter 只显示一次）
-function leitersForBatch(rs) {
-  const seen = new Map();
-  rs.forEach(r => nxhLeiters(r).forEach(l => { if (!seen.has(l.id)) seen.set(l.id, l); }));
-  if (!seen.size) return "";
-  return [...seen.values()].map(l => {
+// 渲染单条 nxh 对应的 leiter，跨 nxh 共享 seen 集合，重复 leiter 只在首次出现处显示
+function leiterHtml(r, seen) {
+  const list = nxhLeiters(r).filter(l => !seen.has(l.id));
+  if (!list.length) return "";
+  list.forEach(l => seen.add(l.id));
+  return list.map(l => {
     const heading = l.label_cn
-      ? `${esc(l.startlabel || "")}的结局：${esc(l.label_cn)}`
+      ? `${esc(l.startlabel || "")}的结局:${esc(l.label_cn)}`
       : `${esc(l.startlabel || "")}的结局`;
     return `
     <div class="leiter-block">
@@ -1254,12 +1254,12 @@ function buildNxcStep(c, hideInner = false) {
   const actedHtml = prereqMysteryC
     ? `<span class="nxs-condition">需先以${mLabel(prereqMysteryC)}书帮助</span>` : "";
   let nxhInner;
-  let leitersHtml = "";
   if (hideInner) {
     nxhInner = `<div style="margin-top:4px;font-size:13px;color:var(--ink-3);font-style:italic">（候选物品与结局同上）</div>`;
   } else {
     const matchNxh = nxcMatchNxh(c);
     const seenNxh = new Set();
+    const seenLeiter = new Set();
     nxhInner = matchNxh.map(r => {
       const itemKey = nxhItemKey(r);
       const nxAction = Object.keys(r.aspects || {}).find(k => k.startsWith("nx."));
@@ -1274,9 +1274,9 @@ function buildNxcStep(c, hideInner = false) {
         <span class="nxh-tag" title="${esc(itemDesc(itemKey))}">${esc(itemLabel(itemKey))}</span>
         ${descText ? `<p class="nxh-desc">${esc(descText)}</p>` : ""}
         ${resultLabel ? `<div class="nxh-result">→ ${esc(resultLabel)}</div>` : ""}
+        ${leiterHtml(r, seenLeiter)}
       </div>`;
     }).join("");
-    leitersHtml = leitersForBatch(matchNxh);
   }
   const label = c.label_cn || c.label_en || "";
   return `
@@ -1290,7 +1290,6 @@ function buildNxcStep(c, hideInner = false) {
       <span class="nxh-who">${esc(vLabel)}</span>
       ${nxhInner}
     </div>
-    ${leitersHtml}
   </div>`;
 }
 
@@ -1341,6 +1340,7 @@ function buildNStateBlock(nid, depth, vid) {
 
   // nxh 深层行动
   const visibleNxh = allNrs.filter(r => r.kind === "nxh" && !(nxcCovers && r.visitor === vid));
+  const seenLeiterState = new Set();
   const nxhHtml = visibleNxh.map(r => {
     const vLabel = r.visitor ? (byId["v:" + r.visitor]?.label_cn || r.visitor) : "？";
     const itemKey = nxhItemKey(r);
@@ -1353,9 +1353,9 @@ function buildNStateBlock(nid, depth, vid) {
       <span class="nxh-who">${esc(vLabel)}</span><span class="nxh-tag" title="${esc(itemDesc(itemKey))}">${esc(itemLabel(itemKey))}</span>
       ${descText ? `<p class="nxh-desc">${esc(descText)}</p>` : ""}
       ${resultLabel ? `<div class="nxh-result">→ ${esc(resultLabel)}</div>` : ""}
+      ${leiterHtml(r, seenLeiterState)}
     </div>`;
   }).join("");
-  const stateLeitersHtml = leitersForBatch(visibleNxh);
 
   // 深层 nxs 分支
   let deeperHtml = "";
@@ -1395,7 +1395,6 @@ function buildNStateBlock(nid, depth, vid) {
     ${desc ? `<div class="nstate-desc">${esc(desc)}</div>` : ""}
     ${nxiHtml}
     ${nxhHtml}
-    ${stateLeitersHtml}
     ${deeperWrap}
   </div>`;
 }
