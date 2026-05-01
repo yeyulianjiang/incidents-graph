@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none">
+  
+  <circle cx="120" cy="120" r="100" stroke="#8a2415" stroke-width="2" fill="#f3ead6"></circle>
+  <circle cx="120" cy="120" r="92" stroke="#a87b1e" stroke-width="0.8" fill="none"></circle>
+  
+  <circle cx="120" cy="120" r="58" stroke="#1f3a6e" stroke-width="1.5" fill="none"></circle>
+  
+  <g stroke="#2a1f12" stroke-width="1.5" stroke-linecap="round">
+    <line x1="120" y1="34" x2="120" y2="48"></line>
+    <line x1="120" y1="192" x2="120" y2="206"></line>
+    <line x1="34" y1="120" x2="48" y2="120"></line>
+    <line x1="192" y1="120" x2="206" y2="120"></line>
+  </g>
+  <g stroke="#2a1f12" stroke-width="0.8" stroke-linecap="round" opacity="0.7">
+    <line x1="163" y1="46" x2="158" y2="55"></line>
+    <line x1="194" y1="77" x2="185" y2="82"></line>
+    <line x1="194" y1="163" x2="185" y2="158"></line>
+    <line x1="163" y1="194" x2="158" y2="185"></line>
+    <line x1="77" y1="194" x2="82" y2="185"></line>
+    <line x1="46" y1="163" x2="55" y2="158"></line>
+    <line x1="46" y1="77" x2="55" y2="82"></line>
+    <line x1="77" y1="46" x2="82" y2="55"></line>
+  </g>
+  
+  <g transform="translate(120 78)">
+    <circle r="10" fill="#d4a74a" stroke="#a87b1e" stroke-width="1"></circle>
+    <circle r="3.5" fill="#8a2415"></circle>
+  </g>
+  
+  <g transform="translate(120 162)">
+    <path d="M -8 0 a 8 8 0 1 0 12 -6 a 6 6 0 1 1 -12 6 z" fill="#1f3a6e" stroke="#1f3a6e" stroke-width="0.6"></path>
+  </g>
+  
+  <g transform="translate(120 120)" stroke="#2a1f12" stroke-width="1.4" fill="none" stroke-linejoin="round">
+    <path d="M -22 -8 Q 0 -14 22 -8 L 22 12 Q 0 6 -22 12 Z" fill="#ebe0c4"></path>
+    <line x1="0" y1="-12" x2="0" y2="11"></line>
+    <line x1="-16" y1="-4" x2="-4" y2="-2" stroke-width="0.8"></line>
+    <line x1="-16" y1="0" x2="-4" y2="2" stroke-width="0.8"></line>
+    <line x1="-16" y1="4" x2="-4" y2="6" stroke-width="0.8"></line>
+    <line x1="4" y1="-2" x2="16" y2="-4" stroke-width="0.8"></line>
+    <line x1="4" y1="2" x2="16" y2="0" stroke-width="0.8"></line>
+    <line x1="4" y1="6" x2="16" y2="4" stroke-width="0.8"></line>
+  </g>
+</svg>

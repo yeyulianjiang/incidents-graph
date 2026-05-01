@@ -2,126 +2,386 @@
 <html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>《司辰之书》事件攻略</title>
 <script src="./data.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-* { box-sizing: border-box; }
-html, body { margin: 0; height: 100%; font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 13px; color: #222; }
-#app { display: grid; grid-template-columns: 260px 1fr; height: 100vh; }
+/* ── Brand font ── */
+@font-face {
+  font-family: 'Huiwen Mincho';
+  src: url('./fonts/Huiwenmincho-improved.ttf') format('truetype');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
 
-/* ── 侧边栏 ── */
-#sidebar { border-right: 1px solid #ddd; overflow-y: auto; padding: 10px 12px; background: #fafafa; }
-#sidebar h1 { margin: 0 0 6px; font-size: 15px; }
-#sidebar h2 { margin: 12px 0 4px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: .04em; }
-.incident-list { list-style: none; padding: 0; margin: 0 0 8px; }
-.incident-list li { padding: 5px 8px; border-radius: 4px; cursor: pointer; line-height: 1.4; }
-.incident-list li:hover { background: #e8eef8; }
-.incident-list li.numa { color: #7038a8; }
-.incident-list li.active { background: #2e64a8; color: #fff; }
-.incident-list li.active.numa { background: #7038a8; }
+/* ── Design tokens ── */
+:root {
+  --paper-1:       #faf6ec;
+  --paper-2:       #f3ecd8;
+  --paper-3:       #e9dfc4;
+  --paper-edge:    #d8cba6;
+  --paper-shadow:  #b89f74;
+  --paper-foxing:  #c9a87033;
 
-/* ── 主内容区 ── */
-#main { overflow-y: auto; padding: 20px 24px; background: #fff; }
-#main .placeholder { color: #aaa; margin-top: 60px; text-align: center; font-size: 15px; }
+  --ink-1:         #1f1810;
+  --ink-2:         #4a3a28;
+  --ink-3:         #806a4e;
+  --ink-4:         #a8957a;
 
-/* ── 事件头部 ── */
-.inc-header { margin-bottom: 20px; padding-bottom: 14px; border-bottom: 2px solid #e0e0e0; }
-.inc-title { font-size: 20px; font-weight: bold; margin: 0 0 6px; display: flex; align-items: center; gap: 8px; }
-.badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 11px; font-weight: bold; }
-.badge.numa { background: #ede0fa; color: #5b2a92; }
-.inc-desc { color: #444; line-height: 1.6; margin: 0 0 8px; }
-.inc-mystery { font-size: 12px; color: #777; }
-.m-chip { display: inline-block; padding: 1px 7px; border-radius: 8px; background: #f6e4a4; color: #6b3f00; margin: 0 2px; font-size: 11px; font-weight: bold; }
+  --rubric-1:      #8c2a1e;
+  --rubric-2:      #b53d2a;
+  --rubric-soft:   #f4d8c8;
 
-/* ── 阶段标题 ── */
-.phase-header { font-size: 11px; font-weight: bold; letter-spacing: .06em; text-transform: uppercase; padding: 4px 10px; border-radius: 4px; margin: 0 0 10px; display: inline-block; }
-.phase-header.during { background: #d4edda; color: #155724; border: 1px solid #82c896; }
-.phase-header.after  { background: #dde3f5; color: #1a2a7a; border: 1px dashed #7080cc; }
+  --lapis-1:       #1d3461;
+  --lapis-2:       #325ea0;
+  --lapis-3:       #6a8ec0;
+  --lapis-soft:    #dbe5f3;
 
-/* ── 访客卡片网格 ── */
-.visitor-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  --gold-1:        #9a6f1a;
+  --gold-2:        #c89a3e;
+  --gold-3:        #e8cf86;
+  --gold-soft:     #f6e4a8;
 
-/* ── 单张访客卡片 ── */
-.vcard { border: 1px solid #d0d8e8; border-radius: 8px; overflow: hidden; }
-.vcard.has-chain { border-color: #4a7ab8; }
-.vcard-head { display: flex; align-items: flex-start; gap: 8px; padding: 10px 12px; cursor: pointer; background: #f0f4fb; user-select: none; }
-.vcard.has-chain .vcard-head { background: #e8f0fc; }
-.vcard-head:hover { background: #dde8f8; }
-.vname { font-weight: bold; flex: 1; line-height: 1.4; }
-.need-chip { display: inline-block; padding: 1px 7px; border-radius: 8px; background: #fff3cd; color: #7a4f00; border: 1px solid #f0c040; font-size: 11px; white-space: nowrap; }
-.toggle-arrow { font-size: 11px; color: #888; transition: transform .18s; margin-top: 2px; }
+  --verd-1:        #285442;
+  --verd-2:        #4a8268;
+  --verd-soft:     #d8e8de;
+
+  --numa-1:        #432472;
+  --numa-2:        #6f3aa8;
+  --numa-soft:     #ece0fa;
+
+  --bg:            var(--paper-1);
+  --fg:            var(--ink-1);
+  --border:        var(--paper-edge);
+  --border-strong: var(--paper-shadow);
+
+  --font-display:  'Cormorant Garamond', 'Huiwen Mincho', 'Songti SC', serif;
+  --font-serif:    'EB Garamond', 'Huiwen Mincho', 'Songti SC', serif;
+  --font-han:      'Huiwen Mincho', 'Songti SC', 'STSong', 'SimSun', serif;
+  --font-mono:     'JetBrains Mono', 'Menlo', 'Consolas', monospace;
+
+  --fs-xs:  11px;
+  --fs-sm:  13px;
+  --fs-base:15px;
+  --fs-md:  17px;
+  --fs-lg:  20px;
+  --fs-xl:  26px;
+
+  --lh-base: 1.65;
+  --lh-loose:1.85;
+  --lh-snug: 1.45;
+
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px;
+  --s-5: 20px; --s-6: 24px; --s-8: 32px;
+
+  --r-1: 2px; --r-2: 4px; --r-3: 6px;
+
+  --shadow-1: 0 1px 0 0 rgba(120,95,60,.10), 0 1px 3px rgba(120,95,60,.08);
+  --shadow-2: 0 2px 0 0 rgba(120,95,60,.12), 0 4px 10px -2px rgba(120,95,60,.18);
+
+  --ease:      cubic-bezier(.4,0,.2,1);
+  --dur-fast:  120ms;
+  --dur-normal:220ms;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; }
+html, body {
+  margin: 0; height: 100%;
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-serif); font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  -webkit-font-smoothing: antialiased;
+}
+p { margin: 0 0 var(--s-3); }
+::selection { background: var(--gold-soft); color: var(--ink-1); }
+
+/* ── Layout ── */
+#app { display: grid; grid-template-columns: 270px 1fr; height: 100vh; }
+
+/* ── Sidebar ── */
+#sidebar {
+  border-right: 1px solid var(--paper-edge);
+  overflow-y: auto; padding: 16px 14px 24px;
+  background: var(--paper-2);
+}
+.sidebar-brand {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 6px;
+}
+.sidebar-brand img { width: 38px; height: 38px; }
+.sidebar-title {
+  font-family: var(--font-han); font-weight: 700; font-size: 17px;
+  color: var(--ink-1); line-height: 1.15;
+}
+.sidebar-sub {
+  font-family: var(--font-display); font-style: italic; font-size: 11px;
+  color: var(--ink-3); letter-spacing: .06em; margin-top: 2px;
+}
+.sidebar-divider { width: 100%; height: auto; opacity: .5; margin: 4px 0 10px; }
+.sidebar-section {
+  font-family: var(--font-display); font-weight: 600; font-style: italic;
+  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--rubric-1);
+  margin: 14px 0 6px; padding-bottom: 4px;
+  border-bottom: 1px solid var(--paper-edge);
+}
+.sidebar-section em { font-style: italic; color: var(--numa-1); margin-left: 2px; }
+
+.incident-list { list-style: none; padding: 0; margin: 0; }
+.incident-list li {
+  padding: 6px 10px; border-radius: var(--r-2); cursor: pointer;
+  font-family: var(--font-han); font-size: var(--fs-sm);
+  color: var(--ink-1);
+  display: flex; flex-direction: column; gap: 1px;
+  border-left: 2px solid transparent;
+  transition: background var(--dur-fast) var(--ease);
+  line-height: 1.35;
+}
+.incident-list li:hover { background: rgba(168,123,30,.10); border-left-color: var(--gold-2); }
+.incident-list li.active {
+  background: rgba(138,36,21,.12); border-left-color: var(--rubric-1);
+  color: var(--rubric-1); font-weight: 600;
+}
+.incident-list li.numa { color: var(--numa-1); }
+.incident-list li.numa.active {
+  background: rgba(112,56,168,.12); border-left-color: var(--numa-2); color: var(--numa-1);
+}
+.li-en {
+  font-family: var(--font-display); font-style: italic; font-size: 10px;
+  color: var(--ink-4); letter-spacing: .04em;
+}
+
+/* ── Main column ── */
+#main {
+  overflow-y: auto; padding: 28px 48px 72px;
+  background: var(--paper-1);
+}
+.placeholder {
+  color: var(--ink-4); margin-top: 72px; text-align: center;
+  font-family: var(--font-han); font-size: var(--fs-md);
+}
+
+/* ── Incident header ── */
+.inc-header { margin-bottom: 20px; }
+.inc-title {
+  font-family: var(--font-han); font-weight: 700; font-size: 32px;
+  line-height: 1.15; color: var(--ink-1);
+  display: flex; align-items: baseline; gap: 10px; margin: 0 0 4px;
+}
+.badge-numa {
+  font-family: var(--font-display); font-style: italic; font-size: 12px;
+  letter-spacing: .10em; padding: 2px 10px; border-radius: 999px;
+  background: var(--numa-soft); color: var(--numa-1); border: 1px solid #c4a4dd;
+  position: relative; top: -5px;
+}
+.inc-en {
+  font-family: var(--font-display); font-style: italic;
+  font-size: 15px; color: var(--ink-3); letter-spacing: .04em; margin: 0 0 12px;
+}
+.inc-desc {
+  font-family: var(--font-han); font-size: 15px; line-height: 1.75;
+  color: var(--ink-1);
+  border-left: 3px solid var(--gold-2);
+  padding: 4px 0 4px 14px; margin: 0 0 12px;
+  font-style: italic;
+}
+.inc-mystery {
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  margin: 0 0 6px;
+}
+.inc-mystery-label {
+  font-family: var(--font-display); font-weight: 600; font-style: italic;
+  font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--rubric-1);
+}
+.m-chip {
+  display: inline-flex; align-items: center; padding: 1px 10px;
+  border-radius: 999px; background: var(--gold-3);
+  color: #5a3500; border: 1px solid #b8902e;
+  font-family: var(--font-han); font-size: 11px; font-weight: 700;
+}
+.inc-rule { display: block; width: 100%; max-width: 460px; opacity: .45; margin: 18px 0 0; }
+
+/* ── Flow diagram ── */
+.flow-diagram {
+  margin: 0 0 20px; padding: 12px 14px;
+  background: var(--paper-2);
+  border: 1px solid var(--paper-edge); border-radius: var(--r-3);
+  overflow-x: auto;
+}
+.flow-diagram svg text { font-family: var(--font-han); }
+
+/* ── Phase header ── */
+.phase-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 14px; border-radius: var(--r-2);
+  font-family: var(--font-han); font-weight: 600; font-size: 13px;
+  letter-spacing: .06em;
+}
+.phase-pill.during { background: var(--verd-soft); color: var(--verd-1); border: 1px solid #82c896; }
+.phase-pill.after  { background: var(--lapis-soft); color: var(--lapis-1); border: 1px dashed #7080cc; }
+.phase-pill.after.small { padding: 2px 10px; font-size: 11px; margin-bottom: 8px; }
+.phase-glyph { font-family: var(--font-display); font-style: italic; opacity: .75; }
+.phase-block { display: flex; align-items: baseline; gap: 10px; margin: 20px 0 14px; }
+.phase-hint { font-family: var(--font-han); font-size: 13px; color: var(--ink-3); }
+
+/* ── Visitor grid ── */
+.visitor-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px; margin-bottom: 24px;
+}
+
+/* ── Visitor card ── */
+.vcard {
+  border: 1.5px solid var(--paper-shadow); border-radius: var(--r-3);
+  background: var(--paper-1); overflow: hidden;
+  box-shadow: var(--shadow-1);
+}
+.vcard.has-chain { border-color: var(--lapis-2); }
+.vcard-head {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 10px 14px; cursor: pointer;
+  background: var(--paper-2); user-select: none;
+  transition: background var(--dur-fast) var(--ease);
+}
+.vcard.has-chain .vcard-head { background: var(--lapis-soft); }
+.vcard-head:hover { background: var(--paper-3); }
+.vcard.has-chain .vcard-head:hover { background: #c8d8eb; }
+.vname {
+  flex: 1; font-family: var(--font-han); font-weight: 700;
+  font-size: 15px; color: var(--ink-1); line-height: 1.3;
+}
+.need-chip {
+  display: inline-flex; align-items: center; padding: 1px 9px;
+  border-radius: 999px; background: var(--gold-soft);
+  color: #6b3f00; border: 1px solid #d8b258;
+  font-family: var(--font-han); font-size: 11px; font-weight: 600; white-space: nowrap;
+}
+.toggle-arrow {
+  color: var(--ink-3); font-size: 11px;
+  transition: transform var(--dur-fast) var(--ease); margin-top: 2px;
+}
 .vcard.open .toggle-arrow { transform: rotate(90deg); }
-.vcard-desc { font-size: 12px; color: #555; padding: 0 12px 8px; line-height: 1.5; }
-
-/* ── 后果链（折叠区） ── */
-.consequence { display: none; border-top: 1px solid #c8d8f0; background: #f7f9ff; padding: 10px 12px 12px; }
+.vcard-desc {
+  font-family: var(--font-han); font-size: 12px; line-height: 1.65;
+  color: var(--ink-2); padding: 6px 14px 10px; font-style: italic;
+}
+.consequence {
+  display: none; border-top: 1px solid var(--paper-edge);
+  padding: 12px 14px 14px;
+  background: linear-gradient(180deg, var(--paper-1), rgba(243,234,214,.4));
+}
 .vcard.open .consequence { display: block; }
 
-.phase-after-tag { font-size: 10px; font-weight: bold; letter-spacing: .05em; color: #1a2a7a; background: #dde3f5; border: 1px dashed #7080cc; border-radius: 4px; padding: 1px 8px; display: inline-block; margin-bottom: 8px; }
+/* ── Talk ── */
+.talk-section { padding-bottom: 8px; border-bottom: 1px solid var(--paper-edge); margin-bottom: 12px; }
+.talk-block { margin-bottom: 8px; }
+.talk-tag {
+  display: inline-block; padding: 1px 9px; border-radius: 999px;
+  font-family: var(--font-han); font-size: 11px; font-weight: 600;
+  border: 1px solid; line-height: 1.5; margin-bottom: 3px;
+}
+.talk-tag.intro   { background: var(--lapis-soft); color: var(--lapis-1); border-color: #90b0e0; }
+.talk-tag.success { background: var(--verd-soft);  color: var(--verd-1);  border-color: #82c896; }
+.talk-tag.failure { background: #fce8e8; color: #8a1a1a; border-color: #e09898; }
+.talk-text {
+  font-family: var(--font-han); font-style: italic; font-size: 13px;
+  line-height: 1.7; color: var(--ink-1); margin: 4px 0 0; padding-left: 4px;
+}
+.talk-hint { font-family: var(--font-han); font-size: 11px; color: var(--ink-3); margin: 2px 0 0; }
 
-/* ── nxs 步骤 ── */
+/* ── nxi ── */
+.nxi-item { display: flex; align-items: baseline; gap: 5px; padding: 2px 0; font-size: 12px; }
+.nxi-who  { font-weight: bold; color: var(--verd-1); flex-shrink: 0; }
+.nxi-text { color: var(--ink-2); font-style: italic; }
+
+/* ── nxs step ── */
 .nxs-block { margin-bottom: 10px; }
-.nxs-head { display: flex; align-items: flex-start; gap: 6px; margin-bottom: 4px; }
-.nxs-label { background: #c05020; color: #fff; border-radius: 5px; padding: 2px 8px; font-size: 12px; font-weight: bold; }
-.nxs-condition { font-size: 11px; color: #7a5000; background: #fff3cd; border-radius: 4px; padding: 1px 6px; border: 1px solid #f0c040; }
-.nxs-arrow { font-size: 11px; color: #888; padding: 2px 0 2px 24px; }
+.nxs-head  { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; flex-wrap: wrap; }
+.nxs-label {
+  background: var(--rubric-1); color: var(--paper-1); border-radius: var(--r-2);
+  padding: 2px 9px; font-family: var(--font-han); font-size: 12px; font-weight: 600;
+}
+.nxs-condition {
+  background: var(--gold-soft); color: #7a5000;
+  border: 1px solid #d8b258; border-radius: var(--r-2);
+  padding: 1px 8px; font-family: var(--font-han); font-size: 11px;
+}
+.nxs-arrow { font-family: var(--font-han); font-size: 11px; color: var(--ink-3); padding-left: 8px; margin-bottom: 4px; }
+.nxs-preface { font-size: 12px; color: var(--ink-3); font-style: italic; margin: 2px 0 4px 0; font-family: var(--font-han); }
 
-/* ── n-state 结果卡 ── */
-.nstate-block { border-left: 3px solid #5a8eb5; margin: 4px 0 8px 12px; padding: 6px 10px; border-radius: 0 6px 6px 0; background: #eef4fb; }
-.nstate-block.done { border-left-color: #2c8266; background: #e8f5f0; }
-.nstate-name { font-weight: bold; font-size: 13px; margin-bottom: 2px; }
-.nstate-desc { font-size: 11px; color: #555; line-height: 1.5; margin-bottom: 4px; }
+/* ── n-state block ── */
+.nstate-block {
+  border-left: 3px solid var(--lapis-2);
+  background: var(--lapis-soft);
+  padding: 8px 12px; border-radius: 0 var(--r-3) var(--r-3) 0;
+  margin: 4px 0 8px 12px;
+}
+.nstate-block.done { border-left-color: var(--verd-1); background: var(--verd-soft); }
+.nstate-name { font-family: var(--font-han); font-weight: 700; font-size: 13px; color: var(--ink-1); margin-bottom: 3px; }
+.nstate-done-mark { color: var(--verd-1); }
+.nstate-desc { font-family: var(--font-han); font-size: 12px; line-height: 1.65; color: var(--ink-2); font-style: italic; margin-bottom: 4px; }
 
-/* ── nxh 奖励 ── */
-.rewards { margin-top: 6px; }
-.reward-item { font-size: 11px; color: #6a1a4a; background: #fce8f3; border-radius: 4px; padding: 2px 8px; margin-bottom: 3px; display: flex; gap: 6px; align-items: center; }
+/* ── nxh reward ── */
+.nxh-block {
+  background: rgba(243,234,214,.7);
+  border-left: 2px solid var(--gold-2);
+  padding: 6px 10px; border-radius: 0 var(--r-2) var(--r-2) 0;
+  margin-top: 6px;
+}
+.nxh-who   { font-family: var(--font-han); font-weight: 700; font-size: 12px; color: var(--lapis-1); }
+.nxh-tag   {
+  display: inline-block; padding: 0 7px; border-radius: var(--r-2);
+  background: var(--gold-soft); color: #6b3f00;
+  font-family: var(--font-han); font-size: 11px; margin-left: 6px;
+  cursor: default;
+}
+.nxh-desc   { font-family: var(--font-han); font-size: 11px; line-height: 1.65; color: var(--ink-2); font-style: italic; margin: 4px 0 2px; }
+.nxh-result { font-family: var(--font-han); font-size: 11px; font-weight: 600; color: var(--verd-1); }
 
-/* ── 深层链 ── */
-.deeper { border-left: 2px dashed #c0c8d8; margin: 6px 0 0 8px; padding-left: 10px; }
-.deeper-head { font-size: 11px; color: #888; cursor: pointer; user-select: none; margin-bottom: 4px; }
-.deeper-head:hover { color: #444; }
+/* ── Deeper chain ── */
+.deeper { border-left: 2px dashed var(--paper-shadow); margin: 6px 0 0 8px; padding-left: 10px; }
+.deeper-head { font-family: var(--font-han); font-size: 11px; color: var(--ink-3); cursor: pointer; user-select: none; padding: 3px 0; }
+.deeper-head:hover { color: var(--ink-1); }
 .deeper-body { display: none; }
 .deeper-body.open { display: block; }
 
-/* ── 无后果访客 ── */
+/* ── No-chain visitors ── */
 .no-chain-visitors { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
-.mini-visitor { border: 1px solid #d8dde8; border-radius: 6px; padding: 4px 10px; font-size: 12px; display: flex; gap: 6px; align-items: center; background: #f5f7fb; }
+.mini-visitor {
+  border: 1px solid var(--paper-edge); border-radius: var(--r-3);
+  padding: 4px 10px; font-size: 12px; display: flex; gap: 6px;
+  align-items: center; background: var(--paper-2);
+  font-family: var(--font-han); color: var(--ink-2);
+}
 
-/* ── 流程图 ── */
-.flow-diagram { margin: 0 0 20px; overflow-x: auto; border: 1px solid #dde8f5; border-radius: 8px; background: #f8faff; padding: 10px 14px; }
-.flow-diagram svg text { font-family: -apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; }
-@keyframes vcard-flash { 0%,100%{outline:none} 40%{outline:3px solid #f07020;outline-offset:2px} }
-.vcard.highlighted { animation: vcard-flash .8s ease; }
-
-/* ── 对话文本 ── */
-.talk-section { margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #c8d8f0; }
-.talk-block { margin-bottom: 7px; }
-.talk-tag { display: inline-block; padding: 1px 8px; border-radius: 8px; font-size: 11px; font-weight: bold; margin-bottom: 3px; }
-.talk-tag.intro  { background: #e8f0fc; color: #1a3a8a; border: 1px solid #90b0e0; }
-.talk-tag.success{ background: #e0f5e8; color: #1a6a30; border: 1px solid #70c880; }
-.talk-tag.failure{ background: #fce8e8; color: #8a1a1a; border: 1px solid #f0a0a0; }
-.talk-text { font-size: 11px; color: #333; line-height: 1.7; margin: 2px 0 0; font-style: italic; }
-.talk-hint { font-size: 10px; color: #999; margin: 1px 0 0; line-height: 1.5; }
-/* ── nxi 回顾对话 ── */
-.nxi-item { display: flex; align-items: baseline; gap: 5px; padding: 2px 0; font-size: 11px; }
-.nxi-who  { font-weight: bold; color: #1a5a40; flex-shrink: 0; }
-.nxi-text { color: #555; font-style: italic; }
-/* ── nxh 深层结果 ── */
-.nxh-block  { margin: 4px 0 6px; border-left: 2px solid #b0c8e0; padding: 5px 10px; border-radius: 0 5px 5px 0; background: #f4f8fe; }
-.nxh-who    { font-size: 11px; font-weight: bold; color: #2a4a7a; }
-.nxh-tag    { font-size: 10px; background: #d8eaf8; color: #1a3a6a; border-radius: 4px; padding: 0 5px; margin-left: 4px; }
-.nxh-desc   { font-size: 11px; color: #444; font-style: italic; margin: 3px 0 2px; line-height: 1.6; }
-.nxh-result { font-size: 11px; color: #1a6a40; font-weight: 500; }
+/* ── Flash animation ── */
+@keyframes vcard-flash {
+  0%,100% { outline: none; }
+  40%      { outline: 3px solid var(--rubric-2); outline-offset: 2px; }
+}
+.vcard.highlighted { animation: vcard-flash .8s var(--ease); }
 </style>
 </head>
 <body>
 <div id="app">
   <aside id="sidebar">
-    <h1>《司辰之书》事件攻略</h1>
-    <h2>常规事件</h2>
+    <div class="sidebar-brand">
+      <img src="./assets/icon-book.svg" alt="">
+      <div>
+        <div class="sidebar-title">司辰之书</div>
+        <div class="sidebar-sub">事件攻略 · Incidents</div>
+      </div>
+    </div>
+    <img src="./assets/divider-flourish.svg" alt="" class="sidebar-divider">
+    <div class="sidebar-section">常规事件</div>
     <ul class="incident-list" id="list-standard"></ul>
-    <h2>闰时事件 Numa</h2>
-    <ul class="incident-list numa" id="list-numa"></ul>
+    <div class="sidebar-section">闰时事件 <em>Numa</em></div>
+    <ul class="incident-list" id="list-numa"></ul>
   </aside>
   <main id="main">
     <p class="placeholder">← 选择左侧事件查看攻略</p>
@@ -155,16 +415,16 @@ function buildTalkSection(pair) {
   let h = `<div class="talk-section">`;
   if (pair.intro_text) {
     const p = splitTalkText(pair.intro_text);
-    h += `<div class="talk-block"><span class="talk-tag intro">访客引言</span><p class="talk-text">${esc(p.quote)}</p>${p.hint ? `<p class="talk-hint">${esc(p.hint)}</p>` : ""}</div>`;
+    h += `<div class="talk-block"><span class="talk-tag intro">访客引言</span><p class="talk-text">「${esc(p.quote)}」</p>${p.hint ? `<p class="talk-hint">[ ${esc(p.hint)} ]</p>` : ""}</div>`;
   }
   if (pair.failure_text) {
     const p = splitTalkText(pair.failure_text);
-    h += `<div class="talk-block"><span class="talk-tag failure">尚未帮助时</span><p class="talk-text">${esc(p.quote)}</p>${p.hint ? `<p class="talk-hint">${esc(p.hint)}</p>` : ""}</div>`;
+    h += `<div class="talk-block"><span class="talk-tag failure">尚未帮助时</span><p class="talk-text">「${esc(p.quote)}」</p>${p.hint ? `<p class="talk-hint">[ ${esc(p.hint)} ]</p>` : ""}</div>`;
   }
   Object.entries(pair.success_texts || {}).forEach(([mkey, text]) => {
     if (!text) return;
     const p = splitTalkText(text);
-    h += `<div class="talk-block"><span class="talk-tag success">成功·${esc(mLabel(mkey))}</span><p class="talk-text">${esc(p.quote)}</p>${p.hint ? `<p class="talk-hint">${esc(p.hint)}</p>` : ""}</div>`;
+    h += `<div class="talk-block"><span class="talk-tag success">成功·${esc(mLabel(mkey))}</span><p class="talk-text">「${esc(p.quote)}」</p>${p.hint ? `<p class="talk-hint">[ ${esc(p.hint)} ]</p>` : ""}</div>`;
   });
   h += `</div>`;
   return h;
@@ -186,7 +446,7 @@ async function main() {
   if (window.GRAPH_DATA) { data = window.GRAPH_DATA; }
   else {
     try { data = await (await fetch(DATA_URL)).json(); }
-    catch(e) { document.getElementById("main").innerHTML = '<p style="color:red;padding:20px">无法加载 data.js</p>'; return; }
+    catch(e) { document.getElementById("main").innerHTML = '<p style="color:var(--rubric-1);padding:20px">无法加载 data.js</p>'; return; }
   }
   data.incidents.forEach(i => byId["i:" + i.id] = i);
   data.visitors.forEach(v => byId["v:" + v.id] = v);
@@ -229,14 +489,14 @@ function getVisitorDeepStates(resultId, vid) {
 }
 
 function populateLists() {
-  const std = document.getElementById("list-standard");
+  const std  = document.getElementById("list-standard");
   const numa = document.getElementById("list-numa");
   data.incidents.forEach(inc => {
     if (inc.id === "incident.consultation") return;
     const li = document.createElement("li");
     li.dataset.id = inc.id;
     if (inc.numatic) li.classList.add("numa");
-    li.textContent = inc.label_cn;
+    li.innerHTML = `<span>${esc(inc.label_cn)}</span><span class="li-en">${esc(inc.label_en || "")}</span>`;
     li.title = inc.id;
     li.onclick = () => { renderIncident(inc.id); markActive(inc.id); };
     (inc.numatic ? numa : std).appendChild(li);
@@ -269,20 +529,20 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
 
   let s = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" style="width:100%;display:block">
 <defs><marker id="flo-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-  <path d="M0,1 L9,5 L0,9 Z" fill="#888"/></marker></defs>`;
+  <path d="M0,1 L9,5 L0,9 Z" fill="#806a4e"/></marker></defs>`;
 
-  // 事件框
+  // 事件框 — lapis + gold border
   s += `
-<rect x="${INC_CX - INC_W / 2}" y="${incCY - INC_H / 2}" width="${INC_W}" height="${INC_H}" rx="8" fill="#2e64a8"/>
-<text x="${INC_CX}" y="${incCY - 4}" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="13" font-weight="bold">${esc(truncate(inc.label_cn, 8))}</text>`;
+<rect x="${INC_CX - INC_W / 2}" y="${incCY - INC_H / 2}" width="${INC_W}" height="${INC_H}" rx="4" fill="#1d3461" stroke="#c89a3e" stroke-width="1.5"/>
+<text x="${INC_CX}" y="${incCY - 4}" text-anchor="middle" dominant-baseline="middle" fill="#faf6ec" font-size="13" font-weight="700">${esc(truncate(inc.label_cn, 8))}</text>`;
   if (inc.label_en) s += `
-<text x="${INC_CX}" y="${incCY + 13}" text-anchor="middle" fill="#9ab8e0" font-size="9">${esc(truncate(inc.label_en, 20))}</text>`;
+<text x="${INC_CX}" y="${incCY + 13}" text-anchor="middle" fill="#c89a3e" font-size="9" font-style="italic" letter-spacing="0.06em">${esc(truncate(inc.label_en, 20))}</text>`;
 
-  // 主干线：事件框右侧 → 竖干
+  // 主干线
   s += `
-<line x1="${INC_CX + INC_W / 2}" y1="${incCY}" x2="${CON_X}" y2="${incCY}" stroke="#8aadd0" stroke-width="1.5"/>`;
+<line x1="${INC_CX + INC_W / 2}" y1="${incCY}" x2="${CON_X}" y2="${incCY}" stroke="#b89f74" stroke-width="1.5"/>`;
   if (N > 1) s += `
-<line x1="${CON_X}" y1="${firstY}" x2="${CON_X}" y2="${lastY}" stroke="#8aadd0" stroke-width="1.5"/>`;
+<line x1="${CON_X}" y1="${firstY}" x2="${CON_X}" y2="${lastY}" stroke="#b89f74" stroke-width="1.5"/>`;
 
   withChain.forEach((vid, i) => {
     const rowY = PAD_V + i * ROW_H + ROW_H / 2;
@@ -290,14 +550,14 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
     const vLabel = truncate(v ? v.label_cn : vid, 12);
     const visCX = VIS_X + VIS_W / 2;
 
-    // nxs 路径（对话推进）
+    // nxs 路径
     const nxs = (data.nxs || []).find(r => r.visitor === vid && r.n_state === nInit)
                 || (data.nxs || []).find(r => !r.visitor && r.n_state === nInit);
     const nxsTr = nxs ? data.n_transitions.find(t => t.from === nxs.n_state && t.via === nxs.nx_action) : null;
     let resultId = nxsTr ? nxsTr.to : null;
     let action   = nxs ? nxLabel(nxs.nx_action) : "";
 
-    // nxc/nxh 路径（帮助请求 → 提供书籍）
+    // nxc/nxh 路径
     const myNxc = (data.nxc||[]).find(c => c.visitor === vid && c.n_state === nInit);
     let nxcResultId = null;
     if (myNxc) {
@@ -308,7 +568,6 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
         if (nxhTr) nxcResultId = nxhTr.to;
       }
       if (!resultId && nxcResultId) {
-        // 没有 nxs → nxc 结果作为主结果
         resultId = nxcResultId;
         action = truncate(myNxc.label_cn || myNxc.label_en || "帮助", 6);
         nxcResultId = null;
@@ -319,40 +578,38 @@ function buildFlowSVG(inc, iid, incSuffix, reach, withChain) {
     const resultLabel = truncate(resultNs ? resultNs.label_cn : (resultId || "？"), 13);
     const isDone = resultNs && resultNs.complete;
 
-    // 分支线 → 访客框
+    // 访客框
     s += `
-<line x1="${CON_X}" y1="${rowY}" x2="${VIS_X}" y2="${rowY}" stroke="#8aadd0" stroke-width="1.5"/>
-<rect x="${VIS_X}" y="${rowY - VIS_H / 2}" width="${VIS_W}" height="${VIS_H}" rx="6" fill="#e8f0fc" stroke="#4a7ab8" stroke-width="1.5" style="cursor:pointer" onclick="openCard('vc-${vid}')"/>
-<text x="${visCX}" y="${rowY}" text-anchor="middle" dominant-baseline="middle" fill="#1a3a6a" font-size="11" font-weight="500" style="pointer-events:none">${esc(vLabel)}</text>`;
+<line x1="${CON_X}" y1="${rowY}" x2="${VIS_X}" y2="${rowY}" stroke="#b89f74" stroke-width="1.5"/>
+<rect x="${VIS_X}" y="${rowY - VIS_H / 2}" width="${VIS_W}" height="${VIS_H}" rx="3" fill="#faf6ec" stroke="#325ea0" stroke-width="1.5" style="cursor:pointer" onclick="openCard('vc-${vid}')"/>
+<text x="${visCX}" y="${rowY}" text-anchor="middle" dominant-baseline="middle" fill="#1d3461" font-size="11" font-weight="600" style="pointer-events:none">${esc(vLabel)}</text>`;
 
     if (resultId) {
       const arrMidX = (ARR_X1 + ARR_X2) / 2;
       const resCX = RES_X + RES_W / 2;
-      const resFill  = isDone ? "#e8f5f0" : "#eef4fb";
-      const resBorder = isDone ? "#2c8266" : "#5a8eb5";
-      const resText  = isDone ? "#1a5040" : "#0a2a5a";
+      const resFill   = isDone ? "#d8e8de" : "#dbe5f3";
+      const resBorder = isDone ? "#285442" : "#325ea0";
+      const resText   = isDone ? "#1a4030" : "#1d3461";
       s += `
-<line x1="${ARR_X1}" y1="${rowY}" x2="${ARR_X2}" y2="${rowY}" stroke="#888" stroke-width="1.5" marker-end="url(#flo-arr)"/>`;
+<line x1="${ARR_X1}" y1="${rowY}" x2="${ARR_X2}" y2="${rowY}" stroke="#806a4e" stroke-width="1.5" marker-end="url(#flo-arr)"/>`;
       if (action) s += `
-<text x="${arrMidX}" y="${rowY - 6}" text-anchor="middle" fill="#c05020" font-size="10" font-weight="bold">${esc(action)}</text>`;
+<text x="${arrMidX}" y="${rowY - 6}" text-anchor="middle" fill="#8c2a1e" font-size="10" font-weight="700">${esc(action)}</text>`;
       s += `
-<rect x="${RES_X}" y="${rowY - RES_H / 2}" width="${RES_W}" height="${RES_H}" rx="6" fill="${resFill}" stroke="${resBorder}" stroke-width="1.5" style="cursor:pointer" onclick="openCard('vc-${vid}')"/>
+<rect x="${RES_X}" y="${rowY - RES_H / 2}" width="${RES_W}" height="${RES_H}" rx="3" fill="${resFill}" stroke="${resBorder}" stroke-width="1.5" style="cursor:pointer" onclick="openCard('vc-${vid}')"/>
 <text x="${resCX}" y="${rowY}" text-anchor="middle" dominant-baseline="middle" fill="${resText}" font-size="11" style="pointer-events:none">${esc(resultLabel)}</text>`;
 
-      // 更深后果（nxh 路线 → deeper states）
       const deepStates = getVisitorDeepStates(resultId, vid);
       let extraY = deepStates.length;
       deepStates.slice(0, 3).forEach((ds, j) => {
         s += `
-<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 5 + j * 13}" fill="#1a6a40" font-size="10" style="pointer-events:none">↳ ${esc(truncate(ds.label, 14))}</text>`;
+<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 5 + j * 13}" fill="#285442" font-size="10" style="pointer-events:none">↳ ${esc(truncate(ds.label, 14))}</text>`;
       });
 
-      // nxc 额外路线（当同时有 nxs 结果时，nxc 结果另起一行 ↳）
       if (nxcResultId) {
         const nxcNs = byId["n:" + nxcResultId];
         const nxcLabel2 = truncate(nxcNs ? nxcNs.label_cn : nxcResultId, 14);
         s += `
-<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 5 + extraY * 13}" fill="#7040a0" font-size="10" style="pointer-events:none">↳ ${esc(nxcLabel2)}</text>`;
+<text x="${RES_X + 6}" y="${rowY + RES_H / 2 + 5 + extraY * 13}" fill="#6f3aa8" font-size="10" style="pointer-events:none">↳ ${esc(nxcLabel2)}</text>`;
       }
     }
   });
@@ -388,7 +645,7 @@ function buildIncidentHTML(inc) {
     while (q.length) { const c = q.shift(); (data.n_outgoing[c]||[]).forEach(t => { if (!reach.has(t.to)) { reach.add(t.to); q.push(t.to); } }); }
   }
 
-  // 分类访客：有后果链 vs 无
+  // 分类访客
   const withChain = [], noChain = [];
   visitorIds.forEach(vid => {
     const hasAny = nInit && (
@@ -405,19 +662,21 @@ function buildIncidentHTML(inc) {
   <div class="inc-header">
     <div class="inc-title">
       ${esc(inc.label_cn)}
-      ${inc.numatic ? '<span class="badge numa">Numa</span>' : ''}
+      ${inc.numatic ? '<span class="badge-numa">Numa</span>' : ''}
     </div>
+    ${inc.label_en ? `<div class="inc-en">${esc(inc.label_en)}</div>` : ""}
     <p class="inc-desc">${esc((inc.desc_cn||"").replace(/\[|\]/g,""))}</p>
-    ${mChips ? `<p class="inc-mystery">相关 Mystery：${mChips}</p>` : ""}
+    ${mChips ? `<div class="inc-mystery"><span class="inc-mystery-label">相关 Mystery</span>${mChips}</div>` : ""}
+    <img src="./assets/divider-flourish.svg" alt="" class="inc-rule">
   </div>
   ${flowSvg ? `<div class="flow-diagram">${flowSvg}</div>` : ""}
-  <div class="phase-header during">事件期间 — 带正确的书帮助访客</div>
-  `;
+  <div class="phase-block">
+    <span class="phase-pill during"><span class="phase-glyph">☉</span>事件期间</span>
+    <span class="phase-hint">— 带正确的书帮助访客</span>
+  </div>`;
 
-  // 所有访客均以卡片展示（有后续链的蓝色边框，无链的灰色）
   if (visitorIds.length) {
     html += `<div class="visitor-grid">`;
-    // 有后续链的放前面
     [...withChain, ...noChain].forEach(vid => {
       html += buildVisitorCard(vid, visitorMysteries[vid]||[], iid, incSuffix, reach);
     });
@@ -448,7 +707,7 @@ function buildVisitorCard(vid, mysteries, iid, incSuffix, reach) {
     ${v && v.desc_cn ? `<div class="vcard-desc">${esc(v.desc_cn)}</div>` : ""}
     ${hasContent ? `<div class="consequence">
       ${talkHtml}
-      ${chainHtml ? `<div class="phase-after-tag">事件结束后</div>${chainHtml}` : ""}
+      ${chainHtml ? `<div style="margin-bottom:8px"><span class="phase-pill after small"><span class="phase-glyph">☾</span>事件结束后</span></div>${chainHtml}` : ""}
     </div>` : ""}
   </div>`;
 }
@@ -466,7 +725,6 @@ function buildNxcStep(c) {
   const prereqMysteryC = c.acted_required.length ? c.acted_required[0].split(".").slice(-1)[0] : null;
   const actedHtml = prereqMysteryC
     ? `<span class="nxs-condition">需先以${mLabel(prereqMysteryC)}书帮助</span>` : "";
-  // 找对应 nxh（同 n_state、同访客）
   const matchNxh = (data.nrs_by_state[c.n_state] || [])
     .filter(r => r.kind === "nxh" && (!r.visitor || r.visitor === c.visitor));
   const nxhInner = matchNxh.map(r => {
@@ -489,7 +747,7 @@ function buildNxcStep(c) {
       <span class="nxs-label">帮助：${esc(label)}</span>
       ${actedHtml}
     </div>
-    ${c.preface_cn ? `<div style="font-size:11px;color:#666;font-style:italic;margin:2px 0 4px 0">${esc(c.preface_cn)}</div>` : ""}
+    ${c.preface_cn ? `<div class="nxs-preface">${esc(c.preface_cn)}</div>` : ""}
     <div class="nxh-block" style="margin-top:6px">
       <span class="nxh-who">${esc(vLabel)}</span>
       ${nxhInner}
@@ -509,7 +767,7 @@ function buildNxsStep(nxs, incSuffix, vid) {
   const targetState = tr ? tr.to : null;
   const targetHtml = targetState ? buildNStateBlock(targetState, 0, vid) : "";
 
-  const preface = nxs.preface_cn ? `<div style="font-size:11px;color:#666;font-style:italic;margin:2px 0 4px 0">${esc(nxs.preface_cn)}</div>` : "";
+  const preface = nxs.preface_cn ? `<div class="nxs-preface">${esc(nxs.preface_cn)}</div>` : "";
   const desc    = nxs.desc_cn    ? `<p class="nxh-desc" style="padding-left:8px">${esc(nxs.desc_cn)}</p>` : "";
 
   return `
@@ -530,7 +788,6 @@ function buildNStateBlock(nid, depth, vid) {
   const label = ns ? ns.label_cn : nid;
   const isDone = ns && ns.complete;
   const desc = ns ? (ns.desc_cn || "") : "";
-  // 按访客过滤：只显示本访客（或通用）的 nxi/nxh
   const allNrs = (data.nrs_by_state[nid] || []).filter(r => !r.visitor || !vid || r.visitor === vid);
 
   // nxi 回顾对话
@@ -540,7 +797,7 @@ function buildNStateBlock(nid, depth, vid) {
     return `<div class="nxi-item"><span class="nxi-who">${esc(vLabel)}</span>${text ? `<span class="nxi-text">：${esc(text)}</span>` : ""}</div>`;
   }).join("");
 
-  // nxh 深层行动 + 结果状态
+  // nxh 深层行动
   const nxhHtml = allNrs.filter(r => r.kind === "nxh").map(r => {
     const vLabel = r.visitor ? (byId["v:" + r.visitor]?.label_cn || r.visitor) : "？";
     const itemKey = nxhItemKey(r);
@@ -556,7 +813,7 @@ function buildNStateBlock(nid, depth, vid) {
     </div>`;
   }).join("");
 
-  // 深层 nxs 分支（已折叠）
+  // 深层 nxs 分支
   let deeperHtml = "";
   if (depth < 2) {
     (data.n_outgoing[nid] || []).forEach(tr => {
@@ -569,7 +826,7 @@ function buildNStateBlock(nid, depth, vid) {
           <div class="nxs-block">
             <div class="nxs-head">
               <span class="nxs-label">询问：${esc(nxsLabel)}</span>
-              <span style="font-size:11px;color:#888">${esc(vLabel)}</span>
+              <span style="font-size:11px;color:var(--ink-4)">${esc(vLabel)}</span>
             </div>
             <div class="nxs-arrow">↓ ${nxLabel(nxs.nx_action)}</div>
             ${subTargetHtml}
@@ -587,7 +844,7 @@ function buildNStateBlock(nid, depth, vid) {
 
   return `
   <div class="nstate-block ${isDone ? "done" : ""}">
-    <div class="nstate-name">${esc(label)}</div>
+    <div class="nstate-name">${isDone ? '<span class="nstate-done-mark">✓ </span>' : ""}${esc(label)}</div>
     ${desc ? `<div class="nstate-desc">${esc(desc)}</div>` : ""}
     ${nxiHtml}
     ${nxhHtml}
@@ -595,9 +852,7 @@ function buildNStateBlock(nid, depth, vid) {
   </div>`;
 }
 
-function attachListeners() {
-  // 卡片折叠已通过 onclick 内联处理
-}
+function attachListeners() {}
 function toggleCard(id) {
   const el = document.getElementById(id);
   if (el) el.classList.toggle("open");

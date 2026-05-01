@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 80" width="480" height="80">
+  
+  <g transform="translate(40 40)">
+    <circle r="32" stroke="#8a2415" stroke-width="1.4" fill="#f3ead6"></circle>
+    <circle r="28" stroke="#a87b1e" stroke-width="0.6" fill="none"></circle>
+    <circle r="18" stroke="#1f3a6e" stroke-width="1" fill="none"></circle>
+    <g stroke="#2a1f12" stroke-width="1" stroke-linecap="round">
+      <line x1="0" y1="-25" x2="0" y2="-19"></line>
+      <line x1="0" y1="19" x2="0" y2="25"></line>
+      <line x1="-25" y1="0" x2="-19" y2="0"></line>
+      <line x1="19" y1="0" x2="25" y2="0"></line>
+    </g>
+    <g stroke="#2a1f12" stroke-width="1.2" fill="none" stroke-linejoin="round">
+      <path d="M -8 -3 Q 0 -5 8 -3 L 8 5 Q 0 3 -8 5 Z" fill="#ebe0c4"></path>
+      <line x1="0" y1="-4" x2="0" y2="5"></line>
+    </g>
+  </g>
+  
+  <text x="84" y="44" font-family="Noto Serif SC, Songti SC, serif" font-weight="700" font-size="26" fill="#2a1f12">司辰之书</text>
+  <text x="84" y="64" font-family="EB Garamond, serif" font-style="italic" font-weight="500" font-size="13" fill="#786148" letter-spacing="0.08em">Book of Hours · Incidents</text>
+</svg>
