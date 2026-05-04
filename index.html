@@ -649,12 +649,39 @@ p { margin: 0 0 var(--s-3); }
 .ending-detail.open { display: block; }
 
 @media (max-width: 768px) {
-  .numen-title { font-size: 22px; }
-  .numen-en { font-size: 12px; }
-  .numen-flavour { font-size: 13px; }
-  .book-card__title { font-size: 16px; }
-  .ending-name { font-size: 17px; }
-  .ending-detail { font-size: 15px; }
+  .numen-title    { font-size: 22px; }
+  .numen-en       { font-size: 12px; word-break: break-all; }
+  .numen-flavour  { font-size: 13px; }
+
+  .book-card           { padding: 10px 12px; }
+  .book-card__title    { font-size: 16px; }
+  .book-card__en       { word-break: break-all; font-size: 12px; }
+  .book-card__desc     { font-size: 13px; }
+  .book-card__trigger  { font-size: 12px; word-break: break-word; }
+  .book-reading__intro { font-size: 13px; padding-left: 10px; }
+  .book-reading__body  { font-size: 14px; line-height: 1.75; text-indent: 1.5em; }
+
+  .history-card__head     { flex-direction: column; align-items: flex-start; gap: 2px; padding: 8px 12px; }
+  .history-card__title    { font-size: 16px; word-break: break-word; }
+  .history-card__id       { font-size: 11px; }
+  .history-card__req      { padding: 6px 12px; font-size: 12px; }
+  .history-card__req .reqkey { font-size: 11px; padding: 1px 8px; }
+  .history-card__desc     { padding: 8px 12px; font-size: 12px; }
+  .history-card__endings  { padding: 4px 10px 10px; }
+
+  .ending-row     { gap: 6px; padding: 8px 0; }
+  .ending-trophy  { width: 22px; font-size: 17px; }
+  .ending-line    { gap: 4px; }
+  .ending-name    { font-size: 17px; }
+  .ending-en      { font-size: 12px; }
+  .ending-id      { margin-left: 0; flex-basis: 100%; word-break: break-all; }
+  .ending-tags    { gap: 4px; }
+  .ending-tag     { font-size: 11px; padding: 1px 8px; }
+  .ending-toggle  { font-size: 13px; }
+  .ending-detail  { font-size: 15px; padding: 8px 10px; line-height: 1.75; }
+
+  .numen-list li         { padding: 8px 10px; font-size: 14px; }
+  .numen-list .li-en     { font-size: 10px; }
 }
 
 /* ── Flash animation ── */
@@ -1250,11 +1277,8 @@ function renderNumenIntro() {
     <div class="numen-header">
       <div class="numen-eyebrow">结局攻略 · ENDINGS</div>
       <div class="numen-title">闰识 → 历史 → 结局</div>
-      <p class="numen-flavour">每个特殊胜利结局都需要一个 <b>闰识</b>（来自特定的书）+ 一段在闰时记录的 <b>历史</b>。某些结局还需要特定的 <b>性向</b>（origin / journal）。点击左侧任一闰识或性向查看详细链条。</p>
-    </div>
-    <p style="font-family:var(--font-han);font-size:13px;color:var(--ink-3);line-height:1.7">
-      ※ 完整链条：研读书籍触发 <code>reading.&lt;奥秘&gt;</code> → 书内 xtrigger 产出 <code>numen.X</code> → 在闰时之外用 <code>record.h.&lt;M&gt;.&lt;Y&gt;</code> 配方写入历史（消耗 numen + 25 点对应奥秘 + 启示墨）→ 在闰时大树之门用 <code>present.h.&lt;M&gt;.&lt;Y&gt;</code> 配方触发结局。
-    </p>`;
+      <p class="numen-flavour">每个结局都需要由 <b>闰识</b>（来自书籍）+ <b>性向</b>写就历史。点击左侧任一闰识或性向查看详细链条。</p>
+    </div>`;
   document.getElementById("main").innerHTML = html;
 }
 
@@ -1296,7 +1320,7 @@ function renderNumen(nid) {
         <div class="book-card__en">${esc(book.book_label_en || "")} · <code>${esc(book.book_id)}</code></div>
         ${book.book_desc_cn ? `<div class="book-card__desc">${esc(book.book_desc_cn.replace(/\[|\]/g,""))}</div>` : ""}
         <div class="book-card__trigger">
-          研究本书：归类于 <b>mystery.${esc(book.mystery)}</b> 奥秘下；研读时触发 <code>${esc(book.trigger)}.intro</code>（前置）与 <code>${esc(book.trigger)}</code>（正文）xtrigger，产出本闰识。
+          研究本书：需要 <b>mystery.${esc(book.mystery)}</b>
         </div>
         ${readingHtml}
       </div>`;
