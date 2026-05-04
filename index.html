@@ -1348,9 +1348,6 @@ function renderNumen(nid) {
       } else {
         tagHtml.push(`<span class="ending-tag generic">通用结局</span>`);
       }
-      if (e.image) tagHtml.push(`<span class="ending-tag image">${esc(e.image)}</span>`);
-      if (e.flavour) tagHtml.push(`<span class="ending-tag flavour">${esc(e.flavour)}</span>`);
-      (e.achievements || []).forEach(a => tagHtml.push(`<span class="ending-tag ach" title="成就">${esc(a)}</span>`));
       const detailId = "ed-" + e.id.replace(/[^a-z0-9]/gi, "-");
       const cleanDesc = (e.desc_cn || "").replace(/<[^>]+>/g, "").replace(/\[|\]/g, "").trim();
       return `
@@ -1378,8 +1375,8 @@ function renderNumen(nid) {
         <div class="history-card__req">
           <span style="font-weight:600">记录要求：</span>
           ${reqStr}
-          <span class="reqkey">闰识 ${esc(n.label_cn)}</span>
-          <span class="reqkey">炽热墨 encaustum</span>
+          <span class="reqkey">${esc(n.label_cn)}</span>
+          <span class="reqkey">终刻墨 encaustum</span>
         </div>
         ${h.desc_cn ? `<div class="history-card__desc">${esc(h.desc_cn.replace(/<[^>]+>/g,"").replace(/\[|\]/g,""))}</div>` : ""}
         <div class="history-card__endings">
@@ -1438,14 +1435,8 @@ function renderRole(rid) {
           <div class="history-card__endings">`;
       list.forEach(item => {
         const e = item.ending_e;
-        const reqStr = Object.entries(item.mystery_reqs || {}).map(([k,v]) =>
-          `<span class="reqkey">${esc(mLabel(k))} ≥ ${v}</span>`).join("");
         const detailId = "edr-" + e.id.replace(/[^a-z0-9]/gi, "-");
         const cleanDesc = (e.desc_cn || "").replace(/<[^>]+>/g, "").replace(/\[|\]/g, "").trim();
-        const tagHtml = [];
-        if (e.image) tagHtml.push(`<span class="ending-tag image">${esc(e.image)}</span>`);
-        if (e.flavour) tagHtml.push(`<span class="ending-tag flavour">${esc(e.flavour)}</span>`);
-        (e.achievements || []).forEach(a => tagHtml.push(`<span class="ending-tag ach">${esc(a)}</span>`));
         html += `
           <div class="ending-row role-only">
             <div class="ending-trophy">🏆</div>
@@ -1457,8 +1448,6 @@ function renderRole(rid) {
               </div>
               <div class="ending-tags" style="margin-top:4px">
                 <span class="ending-tag generic" style="background:var(--paper-3);color:var(--ink-2);border-color:var(--paper-edge)">📜 ${esc(item.history)}</span>
-                ${reqStr}
-                ${tagHtml.join("")}
               </div>
               ${cleanDesc ? `<div class="ending-toggle" onclick="toggleEnding('${detailId}', this)">▶ 展开结局描述</div>
                 <div class="ending-detail" id="${detailId}">${esc(cleanDesc)}</div>` : ""}
