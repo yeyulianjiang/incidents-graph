@@ -787,7 +787,7 @@ p { margin: 0 0 var(--s-3); }
 <body>
 <!-- Mobile app bar -->
 <div class="m-appbar-wrap" id="m-appbar-wrap">
-  <button class="m-iconbtn" onclick="toggleDrawer()" aria-label="菜单">☰</button>
+  <button class="m-iconbtn" onclick="toggleDrawer()" aria-label="菜单">菜单</button>
   <div class="m-appbar-title">司辰之书</div>
   <div style="width:40px"></div>
 </div>
@@ -885,7 +885,7 @@ function richInline(s) {
 function truncate(s, n) { return s && s.length > n ? s.slice(0, n - 1) + "…" : (s || ""); }
 function splitTalkText(s) {
   if (!s) return { quote: "", hint: "" };
-  const clean = s.replace(/<sprite[^>]*>/g, "◈");
+  const clean = s.replace(/<sprite[^>]*>/g, "");
   const bi = clean.indexOf("[");
   if (bi < 0) return { quote: clean.trim(), hint: "" };
   return { quote: clean.slice(0, bi).trim(), hint: clean.slice(bi + 1).replace(/\].*$/, "").trim() };
@@ -1191,7 +1191,7 @@ function renderSalonVisitor(vid) {
     const bodyHtml = salonBodyHtml(s.desc_cn);
     const lessonLabel = s.lesson_key ? itemLabel(s.lesson_key) : "";
     const lessonChip = lessonLabel ? `<span class="salon-lesson-chip">${esc(lessonLabel)}</span>` : "";
-    const befriendChip = s.befriend ? `<span class="salon-befriend-chip">✦ 结交</span>` : "";
+    const befriendChip = s.befriend ? `<span class="salon-befriend-chip">结交</span>` : "";
     const chips = [lessonChip, befriendChip].filter(Boolean).join(" ");
     html += `<div class="salon-conv-card">
       <div class="salon-conv-header">
@@ -1315,7 +1315,7 @@ function renderNumen(nid) {
         </div>` : "";
     html += `
       <div class="book-card">
-        <div class="book-card__eyebrow">📕 来源书籍</div>
+        <div class="book-card__eyebrow">来源书籍</div>
         <div class="book-card__title">${esc(book.book_label_cn || book.book_id)}</div>
         <div class="book-card__en">${esc(book.book_label_en || "")} · <code>${esc(book.book_id)}</code></div>
         ${book.book_desc_cn ? `<div class="book-card__desc">${esc(book.book_desc_cn.replace(/\[|\]/g,""))}</div>` : ""}
@@ -1326,7 +1326,7 @@ function renderNumen(nid) {
       </div>`;
   }
 
-  html += `<div style="margin:18px 0 10px"><span class="phase-pill during"><span class="phase-glyph">☉</span>可记录的历史 · ${Object.keys(byHist).length}</span></div>`;
+  html += `<div style="margin:18px 0 10px"><span class="phase-pill during">可记录的历史 · ${Object.keys(byHist).length}</span></div>`;
 
   Object.values(byHist).forEach(g => {
     const h = data.history_by_id[g.history] || { id: g.history };
@@ -1352,7 +1352,7 @@ function renderNumen(nid) {
       const cleanDesc = (e.desc_cn || "").replace(/<[^>]+>/g, "").replace(/\[|\]/g, "").trim();
       return `
         <div class="ending-row ${p.role ? "role-only" : "generic"}">
-          <div class="ending-trophy">🏆</div>
+          <div class="ending-trophy"></div>
           <div class="ending-body">
             <div class="ending-line">
               <span class="ending-name">${esc(e.label_cn || e.id)}</span>
@@ -1369,7 +1369,7 @@ function renderNumen(nid) {
     html += `
       <div class="history-card">
         <div class="history-card__head">
-          <div class="history-card__title">📜 ${esc(g.history)}</div>
+          <div class="history-card__title">${esc(g.history)}</div>
           <div class="history-card__id">${esc(h.label_cn || "我的历史")}</div>
         </div>
         <div class="history-card__req">
@@ -1421,7 +1421,7 @@ function renderRole(rid) {
   if (!numenIds.length) {
     html += `<p style="color:var(--ink-3);font-style:italic">该性向暂无可解锁的特殊胜利结局。</p>`;
   } else {
-    html += `<div style="margin:14px 0 10px"><span class="phase-pill after small"><span class="phase-glyph">⚜</span>可解锁结局 · ${numenIds.length} 个闰识</span></div>`;
+    html += `<div style="margin:14px 0 10px"><span class="phase-pill after small">可解锁结局 · ${numenIds.length} 个闰识</span></div>`;
     numenIds.forEach(nid => {
       const n = data.numen_by_id[nid];
       const book = data.book_by_numen[nid];
@@ -1429,8 +1429,8 @@ function renderRole(rid) {
       html += `
         <div class="history-card">
           <div class="history-card__head" style="background:var(--rubric-soft);border-bottom-color:#e09898">
-            <div class="history-card__title" style="color:var(--rubric-1)">💎 ${esc(n.label_cn || nid)}</div>
-            <div class="history-card__id">${book ? `📕 ${esc(book.book_label_cn || book.book_id)}` : esc(nid)}</div>
+            <div class="history-card__title" style="color:var(--rubric-1)">${esc(n.label_cn || nid)}</div>
+            <div class="history-card__id">${book ? esc(book.book_label_cn || book.book_id) : esc(nid)}</div>
           </div>
           <div class="history-card__endings">`;
       list.forEach(item => {
@@ -1439,7 +1439,7 @@ function renderRole(rid) {
         const cleanDesc = (e.desc_cn || "").replace(/<[^>]+>/g, "").replace(/\[|\]/g, "").trim();
         html += `
           <div class="ending-row role-only">
-            <div class="ending-trophy">🏆</div>
+            <div class="ending-trophy"></div>
             <div class="ending-body">
               <div class="ending-line">
                 <span class="ending-name">${esc(e.label_cn || e.id)}</span>
@@ -1447,7 +1447,7 @@ function renderRole(rid) {
                 <span class="ending-id">${esc(e.id)}</span>
               </div>
               <div class="ending-tags" style="margin-top:4px">
-                <span class="ending-tag generic" style="background:var(--paper-3);color:var(--ink-2);border-color:var(--paper-edge)">📜 ${esc(item.history)}</span>
+                <span class="ending-tag generic" style="background:var(--paper-3);color:var(--ink-2);border-color:var(--paper-edge)">${esc(item.history)}</span>
               </div>
               ${cleanDesc ? `<div class="ending-toggle" onclick="toggleEnding('${detailId}', this)">▶ 展开结局描述</div>
                 <div class="ending-detail" id="${detailId}">${esc(cleanDesc)}</div>` : ""}
@@ -1697,7 +1697,7 @@ function buildIncidentHTML(inc) {
   </div>
   ${flowSvg ? `<div class="flow-diagram">${flowSvg}</div>` : ""}
   <div class="phase-block">
-    <span class="phase-pill during"><span class="phase-glyph">☉</span>事件期间</span>
+    <span class="phase-pill during">事件期间</span>
     <span class="phase-hint">— 带正确的书帮助访客</span>
   </div>`;
 
@@ -1733,7 +1733,7 @@ function buildVisitorCard(vid, mysteries, iid, incSuffix, reach) {
     ${v && v.desc_cn ? `<div class="vcard-desc">${esc(v.desc_cn)}</div>` : ""}
     ${hasContent ? `<div class="consequence">
       ${talkHtml}
-      ${chainHtml ? `<div style="margin-bottom:8px"><span class="phase-pill after small"><span class="phase-glyph">☾</span>事件结束后</span></div>${chainHtml}` : ""}
+      ${chainHtml ? `<div style="margin-bottom:8px"><span class="phase-pill after small">事件结束后</span></div>${chainHtml}` : ""}
     </div>` : ""}
   </div>`;
 }
@@ -1908,7 +1908,7 @@ function buildNStateBlock(nid, depth, vid) {
 
   return `
   <div class="nstate-block ${isDone ? "done" : ""}">
-    <div class="nstate-name">${isDone ? '<span class="nstate-done-mark">✓ </span>' : ""}${esc(label)}</div>
+    <div class="nstate-name">${isDone ? '<span class="nstate-done-mark">[完]</span> ' : ""}${esc(label)}</div>
     ${desc ? `<div class="nstate-desc">${esc(desc)}</div>` : ""}
     ${nxiHtml}
     ${nxhHtml}
