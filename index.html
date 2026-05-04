@@ -467,6 +467,196 @@ p { margin: 0 0 var(--s-3); }
   border-left: 3px solid var(--gold-2); padding: 4px 0 4px 12px;
 }
 
+/* ── Numen / Endings module ── */
+.numen-list { list-style: none; padding: 0; margin: 0; }
+.numen-list li {
+  padding: 6px 10px; border-radius: var(--r-2); cursor: pointer;
+  font-family: var(--font-han); font-size: var(--fs-sm);
+  color: var(--ink-1); border-left: 2px solid transparent;
+  transition: background var(--dur-fast) var(--ease);
+  display: flex; flex-direction: column; gap: 1px; line-height: 1.35;
+}
+.numen-list li:hover { background: rgba(168,123,30,.10); border-left-color: var(--gold-2); }
+.numen-list li.active {
+  background: rgba(138,36,21,.12); border-left-color: var(--rubric-1);
+  color: var(--rubric-1); font-weight: 600;
+}
+.numen-list li.role { color: var(--lapis-1); }
+.numen-list li.role.active {
+  background: rgba(50,94,160,.14); border-left-color: var(--lapis-2); color: var(--lapis-1);
+}
+.numen-list .li-en {
+  font-family: var(--font-display); font-style: italic; font-size: 10px;
+  color: var(--ink-4); letter-spacing: .04em;
+}
+
+.numen-header { margin-bottom: 18px; }
+.numen-eyebrow {
+  font-family: var(--font-display); font-style: italic; font-weight: 600;
+  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--rubric-1);
+}
+.numen-eyebrow.role { color: var(--lapis-1); }
+.numen-title {
+  font-family: var(--font-han); font-weight: 700; font-size: 28px;
+  line-height: 1.15; color: var(--ink-1); margin: 4px 0 2px;
+}
+.numen-en {
+  font-family: var(--font-display); font-style: italic;
+  font-size: 14px; color: var(--ink-3); letter-spacing: .04em; margin: 0 0 10px;
+}
+.numen-flavour {
+  font-family: var(--font-han); font-size: 15px; line-height: 1.7;
+  color: var(--ink-2); border-left: 3px solid var(--gold-2);
+  padding: 4px 0 4px 12px; margin: 0 0 14px; font-style: italic;
+}
+
+.book-card {
+  border: 1.5px solid var(--gold-2); border-radius: var(--r-3);
+  background: var(--paper-1);
+  padding: 12px 16px; margin: 0 0 18px;
+}
+.book-card__eyebrow {
+  font-family: var(--font-display); font-style: italic; font-size: 11px;
+  letter-spacing: .12em; color: #6b3f00; text-transform: uppercase;
+}
+.book-card__title {
+  font-family: var(--font-han); font-weight: 700; font-size: 19px;
+  color: var(--ink-1); margin: 4px 0 1px;
+}
+.book-card__en {
+  font-family: var(--font-display); font-style: italic; font-size: 13px;
+  color: var(--ink-3); margin-bottom: 6px;
+}
+.book-card__desc {
+  font-family: var(--font-han); font-size: 14px; line-height: 1.7;
+  color: var(--ink-2); margin: 6px 0 8px;
+}
+.book-card__trigger {
+  font-family: var(--font-han); font-size: 13px; color: var(--ink-3);
+  border-top: 1px dashed #d8b258; padding-top: 6px;
+}
+.book-card__trigger b { color: var(--rubric-1); }
+
+.book-reading {
+  margin-top: 10px; padding-top: 10px;
+  border-top: 1px dashed #d8b258;
+}
+.book-reading__label {
+  display: inline-block; font-family: var(--font-display); font-style: italic;
+  font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+  color: #6b3f00; margin-bottom: 4px;
+}
+.book-reading__intro {
+  font-family: var(--font-han); font-size: 14px; line-height: 1.75;
+  color: var(--ink-2); font-style: italic;
+  border-left: 2px solid var(--gold-2); padding-left: 12px;
+  margin: 0 0 12px;
+}
+.book-reading__body {
+  font-family: var(--font-han); font-size: 14.5px; line-height: 1.8;
+  color: var(--ink-1); margin: 0;
+  text-indent: 2em;
+}
+.book-reading__body + .book-reading__body { margin-top: 8px; }
+
+.history-card {
+  border: 1.5px solid var(--paper-shadow); border-radius: var(--r-3);
+  background: var(--paper-1); margin: 0 0 14px; overflow: hidden;
+  box-shadow: var(--shadow-1);
+}
+.history-card__head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  flex-wrap: wrap; gap: 6px;
+  padding: 10px 14px; background: var(--lapis-soft);
+  border-bottom: 1px solid #b8c8e0;
+}
+.history-card__title {
+  font-family: var(--font-han); font-weight: 700; font-size: 17px;
+  color: var(--lapis-1);
+}
+.history-card__id {
+  font-family: var(--font-mono); font-size: 11px; color: var(--ink-3);
+}
+.history-card__req {
+  display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 14px;
+  background: var(--paper-2); border-bottom: 1px solid var(--paper-edge);
+  font-family: var(--font-han); font-size: 13px; color: var(--ink-2);
+}
+.history-card__req .reqkey {
+  display: inline-flex; align-items: center; padding: 1px 9px; border-radius: 999px;
+  background: var(--gold-soft); color: #6b3f00; border: 1px solid #d8b258;
+  font-weight: 600; font-size: 12px;
+}
+.history-card__desc {
+  padding: 8px 14px; font-family: var(--font-han); font-size: 13px;
+  line-height: 1.65; color: var(--ink-3); font-style: italic;
+}
+.history-card__endings { padding: 6px 14px 12px; }
+
+.ending-row {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 8px 0; border-bottom: 1px dashed var(--paper-edge);
+}
+.ending-row:last-child { border-bottom: 0; }
+.ending-row.generic   { }
+.ending-row.role-only { background: rgba(50,94,160,.04); }
+
+.ending-trophy {
+  font-family: var(--font-han); font-size: 20px; flex-shrink: 0;
+  width: 28px; text-align: center; color: var(--gold-1); padding-top: 2px;
+}
+.ending-body { flex: 1; min-width: 0; }
+.ending-line {
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline;
+}
+.ending-name {
+  font-family: var(--font-han); font-weight: 700; font-size: 19px;
+  color: var(--ink-1);
+}
+.ending-en {
+  font-family: var(--font-display); font-style: italic; font-size: 14px;
+  color: var(--ink-3);
+}
+.ending-id {
+  font-family: var(--font-mono); font-size: 11px; color: var(--ink-4);
+  margin-left: auto;
+}
+.ending-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.ending-tag {
+  display: inline-flex; align-items: center; padding: 2px 10px; border-radius: var(--r-2);
+  font-family: var(--font-han); font-size: 13px; font-weight: 600;
+  border: 1px solid;
+}
+.ending-tag.role     { background: var(--lapis-soft); color: var(--lapis-1); border-color: #90b0e0; }
+.ending-tag.generic  { background: var(--verd-soft); color: var(--verd-1); border-color: #82c896; }
+.ending-tag.image    { background: var(--paper-3); color: var(--ink-2); border-color: var(--paper-edge); }
+.ending-tag.flavour  { background: var(--gold-soft); color: #6b3f00; border-color: #d8b258; }
+.ending-tag.ach      { background: var(--numa-soft); color: var(--numa-1); border-color: #c4a4dd; font-family: var(--font-mono); font-weight: 500; }
+
+.ending-toggle {
+  margin-top: 6px; cursor: pointer; user-select: none;
+  font-family: var(--font-han); font-size: 14px; color: var(--ink-3);
+}
+.ending-toggle:hover { color: var(--ink-1); }
+.ending-detail {
+  display: none; margin-top: 8px; padding: 10px 14px;
+  background: var(--paper-2); border-left: 3px solid var(--gold-2);
+  border-radius: 0 var(--r-2) var(--r-2) 0;
+  font-family: var(--font-han); font-size: 16px; line-height: 1.85;
+  color: var(--ink-1); white-space: pre-wrap;
+}
+.ending-detail.open { display: block; }
+
+@media (max-width: 768px) {
+  .numen-title { font-size: 22px; }
+  .numen-en { font-size: 12px; }
+  .numen-flavour { font-size: 13px; }
+  .book-card__title { font-size: 16px; }
+  .ending-name { font-size: 17px; }
+  .ending-detail { font-size: 15px; }
+}
+
 /* ── Flash animation ── */
 @keyframes vcard-flash {
   0%,100% { outline: none; }
@@ -588,7 +778,8 @@ p { margin: 0 0 var(--s-3); }
     <img src="./assets/divider-flourish.svg" alt="" style="width:100%;opacity:.45;margin:4px 0 10px">
     <div class="sidebar-tabs" style="margin-bottom:10px">
       <button class="sidebar-tab active" data-tab="incidents" onclick="switchTab('incidents',true)">事件</button>
-      <button class="sidebar-tab" data-tab="salons" onclick="switchTab('salons')">沙龙</button>
+      <button class="sidebar-tab" data-tab="salons" onclick="switchTab('salons',true)">沙龙</button>
+      <button class="sidebar-tab" data-tab="numen" onclick="switchTab('numen',true)">结局</button>
     </div>
     <div id="m-sidebar-incidents">
       <div class="m-drawer__head">常规事件</div>
@@ -599,6 +790,12 @@ p { margin: 0 0 var(--s-3); }
     <div id="m-sidebar-salons" style="display:none">
       <div class="m-drawer__head">访客</div>
       <ul class="salon-visitor-list" id="m-salon-visitor-list"></ul>
+    </div>
+    <div id="m-sidebar-numen" style="display:none">
+      <div class="m-drawer__head">闰识 <em>Numen</em></div>
+      <ul class="numen-list" id="m-list-numen"></ul>
+      <div class="m-drawer__head" style="color:var(--lapis-1)">性向 <em>Origin</em></div>
+      <ul class="numen-list" id="m-list-roles"></ul>
     </div>
   </aside>
 </div>
@@ -616,6 +813,7 @@ p { margin: 0 0 var(--s-3); }
     <div class="sidebar-tabs">
       <button class="sidebar-tab active" data-tab="incidents" onclick="switchTab('incidents')">事件</button>
       <button class="sidebar-tab" data-tab="salons" onclick="switchTab('salons')">沙龙</button>
+      <button class="sidebar-tab" data-tab="numen" onclick="switchTab('numen')">结局</button>
     </div>
     <div id="sidebar-incidents">
       <div class="sidebar-section">常规事件</div>
@@ -626,6 +824,12 @@ p { margin: 0 0 var(--s-3); }
     <div id="sidebar-salons" style="display:none">
       <div class="sidebar-section">访客</div>
       <ul class="salon-visitor-list" id="salon-visitor-list"></ul>
+    </div>
+    <div id="sidebar-numen" style="display:none">
+      <div class="sidebar-section">闰识 <em>Numen</em></div>
+      <ul class="numen-list" id="list-numen"></ul>
+      <div class="sidebar-section" style="color:var(--lapis-1)">性向 <em>Origin</em></div>
+      <ul class="numen-list" id="list-roles"></ul>
     </div>
   </aside>
   <main id="main">
@@ -647,6 +851,10 @@ const NX_LABELS = {
 function nxLabel(nx) { return NX_LABELS[nx] || (nx || "").replace(/^nx\./, ""); }
 function mLabel(id) { const m = byId["m:" + id]; return m ? m.label_cn : id; }
 function esc(s) { return (s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+// Escape, then re-allow a small inline whitelist (i / b / em / strong)
+function richInline(s) {
+  return esc(s || "").replace(/&lt;(\/?(i|b|em|strong))&gt;/g, "<$1>");
+}
 function truncate(s, n) { return s && s.length > n ? s.slice(0, n - 1) + "…" : (s || ""); }
 function splitTalkText(s) {
   if (!s) return { quote: "", hint: "" };
@@ -784,8 +992,29 @@ async function main() {
     if (r.kind === "nxh") r._nxAction = Object.keys(r.aspects || {}).find(k => k.startsWith("nx."));
   });
 
+  // Numen indices
+  data.numen_by_id     = {};
+  (data.numen || []).forEach(n => data.numen_by_id[n.id] = n);
+  data.history_by_id   = {};
+  (data.histories || []).forEach(h => data.history_by_id[h.id] = h);
+  data.ending_by_id    = {};
+  (data.endings || []).forEach(e => data.ending_by_id[e.id] = e);
+  data.role_by_id      = {};
+  (data.roles || []).forEach(r => data.role_by_id[r.id] = r);
+  data.book_by_numen   = {};
+  (data.numen_books || []).forEach(b => data.book_by_numen[b.numen] = b);
+  data.records_by_numen = {};
+  (data.numen_records || []).forEach(r => {
+    (data.records_by_numen[r.numen] = data.records_by_numen[r.numen] || []).push(r);
+  });
+  data.presents_by_history = {};
+  (data.history_presents || []).forEach(p => {
+    (data.presents_by_history[p.history] = data.presents_by_history[p.history] || []).push(p);
+  });
+
   populateLists();
   populateSalonList();
+  populateNumenList();
 }
 
 function getVisitorDeepStates(resultId, vid) {
@@ -836,19 +1065,23 @@ function switchTab(tab, closeMobileDrawer) {
   currentTab = tab;
   // PC sidebar
   document.getElementById("sidebar-incidents").style.display = tab === "incidents" ? "" : "none";
-  document.getElementById("sidebar-salons").style.display   = tab === "salons"    ? "" : "none";
+  document.getElementById("sidebar-salons").style.display    = tab === "salons"    ? "" : "none";
+  document.getElementById("sidebar-numen").style.display     = tab === "numen"     ? "" : "none";
   // Mobile drawer
   document.getElementById("m-sidebar-incidents").style.display = tab === "incidents" ? "" : "none";
-  document.getElementById("m-sidebar-salons").style.display   = tab === "salons"    ? "" : "none";
+  document.getElementById("m-sidebar-salons").style.display    = tab === "salons"    ? "" : "none";
+  document.getElementById("m-sidebar-numen").style.display     = tab === "numen"     ? "" : "none";
   // All tab buttons
   document.querySelectorAll(".sidebar-tab").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
   // Reset main
   if (tab === "incidents") {
     document.getElementById("main").innerHTML = '<p class="placeholder">← 选择左侧事件查看攻略</p>';
     currentIid = null;
-  } else {
+  } else if (tab === "salons") {
     document.getElementById("main").innerHTML = '<p class="placeholder">← 选择左侧访客查看对话记录</p>';
     currentVid = null;
+  } else if (tab === "numen") {
+    renderNumenIntro();
   }
   if (closeMobileDrawer) closeDrawer();
   scrollMainToTop();
@@ -959,6 +1192,268 @@ function scrollMainToTop() {
   const main = document.getElementById("main");
   if (main) main.scrollTop = 0;
   window.scrollTo(0, 0);
+}
+
+// ══════════════════════════════════════════
+//   Numen / Endings module
+// ══════════════════════════════════════════
+
+const NUMEN_ORDER = [
+  "numen.unde","numen.worl","numen.loop","numen.desc","numen.secr","numen.asce",
+  "numen.alte","numen.thre","numen.conf","numen.oldl","numen.bell","numen.bala","numen.feas"
+];
+
+function populateNumenList() {
+  if (!data.numen || !data.numen.length) return;
+  const sorted = NUMEN_ORDER
+    .map(id => data.numen_by_id[id])
+    .filter(Boolean)
+    .concat(data.numen.filter(n => !NUMEN_ORDER.includes(n.id)));
+
+  const list  = document.getElementById("list-numen");
+  const mList = document.getElementById("m-list-numen");
+  sorted.forEach(n => {
+    [list, mList].forEach((parent, idx) => {
+      if (!parent) return;
+      const li = document.createElement("li");
+      li.dataset.id = n.id;
+      li.innerHTML = `<span>${esc(n.label_cn || n.id)}</span><span class="li-en">${esc(n.label_en || "")}</span>`;
+      li.title = n.id;
+      li.onclick = () => { renderNumen(n.id); markNumenActive(n.id); if (idx === 1) closeDrawer(); };
+      parent.appendChild(li);
+    });
+  });
+
+  const rList  = document.getElementById("list-roles");
+  const mRList = document.getElementById("m-list-roles");
+  (data.roles || []).forEach(r => {
+    [rList, mRList].forEach((parent, idx) => {
+      if (!parent) return;
+      const li = document.createElement("li");
+      li.dataset.id = "role:" + r.id;
+      li.classList.add("role");
+      li.innerHTML = `<span>${esc(r.label_cn)}</span><span class="li-en">${esc(r.id)}</span>`;
+      li.title = r.journal || r.id;
+      li.onclick = () => { renderRole(r.id); markNumenActive("role:" + r.id); if (idx === 1) closeDrawer(); };
+      parent.appendChild(li);
+    });
+  });
+}
+
+function markNumenActive(id) {
+  document.querySelectorAll("#list-numen li, #m-list-numen li, #list-roles li, #m-list-roles li")
+    .forEach(li => li.classList.toggle("active", li.dataset.id === id));
+}
+
+function renderNumenIntro() {
+  const html = `
+    <div class="numen-header">
+      <div class="numen-eyebrow">结局攻略 · ENDINGS</div>
+      <div class="numen-title">闰识 → 历史 → 结局</div>
+      <p class="numen-flavour">每个特殊胜利结局都需要一个 <b>闰识</b>（来自特定的书）+ 一段在闰时记录的 <b>历史</b>。某些结局还需要特定的 <b>性向</b>（origin / journal）。点击左侧任一闰识或性向查看详细链条。</p>
+    </div>
+    <p style="font-family:var(--font-han);font-size:13px;color:var(--ink-3);line-height:1.7">
+      ※ 完整链条：研读书籍触发 <code>reading.&lt;奥秘&gt;</code> → 书内 xtrigger 产出 <code>numen.X</code> → 在闰时之外用 <code>record.h.&lt;M&gt;.&lt;Y&gt;</code> 配方写入历史（消耗 numen + 25 点对应奥秘 + 启示墨）→ 在闰时大树之门用 <code>present.h.&lt;M&gt;.&lt;Y&gt;</code> 配方触发结局。
+    </p>`;
+  document.getElementById("main").innerHTML = html;
+}
+
+function renderNumen(nid) {
+  const n = data.numen_by_id[nid];
+  if (!n) return;
+  const book = data.book_by_numen[nid];
+  const recs = data.records_by_numen[nid] || [];
+  // group by history
+  const byHist = {};
+  recs.forEach(r => {
+    if (!r.history) return;
+    const k = r.history;
+    if (!byHist[k]) byHist[k] = { history: k, mystery_reqs: r.mystery_reqs, records: [] };
+    byHist[k].records.push(r);
+  });
+
+  let html = `
+    <div class="numen-header">
+      <div class="numen-eyebrow">闰识 · NUMEN</div>
+      <div class="numen-title">${esc(n.label_cn || n.id)}</div>
+      <div class="numen-en">${esc(n.label_en || "")} · ${esc(n.id)}</div>
+      ${n.desc_cn ? `<p class="numen-flavour">${esc(n.desc_cn.replace(/\[|\]/g,""))}</p>` : ""}
+    </div>`;
+
+  if (book) {
+    const introCn = (book.reading_intro_cn || "").trim();
+    const bodyCn  = (book.reading_body_cn  || "").trim();
+    const readingHtml = (introCn || bodyCn) ? `
+        <div class="book-reading">
+          <span class="book-reading__label">研读所获 · reading.${esc(book.mystery)}</span>
+          ${introCn ? `<p class="book-reading__intro">${richInline(introCn)}</p>` : ""}
+          ${bodyCn  ? bodyCn.split(/\n+/).map(p => `<p class="book-reading__body">${richInline(p)}</p>`).join("") : ""}
+        </div>` : "";
+    html += `
+      <div class="book-card">
+        <div class="book-card__eyebrow">📕 来源书籍</div>
+        <div class="book-card__title">${esc(book.book_label_cn || book.book_id)}</div>
+        <div class="book-card__en">${esc(book.book_label_en || "")} · <code>${esc(book.book_id)}</code></div>
+        ${book.book_desc_cn ? `<div class="book-card__desc">${esc(book.book_desc_cn.replace(/\[|\]/g,""))}</div>` : ""}
+        <div class="book-card__trigger">
+          研究本书：归类于 <b>mystery.${esc(book.mystery)}</b> 奥秘下；研读时触发 <code>${esc(book.trigger)}.intro</code>（前置）与 <code>${esc(book.trigger)}</code>（正文）xtrigger，产出本闰识。
+        </div>
+        ${readingHtml}
+      </div>`;
+  }
+
+  html += `<div style="margin:18px 0 10px"><span class="phase-pill during"><span class="phase-glyph">☉</span>可记录的历史 · ${Object.keys(byHist).length}</span></div>`;
+
+  Object.values(byHist).forEach(g => {
+    const h = data.history_by_id[g.history] || { id: g.history };
+    const reqStr = Object.entries(g.mystery_reqs || {}).map(([k,v]) =>
+      `<span class="reqkey">${esc(mLabel(k))} ≥ ${v}</span>`).join("");
+    const presents = data.presents_by_history[g.history] || [];
+    // sort: generic first, then by role
+    presents.sort((a,b) => {
+      if (!a.role && b.role) return -1;
+      if (a.role && !b.role) return 1;
+      return (a.role || "").localeCompare(b.role || "");
+    });
+    const endingsHtml = presents.map(p => {
+      const e = data.ending_by_id[p.ending] || { id: p.ending };
+      const role = p.role ? data.role_by_id[p.role] : null;
+      const tagHtml = [];
+      if (p.role) {
+        tagHtml.push(`<span class="ending-tag role">${esc(role ? role.label_cn : p.role)} 专属</span>`);
+      } else {
+        tagHtml.push(`<span class="ending-tag generic">通用结局</span>`);
+      }
+      if (e.image) tagHtml.push(`<span class="ending-tag image">${esc(e.image)}</span>`);
+      if (e.flavour) tagHtml.push(`<span class="ending-tag flavour">${esc(e.flavour)}</span>`);
+      (e.achievements || []).forEach(a => tagHtml.push(`<span class="ending-tag ach" title="成就">${esc(a)}</span>`));
+      const detailId = "ed-" + e.id.replace(/[^a-z0-9]/gi, "-");
+      const cleanDesc = (e.desc_cn || "").replace(/<[^>]+>/g, "").replace(/\[|\]/g, "").trim();
+      return `
+        <div class="ending-row ${p.role ? "role-only" : "generic"}">
+          <div class="ending-trophy">🏆</div>
+          <div class="ending-body">
+            <div class="ending-line">
+              <span class="ending-name">${esc(e.label_cn || e.id)}</span>
+              <span class="ending-en">${esc(e.label_en || "")}</span>
+              <span class="ending-id">${esc(e.id)}</span>
+            </div>
+            <div class="ending-tags">${tagHtml.join("")}</div>
+            ${cleanDesc ? `<div class="ending-toggle" onclick="toggleEnding('${detailId}', this)">▶ 展开结局描述</div>
+              <div class="ending-detail" id="${detailId}">${esc(cleanDesc)}</div>` : ""}
+          </div>
+        </div>`;
+    }).join("");
+
+    html += `
+      <div class="history-card">
+        <div class="history-card__head">
+          <div class="history-card__title">📜 ${esc(g.history)}</div>
+          <div class="history-card__id">${esc(h.label_cn || "我的历史")}</div>
+        </div>
+        <div class="history-card__req">
+          <span style="font-weight:600">记录要求：</span>
+          ${reqStr}
+          <span class="reqkey">闰识 ${esc(n.label_cn)}</span>
+          <span class="reqkey">炽热墨 encaustum</span>
+        </div>
+        ${h.desc_cn ? `<div class="history-card__desc">${esc(h.desc_cn.replace(/<[^>]+>/g,"").replace(/\[|\]/g,""))}</div>` : ""}
+        <div class="history-card__endings">
+          ${endingsHtml || '<p style="color:var(--ink-4);font-size:12px;font-style:italic;margin:6px 0">无对应结局</p>'}
+        </div>
+      </div>`;
+  });
+
+  document.getElementById("main").innerHTML = html;
+  scrollMainToTop();
+}
+
+function renderRole(rid) {
+  const r = data.role_by_id[rid];
+  if (!r) return;
+  // Find all (numen, history, ending) for this role
+  const recsByNumen = {};
+  (data.history_presents || []).forEach(p => {
+    if (p.role !== rid) return;
+    const e = data.ending_by_id[p.ending];
+    if (!e) return;
+    // find which numen this history derives from
+    const rec = (data.numen_records || []).find(rr => rr.history === p.history);
+    if (!rec) return;
+    const nid = rec.numen;
+    (recsByNumen[nid] = recsByNumen[nid] || []).push({
+      history: p.history, ending: p.ending, ending_e: e, mystery_reqs: rec.mystery_reqs
+    });
+  });
+
+  let html = `
+    <div class="numen-header">
+      <div class="numen-eyebrow role">性向 · ORIGIN</div>
+      <div class="numen-title">${esc(r.label_cn)} <span style="font-size:14px;color:var(--ink-3);font-weight:400">— ${esc(r.id)}</span></div>
+      <div class="numen-en">${esc(r.journal || "")}${r.journal_label_cn ? "（" + esc(r.journal_label_cn) + "）" : ""}</div>
+      <p class="numen-flavour">以 <b>${esc(r.label_cn)}</b> 为图书管理员性向时可解锁的特殊胜利结局列表，按所需的闰识分组。</p>
+    </div>`;
+
+  const numenIds = Object.keys(recsByNumen).sort((a,b) =>
+    NUMEN_ORDER.indexOf(a) - NUMEN_ORDER.indexOf(b));
+
+  if (!numenIds.length) {
+    html += `<p style="color:var(--ink-3);font-style:italic">该性向暂无可解锁的特殊胜利结局。</p>`;
+  } else {
+    html += `<div style="margin:14px 0 10px"><span class="phase-pill after small"><span class="phase-glyph">⚜</span>可解锁结局 · ${numenIds.length} 个闰识</span></div>`;
+    numenIds.forEach(nid => {
+      const n = data.numen_by_id[nid];
+      const book = data.book_by_numen[nid];
+      const list = recsByNumen[nid];
+      html += `
+        <div class="history-card">
+          <div class="history-card__head" style="background:var(--rubric-soft);border-bottom-color:#e09898">
+            <div class="history-card__title" style="color:var(--rubric-1)">💎 ${esc(n.label_cn || nid)}</div>
+            <div class="history-card__id">${book ? `📕 ${esc(book.book_label_cn || book.book_id)}` : esc(nid)}</div>
+          </div>
+          <div class="history-card__endings">`;
+      list.forEach(item => {
+        const e = item.ending_e;
+        const reqStr = Object.entries(item.mystery_reqs || {}).map(([k,v]) =>
+          `<span class="reqkey">${esc(mLabel(k))} ≥ ${v}</span>`).join("");
+        const detailId = "edr-" + e.id.replace(/[^a-z0-9]/gi, "-");
+        const cleanDesc = (e.desc_cn || "").replace(/<[^>]+>/g, "").replace(/\[|\]/g, "").trim();
+        const tagHtml = [];
+        if (e.image) tagHtml.push(`<span class="ending-tag image">${esc(e.image)}</span>`);
+        if (e.flavour) tagHtml.push(`<span class="ending-tag flavour">${esc(e.flavour)}</span>`);
+        (e.achievements || []).forEach(a => tagHtml.push(`<span class="ending-tag ach">${esc(a)}</span>`));
+        html += `
+          <div class="ending-row role-only">
+            <div class="ending-trophy">🏆</div>
+            <div class="ending-body">
+              <div class="ending-line">
+                <span class="ending-name">${esc(e.label_cn || e.id)}</span>
+                <span class="ending-en">${esc(e.label_en || "")}</span>
+                <span class="ending-id">${esc(e.id)}</span>
+              </div>
+              <div class="ending-tags" style="margin-top:4px">
+                <span class="ending-tag generic" style="background:var(--paper-3);color:var(--ink-2);border-color:var(--paper-edge)">📜 ${esc(item.history)}</span>
+                ${reqStr}
+                ${tagHtml.join("")}
+              </div>
+              ${cleanDesc ? `<div class="ending-toggle" onclick="toggleEnding('${detailId}', this)">▶ 展开结局描述</div>
+                <div class="ending-detail" id="${detailId}">${esc(cleanDesc)}</div>` : ""}
+            </div>
+          </div>`;
+      });
+      html += `</div></div>`;
+    });
+  }
+
+  document.getElementById("main").innerHTML = html;
+  scrollMainToTop();
+}
+
+function toggleEnding(id, headEl) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.classList.toggle("open");
+  if (headEl) headEl.textContent = el.classList.contains("open") ? "▼ 折叠结局描述" : "▶ 展开结局描述";
 }
 
 // ── 流程图 SVG ──

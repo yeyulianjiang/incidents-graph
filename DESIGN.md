@@ -240,9 +240,88 @@ buildIncidentHTML
 
 ---
 
-## 五、已知边界情况
+## 五、闰识 → 历史 → 结局模块（结局 Tab）
+
+侧栏第三个 Tab，独立于事件/沙龙。回答两个核心问题：
+
+1. **某个闰识能解锁哪些结局？** — 点左侧 13 个闰识中任一项 → `renderNumen(nid)`
+2. **某个性向能解锁哪些结局？** — 点左侧 9 个性向中任一项 → `renderRole(rid)`
+3. 顶部 lookup widget：闰识 × 性向 → 结局列表（默认进入 Tab 时显示）。
+
+### 5.1 数据字段
+
+`window.GRAPH_DATA` 上新增 7 个字段（来自 weatherFactory + bohbook 本地化）：
+
+```js
+numen:           [{ id, label_cn, label_en, desc_cn }]                    // 13
+numen_books:     [{ numen, book_id, book_label_cn, book_label_en,         // 13
+                    book_desc_cn, mystery, trigger }]
+numen_records:   [{ recipe_id, numen, history, role,                       // 99
+                    mystery_reqs, label_en }]
+histories:       [{ id, label_cn, label_en, desc_cn }]                    // 39
+history_presents:[{ recipe_id, history, role, ending, extant_season }]    // 99
+endings:         [{ id, label_cn, label_en, image, flavour,               // 99
+                    achievements, desc_cn }]
+roles:           [{ id, label_cn, journal, journal_label_cn }]            // 9
+```
+
+### 5.2 派生索引（在 `main()` 中预建）
+
+```js
+data.numen_by_id          // {numen.X: numen}
+data.history_by_id        // {h.X.Y: history}
+data.ending_by_id         // {end.h.X.Y[.role]: ending}
+data.role_by_id           // {magnate: role}
+data.book_by_numen        // {numen.X: book}
+data.records_by_numen     // {numen.X: [record1, record2, ...]}
+data.presents_by_history  // {h.X.Y: [present1, present2, ...]}
+```
+
+### 5.3 链条机制（关键）
+
+```
+书 (tomes/t.*)
+  ├ aspects.mystery.<X>:N (奥秘归类)
+  └ xtriggers.reading.<X>: [{id: numen.<Y>, morpheffect: spawn}]
+       │
+       │  研究本书时（recipe study.mystery.<X>.mastering.yes）
+       │  → aspects.reading.<X>=1 → 触发 xtrigger
+       ↓
+闰识 numen.<Y> (aspecteditems/numen.*)
+       │
+       │  recipe record.h.<M>.<Y>[.role]
+       │  reqs: numen.<Y> + mystery.<M>:25 + encaustum + journal + ability
+       │  mutate journal → h.<M>.<Y>
+       ↓
+历史 h.<M>.<Y> (resolutionaspects/h.*)
+       │
+       │  recipe present.h.<M>.<Y>[.role]
+       │  reqs: ability + h.<M>.<Y>  (+ journal.<role>)
+       │  extantreqs: season.numa  ← 必须闰时!
+       │  actionid: world.tree.gate
+       ↓
+结局 end.h.<M>.<Y>[.role] (endings/_.json)
+```
+
+13 个闰识 × 3 个奥秘 = 39 个历史；每个历史按是否绑定性向产生通用+若干角色专属结局，共 99。
+另有 2 个非闰识的隐藏结局 `end.u.winter` / `end.u.evening`，不在本模块范围。
+
+### 5.4 渲染函数
+
+| 函数 | 输入 | 产出 |
+|------|------|------|
+| `populateNumenList()` | data | 侧栏 13 闰识 + 9 性向列表 |
+| `renderNumenIntro()` | — | Tab 默认页：lookup widget + 链条说明 |
+| `renderNumen(nid)` | numen.X | 来源书卡 + 各历史卡（含通用/角色结局列表） |
+| `renderRole(rid)` | role 字符串 | 该性向所有结局，按闰识分组 |
+| `runLookup()` | 表单 | 闰识 × 性向 → 结局列表 |
+| `toggleEnding(id, head)` | — | 折叠/展开结局正文 |
+
+## 六、已知边界情况
 
 - **通用 nxs**（`visitor=null`）：部分事件（如"可恕之债" `incident.mob`）的 `nxs.n.debt.inconclusive` 无特定访客，适用于所有访客。`hasAny` 和流程图查询均用 `!nxs.visitor` 兼容。
 - **无 HOL 链的事件**：`incident_to_n` 无条目的事件不生成流程图，只显示访客卡片。
 - **Numa 事件**：逻辑与常规事件相同，仅在来源牌堆（`incidents.numa`）和标签配色上有区别。
 - **对话文本格式**：游戏内 `startdescription` 可能含 `<sprite name=...>` 图标标签，脚本用 `◈` 替代；`[提示文字]` 方括号内容单独渲染为灰色小字。
+- **结局描述去标签**：游戏 `Desc` 含 `<i>` / `<size=...>` / `<align=...>` 等富文本标签，渲染时统一 `replace(/<[^>]+>/g, "")` 后用 `white-space: pre-wrap` 保留段落。
+- **角色名映射**：游戏中没有"性向"独立元素，角色字符串（magnate/symurgist/...）的中文名从结局标签 `"<X>胜利："` 前缀反向提取，与 journal 物品（如"银脊日记"）的映射表手工补齐。
